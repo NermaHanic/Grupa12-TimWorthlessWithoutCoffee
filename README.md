@@ -54,8 +54,8 @@ Korisnik je u svakom trenutku u mogucnosti da podijeli svoje iskustvo pisanjem k
 # Funkcionalnosti:
 
 • Login i registracija
-• Pregled profila
-• Izmjena podataka na korisnickom profilu
+\n• Pregled profila
+\n• Izmjena podataka na korisnickom profilu
 • Password recovery
 • Brisanje profila
 • Dodavanje/brisanje i kupovina kreacija
