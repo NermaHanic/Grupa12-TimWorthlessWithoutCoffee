@@ -52,8 +52,7 @@ OCJENJIVANJE USLUGE
 Korisnik je u svakom trenutku u mogucnosti da podijeli svoje iskustvo pisanjem komentara u knjigu utisaka. Knjiga utisaka je javna, svaki korisnik ima pristup pregledu svih prethodnih komentara.
 
 # Funkcionalnosti:
-
-    • Login i registracija
+• Login i registracija
     • Pregled profila
     • Izmjena podataka na korisnickom profilu
     • Password recovery
