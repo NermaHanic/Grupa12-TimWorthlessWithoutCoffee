@@ -54,18 +54,31 @@ Korisnik je u svakom trenutku u mogucnosti da podijeli svoje iskustvo pisanjem k
 # Funkcionalnosti:
 
 • Login i registracija
-\n• Pregled profila
-\n• Izmjena podataka na korisnickom profilu
+
+• Pregled profila
+
+• Izmjena podataka na korisnickom profilu
+
 • Password recovery
+
 • Brisanje profila
+
 • Dodavanje/brisanje i kupovina kreacija
+
 • Unos velicina
+
 • Odabir materijala, boja i dezena na kreacijama
+
 • "Pitaj stilistu"
+
 • Kupovina kreditnom karticom ili preko ziro racuna
+
 • Pretrage
+
 • Randomiziranje outfita
+
 • Preporuci prijateljima
+
 • Knjiga utisaka
 
 # Akteri:
