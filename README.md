@@ -3,10 +3,11 @@
 # TEMA: Online dizajniranje i kupovina odjece
 
 # Clanovi tima:
+• Nerma Hanic
 
-    • Nerma Hanic
-    • Amila Borancic
-    • Mahira Buturovic 
+• Amila Borancic
+
+• Mahira Buturovic 
 
 # Opis teme:
 
