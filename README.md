@@ -69,6 +69,5 @@ Funkcionalnosti:
 Akteri:
 
     • Aministrator - korisnik sa najvišim nivoom privilegija koji održava sistem.
-    • Korisnik - korisnik koji je kreirao nalog na aplikaciji i ima sve moguænost koje nudi  
-                 aplikacija
-    • Stilista – korisnik aplikacije cija je uloga u ocjenjivanju i preporukama ulogovanih                                           korisnika koji se odluce za opciju "Pitaj stilistu"
+    • Korisnik - korisnik koji je kreirao nalog na aplikaciji i ima sve moguænost koje nudi aplikacija
+    • Stilista – korisnik aplikacije cija je uloga u ocjenjivanju i preporukama ulogovanih korisnika koji se odluce za opciju "Pitaj stilistu"
