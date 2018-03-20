@@ -2,18 +2,18 @@
 
 # TEMA: Online dizajniranje i kupovina odjece
 
-#Clanovi tima:
+# Clanovi tima:
 
     • Nerma Hanic
     • Amila Borancic
     • Mahira Buturovic 
 
-#Opis teme:
+# Opis teme:
 
 "Dear Wallet, Dress Me Up" omogucava online kreiranje personalizirane odjece. Korisnik ima mogucnost da prilagodi odjevnu kombinaciju svom stilu i prilici za koju kupuje. Takodje se nudi opcija unosa dimenzija/mjera na osnovu kojih je zagarantirano da ce korisniku odjeca odgovarati kao i izbor materijala, boja i dezena. Aplikacija omogucava korisnicima da bez odlaska u kupovinu i visesatnog obilazenja radnji pronadju svoju idealnu odjevnu kombinaciju.
 
 
-#Procesi:
+# Procesi:
 
 REGISTRACIJA I PRIJAVA
 
@@ -51,7 +51,7 @@ OCJENJIVANJE USLUGE
 
 Korisnik je u svakom trenutku u mogucnosti da podijeli svoje iskustvo pisanjem komentara u knjigu utisaka. Knjiga utisaka je javna, svaki korisnik ima pristup pregledu svih prethodnih komentara.
 
-#Funkcionalnosti:
+# Funkcionalnosti:
 
     • Login i registracija
     • Pregled profila
@@ -68,7 +68,7 @@ Korisnik je u svakom trenutku u mogucnosti da podijeli svoje iskustvo pisanjem k
     • Preporuci prijateljima
     • Knjiga utisaka
 
-#Akteri:
+# Akteri:
 
     • Aministrator - korisnik sa najvišim nivoom privilegija koji održava sistem.
     • Korisnik - korisnik koji je kreirao nalog na aplikaciji i ima sve moguænost koje nudi aplikacija
