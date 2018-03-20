@@ -11,6 +11,7 @@
 
 # Opis teme:
 
+Koliko puta stojimo pred ormarom tražeæi savršenu kombinaciju za nadolazeæi dan, koja bi odgovarala vremenu, ali i  pristajala uz naše raspoloženje? Zašto danas nismo zadovoljni outfitom koji smo nosili prije par dana? 
 "Dear Wallet, Dress Me Up" omogucava online kreiranje personalizirane odjece. Korisnik ima mogucnost da prilagodi odjevnu kombinaciju svom stilu i prilici za koju kupuje. Takodje se nudi opcija unosa dimenzija/mjera na osnovu kojih je zagarantirano da ce korisniku odjeca odgovarati kao i izbor materijala, boja i dezena. Aplikacija omogucava korisnicima da bez odlaska u kupovinu i visesatnog obilazenja radnji pronadju svoju idealnu odjevnu kombinaciju.
 
 
