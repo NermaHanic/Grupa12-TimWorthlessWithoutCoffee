@@ -1,5 +1,7 @@
 # Grupa12-TimWorthlessWithoutCoffee
 
+# TEMA: Online dizajniranje i kupovina odjece
+
 Clanovi tima:
 
     • Nerma Hanic
@@ -70,4 +72,5 @@ Akteri:
 
     • Aministrator - korisnik sa najvišim nivoom privilegija koji održava sistem.
     • Korisnik - korisnik koji je kreirao nalog na aplikaciji i ima sve moguænost koje nudi aplikacija
-    • Stilista – korisnik aplikacije cija je uloga u ocjenjivanju i preporukama ulogovanih korisnika koji se odluce za opciju "Pitaj stilistu"
+    • Stilista – korisnik aplikacije cija je uloga u ocjenjivanju i preporukama ulogovanih korisnika 
+                 koji se odluce za opciju "Pitaj stilistu"
