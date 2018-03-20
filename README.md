@@ -52,24 +52,25 @@ OCJENJIVANJE USLUGE
 Korisnik je u svakom trenutku u mogucnosti da podijeli svoje iskustvo pisanjem komentara u knjigu utisaka. Knjiga utisaka je javna, svaki korisnik ima pristup pregledu svih prethodnih komentara.
 
 # Funkcionalnosti:
+
 • Login i registracija
-    • Pregled profila
-    • Izmjena podataka na korisnickom profilu
-    • Password recovery
-    • Brisanje profila
-    • Dodavanje/brisanje i kupovina kreacija
-    • Unos velicina
-    • Odabir materijala, boja i dezena na kreacijama
-    • "Pitaj stilistu"
-    • Kupovina kreditnom karticom ili preko ziro racuna
-    • Pretrage
-    • Randomiziranje outfita
-    • Preporuci prijateljima
-    • Knjiga utisaka
+• Pregled profila
+• Izmjena podataka na korisnickom profilu
+• Password recovery
+• Brisanje profila
+• Dodavanje/brisanje i kupovina kreacija
+• Unos velicina
+• Odabir materijala, boja i dezena na kreacijama
+• "Pitaj stilistu"
+• Kupovina kreditnom karticom ili preko ziro racuna
+• Pretrage
+• Randomiziranje outfita
+• Preporuci prijateljima
+• Knjiga utisaka
 
 # Akteri:
 
-    • Aministrator - korisnik sa najvišim nivoom privilegija koji održava sistem.
-    • Korisnik - korisnik koji je kreirao nalog na aplikaciji i ima sve moguænost koje nudi aplikacija
-    • Stilista – korisnik aplikacije cija je uloga u ocjenjivanju i preporukama ulogovanih korisnika 
+• Aministrator - korisnik sa najvišim nivoom privilegija koji održava sistem.
+• Korisnik - korisnik koji je kreirao nalog na aplikaciji i ima sve moguænost koje nudi aplikacija
+• Stilista – korisnik aplikacije cija je uloga u ocjenjivanju i preporukama ulogovanih korisnika 
                  koji se odluce za opciju "Pitaj stilistu"
