@@ -90,4 +90,4 @@ Korisnik je u svakom trenutku u mogucnosti da podijeli svoje iskustvo pisanjem k
 • Korisnik - korisnik koji je kreirao nalog na aplikaciji i ima sve moguænost koje nudi aplikacija
 
 • Stilista – korisnik aplikacije cija je uloga u ocjenjivanju i preporukama ulogovanih korisnika 
-             koji se odluce za opciju "Pitaj stilistu"
+              koji se odluce za opciju "Pitaj stilistu"
