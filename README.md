@@ -3,15 +3,15 @@
 # TEMA: Online dizajniranje i kupovina odjece
 
 # Clanovi tima:
-• Nerma Hanic
+â€¢ Nerma Hanic
 
-• Amila Borancic
+â€¢ Amila Borancic
 
-• Mahira Buturovic 
+â€¢ Mahira Buturovic 
 
 # Opis teme:
 
-Koliko puta stojimo pred ormarom tražeæi savršenu kombinaciju za nadolazeæi dan, koja bi odgovarala vremenu, ali i  pristajala uz naše raspoloženje? Zašto danas nismo zadovoljni outfitom koji smo nosili prije par dana? 
+Koliko puta stojimo pred ormarom traÅ¾eÄ‡i savrÅ¡enu kombinaciju za nadolazeÄ‡i dan, koja bi odgovarala vremenu, ali i  pristajala uz naÅ¡e raspoloÅ¾enje? ZaÅ¡to danas nismo zadovoljni outfitom koji smo nosili prije par dana? 
 "Dear Wallet, Dress Me Up" omogucava online kreiranje personalizirane odjece. Korisnik ima mogucnost da prilagodi odjevnu kombinaciju svom stilu i prilici za koju kupuje. Takodje se nudi opcija unosa dimenzija/mjera na osnovu kojih je zagarantirano da ce korisniku odjeca odgovarati kao i izbor materijala, boja i dezena. Aplikacija omogucava korisnicima da bez odlaska u kupovinu i visesatnog obilazenja radnji pronadju svoju idealnu odjevnu kombinaciju.
 
 
@@ -55,39 +55,39 @@ Korisnik je u svakom trenutku u mogucnosti da podijeli svoje iskustvo pisanjem k
 
 # Funkcionalnosti:
 
-• Login i registracija
+â€¢ Login i registracija
 
-• Pregled profila
+â€¢ Pregled profila
 
-• Izmjena podataka na korisnickom profilu
+â€¢ Izmjena podataka na korisnickom profilu
 
-• Password recovery
+â€¢ Password recovery
 
-• Brisanje profila
+â€¢ Brisanje profila
 
-• Dodavanje/brisanje i kupovina kreacija
+â€¢ Dodavanje/brisanje i kupovina kreacija
 
-• Unos velicina
+â€¢ Unos velicina
 
-• Odabir materijala, boja i dezena na kreacijama
+â€¢ Odabir materijala, boja i dezena na kreacijama
 
-• "Pitaj stilistu"
+â€¢ "Pitaj stilistu"
 
-• Kupovina kreditnom karticom ili preko ziro racuna
+â€¢ Kupovina kreditnom karticom ili preko ziro racuna
 
-• Pretrage
+â€¢ Pretrage
 
-• Randomiziranje outfita
+â€¢ Randomiziranje outfita
 
-• Preporuci prijateljima
+â€¢ Preporuci prijateljima
 
-• Knjiga utisaka
+â€¢ Knjiga utisaka
 
 # Akteri:
 
-• Aministrator - korisnik sa najvišim nivoom privilegija koji održava sistem.
+â€¢ Aministrator - korisnik sa najviÅ¡im nivoom privilegija koji odrÅ¾ava sistem.
 
-• Korisnik - korisnik koji je kreirao nalog na aplikaciji i ima sve moguænost koje nudi aplikacija
+â€¢ Korisnik - korisnik koji je kreirao nalog na aplikaciji i ima sve moguÄ‡nost koje nudi aplikacija
 
-• Stilista – korisnik aplikacije cija je uloga u ocjenjivanju i preporukama ulogovanih korisnika 
+â€¢ Stilista â€“ korisnik aplikacije cija je uloga u ocjenjivanju i preporukama ulogovanih korisnika 
               koji se odluce za opciju "Pitaj stilistu"
