@@ -2,6 +2,8 @@
 
 # TEMA: Online dizajniranje i kupovina odjece
 
+![naslogo](logo.jpg)
+
 # Clanovi tima:
 • Nerma Hanic
 
