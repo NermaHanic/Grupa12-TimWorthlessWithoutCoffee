@@ -1,4 +1,4 @@
-﻿# Grupa12-TimWorthlessWithoutCoffee :)
+﻿# Grupa12-TimWorthlessWithoutCoffee 
 
 # TEMA: Online dizajniranje i kupovina odjece
 
