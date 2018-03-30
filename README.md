@@ -46,14 +46,9 @@ KUPOVINA
 
 Prilikom kreiranja outfita, korisniku se u svakom trenutku prikazuje trenutna cijena cijele kreacije. Kada god korisnik doda/ukloni neki dio kreacije, cijena se shodno tome azurira. Postoje dva nacina placanja; kreditnom karticom i uplata preko ziro racuna. 
 
-
 DOSTAVA
 
 Postoje dvije vrste dostave: klasicna i express. Klasicna dostava traje 7-10 dana i placa se shodno udaljenosti u kilometrazi. Express dostava traje 1-3 dana i dodatno se placa.
-
-OCJENJIVANJE USLUGE
-
-Korisnik je u svakom trenutku u mogucnosti da podijeli svoje iskustvo pisanjem komentara u knjigu utisaka. Knjiga utisaka je javna, svaki korisnik ima pristup pregledu svih prethodnih komentara.
 
 # Funkcionalnosti:
 
@@ -82,8 +77,6 @@ Korisnik je u svakom trenutku u mogucnosti da podijeli svoje iskustvo pisanjem k
 • Randomiziranje outfita
 
 • Preporuci prijateljima
-
-• Knjiga utisaka
 
 # Akteri:
 
