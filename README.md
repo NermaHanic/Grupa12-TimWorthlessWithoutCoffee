@@ -48,7 +48,8 @@ Prilikom kreiranja outfita, korisniku se u svakom trenutku prikazuje trenutna ci
 
 DOSTAVA
 
-Postoje dvije vrste dostave: klasicna i express. Klasicna dostava traje 7-10 dana i placa se shodno udaljenosti u kilometrazi. Express dostava traje 1-3 dana i dodatno se placa.
+Postoje dvije vrste dostave: klasicna i express. Klasicna dostava traje 7-10 dana i besplatna je. 
+Express dostava traje 1-3 dana i dodatno se placa.
 
 # Funkcionalnosti:
 
