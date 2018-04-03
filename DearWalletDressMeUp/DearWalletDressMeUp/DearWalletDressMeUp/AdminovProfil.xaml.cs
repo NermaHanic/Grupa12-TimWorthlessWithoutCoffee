@@ -22,9 +22,15 @@ namespace DearWalletDressMeUp
     /// </summary>
     public sealed partial class AdminovProfil : Page
     {
+        
         public AdminovProfil()
         {
             this.InitializeComponent();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
