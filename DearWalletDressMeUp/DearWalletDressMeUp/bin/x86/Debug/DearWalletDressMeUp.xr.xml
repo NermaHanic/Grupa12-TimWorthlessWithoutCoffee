@@ -21,6 +21,8 @@
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
@@ -98,8 +100,14 @@
       <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="DearWalletDressMeUp.AdminovProfil" />
-    <RootType FullName="DearWalletDressMeUp.Login" />
-    <RootType FullName="DearWalletDressMeUp.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetAlignRightWithPanel" />
+      <RootMethod Name="SetAlignRightWithPanel" />
+      <RootMethod Name="GetRightOf" />
+      <RootMethod Name="SetRightOf" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
@@ -112,6 +120,8 @@
       <RootMethod Name="GetVerticalScrollBarVisibility" />
       <RootMethod Name="SetVerticalScrollBarVisibility" />
     </RootType>
+    <RootType FullName="DearWalletDressMeUp.MainPage" />
     <RootType FullName="DearWalletDressMeUp.Registracija" />
+    <RootType FullName="DearWalletDressMeUp.Registracija2" />
   </Roots.RootTypes>
 </Roots>
