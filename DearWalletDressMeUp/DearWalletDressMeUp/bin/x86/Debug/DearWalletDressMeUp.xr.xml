@@ -13,6 +13,8 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Children" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -24,7 +26,9 @@
       <RootMethod Name="GetVisualStateGroups" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
@@ -37,6 +41,8 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
       <RootProperty Name="BorderBrush" />
@@ -52,6 +58,10 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Text" />
       <RootProperty Name="TextWrapping" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="Height" />
@@ -67,6 +77,10 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Source" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="AllowDrop" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Stretch" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
       <RootProperty Name="States" />
@@ -85,5 +99,18 @@
     </RootType>
     <RootType FullName="DearWalletDressMeUp.AdminovProfil" />
     <RootType FullName="DearWalletDressMeUp.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="AcceptsReturn" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+    </RootType>
+    <RootType FullName="DearWalletDressMeUp.Registracija" />
   </Roots.RootTypes>
 </Roots>
