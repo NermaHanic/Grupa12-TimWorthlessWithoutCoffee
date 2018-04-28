@@ -27,8 +27,14 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
         }
+        
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void DodajBrisi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DodajOdj_Click(object sender, RoutedEventArgs e)
         {
 
         }

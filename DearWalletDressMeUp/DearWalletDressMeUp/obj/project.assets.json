@@ -18422,7 +18422,7 @@
       ]
     },
     "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
-      "sha512": "2RI4q8FfR0S50V4YdZIZtzfyA2Bo4+jJHQXG+TDN7D4mPrFiIswIq8HVeDWS9xZsDwz23z7d/T2qi4rZa60Sig==",
+      "sha512": "svqEclOg2g3pmsVen1/sCCsozefwISlHQcB/Y5yxqovG6tx+LIxN0XtGH4XSieLbf5PbzVIXmHoPPrWb0QhuaA==",
       "type": "package",
       "path": "microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
@@ -25729,24 +25729,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Users\\defaultuser0\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\ImaDaProradis\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\DearWalletDressMeUp.csproj",
+      "projectUniqueName": "C:\\Users\\defaultuser0\\Desktop\\OvdjeTrebaIspravitAdmina\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\DearWalletDressMeUp.csproj",
       "projectName": "DearWalletDressMeUp",
-      "projectPath": "C:\\Users\\HP\\Desktop\\ImaDaProradis\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\DearWalletDressMeUp.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\ImaDaProradis\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\obj\\",
+      "projectPath": "C:\\Users\\defaultuser0\\Desktop\\OvdjeTrebaIspravitAdmina\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\DearWalletDressMeUp.csproj",
+      "packagesPath": "C:\\Users\\defaultuser0\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\defaultuser0\\Desktop\\OvdjeTrebaIspravitAdmina\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\defaultuser0\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
