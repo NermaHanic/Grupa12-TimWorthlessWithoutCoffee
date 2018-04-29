@@ -95,6 +95,9 @@
     <Compile Include="AdminovProfil.xaml.cs">
       <DependentUpon>AdminovProfil.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AdminUserManagement.xaml.cs">
+      <DependentUpon>AdminUserManagement.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -146,11 +149,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+<<<<<<< HEAD
     <Page Include="CheckoutForma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="HomePage.xaml">
+=======
+    <Page Include="AdminUserManagement.xaml">
+>>>>>>> 342929c386d932343126a1f835a4b641499eb648
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

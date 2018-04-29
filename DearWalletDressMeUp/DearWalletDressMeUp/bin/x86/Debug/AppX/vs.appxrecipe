@@ -10,7 +10,11 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>de107c0a-a28f-4375-baae-27a3e2f1e1ba</PackageIdentityName>
     <PackageIdentityPublisher>CN=AMILA</PackageIdentityPublisher>
+<<<<<<< HEAD
     <IntermediateOutputPath>C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\</IntermediateOutputPath>
+=======
+    <IntermediateOutputPath>C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\</IntermediateOutputPath>
+>>>>>>> 342929c386d932343126a1f835a4b641499eb648
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +22,11 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+<<<<<<< HEAD
     <LayoutDir>C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\AppX</LayoutDir>
+=======
+    <LayoutDir>C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\AppX</LayoutDir>
+>>>>>>> 342929c386d932343126a1f835a4b641499eb648
     <RegisteredManifestChecksum>BE7A5E15108498E134847F1C8DCC8310AE4097CF9F553E2BE86DAA0E3606F55D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>de107c0a-a28f-4375-baae-27a3e2f1e1ba_1.0.0.0_x86__1mrq0mp8qkrbe</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>de107c0a-a28f-4375-baae-27a3e2f1e1ba_1mrq0mp8qkrbe!App</RegisteredUserModeAppID>
@@ -28,6 +36,7 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <AppXManifest Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -38,6 +47,18 @@
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.exe">
       <PackagePath>entrypoint\DearWalletDressMeUp.exe</PackagePath>
       <Modified>2018-04-29T19:13:02.742</Modified>
+=======
+    <AppXManifest Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-29T17:50:44.990</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.exe">
+      <PackagePath>entrypoint\DearWalletDressMeUp.exe</PackagePath>
+      <Modified>2018-04-29T17:50:41.269</Modified>
+>>>>>>> 342929c386d932343126a1f835a4b641499eb648
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,6 +516,7 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T21:15:04.000</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\5f7a11765690b717abfdf22372fe80c1.png">
       <PackagePath>Assets\5f7a11765690b717abfdf22372fe80c1.png</PackagePath>
       <Modified>2018-04-25T11:31:46.366</Modified>
@@ -548,11 +570,63 @@
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.xr.xml">
       <PackagePath>DearWalletDressMeUp.xr.xml</PackagePath>
       <Modified>2018-04-29T19:06:31.557</Modified>
+=======
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\logo.jpg">
+      <PackagePath>Assets\logo.jpg</PackagePath>
+      <Modified>2018-04-26T15:08:29.195</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\univerzalno.png">
+      <PackagePath>Assets\univerzalno.png</PackagePath>
+      <Modified>2018-04-26T15:08:29.197</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2018-04-26T15:08:29.186</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-26T15:08:29.188</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-26T15:08:29.189</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-26T15:08:29.190</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-26T15:08:29.191</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-26T15:08:29.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-26T15:08:29.193</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2018-04-26T15:08:29.208</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.xr.xml">
+      <PackagePath>DearWalletDressMeUp.xr.xml</PackagePath>
+      <Modified>2018-04-28T10:15:17.725</Modified>
+>>>>>>> 342929c386d932343126a1f835a4b641499eb648
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T15:28:16.000</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -561,6 +635,16 @@
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\DearWalletDressMeUp.exe">
       <PackagePath>DearWalletDressMeUp.exe</PackagePath>
       <Modified>2018-04-29T19:13:05.202</Modified>
+=======
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-04-29T17:50:43.264</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\DearWalletDressMeUp.exe">
+      <PackagePath>DearWalletDressMeUp.exe</PackagePath>
+      <Modified>2018-04-29T17:50:44.785</Modified>
+>>>>>>> 342929c386d932343126a1f835a4b641499eb648
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

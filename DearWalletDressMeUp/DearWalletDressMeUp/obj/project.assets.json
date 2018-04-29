@@ -25735,11 +25735,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\defaultuser0\\Desktop\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\DearWalletDressMeUp.csproj",
       "projectName": "DearWalletDressMeUp",
       "projectPath": "C:\\Users\\defaultuser0\\Desktop\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\DearWalletDressMeUp.csproj",
       "packagesPath": "C:\\Users\\defaultuser0\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\defaultuser0\\Desktop\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\defaultuser0\\Desktop\\OvdjeTrebaIspravitAdmina\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\DearWalletDressMeUp.csproj",
+      "projectName": "DearWalletDressMeUp",
+      "projectPath": "C:\\Users\\defaultuser0\\Desktop\\OvdjeTrebaIspravitAdmina\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\DearWalletDressMeUp.csproj",
+      "packagesPath": "C:\\Users\\defaultuser0\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\defaultuser0\\Desktop\\OvdjeTrebaIspravitAdmina\\Grupa12-TimWorthlessWithoutCoffee\\DearWalletDressMeUp\\DearWalletDressMeUp\\obj\\",
+>>>>>>> 342929c386d932343126a1f835a4b641499eb648
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

@@ -12,13 +12,16 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+<<<<<<< HEAD
         <StackPanel x:Name="logo" Grid.Column="1" Grid.Row="0" Orientation="Vertical">
             <Image x:Name="slikica" HorizontalAlignment="Left" Height="135" Margin="10,0,0,0" Width="412" Source="Assets/logo.jpg" VerticalAlignment="Center"/>
         </StackPanel>
@@ -32,30 +35,34 @@
         <StackPanel x:Name="Obrisi" Grid.Column="1" Grid.Row="2">
             <Button Content="Obrisi" HorizontalAlignment="Center" Margin="184,0,184,0" VerticalAlignment="Top" Click="Button_Click"/>
         </StackPanel>
+=======
+        <Button x:Name="DodajBrisiKor" Content="Dodaj/Brisi korisnika" Height="70" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Click="DodajBrisi_Click"/>
+        <Button x:Name="DodajOdj" Content="Dodaj Odjevni Predmet" Height="70" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Click="DodajOdj_Click"/>
+>>>>>>> 342929c386d932343126a1f835a4b641499eb648
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
-                <VisualState x:Name="tablet">
+                <VisualState x:Name="Mobile">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="600"/>
+                        <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="slikica.Width" Value="400"></Setter>
-                        <Setter Target="logo.(Grid.ColumnSpan)" Value="2"></Setter>
-                        <Setter Target="logo.(slikica.VerticalAlignment)" Value="Center"></Setter>
-                        <Setter Target="IDProfila.(Grid.ColumnSpan)" Value="2"></Setter>
-                        <Setter Target="id.Margin" Value="50,95,0,0"></Setter>
+                        <Setter Target="DodajOdj.(Grid.Row)" Value="2"/>
+                        <Setter Target="DodajOdj.(Grid.Column)" Value="1"/>
+                        <Setter Target="DodajOdj.(Grid.ColumnSpan)" Value="2"/>
+                        <Setter Target="DodajBrisiKor.(Grid.ColumnSpan)" Value="2"/>
+                        <Setter Target="DodajBrisiKor.(Grid.Row)" Value="1"/>
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:Name="desktop">
+                
+                <VisualState x:Name="Tablet">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="1200" MinWindowHeight="720"></AdaptiveTrigger>
+                        <AdaptiveTrigger MinWindowWidth="640"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="logo.(slikica.VerticalAlignment)" Value="Center"></Setter>
-                        <Setter Target="IDProfila.(Grid.ColumnSpan)" Value="2"></Setter>
-                        <Setter Target="idList.Margin" Value="100,100,0,0"></Setter>
-                        <Setter Target="id.Margin" Value="100,100,0,0"></Setter>
-                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="1008"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
