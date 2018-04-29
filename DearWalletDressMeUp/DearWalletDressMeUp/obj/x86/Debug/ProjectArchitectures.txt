@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\DearWalletDressMeUp.csproj;x86
-=======
-C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\DearWalletDressMeUp.csproj;x86
->>>>>>> 342929c386d932343126a1f835a4b641499eb648
