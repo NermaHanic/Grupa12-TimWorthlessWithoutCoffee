@@ -469,6 +469,7 @@ C:\Users\HP\Desktop\ImaDaProradis\Grupa12-TimWorthlessWithoutCoffee\DearWalletDr
 C:\Users\HP\Desktop\ImaDaProradis\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracja.xbf
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\App.xbf
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\AdminovProfil.xbf
+C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\AdminUserManagement.xbf
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\MainPage.xbf
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Registracija.xbf
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Registracja.xbf
@@ -598,6 +599,8 @@ C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWitho
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\App.g.cs
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminovProfil.g.i.cs
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminovProfil.g.cs
+C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminUserManagement.g.i.cs
+C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminUserManagement.g.cs
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\MainPage.g.i.cs
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\MainPage.g.cs
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracija.g.i.cs
@@ -607,16 +610,19 @@ C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWitho
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\App.xaml
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminovProfil.xaml
+C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminUserManagement.xaml
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\MainPage.xaml
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracija.xaml
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracja.xaml
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\App.xbf
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminovProfil.xbf
+C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminUserManagement.xbf
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\MainPage.xbf
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracija.xbf
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracja.xbf
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\DearWalletDressMeUp.csproj.CoreCompileInputs.cache
+C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\DearWalletDressMeUp.csproj.CopyComplete
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\DearWalletDressMeUp.exe
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\DearWalletDressMeUp.pdb
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\ResourceHandlingTask.state
@@ -694,4 +700,4 @@ C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWitho
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\DearWalletDressMeUp.csproj.CopyComplete
+C:\Users\defaultuser0\Desktop\OvdjeTrebaIspravitAdmina\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\DearWalletDressMeUp.csprojResolveAssemblyReference.cache
