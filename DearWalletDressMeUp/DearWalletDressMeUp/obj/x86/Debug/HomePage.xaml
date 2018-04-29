@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="DearWalletDressMeUp.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DearWalletDressMeUp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="484" Margin="30,128,0,0" VerticalAlignment="Top" Width="1218">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image x:ConnectionId='2' x:Name="Kreiraj" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Height="200" Width="560" Margin="20 0 0 0"/>
+            <Image x:ConnectionId='3' x:Name="Pretraga" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Height="200" Width="560" Margin="20 0 0 0"/>
+            <Image x:ConnectionId='4' x:Name="MojProfil" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="200" Width="560" Margin="20 0 0 0"/>
+            <Image x:ConnectionId='5' x:Name="Kviz" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Height="200" Width="560" Margin="20 0 0 0"/>
+        </Grid>
+        <Button x:ConnectionId='1' x:Name="LogOutHome" Content="Log out" HorizontalAlignment="Right" Margin="560,0,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
+

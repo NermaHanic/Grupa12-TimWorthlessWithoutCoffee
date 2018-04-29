@@ -20,21 +20,21 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <StackPanel x:ConnectionId='1' x:Name="logo" Grid.Column="1" Grid.Row="0" Orientation="Vertical">
-            <Image x:ConnectionId='7' x:Name="slikica" HorizontalAlignment="Left" Height="135" Margin="10,0,0,0" Width="412" Source="Assets/logo.jpg" VerticalAlignment="Center"/>
+            <Image x:ConnectionId='8' x:Name="slikica" HorizontalAlignment="Left" Height="135" Margin="10,0,0,0" Width="412" Source="Assets/logo.jpg" VerticalAlignment="Center"/>
         </StackPanel>
         <StackPanel x:ConnectionId='2' x:Name="IDProfila" Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal">
-            <TextBlock x:ConnectionId='5' x:Name="id" HorizontalAlignment="Left" Margin="100,110,0,0" Text="ID Profila" TextWrapping="Wrap"/>
-            <ListBox x:ConnectionId='6' x:Name="idList" Height="33" Width="219" BorderBrush="White" BorderThickness="5" Margin="10,0,0,0"/>
+            <TextBlock x:ConnectionId='6' x:Name="id" HorizontalAlignment="Left" Margin="100,110,0,0" Text="ID Profila" TextWrapping="Wrap"/>
+            <ListBox x:ConnectionId='7' x:Name="idList" Height="33" Width="219" BorderBrush="White" BorderThickness="5" Margin="10,0,0,0"/>
         </StackPanel>
         <StackPanel x:ConnectionId='3' x:Name="ProfilnaSlika" Grid.Column="1" Grid.Row="1">
             <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="200" Width="200" Margin="0,0,0,0"/>
         </StackPanel>
         <StackPanel x:ConnectionId='4' x:Name="Obrisi" Grid.Column="1" Grid.Row="2">
-            <Button Content="Obrisi" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top"/>
+            <Button x:ConnectionId='5' Content="Obrisi" HorizontalAlignment="Center" Margin="184,0,184,0" VerticalAlignment="Top"                     />
         </StackPanel>
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
-                <VisualState x:ConnectionId='8' x:Name="tablet">
+                <VisualState x:ConnectionId='9' x:Name="tablet">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="600"/>
                     </VisualState.StateTriggers>
@@ -46,7 +46,7 @@
                         <Setter Target="id.Margin" Value="50,95,0,0"></Setter>
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='9' x:Name="desktop">
+                <VisualState x:ConnectionId='10' x:Name="desktop">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="1200" MinWindowHeight="720"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
