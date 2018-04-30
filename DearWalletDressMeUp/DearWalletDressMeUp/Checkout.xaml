@@ -8,7 +8,45 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ScrollViewer VerticalScrollBarVisibility="Visible">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="Mobitel">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="KorpicaDostava.Orientation" Value="Vertical"></Setter>
+                        <Setter Target="KorpicaDostava.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="OutermostStack.Margin" Value="0 20 0 0"></Setter>
+                        <Setter Target="ScrollKafice.Width" Value="350"></Setter>
+                        <Setter Target="HomeiNazad.Orientation" Value="Horizontal"></Setter>
+                        <Setter Target="HomeiNazad.(Grid.ColumnSpan)" Value="3"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="OutermostStack.Margin" Value="0 20 0 0"></Setter>
+                        <Setter Target="KorpicaDostava.Orientation" Value="Vertical"></Setter>
+
+                        <Setter Target="HomeiNazad.Orientation" Value="Horizontal"></Setter>
+                        <Setter Target="HomeiNazad.(Grid.ColumnSpan)" Value="3"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1000"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="OutermostStack.Margin" Value="0 20 0 0"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <ScrollViewer x:Name="ScrollSve" VerticalScrollBarVisibility="Visible">
             <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
@@ -24,104 +62,119 @@
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Rectangle x:Name="DostavaAdresaItd" Height="500" Width="520" Fill="Beige" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="4" HorizontalAlignment="Center" Margin="0 60 -60 0"/>
-                <Rectangle x:Name="Korpica" Width="520" Height="500" Fill="Beige" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="4" Margin="-60 60 0 0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <ScrollViewer VerticalScrollBarVisibility="Visible" Background="White" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="3" Width="500" Height="400" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-60 20 0 0">
-                    <GridView x:Name="Kafice" >
-                        <GridView.ItemTemplate>
-                            <DataTemplate x:Name="Tmp">
-                                <Grid Height="160" Width="160">
-                                    <Image Height="100" Width="100" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png" Stretch="UniformToFill"/>
-                                    <StackPanel Orientation="Horizontal" Height="40" VerticalAlignment="Bottom" Padding="10">
-                                        <TextBlock Text="Cijena:"/>
+                <StackPanel x:Name="OutermostStack" Background="Beige" Orientation="Vertical" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="5" Margin="20 -50 20 0">
+                    <StackPanel x:Name="KorpicaDostava" Orientation="Horizontal" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="5"  HorizontalAlignment="Center" Margin="20 0 0 0">
+                        <StackPanel x:Name="KorpicaKafice" Margin="0 -20 0 0">
+                            <TextBlock x:Name="KorpicaNaziv" TextWrapping="Wrap" Text="Korpica" FontSize="35" Grid.RowSpan="1" HorizontalAlignment="Center" Padding="20"/>
+                            <ScrollViewer x:Name="ScrollKafice" VerticalScrollBarVisibility="Visible" MaxHeight="450" Background="White" VerticalAlignment="Top">
+                                <GridView x:Name="Kafice" >
+                                    <GridView.ItemTemplate>
+                                        <DataTemplate x:Name="Tmp">
+                                            <Grid Height="160" Width="160">
+                                                <Image Height="100" Width="100" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png" Stretch="UniformToFill"/>
+                                                <StackPanel Orientation="Horizontal" Height="40" VerticalAlignment="Bottom" Padding="10">
+                                                    <TextBlock Text="Cijena:"/>
+                                                </StackPanel>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </GridView.ItemTemplate>
+                                    <GridView.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <ItemsWrapGrid MaximumRowsOrColumns="3" Orientation="Horizontal"></ItemsWrapGrid>
+                                        </ItemsPanelTemplate>
+                                    </GridView.ItemsPanel>
+                                    <GridView.Items>
+                                        <Image></Image>
+                                        <Image></Image>
+                                        <Image></Image>
+                                        <Image></Image>
+                                        <Image></Image>
+                                        <Image></Image>
+                                        <Image></Image>
+                                        <Image></Image>
+                                    </GridView.Items>
+                                </GridView>
+                            </ScrollViewer>
+                            <Rectangle Fill="Beige" Height="15"></Rectangle>
+                            <HyperlinkButton x:Name="OtkaziNarudzbu" Content="Predomislili ste se? Kliknite ovdje." Height="32" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Left"/>
+                        </StackPanel>
+                        <StackPanel x:Name="DostavaStack" Margin="20 0 0 0">
+                            <TextBlock x:Name="DetaljiODostavi" Text="Detalji o dostavi" FontSize="35" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                            <StackPanel x:Name="AdresaItd" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3" Orientation="Horizontal">
+                                <StackPanel.Resources>
+                                    <Style TargetType="StackPanel">
+                                        <Setter Property="Margin" Value="-10 0 0 0"></Setter>
+                                        <Setter Property="Padding" Value="10"></Setter>
+                                    </Style>
+                                </StackPanel.Resources>
+                                <StackPanel x:Name="Detalji" Orientation="Vertical" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="3">
+                                    <StackPanel.Resources>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="Padding" Value="20"></Setter>
+                                            <Setter Property="Margin" Value="0 5 0 0"></Setter>
+                                            <Setter Property="FontSize" Value="17"></Setter>
+                                        </Style>
+                                    </StackPanel.Resources>
+                                    <TextBlock x:Name="AdresaS" Text="Adresa:" TextWrapping="Wrap"/>
+                                    <TextBlock x:Name="Grad" Text="Grad:" TextWrapping="Wrap" />
+                                    <TextBlock x:Name="Drzava"  Text="Drzava:" TextWrapping="Wrap"/>
+                                    <TextBlock x:Name="DostavaDetalji" Text="Odabir dostave:" TextWrapping="Wrap"/>
+                                    <TextBlock x:Name="Placanje" Text="Nacin placanja:" TextWrapping="Wrap" />
+                                    <TextBlock x:Name="UkupnaCijena" Text="Total:" TextWrapping="Wrap"/>
+
+                                </StackPanel>
+                                <StackPanel x:Name="DetaljiText" Orientation="Vertical">
+                                    <StackPanel.Resources>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="Height" Value="35"></Setter>
+                                            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+                                            <Setter Property="Margin" Value="0 10 0 0"></Setter>
+                                        </Style>
+                                        <Style TargetType="StackPanel">
+                                            <Setter Property="Margin" Value="0 13 0 0"></Setter>
+                                            <Setter Property="Padding" Value="5"></Setter>
+                                        </Style>
+                                    </StackPanel.Resources>
+                                    <TextBox x:Name="AdresaSText" HorizontalAlignment="Left" Width="250"/>
+                                    <TextBox x:Name="GradText" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="0 35 0 0"/>
+                                    <TextBox x:Name="DrzavaText" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="0 33 0 0"/>
+                                    <StackPanel x:Name="PrviRadio" Orientation="Horizontal">
+                                        <StackPanel.Resources>
+                                            <Style TargetType="RadioButton">
+                                                <Setter Property="Margin" Value="0 20 20 0"></Setter>
+                                            </Style>
+                                        </StackPanel.Resources>
+                                        <RadioButton x:Name="ObicnaDostava" Content="Obicna" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                        <RadioButton x:Name="ExpressDostava" Content="Express" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                                     </StackPanel>
-                                </Grid>
-                            </DataTemplate>
-                        </GridView.ItemTemplate>
-                        <GridView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <ItemsWrapGrid MaximumRowsOrColumns="3" Orientation="Horizontal"></ItemsWrapGrid>
-                            </ItemsPanelTemplate>
-                        </GridView.ItemsPanel>
-                        <GridView.Items>
-                            <Image></Image>
-                            <Image></Image>
-                            <Image></Image>
-                        </GridView.Items>
-                    </GridView>
-                </ScrollViewer>
+                                    <StackPanel x:Name="DrugiRadio" Orientation="Horizontal" >
+                                        <StackPanel.Resources>
+                                            <Style TargetType="RadioButton">
+                                                <Setter Property="Margin" Value="0 10 10 0"></Setter>
+                                            </Style>
+                                        </StackPanel.Resources>
+                                        <RadioButton x:Name="Kredit" Content="Kreditna kartica" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top"/>
+                                        <RadioButton x:Name="Gotovina" Content="Ziro racun" Height="32"/>
+                                    </StackPanel>
+                                    <TextBox x:Name="Total" HorizontalAlignment="Left" Width="250" Margin="0 33 0 0"/>
 
-                <Button Content="Potvrdi" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="0 0 0 0"/>
-                <StackPanel x:Name="AdresaItd" Height="430" Width="450" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3" Margin="60 0 0 0" Orientation="Horizontal">
-                    <StackPanel.Resources>
-                        <Style TargetType="StackPanel">
-                            <Setter Property="Margin" Value="-10 0 0 0"></Setter>
-                            <Setter Property="Padding" Value="10"></Setter>
-                        </Style>
-                    </StackPanel.Resources>
-                    <StackPanel x:Name="Detalji" Orientation="Vertical" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="3">
-                        <StackPanel.Resources>
-                            <Style TargetType="TextBlock">
-                                <Setter Property="Padding" Value="20"></Setter>
-                                <Setter Property="Margin" Value="0 5 0 0"></Setter>
-                                <Setter Property="FontSize" Value="17"></Setter>
-                            </Style>
-                        </StackPanel.Resources>
-                        <TextBlock x:Name="AdresaS" Text="Adresa:" TextWrapping="Wrap"/>
-                        <TextBlock x:Name="Grad" Text="Grad:" TextWrapping="Wrap" />
-                        <TextBlock x:Name="Drzava"  Text="Drzava:" TextWrapping="Wrap"/>
-                        <TextBlock x:Name="DostavaDetalji" Text="Odabir dostave:" TextWrapping="Wrap"/>
-                        <TextBlock x:Name="Placanje" Text="Nacin placanja:" TextWrapping="Wrap" />
-                        <TextBlock x:Name="UkupnaCijena" Text="Total:" TextWrapping="Wrap"/>
-
-                    </StackPanel>
-                    <StackPanel x:Name="DetaljiText" Orientation="Vertical">
-                        <StackPanel.Resources>
-                            <Style TargetType="TextBox">
-                                <Setter Property="Height" Value="35"></Setter>
-                                <Setter Property="Margin" Value="0 10 0 0"></Setter>
-                            </Style>
-                            <Style TargetType="StackPanel">
-                                <Setter Property="Margin" Value="0 13 0 0"></Setter>
-                                <Setter Property="Padding" Value="5"></Setter>
-                            </Style>
-                        </StackPanel.Resources>
-                        <TextBox x:Name="AdresaSText" HorizontalAlignment="Left" Width="250"/>
-                        <TextBox x:Name="GradText" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="0 35 0 0"/>
-                        <TextBox x:Name="DrzavaText" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="0 33 0 0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel.Resources>
-                                <Style TargetType="RadioButton">
-                                    <Setter Property="Margin" Value="0 20 20 0"></Setter>
-                                </Style>
-                            </StackPanel.Resources>
-                            <RadioButton x:Name="ObicnaDostava" Content="Obicna" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                            <RadioButton x:Name="ExpressDostava" Content="Express" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                </StackPanel>
+                            </StackPanel>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal" >
-                            <StackPanel.Resources>
-                                <Style TargetType="RadioButton">
-                                    <Setter Property="Margin" Value="0 10 10 0"></Setter>
-                                </Style>
-                            </StackPanel.Resources>
-                            <RadioButton x:Name="Kredit" Content="Kreditna kartica" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top"/>
-                            <RadioButton x:Name="Gotovina" Content="Ziro racun" Height="32"/>
-                        </StackPanel>
-                        <TextBox x:Name="Total" HorizontalAlignment="Left" Width="250" Margin="0 33 0 0"/>
-
-                    </StackPanel>
+                       </StackPanel>
+                    <Rectangle Fill="Beige" Height="20"></Rectangle>
+                    <Button x:Name="Potvrdi" Content="Potvrdi" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="32"/>
+                    
                 </StackPanel>
-                <HyperlinkButton Content="Predomislili ste se? Kliknite ovdje." HorizontalAlignment="Center" Height="32" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" Margin="-50 70 0 0"/>
-                <TextBlock x:Name="KorpicaNaziv" TextWrapping="Wrap" Text="Korpica" FontSize="35" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-50 -20 0 0"/>
-
-                <Button x:Name="Logout" Content="Log Out" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"/>
-                <StackPanel x:Name="HomeiNazad" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                
+                <Button x:Name="Logout" Content="Log Out" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"/>
+                <StackPanel x:Name="HomeiNazad" Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
                     <StackPanel.Resources>
                         <Style TargetType="Button">
                             <Setter Property="Width" Value="100"></Setter>
                         </Style>
                     </StackPanel.Resources>
-                    <Button x:Name="Home" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Button x:Name="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35">
                         <StackPanel Orientation="Horizontal">
                             <StackPanel.Resources>
                                 <Style TargetType="Image">
@@ -132,7 +185,7 @@
                             <TextBlock Text="Home"></TextBlock>
                         </StackPanel>
                     </Button>
-                    <Button x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Button x:Name="Back" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top">
                         <StackPanel Orientation="Horizontal">
                             <StackPanel.Resources>
                                 <Style TargetType="Image">
@@ -145,33 +198,8 @@
                     </Button>
                 </StackPanel>
                 
-                <VisualStateManager.VisualStateGroups>
-                    <VisualStateGroup>
-                        <VisualState x:Name="Tablet">
-                            <VisualState.StateTriggers>
-                                <AdaptiveTrigger MinWindowWidth="1000"></AdaptiveTrigger>
-                            </VisualState.StateTriggers>
-                            <VisualState.Setters>
-                                <Setter Target="Korpica.Width" Value="400"></Setter>
-                                <Setter Target="Korpica.Margin" Value="-50 10 0 0"></Setter>
-
-                                <Setter Target="KorpicaNaziv.(Grid.RowSpan)" Value="1"></Setter>
-                                <Setter Target="KorpicaNaziv.Margin" Value="-30 50 0 0"></Setter>
-                                <Setter Target="KorpicaNaziv.VerticalAlignment" Value="Center"></Setter>
-
-                                <Setter Target="DostavaAdresaItd.Width" Value="400"></Setter>
-                                <Setter Target="DostavaAdresaItd.Margin" Value="0 10 -50 0"></Setter>
-                            </VisualState.Setters>
-                        </VisualState>
-
-                        <VisualState x:Name="Desktop">
-                            <VisualState.StateTriggers>
-                                <AdaptiveTrigger MinWindowWidth="1100"></AdaptiveTrigger>
-                            </VisualState.StateTriggers>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateManager.VisualStateGroups>
             </Grid>
+            
         </ScrollViewer>
     </Grid>
 </Page>
