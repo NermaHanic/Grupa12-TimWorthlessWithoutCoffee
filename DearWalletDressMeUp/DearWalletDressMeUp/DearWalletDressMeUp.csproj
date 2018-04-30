@@ -104,6 +104,9 @@
     <Compile Include="Checkout.xaml.cs">
       <DependentUpon>Checkout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -130,7 +133,13 @@
     <Content Include="Assets\home.png" />
     <Content Include="Assets\homeIcon.png" />
     <Content Include="Assets\logo.jpg" />
+    <Content Include="Assets\mojProfilIcon.png" />
+    <Content Include="Assets\mojProfilIcon2.png" />
+    <Content Include="Assets\plusIcon.png" />
+    <Content Include="Assets\quizIcon.png" />
+    <Content Include="Assets\search-icon.png" />
     <Content Include="Assets\univerzalno.png" />
+    <Content Include="mojProfilIcon.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -154,6 +163,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Checkout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

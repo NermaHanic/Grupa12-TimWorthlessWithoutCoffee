@@ -29,8 +29,7 @@
                         <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="BackgroundZaGridView.Fill" Value="Yellow"></Setter>
-
+                       
                         <Setter Target="PretragaNaslov.FontSize" Value="30"></Setter>
                         <Setter Target="PretragaNaslov.(Grid.ColumnSpan)" Value="3"></Setter>
                         <Setter Target="PretragaNaslov.(Grid.Column)" Value="1"></Setter>
@@ -56,7 +55,6 @@
                         <AdaptiveTrigger MinWindowWidth="600"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="BackgroundZaGridView.Fill" Value="Black"></Setter>
                         <Setter Target="HomeiNazad.Orientation" Value="Horizontal"></Setter>
                         <Setter Target="HomeiNazad.(Grid.ColumnSpan)" Value="3"></Setter>
 

@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-30T09:49:06.947</Modified>
+      <Modified>2018-04-30T11:24:30.897</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.exe">
       <PackagePath>entrypoint\DearWalletDressMeUp.exe</PackagePath>
-      <Modified>2018-04-30T09:49:05.088</Modified>
+      <Modified>2018-04-30T11:24:29.478</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -511,9 +511,33 @@
       <PackagePath>Assets\homeIcon.png</PackagePath>
       <Modified>2018-04-30T07:41:51.779</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\mojProfilIcon.png">
+      <PackagePath>Assets\mojProfilIcon.png</PackagePath>
+      <Modified>2018-04-30T10:18:11.122</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\mojProfilIcon2.png">
+      <PackagePath>Assets\mojProfilIcon2.png</PackagePath>
+      <Modified>2018-04-30T10:19:47.019</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\plusIcon.png">
+      <PackagePath>Assets\plusIcon.png</PackagePath>
+      <Modified>2018-04-30T10:09:17.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\quizIcon.png">
+      <PackagePath>Assets\quizIcon.png</PackagePath>
+      <Modified>2018-04-30T10:14:38.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\search-icon.png">
+      <PackagePath>Assets\search-icon.png</PackagePath>
+      <Modified>2018-04-30T10:05:41.229</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\univerzalno.png">
       <PackagePath>Assets\univerzalno.png</PackagePath>
       <Modified>2018-04-29T20:39:09.788</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\mojProfilIcon.png">
+      <PackagePath>mojProfilIcon.png</PackagePath>
+      <Modified>2018-04-30T10:16:56.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -559,7 +583,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.xr.xml">
       <PackagePath>DearWalletDressMeUp.xr.xml</PackagePath>
-      <Modified>2018-04-30T09:18:17.955</Modified>
+      <Modified>2018-04-30T10:17:55.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -568,11 +592,11 @@
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-30T09:49:06.346</Modified>
+      <Modified>2018-04-30T11:24:30.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\DearWalletDressMeUp.exe">
       <PackagePath>DearWalletDressMeUp.exe</PackagePath>
-      <Modified>2018-04-30T09:49:06.882</Modified>
+      <Modified>2018-04-30T11:24:30.838</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

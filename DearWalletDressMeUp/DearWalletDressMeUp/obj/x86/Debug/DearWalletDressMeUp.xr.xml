@@ -162,6 +162,7 @@
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="DearWalletDressMeUp.Checkout" />
+    <RootType FullName="DearWalletDressMeUp.Home" />
     <RootType FullName="DearWalletDressMeUp.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="PlaceholderText" />
