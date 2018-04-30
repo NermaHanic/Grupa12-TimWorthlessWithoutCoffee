@@ -20,27 +20,11 @@ namespace DearWalletDressMeUp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class AdminovProfil : Page
+    public sealed partial class AdminUserManagement : Page
     {
-        
-        public AdminovProfil()
+        public AdminUserManagement()
         {
             this.InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void DodajOdj_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void DodajBrisiKor_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
