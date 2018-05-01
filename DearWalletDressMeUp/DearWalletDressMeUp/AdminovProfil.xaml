@@ -16,10 +16,10 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Button x:Name="DodajBrisiKor" Content="Dodaj/Brisi korisnika" Height="70" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Click="DodajBrisiKor_Click" />
         <Button x:Name="DodajOdj" Content="Dodaj Odjevni Predmet" Height="70" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Click="DodajOdj_Click"/>

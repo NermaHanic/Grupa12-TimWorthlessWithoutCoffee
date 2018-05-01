@@ -6,95 +6,33 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+    <Grid>
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
                 <VisualState x:Name="Mobile">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="400"></AdaptiveTrigger>
+                        <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="LicniPodaciTextBox.(Grid.Rowspan)" Value="3"></Setter>
-                        <Setter Target="LicniPodaciTextBox.(Grid.Columnspan)" Value="2"></Setter>
-                        <Setter Target="LicniPodaciTextBox.(Grid.Column)" Value="2"></Setter>
-                        <Setter Target="LicniPodaciTextBox.Spacing" Value="0"></Setter>
-                        <Setter Target="LicniPodaciTextBox.(Grid.Row)" Value="0"></Setter>
-                        <Setter Target="LicniPodaciTextBox.Margin" Value="0 100 0 0"></Setter>
+                        <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
+                        <Setter Target="BrisanjeKorisnika.Margin" Value="0 0 0 -20"></Setter>
+                        
+                        <Setter Target="ImeKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="PrezimeKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="UsernameKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="AdresaKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="BrojTelKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="BrojKreditneKarticeKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="IDProfilaKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        
+                        <Setter Target="ImeKorAdmin.FontSze" Value="15"></Setter>
+                        <Setter Target="PrezimeKorAdmin.FontSze" Value="15"></Setter>
+                        <Setter Target="UsernameKorAdmin.FontSze" Value="15"></Setter>
+                        <Setter Target="AdresaKorAdmin.FontSze" Value="15"></Setter>
+                        <Setter Target="BrojTelKorAdmin.FontSze" Value="15"></Setter>
+                        <Setter Target="BrojKreditneKarticeKorAdmin.FontSze" Value="13"></Setter>
+                        <Setter Target="IDProfilaKorAdmin.FontSze" Value="15"></Setter>
 
-                        <Setter Target="LicniPodaci.(Grid.Column)" Value="0"></Setter>
-                        <Setter Target="LicniPodaci.(Grid.RowSpan)" Value="2"></Setter>
-                        <Setter Target="LicniPodaci.(Grid.ColumnSpan)" Value="2"></Setter>
-                        <Setter Target="LicniPodaci.(Grid.Row)" Value="0"></Setter>
-                        <Setter Target="LicniPodaci.VerticalAlignment" Value="Bottom"></Setter>
-
-                        <Setter Target="ImeKorAdmin.FontSize" Value="13"></Setter>
-                        <Setter Target="PrezimeKorAdmin.FontSize" Value="13"></Setter>
-                        <Setter Target="UsernameKorAdmin.FontSize" Value="13"></Setter>
-                        <Setter Target="AdresaKorAdmin.FontSize" Value="13"></Setter>
-                        <Setter Target="BrojTelKorAdmin.FontSize" Value="13"></Setter>
-                        <Setter Target="BrojKreditneKarticeKorAdmin.FontSize" Value="13"></Setter>
-                        <Setter Target="IDProfilaKorAdmin.FontSize" Value="13"></Setter>
-                        <Setter Target="IDProfilaBrisanje.FontSize" Value="13"></Setter>
-
-                        <Setter Target="DodavanjeKor.VerticalAlignment" Value="Top"></Setter>
-                        <Setter Target="DodavanjeKor.(Grid.Column)" Value="1"></Setter>
-                        <Setter Target="DodavanjeKor.FontSize" Value="20"></Setter>
-                        <Setter Target="DodavanjeKor.Margin" Value="0 30 0 0"></Setter>
-
-                        <Setter Target="BrisanjeKor.(Grid.Row)" Value="2"></Setter>
-                        <Setter Target="BrisanjeKor.(Grid.Column)" Value="1"></Setter>
-                        <Setter Target="BrisanjeKor.FontSize" Value="20"></Setter>
-                        <Setter Target="BrisanjeKor.VerticalAlignment" Value="Bottom"></Setter>
-
-                        <Setter Target="ImeKorAdminText.Width" Value="150"></Setter>
-                        <Setter Target="PrezimeKorAdminText.Width" Value="150"></Setter>
-                        <Setter Target="UsernameKorAdminText.Width" Value="150"></Setter>
-                        <Setter Target="AdresaKorAdminText.Width" Value="150"></Setter>
-                        <Setter Target="BrojTelKorAdminText.Width" Value="150"></Setter>
-                        <Setter Target="BrojKreditneKarticeKorAdminText.Width" Value="150"></Setter>
-                        <Setter Target="IDProfilaKorAdminText.Width" Value="150"></Setter>
-                        <Setter Target="IDProfilaBrisanjeText.Width" Value="150"></Setter>
-                        <Setter Target="ImeKorAdminText.Height" Value="10"></Setter>
-
-                        <Setter Target="BrisanjeInfo.(Grid.Row)" Value="3"></Setter>
-                        <Setter Target="BrisanjeInfo.(Grid.Column)" Value="1"></Setter>
-                        <Setter Target="Bleh.(Grid.Row)" Value="3"></Setter>
-                        <Setter Target="Bleh.(Grid.Column)" Value="1"></Setter>
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="Tablet">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="800" MinWindowHeight="500"></AdaptiveTrigger>
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-
-                        <Setter Target="LicniPodaci.Margin" Value="0 -10 0 0"></Setter>
-                        <Setter Target="ImeKorAdmin.FontSize" Value="17"></Setter>
-                        <Setter Target="PrezimeKorAdmin.FontSize" Value="17"></Setter>
-                        <Setter Target="UsernameKorAdmin.FontSize" Value="17"></Setter>
-                        <Setter Target="AdresaKorAdmin.FontSize" Value="17"></Setter>
-                        <Setter Target="BrojTelKorAdmin.FontSize" Value="17"></Setter>
-                        <Setter Target="BrojKreditneKarticeKorAdmin.FontSize" Value="17"></Setter>
-                        <Setter Target="IDProfilaKorAdmin.FontSize" Value="17"></Setter>
-                        <Setter Target="IDProfilaBrisanje.FontSize" Value="17"></Setter>
-
-
-                        <Setter Target="LicniPodaciTextBox.Spacing" Value="-3"></Setter>
-                        <Setter Target="LicniPodaciTextBox.HorizontalAlignment" Value="Center"></Setter>
                         <Setter Target="ImeKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="PrezimeKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="UsernameKorAdminText.Width" Value="200"></Setter>
@@ -103,45 +41,122 @@
                         <Setter Target="BrojKreditneKarticeKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="IDProfilaKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="IDProfilaBrisanjeText.Width" Value="200"></Setter>
+                        <Setter Target="IDProfilaBrisanje.HorizontalAlignment" Value="Left"></Setter>
 
-                        <Setter Target="BrisanjeInfo.VerticalAlignment" Value="Top"></Setter>
+                        <Setter Target="BrisanjeKorisnika.Margin" Value="0 20 0 0"></Setter>
+                        <Setter Target="DodavanjeKorisnika.Margin" Value="0 20 0 0"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
+                        <Setter Target="ImeKorAdminText.Width" Value="200"></Setter>
+                        <Setter Target="PrezimeKorAdminText.Width" Value="200"></Setter>
+                        <Setter Target="UsernameKorAdminText.Width" Value="200"></Setter>
+                        <Setter Target="AdresaKorAdminText.Width" Value="200"></Setter>
+                        <Setter Target="BrojTelKorAdminText.Width" Value="200"></Setter>
+                        <Setter Target="BrojKreditneKarticeKorAdminText.Width" Value="200"></Setter>
+                        <Setter Target="IDProfilaKorAdminText.Width" Value="200"></Setter>
+                        <Setter Target="IDProfilaBrisanjeText.Width" Value="200"></Setter>
+                        <Setter Target="IDProfilaBrisanje.HorizontalAlignment" Value="Left"></Setter>
+
+                        <Setter Target="BrisanjeKorisnika.Margin" Value="0 20 0 0"></Setter>
+                        <Setter Target="DodavanjeKorisnika.Margin" Value="0 20 0 0"></Setter>
+
+                        <Setter Target="ImeKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="PrezimeKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="UsernameKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="AdresaKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="BrojTelKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="BrojKreditneKarticeKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="IDProfilaKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Desktop">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="1000"></AdaptiveTrigger>
+                        <AdaptiveTrigger MinWindowWidth="1100"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-        <TextBlock x:Name="DodavanjeKor" Text="Dodavanje korisnika" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" FontSize="30"/>
-        <StackPanel x:Name="LicniPodaci" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Margin="50 0 50 0" VerticalAlignment="Center">
-            <TextBlock x:Name="ImeKorAdmin" Text="Ime:" FontSize="20" HorizontalAlignment="Right" Margin="10 10 10 10"/>
-            <TextBlock x:Name="PrezimeKorAdmin" Text="Prezime:" FontSize="20" HorizontalAlignment="Right" Margin="10 10 10 10"/>
-            <TextBlock x:Name="UsernameKorAdmin" Text="Username:" FontSize="20" HorizontalAlignment="Right" Margin="10 10 10 10"/>
-            <TextBlock x:Name="AdresaKorAdmin" Text="Adresa:" FontSize="20" HorizontalAlignment="Right" Margin="10 10 10 10"/>
-            <TextBlock x:Name="BrojTelKorAdmin" Text="Broj telefona:" FontSize="20" HorizontalAlignment="Right" Margin="10 10 10 10"/>
-            <TextBlock x:Name="BrojKreditneKarticeKorAdmin" FontSize="20" Text="Broj kreditne kartice:" HorizontalAlignment="Right" Margin="10 10 10 10"/>
-            <TextBlock x:Name="IDProfilaKorAdmin" Text="ID Profila:" FontSize="20" HorizontalAlignment="Right" Margin="10 10 10 10"/>
-        </StackPanel>
-        <StackPanel x:Name="LicniPodaciTextBox" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Center">
-            <TextBox x:Name="ImeKorAdminText" Height="20" Width="250" HorizontalAlignment="Left" Margin="0 5 10 10"/>
-            <TextBox x:Name="PrezimeKorAdminText" Width="250" Height="20" HorizontalAlignment="Left" Margin="0 5 10 10"/>
-            <TextBox x:Name="UsernameKorAdminText" Width="250" Height="20" HorizontalAlignment="Left" Margin="0 5 10 10"/>
-            <TextBox x:Name="AdresaKorAdminText" Width="250" Height="20" HorizontalAlignment="Left" Margin="0 5 10 10"/>
-            <TextBox x:Name="BrojTelKorAdminText" Width="250" Height="20" HorizontalAlignment="Left" Margin="0 5 10 10"/>
-            <TextBox x:Name="BrojKreditneKarticeKorAdminText" Height="20" Width="250" HorizontalAlignment="Left" Margin="0 5 10 10"/>
-            <TextBox x:Name="IDProfilaKorAdminText" Width="250" Height="20" HorizontalAlignment="Left" Margin="0 5 10 10"/>
-        </StackPanel>
-        <Button x:Name="DodajKorUBazu" Content="Dodaj" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button x:Name="BrisiKorIzBaze" Content="Obrisi" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock x:Name="BrisanjeKor" Text="Brisanje korisnika" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3" FontSize="30"/>
-        <StackPanel x:Name="BrisanjeInfo" Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" Margin="50 0 50 0">
-            <TextBlock x:Name="IDProfilaBrisanje" Text="ID Profila:" FontSize="20" HorizontalAlignment="Right" Margin="10 25 10 10"/>
-        </StackPanel>
-        <StackPanel x:Name="Bleh" Grid.Column="4" Grid.Row="1" Grid.RowSpan="2">
-            <TextBox x:Name="IDProfilaBrisanjeText" Width="250" Height="20" HorizontalAlignment="Left" Margin="0 20 10 10"/>
-        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
+                <StackPanel x:Name="Glavni" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="5" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel x:Name="DodavanjeKorisnika">
+                        <TextBlock x:Name="DodavanjeKor" Text="Dodavanje korisnika" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" FontSize="30"/>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel x:Name="LicniPodaci" Padding="20">
+                                <StackPanel.Resources>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FontSize" Value="20"></Setter>
+                                        <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+                                        <Setter Property="Margin" Value="10"></Setter>
+                                        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                                    </Style>
+                                </StackPanel.Resources>
+
+                                <TextBlock x:Name="ImeKorAdmin" Text="Ime:"/>
+                                <TextBlock x:Name="PrezimeKorAdmin" Text="Prezime:"/>
+                                <TextBlock x:Name="UsernameKorAdmin" Text="Username:"/>
+                                <TextBlock x:Name="AdresaKorAdmin" Text="Adresa:"/>
+                                <TextBlock x:Name="BrojTelKorAdmin" Text="Broj telefona:"/>
+                                <TextBlock x:Name="BrojKreditneKarticeKorAdmin" Text="Broj kreditne kartice"/>
+                                <TextBlock x:Name="IDProfilaKorAdmin" Text="ID Profila:"/>
+                            </StackPanel>
+                            <StackPanel x:Name="LicniPodaciTextBox" VerticalAlignment="Center">
+                                <StackPanel.Resources>
+                                    <Style TargetType="TextBox">
+                                        <Setter Property="Width" Value="250"></Setter>
+                                        <Setter Property="Height" Value="20"></Setter>
+                                        <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                        <Setter Property="Margin" Value="0 5 10 10"></Setter>
+                                    </Style>
+                                </StackPanel.Resources>
+                                <TextBox x:Name="ImeKorAdminText"/>
+                                <TextBox x:Name="PrezimeKorAdminText"/>
+                                <TextBox x:Name="UsernameKorAdminText"/>
+                                <TextBox x:Name="AdresaKorAdminText"/>
+                                <TextBox x:Name="BrojTelKorAdminText"/>
+                                <TextBox x:Name="BrojKreditneKarticeKorAdminText"/>
+                                <TextBox x:Name="IDProfilaKorAdminText"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <Button x:Name="DodajKorUBazu" Content="Dodaj" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel x:Name="BrisanjeKorisnika">
+                        <TextBlock x:Name="BrisanjeKor" Text="Brisanje korisnika" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel x:Name="BrisanjeInfo" Padding="20">
+                                <TextBlock x:Name="IDProfilaBrisanje" Text="ID Profila:" FontSize="20" HorizontalAlignment="Right" Margin="10"/>
+                            </StackPanel>
+                            <StackPanel x:Name="Bleh" VerticalAlignment="Center">
+                                <TextBox x:Name="IDProfilaBrisanjeText" Width="250" Height="20" HorizontalAlignment="Left"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <Button x:Name="BrisiKorIzBaze" Content="Obrisi" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
     </Grid>
-</Page>
+   </Page>
