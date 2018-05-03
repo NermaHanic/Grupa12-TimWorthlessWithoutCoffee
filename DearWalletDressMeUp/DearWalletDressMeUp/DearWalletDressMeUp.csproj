@@ -107,11 +107,32 @@
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kreacija1.xaml.cs">
+      <DependentUpon>Kreacija1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kreacija2.xaml.cs">
+      <DependentUpon>Kreacija2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kreacija3.xaml.cs">
+      <DependentUpon>Kreacija3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Poklon1.xaml.cs">
+      <DependentUpon>Poklon1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Poklon2.xaml.cs">
+      <DependentUpon>Poklon2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Poklon3.xaml.cs">
+      <DependentUpon>Poklon3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Poklon4.xaml.cs">
+      <DependentUpon>Poklon4.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pretraga.xaml.cs">
       <DependentUpon>Pretraga.xaml</DependentUpon>
@@ -132,15 +153,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\5f7a11765690b717abfdf22372fe80c1.png" />
+    <Content Include="Assets\AAS-745x380.jpg" />
+    <Content Include="Assets\Baby-Clothes-512.png" />
     <Content Include="Assets\backArrow.png" />
+    <Content Include="Assets\christmas-icon-gift-512.png" />
+    <Content Include="Assets\female.png" />
     <Content Include="Assets\home.png" />
     <Content Include="Assets\homeIcon.png" />
     <Content Include="Assets\logo.jpg" />
+    <Content Include="Assets\majica.png" />
     <Content Include="Assets\mojProfilIcon.png" />
     <Content Include="Assets\mojProfilIcon2.png" />
     <Content Include="Assets\plusIcon.png" />
     <Content Include="Assets\quizIcon.png" />
     <Content Include="Assets\search-icon.png" />
+    <Content Include="Assets\srculence.png" />
     <Content Include="Assets\univerzalno.png" />
     <Content Include="mojProfilIcon.png" />
     <Content Include="Properties\Default.rd.xml" />
@@ -173,6 +200,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Kreacija1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kreacija2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kreacija3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -180,6 +219,22 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Poklon1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Poklon2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Poklon3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Poklon4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pretraga.xaml">
       <SubType>Designer</SubType>
