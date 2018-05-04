@@ -7,140 +7,123 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-
-    <Grid Margin="-1,0,1,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-
-        </Grid.RowDefinitions>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Button Content="Registruj se" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Height="70" Width="130" Margin="0,0,0,8" ></Button>
-        <Image x:ConnectionId='1' x:Name="logo" HorizontalAlignment="Left" Source ="Assets/logo.jpg" Height="155" Margin="71,163,0,0" VerticalAlignment="Top" Width="409" RenderTransformOrigin="0.487,0.702" AllowDrop="False" IsHitTestVisible="False" Stretch="Fill">
-        </Image>
-        <TextBlock x:ConnectionId='2' x:Name="ime" Text="Ime:" Grid.Row="0" Grid.Column="1" FontSize="36" Width="230" Height="70"  FontWeight="Bold" Margin="270,0,0,0"></TextBlock>
-        <TextBlock x:ConnectionId='3' x:Name="prezime" Text="Prezime:" Grid.Row="0" Grid.Column="1" FontSize="36" Width="230" Height="70"  FontWeight="Bold" Margin="270,120,0,0"></TextBlock>
-        <TextBlock x:ConnectionId='4' x:Name="username" Text="Username:" Grid.Row="0" Grid.Column="1" FontSize="36" Width="230" Height="70"  FontWeight="Bold" Margin="270,240,0,0"></TextBlock>
-        <TextBlock x:ConnectionId='5' x:Name="sifra" Text="Sifra:" Grid.Row="1" Grid.Column="1" FontSize="36" Width="230" Height="70"  FontWeight="Bold" Margin="270,-270,0,0"></TextBlock>
-        <TextBlock x:ConnectionId='6' x:Name="potvrda" Text="Potvrda sifre:" Grid.Row="1" Grid.Column="1" FontSize="36" Width="230" Height="70"  FontWeight="Bold" Margin="270,-150,0,0"></TextBlock>
-        <TextBlock x:ConnectionId='7' x:Name="adresa" Text="Adresa:" Grid.Row="1" Grid.Column="1" FontSize="36" Width="230" Height="70"  FontWeight="Bold" Margin="270,-30,0,0"></TextBlock>
-        <TextBlock x:ConnectionId='8' x:Name="telefon" Text="Broj telefona:" Grid.Row="1" Grid.Column="1" FontSize="36" Width="230" Height="70"  FontWeight="Bold" Margin="270,90,0,0"></TextBlock>
-        <TextBlock x:ConnectionId='9' x:Name="kartica" Text="Broj kreditne" Grid.Row="1" Grid.Column="1" FontSize="36" Width="230" Height="70"  FontWeight="Bold" Margin="270,210,0,0"></TextBlock>
-        <TextBlock x:ConnectionId='10' x:Name="kartica2" Text="kartice:" Grid.Row="1" Grid.Column="1" FontSize="36" Width="230" Height="70"  FontWeight="Bold" Margin="270,270,0,0"></TextBlock>
-        <TextBox x:ConnectionId='11'  x:Name="tb1" Grid.Row="0" Grid.Column="2" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="50,140,0,0" HorizontalAlignment="Stretch" AcceptsReturn="True" VerticalAlignment="Top" Height="15" Width="300"></TextBox>
-        <TextBox x:ConnectionId='12' x:Name="tb2" Grid.Row="0" Grid.Column="2" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="50,200,0,0" HorizontalAlignment="Stretch" AcceptsReturn="True" VerticalAlignment="Top" Height="15" Width="300"></TextBox>
-        <TextBox x:ConnectionId='13' x:Name="tb3" Grid.Row="0" Grid.Column="2" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="50,260,0,0" HorizontalAlignment="Stretch" AcceptsReturn="True" VerticalAlignment="Top" Height="15" Width="300"></TextBox>
-        <TextBox x:ConnectionId='14' x:Name="tb4" Grid.Row="1" Grid.Column="2" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="1100,447,-1400,-462" HorizontalAlignment="Stretch" AcceptsReturn="True" VerticalAlignment="Top" Height="15" Width="300" Grid.RowSpan="2"></TextBox>
-        <TextBox x:ConnectionId='15' x:Name="tb5" Grid.Row="1" Grid.Column="2" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="1100,487,-1400,-502" HorizontalAlignment="Stretch" AcceptsReturn="True" VerticalAlignment="Top" Height="15" Width="300" Grid.RowSpan="2"></TextBox>
-        <TextBox x:ConnectionId='16' x:Name="tb6" Grid.Row="1" Grid.Column="2" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="1100,527,-1400,-542" HorizontalAlignment="Stretch" AcceptsReturn="True" VerticalAlignment="Top" Height="15" Width="300" Grid.RowSpan="2"></TextBox>
-        <TextBox x:ConnectionId='17' x:Name="tb7" Grid.Row="1" Grid.Column="2" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="1100,567,-1400,-582" HorizontalAlignment="Stretch" AcceptsReturn="True" VerticalAlignment="Top" Height="15" Width="300" Grid.RowSpan="2"></TextBox>
-        <TextBox x:ConnectionId='18' x:Name="tb8" Grid.Row="1" Grid.Column="2" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="1095,570,-1395,-585" HorizontalAlignment="Stretch" AcceptsReturn="True" VerticalAlignment="Top" Height="15" Width="300" Grid.RowSpan="2"></TextBox>
-
+    <Grid>
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
-                <VisualState x:ConnectionId='19' x:Name="tablet">
+                <VisualState x:ConnectionId='1' x:Name="Mobitel">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="600"/>
+                        <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="logo.Height" Value="100" ></Setter>
-                        <Setter Target="logo.Margin" Value="0,100,0,0" ></Setter>
-                        <Setter Target="ime.Margin" Value="60,0,0,0" ></Setter>
-                        <Setter Target="ime.FontSize" Value="30" ></Setter>
+                        <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
 
-                        <Setter Target="prezime.Margin" Value="60,80,0,0" ></Setter>
-                        <Setter Target="prezime.FontSize" Value="30" ></Setter>
-
-                        <Setter Target="username.Margin" Value="60,160,0,0" ></Setter>
-                        <Setter Target="username.FontSize" Value="30" ></Setter>
-
-                        <Setter Target="sifra.Margin" Value="60,-140,0,0" ></Setter>
-                        <Setter Target="sifra.FontSize" Value="30" ></Setter>
-
-                        <Setter Target="potvrda.Margin" Value="60,-60,0,0" ></Setter>
-                        <Setter Target="potvrda.FontSize" Value="30" ></Setter>
-
-                        <Setter Target="adresa.Margin" Value="60,10,0,0" ></Setter>
-                        <Setter Target="adresa.FontSize" Value="30" ></Setter>
-
-                        <Setter Target="telefon.Margin" Value="60,85,0,0" ></Setter>
-                        <Setter Target="telefon.FontSize" Value="30" ></Setter>
-
-                        <Setter Target="kartica.Margin" Value="60,140,0,0" ></Setter>
-                        <Setter Target="kartica2.Margin" Value="60,160,0,0" ></Setter>
-
-                        <Setter Target="kartica.FontSize" Value="30" ></Setter>
-                        <Setter Target="kartica2.FontSize" Value="30" ></Setter>
-
-
-                        <Setter Target="tb1.Margin" Value="0,80,0,0" ></Setter>
-                        <Setter Target="tb2.Margin" Value="0,120,0,0" ></Setter>
-                        <Setter Target="tb3.Margin" Value="0,160,0,0" ></Setter>
-                        <Setter Target="tb4.Margin" Value="0,0,0,0" ></Setter>
-                        <Setter Target="tb5.Margin" Value="0,40,0,0" ></Setter>
-                        <Setter Target="tb6.Margin" Value="0,80,0,0" ></Setter>
-                        <Setter Target="tb7.Margin" Value="0,120,0,0" ></Setter>
-                        <Setter Target="tb8.Margin" Value="0,160,0,0" ></Setter>
+                        <Setter Target="Logo.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="LicniPodaciRegistracija.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="LicniPodaciRegistracija.Margin" Value="0 0 0 30"></Setter>
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='20' x:Name="desktop">
+                <VisualState x:ConnectionId='2' x:Name="Tablet">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="1200" MinWindowHeight="720"></AdaptiveTrigger>
+                        <AdaptiveTrigger MinWindowWidth="800"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="logo.Height" Value="100" ></Setter>
-                        <Setter Target="logo.Margin" Value="0,100,0,0" ></Setter>
-                        <Setter Target="ime.Margin" Value="270,0,0,0" ></Setter>
-                        <Setter Target="ime.FontSize" Value="40" ></Setter>
-
-                        <Setter Target="prezime.Margin" Value="270,120,0,0" ></Setter>
-                        <Setter Target="prezime.FontSize" Value="40" ></Setter>
-
-                        <Setter Target="username.Margin" Value="270,240,0,0" ></Setter>
-                        <Setter Target="username.FontSize" Value="40" ></Setter>
-
-                        <Setter Target="sifra.Margin" Value="270,-270,0,0" ></Setter>
-                        <Setter Target="sifra.FontSize" Value="40" ></Setter>
-
-                        <Setter Target="potvrda.Margin" Value="270,-150,0,0" ></Setter>
-                        <Setter Target="potvrda.FontSize" Value="40" ></Setter>
-
-                        <Setter Target="adresa.Margin" Value="270,-30,0,0" ></Setter>
-                        <Setter Target="adresa.FontSize" Value="40" ></Setter>
-
-                        <Setter Target="telefon.Margin" Value="270,90,0,0" ></Setter>
-                        <Setter Target="telefon.FontSize" Value="30" ></Setter>
-
-                        <Setter Target="kartica.Margin" Value="270,210,0,0" ></Setter>
-                        <Setter Target="kartica2.Margin" Value="60,160,0,0" ></Setter>
-
-                        <Setter Target="kartica.FontSize" Value="40" ></Setter>
-                        <Setter Target="kartica2.FontSize" Value="40" ></Setter>
-
-
-                        <Setter Target="tb1.Margin" Value="50,140,0,0" ></Setter>
-                        <Setter Target="tb2.Margin" Value="50,200,0,0" ></Setter>
-                        <Setter Target="tb3.Margin" Value="50,260,0,0" ></Setter>
-                        <Setter Target="tb4.Margin" Value="50,10,0,0" ></Setter>
-                        <Setter Target="tb5.Margin" Value="50,70,0,0" ></Setter>
-                        <Setter Target="tb6.Margin" Value="50,130,0,0" ></Setter>
-                        <Setter Target="tb7.Margin" Value="50,190,0,0" ></Setter>
-                        <Setter Target="tb8.Margin" Value="50,280,0,0" ></Setter>
-
+                        <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
+                        <Setter Target="Logo.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="LicniPodaciRegistracija.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="LicniPodaciRegistracija.Margin" Value="0 0 0 30"></Setter>
                     </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='3' x:Name="Desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1000"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
+        <ScrollViewer>
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel x:ConnectionId='4' x:Name="HomeiNazad" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                    <StackPanel.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Width" Value="100"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Button x:ConnectionId='9' x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel.Resources>
+                                <Style TargetType="Image">
+                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
+                                </Style>
+                            </StackPanel.Resources>
+                            <Image Source="Assets/backArrow.png" Height="20" Width="20"></Image>
+                            <TextBlock Text="Nazad"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+
+                <StackPanel x:ConnectionId='5' x:Name="Glavni" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="5" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Image x:ConnectionId='6' x:Name="Logo" Source="Assets/logo.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" MaxHeight="400" MaxWidth="500"  Margin="0 0 70 0"></Image>
+                    <StackPanel x:ConnectionId='7' x:Name="LicniPodaciRegistracija" Background="Beige" VerticalAlignment="Center">
+                        <StackPanel Padding="20" Orientation="Horizontal">
+                            <StackPanel>
+                                <StackPanel.Resources>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FontSize" Value="25"></Setter>
+                                        <Setter Property="Margin" Value="0 10 0 0"></Setter>
+                                        <Setter Property="Foreground" Value="#787272"></Setter>
+                                    </Style>
+                                </StackPanel.Resources>
+                                <TextBlock Text="Ime:"></TextBlock>
+                                <TextBlock Text="Prezime"></TextBlock>
+                                <TextBlock Text="Username:"></TextBlock>
+                                <TextBlock Text="Sifra:"></TextBlock>
+                                <TextBlock Text="Potvrda sifre:"></TextBlock>
+                                <TextBlock Text="Adresa:"></TextBlock>
+                                <TextBlock Text="Broj telefona:"></TextBlock>
+                                <TextBlock Text="Broj kreditne kartice:" TextWrapping="WrapWholeWords"></TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <StackPanel.Resources>
+                                    <Style TargetType="TextBox">
+                                        <Setter Property="Width" Value="200"></Setter>
+                                        <Setter Property="Margin" Value="20 12 0 0"></Setter>
+                                    </Style>
+                                    <Style TargetType="PasswordBox">
+                                        <Setter Property="Width" Value="200"></Setter>
+                                        <Setter Property="Margin" Value="20 12 0 0"></Setter>
+                                    </Style>
+                                </StackPanel.Resources>
+
+                                <TextBox></TextBox>
+                                <TextBox></TextBox>
+                                <TextBox></TextBox>
+                                <PasswordBox></PasswordBox>
+                                <PasswordBox></PasswordBox>
+                                <TextBox></TextBox>
+                                <TextBox></TextBox>
+                                <TextBox></TextBox>
+                            </StackPanel>
+                        </StackPanel>
+                        <Button x:ConnectionId='8' x:Name="Registruj" FontSize="25" Content="Registruj se" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Margin="0 20 0 10"></Button>
+                    </StackPanel>
+                </StackPanel>
+
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Page>
-
-
-
 

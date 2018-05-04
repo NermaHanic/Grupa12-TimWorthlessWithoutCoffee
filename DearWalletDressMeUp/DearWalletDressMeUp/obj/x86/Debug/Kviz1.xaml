@@ -1,0 +1,164 @@
+﻿<Page
+    x:Class="DearWalletDressMeUp.Kviz1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DearWalletDressMeUp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='1' x:Name="Mobitel">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0">
+                        </AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Pitanja.(Grid.Column)" Value="0"></Setter>
+                        <Setter Target="Pitanja.(Grid.ColumnSpan)" Value="5"></Setter>
+                        <Setter Target="Pitanja.Margin" Value="30"></Setter>
+
+                        <Setter Target="p1.MaxWidth" Value="400"></Setter>
+                        <Setter Target="p1.HorizontalAlignment" Value="Left"></Setter>
+
+                        <Setter Target="p2.MaxWidth" Value="400"></Setter>
+                        <Setter Target="p2.HorizontalAlignment" Value="Left"></Setter>
+
+                        <Setter Target="p3.MaxWidth" Value="400"></Setter>
+                        <Setter Target="p3.HorizontalAlignment" Value="Left"></Setter>
+
+                        <Setter Target="HomeiNazad.(Grid.ColumnSpan)" Value="2"></Setter>
+
+                        <Setter Target="NextLvl.(Grid.ColumnSpan)" Value="5"></Setter>
+                        <Setter Target="NextLvl.(Grid.Column)" Value="0"></Setter>
+
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='2' x:Name="Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Pitanja.(Grid.Column)" Value="0"></Setter>
+                        <Setter Target="Pitanja.(Grid.ColumnSpan)" Value="5"></Setter>
+                        <Setter Target="Pitanja.Margin" Value="30"></Setter>
+
+                        <Setter Target="p1.MaxWidth" Value="600"></Setter>
+                        <Setter Target="p1.HorizontalAlignment" Value="Left"></Setter>
+
+                        <Setter Target="p2.MaxWidth" Value="600"></Setter>
+                        <Setter Target="p2.HorizontalAlignment" Value="Left"></Setter>
+
+                        <Setter Target="p3.MaxWidth" Value="600"></Setter>
+                        <Setter Target="p3.HorizontalAlignment" Value="Left"></Setter>
+
+                        <Setter Target="NextLvl.(Grid.ColumnSpan)" Value="2"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='3' x:Name="Desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="900"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button x:ConnectionId='4' x:Name="Logout" Margin="0 0 20 0" Content="Log Out" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"/>
+                <StackPanel x:ConnectionId='5' x:Name="HomeiNazad" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                    <StackPanel.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Width" Value="100"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Button x:ConnectionId='23' x:Name="Home" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel.Resources>
+                                <Style TargetType="Image">
+                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
+                                </Style>
+                            </StackPanel.Resources>
+                            <Image Source="Assets/homeIcon.png" Width="25" Height="25"></Image>
+                            <TextBlock Text="Home"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button x:ConnectionId='24' x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel.Resources>
+                                <Style TargetType="Image">
+                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
+                                </Style>
+                            </StackPanel.Resources>
+                            <Image Source="Assets/backArrow.png" Height="20" Width="20"></Image>
+                            <TextBlock Text="Nazad"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <StackPanel x:ConnectionId='6' x:Name="Pitanja" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Background="Beige" Margin="0 30 0 0" BorderBrush="Beige">
+                    <StackPanel.Resources>
+                        <Style TargetType="StackPanel">
+                            <Setter Property="Padding" Value="20"></Setter>
+                            <Setter Property="BorderBrush" Value="Gray"></Setter>
+                            <Setter Property="BorderThickness" Value="4"></Setter>
+                            <Setter Property="Margin" Value="0 0 0 10"></Setter>
+
+                        </Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextWrapping" Value="WrapWholeWords"></Setter>
+                            <Setter Property="Margin" Value="0 0 0 10"></Setter>
+                            <Setter Property="FontSize" Value="25"></Setter>
+                            <Setter Property="MaxWidth" Value="800"></Setter>
+                        </Style>
+                        <Style TargetType="RadioButton">
+                            <Setter Property="FontSize" Value="20"></Setter>
+                            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                            <Setter Property="Margin" Value="0 0 0 10"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <StackPanel x:ConnectionId='8' x:Name="s1">
+                        <TextBlock x:ConnectionId='19' x:Name="p1" Text="Pitanje 1"></TextBlock>
+                        <RadioButton x:ConnectionId='20' x:Name="r1" Content="Blabla"></RadioButton>
+                        <RadioButton x:ConnectionId='21' x:Name="r2" ></RadioButton>
+                        <RadioButton x:ConnectionId='22' x:Name="r3"></RadioButton>
+                    </StackPanel>
+                    <StackPanel x:ConnectionId='9' x:Name="s2">
+                        <TextBlock x:ConnectionId='15' x:Name="p2" Text="Pitanje 2"></TextBlock>
+                        <RadioButton x:ConnectionId='16' x:Name="r4"></RadioButton>
+                        <RadioButton x:ConnectionId='17' x:Name="r5"></RadioButton>
+                        <RadioButton x:ConnectionId='18' x:Name="r6"></RadioButton>
+                    </StackPanel>
+                    <StackPanel x:ConnectionId='10' x:Name="s3">
+                        <TextBlock x:ConnectionId='11' x:Name="p3" Text="Pitanje 3"></TextBlock>
+                        <RadioButton x:ConnectionId='12' x:Name="r7"></RadioButton>
+                        <RadioButton x:ConnectionId='13' x:Name="r8"></RadioButton>
+                        <RadioButton x:ConnectionId='14' x:Name="r9"></RadioButton>
+                    </StackPanel>
+                </StackPanel>
+                <Button x:ConnectionId='7' x:Name="NextLvl" FontSize="20" Margin="0 20 20 10" Grid.Column="4" Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Sljedeci nivo"></TextBlock>
+                        <Image Source="Assets/RightArrow.png" Width="20" Height="20"></Image>
+                    </StackPanel>
+                </Button>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
+

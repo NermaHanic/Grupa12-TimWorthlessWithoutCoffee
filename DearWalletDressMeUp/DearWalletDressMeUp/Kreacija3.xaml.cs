@@ -20,9 +20,9 @@ namespace DearWalletDressMeUp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Registracja : Page
+    public sealed partial class Kreacija3 : Page
     {
-        public Registracja()
+        public Kreacija3()
         {
             this.InitializeComponent();
         }
