@@ -132,81 +132,55 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-<<<<<<< HEAD
-            _typeNameTable = new string[12];
-            _typeNameTable[0] = "DearWalletDressMeUp.AdminDodavanjeOdjece";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "DearWalletDressMeUp.AdminovProfil";
-            _typeNameTable[4] = "DearWalletDressMeUp.AdminUserManagement";
-            _typeNameTable[5] = "DearWalletDressMeUp.BackHomeLogout";
+            _typeNameTable = new string[23];
+            _typeNameTable[0] = "DearWalletDressMeUp.BackHomeLogout";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[2] = "DearWalletDressMeUp.AdminDodavanjeOdjece";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[4] = "DearWalletDressMeUp.AdminovProfil";
+            _typeNameTable[5] = "DearWalletDressMeUp.AdminUserManagement";
             _typeNameTable[6] = "DearWalletDressMeUp.Checkout";
             _typeNameTable[7] = "DearWalletDressMeUp.Home";
-            _typeNameTable[8] = "DearWalletDressMeUp.MainPage";
-            _typeNameTable[9] = "DearWalletDressMeUp.Pretraga";
-            _typeNameTable[10] = "DearWalletDressMeUp.Registracija";
-            _typeNameTable[11] = "DearWalletDressMeUp.Registracja";
+            _typeNameTable[8] = "DearWalletDressMeUp.Kreacija1";
+            _typeNameTable[9] = "DearWalletDressMeUp.Kreacija2";
+            _typeNameTable[10] = "DearWalletDressMeUp.Kreacija3";
+            _typeNameTable[11] = "DearWalletDressMeUp.Kviz1";
+            _typeNameTable[12] = "DearWalletDressMeUp.Kviz2";
+            _typeNameTable[13] = "DearWalletDressMeUp.Kviz3";
+            _typeNameTable[14] = "DearWalletDressMeUp.Login";
+            _typeNameTable[15] = "DearWalletDressMeUp.MainPage";
+            _typeNameTable[16] = "DearWalletDressMeUp.Poklon1";
+            _typeNameTable[17] = "DearWalletDressMeUp.Poklon2";
+            _typeNameTable[18] = "DearWalletDressMeUp.Poklon3";
+            _typeNameTable[19] = "DearWalletDressMeUp.Poklon4";
+            _typeNameTable[20] = "DearWalletDressMeUp.Pregled_profila";
+            _typeNameTable[21] = "DearWalletDressMeUp.Pretraga";
+            _typeNameTable[22] = "DearWalletDressMeUp.Registracija";
 
-            _typeTable = new global::System.Type[12];
-            _typeTable[0] = typeof(global::DearWalletDressMeUp.AdminDodavanjeOdjece);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::DearWalletDressMeUp.AdminovProfil);
-            _typeTable[4] = typeof(global::DearWalletDressMeUp.AdminUserManagement);
-            _typeTable[5] = typeof(global::DearWalletDressMeUp.BackHomeLogout);
+            _typeTable = new global::System.Type[23];
+            _typeTable[0] = typeof(global::DearWalletDressMeUp.BackHomeLogout);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[2] = typeof(global::DearWalletDressMeUp.AdminDodavanjeOdjece);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[4] = typeof(global::DearWalletDressMeUp.AdminovProfil);
+            _typeTable[5] = typeof(global::DearWalletDressMeUp.AdminUserManagement);
             _typeTable[6] = typeof(global::DearWalletDressMeUp.Checkout);
             _typeTable[7] = typeof(global::DearWalletDressMeUp.Home);
-            _typeTable[8] = typeof(global::DearWalletDressMeUp.MainPage);
-            _typeTable[9] = typeof(global::DearWalletDressMeUp.Pretraga);
-            _typeTable[10] = typeof(global::DearWalletDressMeUp.Registracija);
-            _typeTable[11] = typeof(global::DearWalletDressMeUp.Registracja);
-=======
-            _typeNameTable = new string[21];
-            _typeNameTable[0] = "DearWalletDressMeUp.AdminovProfil";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "DearWalletDressMeUp.AdminUserManagement";
-            _typeNameTable[4] = "DearWalletDressMeUp.Checkout";
-            _typeNameTable[5] = "DearWalletDressMeUp.Home";
-            _typeNameTable[6] = "DearWalletDressMeUp.Kreacija1";
-            _typeNameTable[7] = "DearWalletDressMeUp.Kreacija2";
-            _typeNameTable[8] = "DearWalletDressMeUp.Kreacija3";
-            _typeNameTable[9] = "DearWalletDressMeUp.Kviz1";
-            _typeNameTable[10] = "DearWalletDressMeUp.Kviz2";
-            _typeNameTable[11] = "DearWalletDressMeUp.Kviz3";
-            _typeNameTable[12] = "DearWalletDressMeUp.Login";
-            _typeNameTable[13] = "DearWalletDressMeUp.MainPage";
-            _typeNameTable[14] = "DearWalletDressMeUp.Poklon1";
-            _typeNameTable[15] = "DearWalletDressMeUp.Poklon2";
-            _typeNameTable[16] = "DearWalletDressMeUp.Poklon3";
-            _typeNameTable[17] = "DearWalletDressMeUp.Poklon4";
-            _typeNameTable[18] = "DearWalletDressMeUp.Pregled_profila";
-            _typeNameTable[19] = "DearWalletDressMeUp.Pretraga";
-            _typeNameTable[20] = "DearWalletDressMeUp.Registracija";
-
-            _typeTable = new global::System.Type[21];
-            _typeTable[0] = typeof(global::DearWalletDressMeUp.AdminovProfil);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::DearWalletDressMeUp.AdminUserManagement);
-            _typeTable[4] = typeof(global::DearWalletDressMeUp.Checkout);
-            _typeTable[5] = typeof(global::DearWalletDressMeUp.Home);
-            _typeTable[6] = typeof(global::DearWalletDressMeUp.Kreacija1);
-            _typeTable[7] = typeof(global::DearWalletDressMeUp.Kreacija2);
-            _typeTable[8] = typeof(global::DearWalletDressMeUp.Kreacija3);
-            _typeTable[9] = typeof(global::DearWalletDressMeUp.Kviz1);
-            _typeTable[10] = typeof(global::DearWalletDressMeUp.Kviz2);
-            _typeTable[11] = typeof(global::DearWalletDressMeUp.Kviz3);
-            _typeTable[12] = typeof(global::DearWalletDressMeUp.Login);
-            _typeTable[13] = typeof(global::DearWalletDressMeUp.MainPage);
-            _typeTable[14] = typeof(global::DearWalletDressMeUp.Poklon1);
-            _typeTable[15] = typeof(global::DearWalletDressMeUp.Poklon2);
-            _typeTable[16] = typeof(global::DearWalletDressMeUp.Poklon3);
-            _typeTable[17] = typeof(global::DearWalletDressMeUp.Poklon4);
-            _typeTable[18] = typeof(global::DearWalletDressMeUp.Pregled_profila);
-            _typeTable[19] = typeof(global::DearWalletDressMeUp.Pretraga);
-            _typeTable[20] = typeof(global::DearWalletDressMeUp.Registracija);
->>>>>>> 3350bb28f54bf5c860637ad104ec305b87272966
+            _typeTable[8] = typeof(global::DearWalletDressMeUp.Kreacija1);
+            _typeTable[9] = typeof(global::DearWalletDressMeUp.Kreacija2);
+            _typeTable[10] = typeof(global::DearWalletDressMeUp.Kreacija3);
+            _typeTable[11] = typeof(global::DearWalletDressMeUp.Kviz1);
+            _typeTable[12] = typeof(global::DearWalletDressMeUp.Kviz2);
+            _typeTable[13] = typeof(global::DearWalletDressMeUp.Kviz3);
+            _typeTable[14] = typeof(global::DearWalletDressMeUp.Login);
+            _typeTable[15] = typeof(global::DearWalletDressMeUp.MainPage);
+            _typeTable[16] = typeof(global::DearWalletDressMeUp.Poklon1);
+            _typeTable[17] = typeof(global::DearWalletDressMeUp.Poklon2);
+            _typeTable[18] = typeof(global::DearWalletDressMeUp.Poklon3);
+            _typeTable[19] = typeof(global::DearWalletDressMeUp.Poklon4);
+            _typeTable[20] = typeof(global::DearWalletDressMeUp.Pregled_profila);
+            _typeTable[21] = typeof(global::DearWalletDressMeUp.Pretraga);
+            _typeTable[22] = typeof(global::DearWalletDressMeUp.Registracija);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -241,38 +215,27 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
             return -1;
         }
 
-<<<<<<< HEAD
-        private object Activate_0_AdminDodavanjeOdjece() { return new global::DearWalletDressMeUp.AdminDodavanjeOdjece(); }
-        private object Activate_3_AdminovProfil() { return new global::DearWalletDressMeUp.AdminovProfil(); }
-        private object Activate_4_AdminUserManagement() { return new global::DearWalletDressMeUp.AdminUserManagement(); }
-        private object Activate_5_BackHomeLogout() { return new global::DearWalletDressMeUp.BackHomeLogout(); }
+        private object Activate_0_BackHomeLogout() { return new global::DearWalletDressMeUp.BackHomeLogout(); }
+        private object Activate_2_AdminDodavanjeOdjece() { return new global::DearWalletDressMeUp.AdminDodavanjeOdjece(); }
+        private object Activate_4_AdminovProfil() { return new global::DearWalletDressMeUp.AdminovProfil(); }
+        private object Activate_5_AdminUserManagement() { return new global::DearWalletDressMeUp.AdminUserManagement(); }
         private object Activate_6_Checkout() { return new global::DearWalletDressMeUp.Checkout(); }
         private object Activate_7_Home() { return new global::DearWalletDressMeUp.Home(); }
-        private object Activate_8_MainPage() { return new global::DearWalletDressMeUp.MainPage(); }
-        private object Activate_9_Pretraga() { return new global::DearWalletDressMeUp.Pretraga(); }
-        private object Activate_10_Registracija() { return new global::DearWalletDressMeUp.Registracija(); }
-        private object Activate_11_Registracja() { return new global::DearWalletDressMeUp.Registracja(); }
-=======
-        private object Activate_0_AdminovProfil() { return new global::DearWalletDressMeUp.AdminovProfil(); }
-        private object Activate_3_AdminUserManagement() { return new global::DearWalletDressMeUp.AdminUserManagement(); }
-        private object Activate_4_Checkout() { return new global::DearWalletDressMeUp.Checkout(); }
-        private object Activate_5_Home() { return new global::DearWalletDressMeUp.Home(); }
-        private object Activate_6_Kreacija1() { return new global::DearWalletDressMeUp.Kreacija1(); }
-        private object Activate_7_Kreacija2() { return new global::DearWalletDressMeUp.Kreacija2(); }
-        private object Activate_8_Kreacija3() { return new global::DearWalletDressMeUp.Kreacija3(); }
-        private object Activate_9_Kviz1() { return new global::DearWalletDressMeUp.Kviz1(); }
-        private object Activate_10_Kviz2() { return new global::DearWalletDressMeUp.Kviz2(); }
-        private object Activate_11_Kviz3() { return new global::DearWalletDressMeUp.Kviz3(); }
-        private object Activate_12_Login() { return new global::DearWalletDressMeUp.Login(); }
-        private object Activate_13_MainPage() { return new global::DearWalletDressMeUp.MainPage(); }
-        private object Activate_14_Poklon1() { return new global::DearWalletDressMeUp.Poklon1(); }
-        private object Activate_15_Poklon2() { return new global::DearWalletDressMeUp.Poklon2(); }
-        private object Activate_16_Poklon3() { return new global::DearWalletDressMeUp.Poklon3(); }
-        private object Activate_17_Poklon4() { return new global::DearWalletDressMeUp.Poklon4(); }
-        private object Activate_18_Pregled_profila() { return new global::DearWalletDressMeUp.Pregled_profila(); }
-        private object Activate_19_Pretraga() { return new global::DearWalletDressMeUp.Pretraga(); }
-        private object Activate_20_Registracija() { return new global::DearWalletDressMeUp.Registracija(); }
->>>>>>> 3350bb28f54bf5c860637ad104ec305b87272966
+        private object Activate_8_Kreacija1() { return new global::DearWalletDressMeUp.Kreacija1(); }
+        private object Activate_9_Kreacija2() { return new global::DearWalletDressMeUp.Kreacija2(); }
+        private object Activate_10_Kreacija3() { return new global::DearWalletDressMeUp.Kreacija3(); }
+        private object Activate_11_Kviz1() { return new global::DearWalletDressMeUp.Kviz1(); }
+        private object Activate_12_Kviz2() { return new global::DearWalletDressMeUp.Kviz2(); }
+        private object Activate_13_Kviz3() { return new global::DearWalletDressMeUp.Kviz3(); }
+        private object Activate_14_Login() { return new global::DearWalletDressMeUp.Login(); }
+        private object Activate_15_MainPage() { return new global::DearWalletDressMeUp.MainPage(); }
+        private object Activate_16_Poklon1() { return new global::DearWalletDressMeUp.Poklon1(); }
+        private object Activate_17_Poklon2() { return new global::DearWalletDressMeUp.Poklon2(); }
+        private object Activate_18_Poklon3() { return new global::DearWalletDressMeUp.Poklon3(); }
+        private object Activate_19_Poklon4() { return new global::DearWalletDressMeUp.Poklon4(); }
+        private object Activate_20_Pregled_profila() { return new global::DearWalletDressMeUp.Pregled_profila(); }
+        private object Activate_21_Pretraga() { return new global::DearWalletDressMeUp.Pretraga(); }
+        private object Activate_22_Registracija() { return new global::DearWalletDressMeUp.Registracija(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -284,38 +247,38 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  DearWalletDressMeUp.AdminDodavanjeOdjece
-                userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_AdminDodavanjeOdjece;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 1:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  DearWalletDressMeUp.AdminovProfil
-                userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_AdminovProfil;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  DearWalletDressMeUp.AdminUserManagement
-                userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_AdminUserManagement;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 5:   //  DearWalletDressMeUp.BackHomeLogout
+            case 0:   //  DearWalletDressMeUp.BackHomeLogout
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_5_BackHomeLogout;
+                userType.Activator = Activate_0_BackHomeLogout;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 1:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  DearWalletDressMeUp.AdminDodavanjeOdjece
+                userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_2_AdminDodavanjeOdjece;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 3:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  DearWalletDressMeUp.AdminovProfil
+                userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_AdminovProfil;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  DearWalletDressMeUp.AdminUserManagement
+                userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_AdminUserManagement;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -334,131 +297,107 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-<<<<<<< HEAD
-            case 8:   //  DearWalletDressMeUp.MainPage
+            case 8:   //  DearWalletDressMeUp.Kreacija1
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_MainPage;
-=======
-            case 6:   //  DearWalletDressMeUp.Kreacija1
-                userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_Kreacija1;
+                userType.Activator = Activate_8_Kreacija1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  DearWalletDressMeUp.Kreacija2
+            case 9:   //  DearWalletDressMeUp.Kreacija2
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_Kreacija2;
+                userType.Activator = Activate_9_Kreacija2;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  DearWalletDressMeUp.Kreacija3
+            case 10:   //  DearWalletDressMeUp.Kreacija3
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_Kreacija3;
+                userType.Activator = Activate_10_Kreacija3;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  DearWalletDressMeUp.Kviz1
+            case 11:   //  DearWalletDressMeUp.Kviz1
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_Kviz1;
+                userType.Activator = Activate_11_Kviz1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  DearWalletDressMeUp.Kviz2
+            case 12:   //  DearWalletDressMeUp.Kviz2
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_Kviz2;
+                userType.Activator = Activate_12_Kviz2;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  DearWalletDressMeUp.Kviz3
+            case 13:   //  DearWalletDressMeUp.Kviz3
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_Kviz3;
+                userType.Activator = Activate_13_Kviz3;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  DearWalletDressMeUp.Login
+            case 14:   //  DearWalletDressMeUp.Login
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_Login;
+                userType.Activator = Activate_14_Login;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  DearWalletDressMeUp.MainPage
+            case 15:   //  DearWalletDressMeUp.MainPage
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_MainPage;
+                userType.Activator = Activate_15_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  DearWalletDressMeUp.Poklon1
+            case 16:   //  DearWalletDressMeUp.Poklon1
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_Poklon1;
+                userType.Activator = Activate_16_Poklon1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  DearWalletDressMeUp.Poklon2
+            case 17:   //  DearWalletDressMeUp.Poklon2
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_Poklon2;
+                userType.Activator = Activate_17_Poklon2;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  DearWalletDressMeUp.Poklon3
+            case 18:   //  DearWalletDressMeUp.Poklon3
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_Poklon3;
+                userType.Activator = Activate_18_Poklon3;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  DearWalletDressMeUp.Poklon4
+            case 19:   //  DearWalletDressMeUp.Poklon4
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_Poklon4;
->>>>>>> 3350bb28f54bf5c860637ad104ec305b87272966
+                userType.Activator = Activate_19_Poklon4;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-<<<<<<< HEAD
-            case 9:   //  DearWalletDressMeUp.Pretraga
+            case 20:   //  DearWalletDressMeUp.Pregled_profila
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_Pretraga;
-=======
-            case 18:   //  DearWalletDressMeUp.Pregled_profila
-                userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_Pregled_profila;
->>>>>>> 3350bb28f54bf5c860637ad104ec305b87272966
+                userType.Activator = Activate_20_Pregled_profila;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-<<<<<<< HEAD
-            case 10:   //  DearWalletDressMeUp.Registracija
+            case 21:   //  DearWalletDressMeUp.Pretraga
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_Registracija;
-=======
-            case 19:   //  DearWalletDressMeUp.Pretraga
-                userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_Pretraga;
->>>>>>> 3350bb28f54bf5c860637ad104ec305b87272966
+                userType.Activator = Activate_21_Pretraga;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-<<<<<<< HEAD
-            case 11:   //  DearWalletDressMeUp.Registracja
+            case 22:   //  DearWalletDressMeUp.Registracija
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_Registracja;
-=======
-            case 20:   //  DearWalletDressMeUp.Registracija
-                userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_Registracija;
->>>>>>> 3350bb28f54bf5c860637ad104ec305b87272966
+                userType.Activator = Activate_22_Registracija;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

@@ -1,1 +1,1 @@
-C:\Users\HP\Desktop\DearWalletDressMeUp\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\DearWalletDressMeUp.csproj;x86
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\DearWalletDressMeUp.csproj;x86

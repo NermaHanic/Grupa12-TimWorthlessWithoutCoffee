@@ -16,9 +16,8 @@
                     <VisualState.Setters>
                         <Setter Target="Gornji.Orientation" Value="Vertical"></Setter>
                         <Setter Target="Gornji.HorizontalAlignment" Value="Center"></Setter>
-                        
-                        <Setter Target="Glavni.(Grid.Row)" Value="1"></Setter>
-                        <Setter Target="Glavni.Margin" Value="10 20 10 0"></Setter>
+
+                        <Setter Target="Glavni.Margin" Value="10 50 10 0"></Setter>
                         <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
 
                         <Setter Target="s1.Padding" Value="5"></Setter>
@@ -34,9 +33,8 @@
                         <Setter Target="Gornji.Orientation" Value="Vertical"></Setter>
                         <Setter Target="Gornji.HorizontalAlignment" Value="Center"></Setter>
 
-                        <Setter Target="Glavni.(Grid.Row)" Value="1"></Setter>
+                        <Setter Target="Glavni.Margin" Value="10 50 10 0"></Setter>
                         <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
-                        <Setter Target="Glavni.Margin" Value="10 20 10 0"></Setter>
 
                         <Setter Target="s1.Padding" Value="5"></Setter>
                         <Setter Target="s2.Padding" Value="1"></Setter>
@@ -51,8 +49,8 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-            <ScrollViewer VerticalScrollBarVisibility="Auto">
-                <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
@@ -61,108 +59,108 @@
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Button x:ConnectionId='4' x:Name="Logout" Content="Log Out" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"/>
-                    <Button x:ConnectionId='5' Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Style="{StaticResource NavigationBackButtonNormalStyle}"                     />
-                    <StackPanel x:ConnectionId='6' x:Name="Glavni" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.RowSpan="5" Grid.ColumnSpan="5" Background="Beige">
-                        <StackPanel x:ConnectionId='7' x:Name="Gornji" Orientation="Horizontal">
-                            <StackPanel.Resources>
-                                <Style TargetType="StackPanel">
-                                    <Setter Property="Padding" Value="20"></Setter>
-                                </Style>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="FontSize" Value="25"></Setter>
-                                    <Setter Property="Padding" Value="10"></Setter>
-                                    <Setter Property="VerticalAlignment" Value="Center"></Setter>
-                                    <Setter Property="Foreground" Value="#787272"></Setter>
-                                </Style>
-                                <Style TargetType="TextBox">
-                                    <Setter Property="Padding" Value="10"></Setter>
-                                    <Setter Property="Margin" Value="0 0 0 15"></Setter>
-                                    <Setter Property="VerticalAlignment" Value="Center"></Setter>
-                                    <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
-                                    <Setter Property="MinWidth" Value="200"></Setter>
-                                    </Style>
-                                <Style TargetType="ComboBox">
-                                    <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
-                                    <Setter Property="Padding" Value="10"></Setter>
-                                    <Setter Property="Margin" Value="0 0 0 15"></Setter>
-                                    <Setter Property="VerticalAlignment" Value="Center"></Setter>
-                                </Style>
-                            </StackPanel.Resources>
-                            <StackPanel Orientation="Horizontal">
-                                <StackPanel x:ConnectionId='10' x:Name="s1">
-                                    <TextBlock Text="Naziv:"></TextBlock>
-                                    <TextBlock Text="ID:"></TextBlock>
-                                    <TextBlock Text="Kategorija:"></TextBlock>
-                                    <TextBlock Text="Odjel:"></TextBlock>
-                                    <TextBlock Text="Stil:"></TextBlock>
-                                    <TextBlock Text="Cijena:"></TextBlock>
-                                </StackPanel>
-                                <StackPanel x:ConnectionId='11' x:Name="s2">
-                                    <TextBox x:ConnectionId='12' x:Name="NazivTextOdjeca"></TextBox>
-                                    <TextBox x:ConnectionId='13' x:Name="IDTextOdjeca"></TextBox>
-                                    <ComboBox x:ConnectionId='14' x:Name="KategorijaCombo">
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Majica"></TextBlock>
-                                        </ComboBoxItem>
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Haljina"></TextBlock>
-                                        </ComboBoxItem>
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Pantalone/Suknje"></TextBlock>
-                                        </ComboBoxItem>
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Obuca"></TextBlock>
-                                        </ComboBoxItem>
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Jakna"></TextBlock>
-                                        </ComboBoxItem>
-                                    </ComboBox>
-                                    <ComboBox x:ConnectionId='15' x:Name="OdjelCombo">
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Muski"></TextBlock>
-                                        </ComboBoxItem>
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Zenski"></TextBlock>
-                                        </ComboBoxItem>
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Djeciji"></TextBlock>
-                                        </ComboBoxItem>
-                                    </ComboBox>
-                                    <ComboBox x:ConnectionId='16' x:Name="StilCombo">
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Casual"></TextBlock>
-                                        </ComboBoxItem>
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Sport"></TextBlock>
-                                        </ComboBoxItem>
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Vintage"></TextBlock>
-                                        </ComboBoxItem>
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Rock/Punk"></TextBlock>
-                                        </ComboBoxItem>
-                                        <ComboBoxItem>
-                                            <TextBlock Text="Elegant/Formal"></TextBlock>
-                                        </ComboBoxItem>
-                                    </ComboBox>
-                                    <TextBox x:ConnectionId='17' x:Name="CijenaTextOdjeca"></TextBox>
-                                </StackPanel>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel x:ConnectionId='4' x:Name="Glavni" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.RowSpan="5" Grid.ColumnSpan="5" Background="Beige">
+                    <StackPanel x:ConnectionId='5' x:Name="Gornji" Orientation="Horizontal">
+                        <StackPanel.Resources>
+                            <Style TargetType="StackPanel">
+                                <Setter Property="Padding" Value="20"></Setter>
+                            </Style>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="FontSize" Value="25"></Setter>
+                                <Setter Property="Padding" Value="10"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                                <Setter Property="Foreground" Value="#787272"></Setter>
+                            </Style>
+                            <Style TargetType="TextBox">
+                                <Setter Property="Padding" Value="10"></Setter>
+                                <Setter Property="Margin" Value="0 0 0 15"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                                <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+                                <Setter Property="MinWidth" Value="200"></Setter>
+                            </Style>
+                            <Style TargetType="ComboBox">
+                                <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+                                <Setter Property="Padding" Value="10"></Setter>
+                                <Setter Property="Margin" Value="0 0 0 15"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </StackPanel.Resources>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel x:ConnectionId='8' x:Name="s1">
+                                <TextBlock Text="Naziv:"></TextBlock>
+                                <TextBlock Text="ID:"></TextBlock>
+                                <TextBlock Text="Kategorija:"></TextBlock>
+                                <TextBlock Text="Odjel:"></TextBlock>
+                                <TextBlock Text="Stil:"></TextBlock>
+                                <TextBlock Text="Cijena:"></TextBlock>
                             </StackPanel>
-                            <StackPanel x:ConnectionId='9' x:Name="s3">
-                                 <Image Width="300" Height="300" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <StackPanel x:ConnectionId='9' x:Name="s2">
+                                <TextBox x:ConnectionId='10' x:Name="NazivTextOdjeca"></TextBox>
+                                <TextBox x:ConnectionId='11' x:Name="IDTextOdjeca"></TextBox>
+                                <ComboBox x:ConnectionId='12' x:Name="KategorijaCombo">
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Majica"></TextBlock>
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Haljina"></TextBlock>
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Pantalone/Suknje"></TextBlock>
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Obuca"></TextBlock>
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Jakna"></TextBlock>
+                                    </ComboBoxItem>
+                                </ComboBox>
+                                <ComboBox x:ConnectionId='13' x:Name="OdjelCombo">
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Muski"></TextBlock>
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Zenski"></TextBlock>
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Djeciji"></TextBlock>
+                                    </ComboBoxItem>
+                                </ComboBox>
+                                <ComboBox x:ConnectionId='14' x:Name="StilCombo">
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Casual"></TextBlock>
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Sport"></TextBlock>
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Vintage"></TextBlock>
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Rock/Punk"></TextBlock>
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        <TextBlock Text="Elegant/Formal"></TextBlock>
+                                    </ComboBoxItem>
+                                </ComboBox>
+                                <TextBox x:ConnectionId='15' x:Name="CijenaTextOdjeca"></TextBox>
                             </StackPanel>
                         </StackPanel>
-                        <Button x:ConnectionId='8' x:Name="DodajOdjevniPredmet" Content="Dodaj" HorizontalAlignment="Center" Margin="10"></Button>
+                        <StackPanel x:ConnectionId='7' x:Name="s3">
+                            <Image Width="300" Height="300" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                        </StackPanel>
                     </StackPanel>
-                 </Grid>
-            </ScrollViewer>
-        </Grid>
+                    <Button x:ConnectionId='6' x:Name="DodajOdjevniPredmet" Content="Dodaj" HorizontalAlignment="Center" Margin="10"></Button>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+        <local:BackHomeLogout/>
+    </Grid>
 </Page>
 

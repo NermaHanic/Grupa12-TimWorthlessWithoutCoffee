@@ -30,28 +30,6 @@
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
     </RootType>
-<<<<<<< HEAD
-=======
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="FontSize" />
-      <RootEvent Name="Click" />
-    </RootType>
->>>>>>> 3350bb28f54bf5c860637ad104ec305b87272966
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
       <RootProperty Name="States" />
     </RootType>
@@ -82,22 +60,13 @@
       <RootMethod Name="GetVerticalScrollBarVisibility" />
       <RootMethod Name="SetVerticalScrollBarVisibility" />
     </RootType>
+    <RootType FullName="DearWalletDressMeUp.BackHomeLogout" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Width" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="HorizontalAlignment" />
@@ -116,6 +85,18 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="FontSize" />
+      <RootEvent Name="Click" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="FontSize" />
       <RootProperty Name="Padding" />
@@ -129,7 +110,6 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="Height" />
-      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="VerticalAlignment" />
@@ -138,6 +118,7 @@
       <RootProperty Name="MinWidth" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="MaxWidth" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Width" />
@@ -152,23 +133,15 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="UseLayoutRounding" />
     </RootType>
-<<<<<<< HEAD
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Padding" />
+      <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="Items" />
-      <RootProperty Name="PlaceholderText" />
-=======
-    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="MaxWidth" />
-      <RootProperty Name="MinWidth" />
->>>>>>> 3350bb28f54bf5c860637ad104ec305b87272966
+      <RootProperty Name="PlaceholderText" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Width" />
@@ -185,14 +158,13 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
       <RootProperty Name="Content" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="DearWalletDressMeUp.AdminDodavanjeOdjece" />
     <RootType FullName="DearWalletDressMeUp.AdminovProfil" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="DearWalletDressMeUp.AdminUserManagement" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>
-    <RootType FullName="DearWalletDressMeUp.BackHomeLogout" />
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Fill" />
       <RootProperty Name="Height" />
@@ -236,24 +208,9 @@
     </RootType>
     <RootType FullName="DearWalletDressMeUp.Checkout" />
     <RootType FullName="DearWalletDressMeUp.Home" />
-<<<<<<< HEAD
-    <RootType FullName="DearWalletDressMeUp.MainPage" />
-    <RootType FullName="DearWalletDressMeUp.Pretraga" />
-    <RootType FullName="DearWalletDressMeUp.Registracija" />
-=======
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="DearWalletDressMeUp.Kreacija1" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
-      <RootProperty Name="Width" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="Items" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Panel">
       <RootProperty Name="Background" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
-      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="DearWalletDressMeUp.Kreacija2" />
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
@@ -261,10 +218,6 @@
       <RootProperty Name="TranslateX" />
     </RootType>
     <RootType FullName="DearWalletDressMeUp.Kreacija3" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Control">
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="Padding" />
-    </RootType>
     <RootType FullName="DearWalletDressMeUp.Kviz1" />
     <RootType FullName="DearWalletDressMeUp.Kviz2" />
     <RootType FullName="DearWalletDressMeUp.Kviz3" />
@@ -272,7 +225,6 @@
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Margin" />
     </RootType>
->>>>>>> 3350bb28f54bf5c860637ad104ec305b87272966
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />

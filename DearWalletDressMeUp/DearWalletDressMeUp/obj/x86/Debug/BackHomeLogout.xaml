@@ -5,27 +5,12 @@
     xmlns:local="using:DearWalletDressMeUp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    d:DesignHeight="300"
-    d:DesignWidth="400">
+    mc:Ignorable="d">
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Button x:ConnectionId='1' x:Name="Logout" Content="Log Out" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"                     />
-        <Button x:ConnectionId='2' Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Style="{StaticResource NavigationBackButtonNormalStyle}"                     />
+        
+        <Button x:ConnectionId='1' x:Name="Logout" Content="Log Out" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"                      Margin="0 0 15 0"/>
+        <Button x:ConnectionId='2' x:Name="Back" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Style="{StaticResource NavigationBackButtonNormalStyle}"                     />
 
     </Grid>
 </UserControl>
