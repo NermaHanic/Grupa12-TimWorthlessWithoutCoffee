@@ -1,0 +1,190 @@
+﻿<Page
+    x:Class="NermineForme.Kviz2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NermineForme"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="Mobitel">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Tekstic.Width" Value="300"></Setter>
+                        <Setter Target="Tekstic.TextWrapping" Value="Wrap"></Setter>
+                        <Setter Target="Glavni.(Grid.Column)" Value="0"></Setter>
+                        <Setter Target="Glavni.(Grid.ColumnSpan)" Value="5"></Setter>
+                        <Setter Target="Glavni.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="Glavni.Width" Value="400"></Setter>
+                        <Setter Target="Prvi.Orientation" Value="Vertical"></Setter>
+                        <Setter Target="Prvi.Padding" Value="0"></Setter>
+                        <Setter Target="PrviRect.Width" Value="400"></Setter>
+                        <Setter Target="Drugi.Orientation" Value="Vertical"></Setter>
+                        <Setter Target="Drugi.Padding" Value="0"></Setter>
+                        <Setter Target="DrugiRect.Width" Value="400"></Setter>
+                        <Setter Target="Treci.Orientation" Value="Vertical"></Setter>
+                        <Setter Target="Treci.Padding" Value="0"></Setter>
+                        <Setter Target="TreciRect.Width" Value="400"></Setter>
+                        <Setter Target="HomeiNazad.(Grid.ColumnSpan)" Value="2"></Setter>
+                        <Setter Target="Rez.(Grid.ColumnSpan)" Value="3"></Setter>
+                        <Setter Target="Rez.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="Rez.(Grid.Column)" Value="1"></Setter>
+                        <Setter Target="PrviRect.Height" Value="20"></Setter>
+                        <Setter Target="DrugiRect.Height" Value="20"></Setter>
+                        <Setter Target="TreciRect.Height" Value="20"></Setter>
+
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Glavni.(Grid.Column)" Value="0"></Setter>
+                        <Setter Target="Glavni.(Grid.ColumnSpan)" Value="5"></Setter>
+                        <Setter Target="Glavni.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="Glavni.Margin" Value="30"></Setter>
+                        <Setter Target="Glavni.Padding" Value="20"></Setter>
+                        <Setter Target="Tekstic.Width" Value="500"></Setter>
+                        <Setter Target="Tekstic.TextWrapping" Value="Wrap"></Setter>
+                        <Setter Target="HomeiNazad.(Grid.ColumnSpan)" Value="2"></Setter>
+                        <Setter Target="PrviRect.Height" Value="20"></Setter>
+                        <Setter Target="DrugiRect.Height" Value="20"></Setter>
+                        <Setter Target="TreciRect.Height" Value="20"></Setter>
+                        <Setter Target="Rez.(Grid.ColumnSpan)" Value="3"></Setter>
+                        <Setter Target="Rez.(Grid.Column)" Value="1"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1000"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PrviRect.Height" Value="20"></Setter>
+                        <Setter Target="DrugiRect.Height" Value="20"></Setter>
+                        <Setter Target="TreciRect.Height" Value="20"></Setter>
+                        <Setter Target="PrviRect.Width" Value="600"></Setter>
+                        <Setter Target="DrugiRect.Width" Value="600"></Setter>
+                        <Setter Target="TreciRect.Width" Value="600"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Logout" Content="Log Out" Height="32" Margin="0 0 10 0" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"/>
+                <StackPanel x:Name="HomeiNazad" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                    <StackPanel.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Width" Value="100"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Button x:Name="Home" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel.Resources>
+                                <Style TargetType="Image">
+                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
+                                </Style>
+                            </StackPanel.Resources>
+                            <Image Source="Assets/homeIcon.png" Width="25" Height="25"></Image>
+                            <TextBlock Text="Home"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel.Resources>
+                                <Style TargetType="Image">
+                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
+                                </Style>
+                            </StackPanel.Resources>
+                            <Image Source="Assets/backArrow.png" Height="20" Width="20"></Image>
+                            <TextBlock Text="Nazad"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <StackPanel x:Name="Glavni" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Background="Beige" BorderBrush="Beige" Orientation="Vertical" Margin="0 30 0 0">
+                    <StackPanel.Resources>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="25"></Setter>
+                            <Setter Property="Margin" Value="0 0 0 20"></Setter>
+                        </Style>
+                        <Style TargetType="StackPanel">
+                            <Setter Property="Orientation" Value="Horizontal"></Setter>
+                            <Setter Property="Padding" Value="20"></Setter>
+                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                            <Setter Property="Background" Value="White"></Setter>
+                        </Style>
+                        <Style TargetType="Image">
+                            <Setter Property="Width" Value="250"></Setter>
+                            <Setter Property="Height" Value="400"></Setter>
+                        </Style>
+                        <Style TargetType="RadioButton">
+                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                            <Setter Property="Margin" Value="0 10 0 0"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <TextBlock x:Name="Tekstic" HorizontalAlignment="Center" Text="Koja od navedenih kombinacija Vam se vise dopada?"></TextBlock>
+                    <StackPanel x:Name="Prvi">
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <RadioButton Content="Kombinacija 1"></RadioButton>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <RadioButton Content="Kombinacija 2"></RadioButton>
+                        </StackPanel>
+                        </StackPanel>
+                    <Rectangle x:Name="PrviRect" Height="0" Fill="Beige" ></Rectangle>
+                    <StackPanel x:Name="Drugi">
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <RadioButton Content="Kombinacija 1"></RadioButton>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <RadioButton Content="Kombinacija 2"></RadioButton>
+                        </StackPanel>
+                    </StackPanel>
+                    <Rectangle x:Name="DrugiRect" Height="0" Fill="Beige"></Rectangle>
+
+                    <StackPanel x:Name="Treci">
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <RadioButton Content="Kombinacija 1"></RadioButton>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <RadioButton Content="Kombinacija 2"></RadioButton>
+                        </StackPanel>
+                    </StackPanel>
+                    <Rectangle x:Name="TreciRect" Height="0" Fill="Beige" ></Rectangle>
+
+                </StackPanel>
+                <Button  x:Name="Rez" Grid.Column="2" Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 10 0 10">
+                    <TextBlock x:Name="RezText" Text="Prikazi rezultate kviza"></TextBlock>
+                </Button>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

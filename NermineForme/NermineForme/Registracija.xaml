@@ -1,0 +1,127 @@
+﻿<Page
+    x:Class="NermineForme.Registracija"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NermineForme"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="Mobitel">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
+                        
+                        <Setter Target="Logo.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="LicniPodaciRegistracija.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="LicniPodaciRegistracija.Margin" Value="0 0 0 30"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
+                        <Setter Target="Logo.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="LicniPodaciRegistracija.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="LicniPodaciRegistracija.Margin" Value="0 0 0 30"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1000"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <ScrollViewer>
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="HomeiNazad" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Width" Value="100"></Setter>
+                </Style>
+            </StackPanel.Resources>
+            <Button x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel.Resources>
+                        <Style TargetType="Image">
+                            <Setter Property="Margin" Value="0 0 10 0"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Image Source="Assets/backArrow.png" Height="20" Width="20"></Image>
+                    <TextBlock Text="Nazad"></TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <StackPanel x:Name="Glavni" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="5" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Image x:Name="Logo" Source="Assets/logoPrivremeni.png" VerticalAlignment="Center" HorizontalAlignment="Center" MaxHeight="400" MaxWidth="500"  Margin="0 0 70 0"></Image>
+            <StackPanel x:Name="LicniPodaciRegistracija" Background="Beige" VerticalAlignment="Center">
+                <StackPanel Padding="20" Orientation="Horizontal">
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="FontSize" Value="25"></Setter>
+                                <Setter Property="Margin" Value="0 10 0 0"></Setter>
+                                <Setter Property="Foreground" Value="#787272"></Setter>
+                            </Style>
+                        </StackPanel.Resources>
+                        <TextBlock Text="Ime:"></TextBlock>
+                        <TextBlock Text="Prezime"></TextBlock>
+                        <TextBlock Text="Username:"></TextBlock>
+                        <TextBlock Text="Sifra:"></TextBlock>
+                        <TextBlock Text="Potvrda sifre:"></TextBlock>
+                        <TextBlock Text="Adresa:"></TextBlock>
+                        <TextBlock Text="Broj telefona:"></TextBlock>
+                        <TextBlock Text="Broj kreditne kartice:" TextWrapping="WrapWholeWords"></TextBlock>
+                    </StackPanel>
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <Style TargetType="TextBox">
+                                <Setter Property="Width" Value="200"></Setter>
+                                <Setter Property="Margin" Value="20 12 0 0"></Setter>
+                            </Style>
+                            <Style TargetType="PasswordBox">
+                                <Setter Property="Width" Value="200"></Setter>
+                                <Setter Property="Margin" Value="20 12 0 0"></Setter>
+                            </Style>
+                        </StackPanel.Resources>
+
+                        <TextBox></TextBox>
+                        <TextBox></TextBox>
+                        <TextBox></TextBox>
+                        <PasswordBox></PasswordBox>
+                        <PasswordBox></PasswordBox>
+                        <TextBox></TextBox>
+                        <TextBox></TextBox>
+                        <TextBox></TextBox>
+                    </StackPanel>
+                </StackPanel>
+                <Button x:Name="Registruj" FontSize="25" Content="Registruj se" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Margin="0 20 0 10"></Button>
+            </StackPanel>
+            </StackPanel>
+       
+    </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
