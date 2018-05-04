@@ -156,6 +156,7 @@
 
                     </StackPanel>
                 </StackPanel>
+                <Button Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Button_Click"/>
             </Grid>
         </ScrollViewer>
     </Grid>
