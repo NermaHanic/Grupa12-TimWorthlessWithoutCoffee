@@ -141,9 +141,6 @@
     <Compile Include="Registracija.xaml.cs">
       <DependentUpon>Registracija.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Registracja.xaml.cs">
-      <DependentUpon>Registracja.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -241,10 +238,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Registracija.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Registracja.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
