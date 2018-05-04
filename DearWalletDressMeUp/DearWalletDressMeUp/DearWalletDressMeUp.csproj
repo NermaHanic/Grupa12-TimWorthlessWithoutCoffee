@@ -116,6 +116,15 @@
     <Compile Include="Kreacija3.xaml.cs">
       <DependentUpon>Kreacija3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kviz1.xaml.cs">
+      <DependentUpon>Kviz1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kviz2.xaml.cs">
+      <DependentUpon>Kviz2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kviz3.xaml.cs">
+      <DependentUpon>Kviz3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -133,6 +142,9 @@
     </Compile>
     <Compile Include="Poklon4.xaml.cs">
       <DependentUpon>Poklon4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pregled profila.xaml.cs">
+      <DependentUpon>Pregled profila.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pretraga.xaml.cs">
       <DependentUpon>Pretraga.xaml</DependentUpon>
@@ -209,6 +221,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Kviz1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kviz2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kviz3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -230,6 +254,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Poklon4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pregled profila.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

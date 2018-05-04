@@ -1,0 +1,143 @@
+﻿<Page
+    x:Class="DearWalletDressMeUp.Kviz3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DearWalletDressMeUp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="Mobitel">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
+
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
+                        <Setter Target="Glavni.(Grid.Column)" Value="0"></Setter>
+                        <Setter Target="Glavni.Margin" Value="0"></Setter>
+                        <Setter Target="Glavni.(Grid.Row)" Value="1"></Setter>
+                        <Setter Target="Glavni.Padding" Value="0"></Setter>
+                        <Setter Target="LoremIpsum.Width" Value="330"></Setter>
+                        <Setter Target="Tekstic.Margin" Value="0"></Setter>
+                        <Setter Target="Generisi.HorizontalAlignment" Value="Center"></Setter>
+
+                        <Setter Target="Generisi.Margin" Value="0 0 0 20"></Setter>
+                        <Setter Target="Logout.Margin" Value="0 0 10 0"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
+                        <Setter Target="Glavni.Margin" Value="0"></Setter>
+                        <Setter Target="Glavni.(Grid.Row)" Value="1"></Setter>
+                        <Setter Target="Glavni.Padding" Value="0"></Setter>
+                        <Setter Target="LoremIpsum.Width" Value="330"></Setter>
+                        <Setter Target="Tekstic.Margin" Value="0"></Setter>
+                        <Setter Target="Generisi.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="Generisi.Margin" Value="0 0 0 20"></Setter>
+                        <Setter Target="Logout.Margin" Value="0 0 10 0"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Logout" Content="Log Out" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"/>
+                <StackPanel x:Name="HomeiNazad" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                    <StackPanel.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Width" Value="100"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Button x:Name="Home" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel.Resources>
+                                <Style TargetType="Image">
+                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
+                                </Style>
+                            </StackPanel.Resources>
+                            <Image Source="Assets/homeIcon.png" Width="25" Height="25"></Image>
+                            <TextBlock Text="Home"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel.Resources>
+                                <Style TargetType="Image">
+                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
+                                </Style>
+                            </StackPanel.Resources>
+                            <Image Source="Assets/backArrow.png" Height="20" Width="20"></Image>
+                            <TextBlock Text="Nazad"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <StackPanel x:Name="Glavni" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="4" Orientation="Horizontal" HorizontalAlignment="Center" Padding="20" Margin="20 0 20 0">
+                    <StackPanel.Resources>
+                        <Style TargetType="StackPanel">
+                            <Setter Property="Orientation" Value="Vertical"></Setter>
+                            <Setter Property="Margin" Value="50 0 50 0"></Setter>
+                        </Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="25"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <StackPanel x:Name="RezKviza">
+                        <TextBlock Text="Preporuceni outfit"></TextBlock>
+                        <GridView Background="Beige" x:Name="Kafice" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <GridView.ItemTemplate>
+                                <DataTemplate x:Name="Tmp">
+                                    <Grid x:Name="Meh" HorizontalAlignment="Center" Height="160" Width="160">
+                                        <Image Height="100" Width="100" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png" Stretch="UniformToFill"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </GridView.ItemTemplate>
+                            <GridView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <ItemsWrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal"></ItemsWrapGrid>
+                                </ItemsPanelTemplate>
+                            </GridView.ItemsPanel>
+                            <GridView.Items>
+                                <Image></Image>
+                                <Image></Image>
+                                <Image></Image>
+                                <Image></Image>
+                            </GridView.Items>
+                        </GridView>
+                    </StackPanel>
+                    <StackPanel x:Name="Tekstic">
+                        <TextBlock Text=""></TextBlock>
+                        <TextBox x:Name="LoremIpsum" Margin="0 0 0 55" TextWrapping="Wrap" Height="250" Width="350" ScrollViewer.VerticalScrollBarVisibility="Auto" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac scelerisque lorem, fermentum efficitur ante. Praesent nec tortor eu risus cursus ornare. Aliquam lacinia lorem eros, non laoreet dui porttitor in. Morbi gravida, dolor vitae vehicula facilisis, diam metus dictum sapien, eu sodales est erat vel dolor. Sed viverra elit augue, sed mollis lorem aliquet id. Aliquam commodo mi tellus, ut lacinia tellus interdum non. Phasellus nec neque finibus magna vehicula fringilla. Curabitur id diam eu risus mollis laoreet. Aliquam tempor interdum egestas."></TextBox>
+                        <Button x:Name="Generisi" HorizontalAlignment="Right" FontSize="20" Content="Generisi novi outfit"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
