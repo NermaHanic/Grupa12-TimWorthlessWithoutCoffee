@@ -96,7 +96,7 @@
                                 </GridView>
                             </ScrollViewer>
                             <Rectangle Fill="Beige" Height="15"></Rectangle>
-                            <HyperlinkButton x:Name="OtkaziNarudzbu" Content="Predomislili ste se? Kliknite ovdje." Height="32" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Left"/>
+                            <HyperlinkButton x:Name="OtkaziNarudzbu" Content="Predomislili ste se? Kliknite ovdje." Height="32" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Left" Click="OtkaziNarudzbu_Click"/>
                         </StackPanel>
                         <StackPanel x:Name="DostavaStack" Margin="20 0 0 0">
                             <TextBlock x:Name="DetaljiODostavi" Text="Detalji o dostavi" FontSize="35" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
@@ -167,14 +167,14 @@
                     
                 </StackPanel>
                 
-                <Button x:Name="Logout" Content="Log Out" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"/>
+                <Button x:Name="Logout" Content="Log Out" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0" Click="Logout_Click"/>
                 <StackPanel x:Name="HomeiNazad" Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
                     <StackPanel.Resources>
                         <Style TargetType="Button">
                             <Setter Property="Width" Value="100"></Setter>
                         </Style>
                     </StackPanel.Resources>
-                    <Button x:Name="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35">
+                    <Button x:Name="Home" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Click="Home_Click">
                         <StackPanel Orientation="Horizontal">
                             <StackPanel.Resources>
                                 <Style TargetType="Image">
@@ -185,18 +185,8 @@
                             <TextBlock Text="Home"></TextBlock>
                         </StackPanel>
                     </Button>
-                    <Button x:Name="Back" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top">
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel.Resources>
-                                <Style TargetType="Image">
-                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
-                                </Style>
-                            </StackPanel.Resources>
-                            <Image Source="Assets/backArrow.png" Height="20" Width="20"></Image>
-                            <TextBlock Text="Nazad"></TextBlock>
-                        </StackPanel>
-                    </Button>
-                </StackPanel>
+                    <Button x:Name="Back1" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Back1_Click"></Button>
+                    </StackPanel>
                 
             </Grid>
             

@@ -33,13 +33,12 @@
             <RelativePanel x:Name="r" HorizontalAlignment="Center"  
             Margin="2,10,2,0" Width="115">
 
-                <Button x:Name="loginbtn" Content="Potvrdi"  
-                Height="31" Width="67" HorizontalAlignment="Center" Margin="28,0,-28,0" />
+                <Button x:Name="Loginbtn" Content="Potvrdi" Height="31" Width="67" HorizontalAlignment="Center" Margin="28,0,-28,0" Click="Loginbtn_Click" />
 
                 <TextBlock x:Name="lala" Text=" Novi ste clan?" Margin="0,0,-110,0" FontSize="5" HorizontalAlignment="Right" 
-                  RelativePanel.Below="loginbtn" TextWrapping="Wrap" Width="100" Height="20"/>
+                  RelativePanel.Below="Loginbtn" TextWrapping="Wrap" Width="100" Height="20"/>
                 <HyperlinkButton x:Name="pink" Content="Registrujte se" FontSize="10" HorizontalAlignment="Center"
-                  RelativePanel.Below="lala" Margin="15,0,-21,0" Height="35" Width="95"/>
+                  RelativePanel.Below="lala" Margin="15,0,-21,0" Height="35" Width="95" Click="pink_Click"/>
             </RelativePanel>
 
         </StackPanel>

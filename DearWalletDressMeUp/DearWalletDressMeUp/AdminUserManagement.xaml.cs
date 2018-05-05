@@ -26,10 +26,15 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(AdminovProfil));
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Login));
         }
     }
 }

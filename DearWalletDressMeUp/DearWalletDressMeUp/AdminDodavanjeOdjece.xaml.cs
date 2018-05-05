@@ -7,6 +7,9 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.Storage;
+using Windows.Storage.Pickers;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -30,6 +33,33 @@ namespace DearWalletDressMeUp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(AdminovProfil));
+        }
+        
+
+        private async void OdaberiSlikuOdjece_Click(object sender, RoutedEventArgs e)
+        {
+            FileOpenPicker fop = new FileOpenPicker();
+            fop.FileTypeFilter.Add(".jpg");
+            fop.FileTypeFilter.Add(".png");
+            fop.FileTypeFilter.Add(".jpeg");
+            StorageFile file = await fop.PickSingleFileAsync();
+            if (file != null)
+            {
+                var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+                var image = new BitmapImage();
+                image.SetSource(stream);
+                SlikaAdminDodavanje.Source = image;
+            }
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AdminovProfil));
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Login));
         }
     }
 }

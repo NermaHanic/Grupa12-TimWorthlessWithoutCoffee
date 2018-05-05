@@ -9,8 +9,6 @@
 
     <Grid>
         
-        <Button x:Name="Logout" Content="Log Out" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0" Click="Logout_Click" Margin="0 0 15 0"/>
-        <Button x:Name="Back" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Button_Click"/>
-
+        
     </Grid>
 </UserControl>

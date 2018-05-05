@@ -30,27 +30,14 @@
                         <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="stek.Margin" Value="50,160,-425,-615"></Setter>
-                        <Setter Target="musko.Margin" Value="280,165,-330,-265"></Setter>
-                        <Setter Target="zensko.Margin" Value="280,310,-345,-410"></Setter>
-                        <Setter Target="dijete.Margin" Value="280,460,-345,-565"></Setter>
-                        <Setter Target="tekst.FontSize" Value="30"></Setter>
-                        <Setter Target="tekst.Margin" Value="140,114,-167,-134"></Setter>
-                    </VisualState.Setters>
+                         </VisualState.Setters>
                 </VisualState>
                 <VisualState x:ConnectionId='2' x:Name="tablet">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="800"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="tekst.FontSize" Value="40"></Setter>
-                        <Setter Target="tekst.Width" Value="315"></Setter>
-                        <Setter Target="tekst.Margin" Value="355,65,-880,-140"></Setter>
-                        <Setter Target="stek.Margin" Value="309,129,-820,-579"></Setter>
-                        <Setter Target="musko.Margin" Value="625,150,-765,-250"></Setter>
-                        <Setter Target="zensko.Margin" Value="625,300,-775,-400"></Setter>
-                        <Setter Target="dijete.Margin" Value="625,450,-765,-560"></Setter>
-
+                       
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:ConnectionId='3' x:Name="desktop">
@@ -58,37 +45,54 @@
                         <AdaptiveTrigger MinWindowWidth="1200"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="tekst.FontSize" Value="40"></Setter>
-                        <Setter Target="tekst.Width" Value="455"></Setter>
-                        <Setter Target="tekst.Margin" Value="530,100,-890,-132"></Setter>
-                        <Setter Target="stek.Margin" Value="460,180,0,0"></Setter>
-                        <Setter Target="zensko.Margin" Value="765,325,-870,-425"></Setter>
-                        <Setter Target="musko.Margin" Value="765,180,-870,-425"></Setter>
-                        <Setter Target="dijete.Margin" Value="765,480,-870,-425"></Setter>
-
+                       
                     </VisualState.Setters>
 
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
 
+        <StackPanel x:ConnectionId='4' x:Name="stek" Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" Width="415">
+            <StackPanel.Resources>
+                <Style TargetType="Image">
+                    <Setter Property="Width" Value="100"></Setter>
+                    <Setter Property="Height" Value="100"></Setter>
+                    <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                    <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                    <Setter Property="Margin" Value="20 0 0 0"></Setter>
+                </Style>
 
+            </StackPanel.Resources>
+            <TextBlock x:ConnectionId='8' x:Name="tekst" Text="Odaberite odjel:" HorizontalAlignment="Center"  TextWrapping="Wrap"  FontSize="30"/>
+            <Button x:ConnectionId='9' x:Name="MuskiOdjel" Background="Beige" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="120" FontSize="20"                         >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Muski" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    <Image x:ConnectionId='14' x:Name="musko" Source="Assets/shirt_dress_blouse_male-512.png"/>
+                </StackPanel>
+            </Button>
+            <Button x:ConnectionId='10' x:Name="ZenskiOdjel" Background="Beige" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="145" FontSize="20"                          >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Zenski" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    <Image x:ConnectionId='13' x:Name="zensko" Source="Assets/female.png"/>
+                </StackPanel>
+            </Button>
+            <Button x:ConnectionId='11' x:Name="DjecijiOdjel" Background="Beige" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="150" FontSize="20"                            >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Djeciji" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    <Image x:ConnectionId='12' x:Name="dijete" Source="Assets/Baby-Clothes-512.png"/>
 
-        <StackPanel x:ConnectionId='4' x:Name="stek" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="455" Margin="10,160,-425,-615" Grid.RowSpan="5" VerticalAlignment="Top" Width="415">
-            <Button Background="Beige" Content="Muski" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="120" FontSize="20"/>
-            <Button  Background="Beige" Content="Zenski" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="145" FontSize="20"/>
-            <Button  Background="Beige" Content="Djeciji" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="150" FontSize="20"/>
+                </StackPanel>
+            </Button>
         </StackPanel>
-        <TextBlock x:ConnectionId='5' x:Name="tekst" Grid.ColumnSpan="5" HorizontalAlignment="Left" Margin="475,101,-930,-154" Grid.RowSpan="5" Text="Odaberite odjel:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <Image x:ConnectionId='6' x:Name="musko" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="100" Margin="280,190,-380,-290" Grid.RowSpan="5" VerticalAlignment="Top" Width="100" Source="Assets/shirt_dress_blouse_male-512.png"/>
-        <Image x:ConnectionId='7' x:Name="zensko" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="100" Margin="275,315,-375,-415" Grid.RowSpan="5" VerticalAlignment="Top" Width="100" Source="Assets/female.png"/>
-        <Image x:ConnectionId='8' x:Name="dijete" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="100" Margin="275,460,-375,-560" Grid.RowSpan="5" VerticalAlignment="Top" Width="100" Source="Assets/Baby-Clothes-512.png"/>
-        <Button x:ConnectionId='9' x:Name="logout" Content="Log out" Grid.ColumnSpan="5" HorizontalAlignment="Left" Margin="1170,36,-1270,-36" Grid.RowSpan="5" VerticalAlignment="Top" Height="0" Width="100"/>
-        <Button Content="Home" Background="Transparent" HorizontalAlignment="Left" Margin="0,0,-135,-50" VerticalAlignment="Top" Height="50" Grid.ColumnSpan="5" Grid.RowSpan="5" Width="135"/>
-        <Image Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="48" Margin="10,0,-46,-48" Grid.RowSpan="5" VerticalAlignment="Top" Width="36" Source="Assets/homeIcon.png"/>
-        <Button Content="Log out" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Grid.Column="4"/>
+        <Button x:ConnectionId='5' x:Name="Homebtn" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top"                      >
+            <StackPanel Orientation="Horizontal">
+                <Image Height="30" Width="30" Source="Assets/homeIcon.png"/>
+                <TextBlock Text="Home" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 0 0 0"></TextBlock>
+            </StackPanel>
+            </Button>
+        <Button x:ConnectionId='6' x:Name="Logout" Content="Log Out" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 0 15 0"                     />
 
-        <Button Style="{StaticResource NavigationBackButtonNormalStyle}"/>
+        <Button x:ConnectionId='7' x:Name="Back" Style="{StaticResource NavigationBackButtonNormalStyle}"                   />
 
     </Grid>
 </Page>

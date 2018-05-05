@@ -169,12 +169,14 @@
   <ItemGroup>
     <Content Include="Assets\5f7a11765690b717abfdf22372fe80c1.png" />
     <Content Include="Assets\AAS-745x380.jpg" />
+    <Content Include="Assets\addtocart.png" />
     <Content Include="Assets\Baby-Clothes-512.png" />
     <Content Include="Assets\backArrow.png" />
     <Content Include="Assets\christmas-icon-gift-512.png" />
     <Content Include="Assets\female.png" />
     <Content Include="Assets\home.png" />
     <Content Include="Assets\homeIcon.png" />
+    <Content Include="Assets\letterIcon.png" />
     <Content Include="Assets\logo.jpg" />
     <Content Include="Assets\majica.png" />
     <Content Include="Assets\mojProfilIcon.png" />
@@ -183,6 +185,7 @@
     <Content Include="Assets\quizIcon.png" />
     <Content Include="Assets\search-icon.png" />
     <Content Include="Assets\srculence.png" />
+    <Content Include="Assets\trashcanIcon.png" />
     <Content Include="Assets\univerzalno.png" />
     <Content Include="mojProfilIcon.png" />
     <Content Include="Properties\Default.rd.xml" />

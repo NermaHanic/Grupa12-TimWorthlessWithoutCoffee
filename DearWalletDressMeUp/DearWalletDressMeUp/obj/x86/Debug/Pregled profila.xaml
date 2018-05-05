@@ -74,15 +74,10 @@
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Button x:ConnectionId='4' x:Name="Logout" Content="Log Out" VerticalAlignment="Top" Height="40" HorizontalAlignment="Right" Margin="0 0 20 0" Grid.Column="4" Grid.Row="0"/>
+                <Button x:ConnectionId='4' x:Name="Logout" Content="Log Out" VerticalAlignment="Top" Height="40" HorizontalAlignment="Right" Margin="0,0,15,0" Grid.Column="4" Grid.Row="0" Grid.ColumnSpan="1"/>
                 <StackPanel x:ConnectionId='5' x:Name="HomeiNazad" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="0">
-                    <StackPanel.Resources>
-                        <Style TargetType="Button">
-                            <Setter Property="Width" Value="100"></Setter>
-                        </Style>
-                    </StackPanel.Resources>
-                    <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
-                        <Button x:ConnectionId='33' x:Name="Home" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='37' x:Name="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent"                   >
                             <StackPanel Orientation="Horizontal">
                                 <StackPanel.Resources>
                                     <Style TargetType="Image">
@@ -92,40 +87,23 @@
                                     </Style>
                                 </StackPanel.Resources>
                                 <Image Source="Assets/homeIcon.png"></Image>
-                                <TextBlock Text="Home"></TextBlock>
+                                <TextBlock Text="Home" VerticalAlignment="Center"></TextBlock>
                             </StackPanel>
                         </Button>
-                        <Button x:ConnectionId='34' x:Name="PreporuciPrijatelju" Width="200" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="Assets/letterIcon.png" Width="30" Height="30" Margin="0 0 10 0"></Image>
-                                <TextBlock Text="Preporuci prijatelju"></TextBlock>
-                            </StackPanel>
-                        </Button>
+                        <Rectangle Fill="LightGray" Width="1"></Rectangle>
+                        <Button x:ConnectionId='38' x:Name="PreporuciPrijatelju"  Background="Transparent" Content="Preporuci prijatelju" HorizontalAlignment="Left" VerticalAlignment="Stretch"                                  />
+
                     </StackPanel>
-                    <Button x:ConnectionId='32' x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top">
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel.Resources>
-                                <Style TargetType="Image">
-                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
-                                    <Setter Property="Width" Value="20"></Setter>
-                                    <Setter Property="Height" Value="20"></Setter>
-                                </Style>
-                            </StackPanel.Resources>
-                            <Image Source="Assets/backArrow.png"></Image>
-                            <TextBlock Text="Nazad"></TextBlock>
-                        </StackPanel>
-                    </Button>
+                    <Button x:ConnectionId='36' x:Name="Back" Style="{StaticResource NavigationBackButtonNormalStyle}"                   />
                 </StackPanel>
-
-
-                <StackPanel x:ConnectionId='6' x:Name="OutermostStackPanel" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="5" HorizontalAlignment="Center" Orientation="Vertical" Margin="0 -20 0 0">
-                    <Image x:ConnectionId='7' x:Name="logo" Height="130" Width="220" Source="Assets/logo.jpg" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center" MaxHeight="300" MaxWidth="400"  Margin="0 0 40 0" ></Image>
-                    <StackPanel x:ConnectionId='8' x:Name="FirstUpperStack" Orientation="Horizontal" Padding="20" HorizontalAlignment="Left">
-                        <StackPanel x:ConnectionId='16' x:Name="Slikica" VerticalAlignment="Top" Background="Beige"  HorizontalAlignment="Center">
-                            <Image x:ConnectionId='31' x:Name="userSlika"  Height="250" Width="200" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
-                            <Button Content="Izmijeni sliku"  HorizontalAlignment="Center"></Button>
+                <StackPanel x:ConnectionId='6' x:Name="OutermostStackPanel" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="5" HorizontalAlignment="Center" Orientation="Vertical" Margin="0 -20 0 0">
+                    <Image x:ConnectionId='7' x:Name="logo"  Source="Assets/logo.jpg" MaxHeight="300" MaxWidth="400" ></Image>
+                    <StackPanel x:ConnectionId='8' x:Name="FirstUpperStack" Orientation="Horizontal" Padding="20" HorizontalAlignment="Left" Margin="0 20 0 0">
+                        <StackPanel x:ConnectionId='18' x:Name="Slikica" Height="400" Background="Beige"  HorizontalAlignment="Center">
+                            <Image x:ConnectionId='34' x:Name="userSlika"  Height="350" Width="250" VerticalAlignment="Top" Stretch="Fill" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <Button x:ConnectionId='35' x:Name="IzmijeniSliku" Content="Izmijeni sliku"  HorizontalAlignment="Center" VerticalAlignment="Bottom"                            />
                         </StackPanel>
-                        <StackPanel x:ConnectionId='17' x:Name="LicniPodaci" Background="Beige" Orientation="Vertical"   Width="300" HorizontalAlignment="Stretch">
+                        <StackPanel x:ConnectionId='19' x:Name="LicniPodaci" Background="Beige" Orientation="Vertical" Width="300" HorizontalAlignment="Stretch">
                             <StackPanel.Resources>
                                 <Style TargetType="StackPanel">
                                     <Setter Property="Orientation" Value="Horizontal"></Setter>
@@ -139,49 +117,54 @@
                             </StackPanel.Resources>
                             <TextBlock Text="Licni Podaci" FontSize="25"></TextBlock>
                             <StackPanel>
-                                <TextBlock x:ConnectionId='29' x:Name="LicniIme" Text="Ime:"></TextBlock>
-                                <TextBox x:ConnectionId='30' x:Name="LicniImeText"></TextBox>
+                                <TextBlock x:ConnectionId='32' x:Name="LicniIme" Text="Ime:"></TextBlock>
+                                <TextBox x:ConnectionId='33' x:Name="LicniImeText"></TextBox>
                             </StackPanel>
                             <StackPanel>
-                                <TextBlock x:ConnectionId='27' x:Name="LicniPrezime" Text="Prezime:"></TextBlock>
-                                <TextBox x:ConnectionId='28' x:Name="LicniPrezimeText"></TextBox>
+                                <TextBlock x:ConnectionId='30' x:Name="LicniPrezime" Text="Prezime:"></TextBlock>
+                                <TextBox x:ConnectionId='31' x:Name="LicniPrezimeText"></TextBox>
                             </StackPanel>
                             <StackPanel>
-                                <TextBlock x:ConnectionId='25' x:Name="LicniAdresa" Text="Adresa:"></TextBlock>
-                                <TextBox x:ConnectionId='26' x:Name="LicniAdresaText"></TextBox>
+                                <TextBlock x:ConnectionId='28' x:Name="LicniAdresa" Text="Adresa:"></TextBlock>
+                                <TextBox x:ConnectionId='29' x:Name="LicniAdresaText"></TextBox>
                             </StackPanel>
                             <StackPanel>
-                                <TextBlock x:ConnectionId='23' x:Name="LicniGrad" Text="Grad:"></TextBlock>
-                                <TextBox x:ConnectionId='24' x:Name="LicniGradText"></TextBox>
+                                <TextBlock x:ConnectionId='26' x:Name="LicniGrad" Text="Grad:"></TextBlock>
+                                <TextBox x:ConnectionId='27' x:Name="LicniGradText"></TextBox>
                             </StackPanel>
                             <StackPanel>
-                                <TextBlock x:ConnectionId='21' x:Name="LicniDrzava" Text="Drzava:"></TextBlock>
-                                <TextBox x:ConnectionId='22' x:Name="LicniDrzavaText"></TextBox>
+                                <TextBlock x:ConnectionId='24' x:Name="LicniDrzava" Text="Drzava:"></TextBlock>
+                                <TextBox x:ConnectionId='25' x:Name="LicniDrzavaText"></TextBox>
                             </StackPanel>
                             <StackPanel>
-                                <TextBlock x:ConnectionId='19' x:Name="LicniTelefon" Text="Telefon:"></TextBlock>
-                                <TextBox x:ConnectionId='20' x:Name="LicniTelefonText"></TextBox>
+                                <TextBlock x:ConnectionId='22' x:Name="LicniTelefon" Text="Telefon:"></TextBlock>
+                                <TextBox x:ConnectionId='23' x:Name="LicniTelefonText"></TextBox>
                             </StackPanel>
-                            <Button Content="Izmijeni" HorizontalAlignment="Right"></Button>
+                            <Button x:ConnectionId='21' x:Name="IzmijeniLicne" Content="Izmijeni" HorizontalAlignment="Right"                            ></Button>
                         </StackPanel>
-                        <Rectangle x:ConnectionId='18' x:Name="mini" Fill="Transparent" Width="420" Margin="20 0 20 0"></Rectangle>
-                        
+                        <Rectangle x:ConnectionId='20' x:Name="mini" Fill="Transparent" Width="420" Margin="20 0 20 0"></Rectangle>
+
                     </StackPanel>
-                    
+
                     <StackPanel x:ConnectionId='9' x:Name="SecondLowerStack" Orientation="Horizontal" Padding="20" HorizontalAlignment="Center">
                         <StackPanel x:ConnectionId='10' x:Name="Kreacije" Background="Beige" Padding="10">
                             <TextBlock Text="Moje kreacije" FontSize="25"></TextBlock>
-                            <ScrollViewer x:ConnectionId='12' x:Name="KrecijeScroll" BorderBrush="Gray" BorderThickness="2" MaxHeight="600" VerticalScrollBarVisibility="Auto">
+                            <ScrollViewer x:ConnectionId='14' x:Name="KrecijeScroll" BorderBrush="Gray" BorderThickness="2" MaxHeight="600" VerticalScrollBarVisibility="Auto">
                                 <GridView>
                                     <GridView.ItemTemplate>
                                         <DataTemplate>
                                             <Grid Height="150" Width="150">
                                                 <StackPanel Orientation="Horizontal">
-                                                    <Image Width="100" Height="100" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                                                    <Image x:Name="Placeholder" Width="100" Height="100" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"/>
                                                     <StackPanel VerticalAlignment="Center">
                                                         <Image Width="50" Source="Assets/Square44x44Logo.png"></Image>
                                                         <Image Width="50" Source="Assets/Square44x44Logo.png"></Image>
                                                     </StackPanel>
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal" Height="40" VerticalAlignment="Bottom" Padding="10">
+                                                    <TextBlock Text="Cijena: "/>
+                                                    <TextBlock x:Name="Cijena" Text=""></TextBlock>
+                                                    <TextBlock x:Name="KM" Text=" KM"></TextBlock>
                                                 </StackPanel>
 
                                             </Grid>
@@ -217,14 +200,14 @@
                                     </GridView.Items>
                                 </GridView>
                             </ScrollViewer>
-                            <StackPanel x:ConnectionId='13' x:Name="ButtonsIspodKreacija" Orientation="Horizontal">
-                                <Button x:ConnectionId='14' x:Name="DodajKreaciju">
+                            <StackPanel x:ConnectionId='15' x:Name="ButtonsIspodKreacija" Orientation="Horizontal">
+                                <Button x:ConnectionId='16' x:Name="DodajKreaciju"                            >
                                     <StackPanel Orientation="Horizontal">
                                         <Image Width="20" Height="20" Source="Assets/plusIcon.png"></Image>
                                         <TextBlock Text="Dodaj kreaciju"></TextBlock>
                                     </StackPanel>
                                 </Button>
-                                <Button x:ConnectionId='15' x:Name="BrisiKreaciju">
+                                <Button x:ConnectionId='17' x:Name="BrisiKreaciju">
                                     <StackPanel Orientation="Horizontal">
                                         <Image Source="Assets/trashcanIcon.png" Width="20" Height="20"></Image>
                                         <TextBlock Text="Izbrisi kreaciju"></TextBlock>
@@ -234,8 +217,8 @@
                         </StackPanel>
                         <StackPanel x:ConnectionId='11' x:Name="DodajUKorpicu" BorderBrush="MediumPurple" Orientation="Vertical" Margin="10 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Padding="10">
                             <Image Source="Assets/addtocart.png" Width="80" Height="80" Margin="0 0 0 10"></Image>
-                            <Button Content="Dodaj u korpicu"></Button>
-                            <HyperlinkButton Content="Zahtjev za brisanje profila" VerticalAlignment="Bottom"></HyperlinkButton>
+                            <Button x:ConnectionId='12' x:Name="DodajKorpica" Content="Dodaj u korpicu"                           ></Button>
+                            <HyperlinkButton x:ConnectionId='13' x:Name="BrisanjeProfila" Content="Zahtjev za brisanje profila" VerticalAlignment="Bottom"                              ></HyperlinkButton>
                         </StackPanel>
                     </StackPanel>
                 </StackPanel>

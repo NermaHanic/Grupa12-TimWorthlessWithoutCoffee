@@ -26,5 +26,15 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
         }
+
+        private void Loginbtn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Home));
+        }
+
+        private void pink_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Registracija));
+        }
     }
 }

@@ -81,14 +81,14 @@
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="Logout" Margin="0 0 20 0" Content="Log Out" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"/>
+                <Button x:Name="Logout" Margin="0 0 15 0" Content="Log Out" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0" Click="Logout_Click"/>
                 <StackPanel x:Name="HomeiNazad" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
                     <StackPanel.Resources>
                         <Style TargetType="Button">
                             <Setter Property="Width" Value="100"></Setter>
                         </Style>
                     </StackPanel.Resources>
-                    <Button x:Name="Home" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Button x:Name="Home" HorizontalAlignment="Left" Background="Transparent" VerticalAlignment="Top" Click="Home_Click">
                         <StackPanel Orientation="Horizontal">
                             <StackPanel.Resources>
                                 <Style TargetType="Image">
@@ -99,18 +99,8 @@
                             <TextBlock Text="Home"></TextBlock>
                         </StackPanel>
                     </Button>
-                    <Button x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top">
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel.Resources>
-                                <Style TargetType="Image">
-                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
-                                </Style>
-                            </StackPanel.Resources>
-                            <Image Source="Assets/backArrow.png" Height="20" Width="20"></Image>
-                            <TextBlock Text="Nazad"></TextBlock>
-                        </StackPanel>
-                    </Button>
-                </StackPanel>
+                    <Button x:Name="Back" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Back_Click"></Button>
+                     </StackPanel>
                 <StackPanel x:Name="Pitanja" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Background="Beige" Margin="0 30 0 0" BorderBrush="Beige">
                     <StackPanel.Resources>
                         <Style TargetType="StackPanel">
@@ -151,7 +141,7 @@
                         <RadioButton x:Name="r9"></RadioButton>
                     </StackPanel>
                 </StackPanel>
-                <Button x:Name="NextLvl" FontSize="20" Margin="0 20 20 10" Grid.Column="4" Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                <Button x:Name="NextLvl" FontSize="20" Margin="0 20 20 10" Grid.Column="4" Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="NextLvl_Click">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Sljedeci nivo"></TextBlock>
                         <Image Source="Assets/RightArrow.png" Width="20" Height="20"></Image>

@@ -100,11 +100,11 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <StackPanel x:ConnectionId='4' x:Name="Glavni" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="5" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <StackPanel x:ConnectionId='6' x:Name="DodavanjeKorisnika">
-                        <TextBlock x:ConnectionId='14' x:Name="DodavanjeKor" Text="Dodavanje korisnika" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" FontSize="30"/>
+                <StackPanel x:ConnectionId='6' x:Name="Glavni" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="5" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel x:ConnectionId='7' x:Name="DodavanjeKorisnika">
+                        <TextBlock x:ConnectionId='15' x:Name="DodavanjeKor" Text="Dodavanje korisnika" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" FontSize="30"/>
                         <StackPanel Orientation="Horizontal">
-                            <StackPanel x:ConnectionId='16' x:Name="LicniPodaci" Padding="20">
+                            <StackPanel x:ConnectionId='17' x:Name="LicniPodaci" Padding="20">
                                 <StackPanel.Resources>
                                     <Style TargetType="TextBlock">
                                         <Setter Property="FontSize" Value="20"></Setter>
@@ -114,15 +114,15 @@
                                     </Style>
                                 </StackPanel.Resources>
 
-                                <TextBlock x:ConnectionId='25' x:Name="ImeKorAdmin" Text="Ime:"/>
-                                <TextBlock x:ConnectionId='26' x:Name="PrezimeKorAdmin" Text="Prezime:"/>
-                                <TextBlock x:ConnectionId='27' x:Name="UsernameKorAdmin" Text="Username:"/>
-                                <TextBlock x:ConnectionId='28' x:Name="AdresaKorAdmin" Text="Adresa:"/>
-                                <TextBlock x:ConnectionId='29' x:Name="BrojTelKorAdmin" Text="Broj telefona:"/>
-                                <TextBlock x:ConnectionId='30' x:Name="BrojKreditneKarticeKorAdmin" Text="Broj kreditne kartice"/>
-                                <TextBlock x:ConnectionId='31' x:Name="IDProfilaKorAdmin" Text="ID Profila:"/>
+                                <TextBlock x:ConnectionId='26' x:Name="ImeKorAdmin" Text="Ime:"/>
+                                <TextBlock x:ConnectionId='27' x:Name="PrezimeKorAdmin" Text="Prezime:"/>
+                                <TextBlock x:ConnectionId='28' x:Name="UsernameKorAdmin" Text="Username:"/>
+                                <TextBlock x:ConnectionId='29' x:Name="AdresaKorAdmin" Text="Adresa:"/>
+                                <TextBlock x:ConnectionId='30' x:Name="BrojTelKorAdmin" Text="Broj telefona:"/>
+                                <TextBlock x:ConnectionId='31' x:Name="BrojKreditneKarticeKorAdmin" Text="Broj kreditne kartice"/>
+                                <TextBlock x:ConnectionId='32' x:Name="IDProfilaKorAdmin" Text="ID Profila:"/>
                             </StackPanel>
-                            <StackPanel x:ConnectionId='17' x:Name="LicniPodaciTextBox" VerticalAlignment="Center">
+                            <StackPanel x:ConnectionId='18' x:Name="LicniPodaciTextBox" VerticalAlignment="Center">
                                 <StackPanel.Resources>
                                     <Style TargetType="TextBox">
                                         <Setter Property="Width" Value="250"></Setter>
@@ -131,34 +131,35 @@
                                         <Setter Property="Margin" Value="0 5 10 10"></Setter>
                                     </Style>
                                 </StackPanel.Resources>
-                                <TextBox x:ConnectionId='18' x:Name="ImeKorAdminText"/>
-                                <TextBox x:ConnectionId='19' x:Name="PrezimeKorAdminText"/>
-                                <TextBox x:ConnectionId='20' x:Name="UsernameKorAdminText"/>
-                                <TextBox x:ConnectionId='21' x:Name="AdresaKorAdminText"/>
-                                <TextBox x:ConnectionId='22' x:Name="BrojTelKorAdminText"/>
-                                <TextBox x:ConnectionId='23' x:Name="BrojKreditneKarticeKorAdminText"/>
-                                <TextBox x:ConnectionId='24' x:Name="IDProfilaKorAdminText"/>
+                                <TextBox x:ConnectionId='19' x:Name="ImeKorAdminText"/>
+                                <TextBox x:ConnectionId='20' x:Name="PrezimeKorAdminText"/>
+                                <TextBox x:ConnectionId='21' x:Name="UsernameKorAdminText"/>
+                                <TextBox x:ConnectionId='22' x:Name="AdresaKorAdminText"/>
+                                <TextBox x:ConnectionId='23' x:Name="BrojTelKorAdminText"/>
+                                <TextBox x:ConnectionId='24' x:Name="BrojKreditneKarticeKorAdminText"/>
+                                <TextBox x:ConnectionId='25' x:Name="IDProfilaKorAdminText"/>
                             </StackPanel>
                         </StackPanel>
-                        <Button x:ConnectionId='15' x:Name="DodajKorUBazu" Content="Dodaj" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Button x:ConnectionId='16' x:Name="DodajKorUBazu" Content="Dodaj" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='7' x:Name="BrisanjeKorisnika">
-                        <TextBlock x:ConnectionId='8' x:Name="BrisanjeKor" Text="Brisanje korisnika" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+                    <StackPanel x:ConnectionId='8' x:Name="BrisanjeKorisnika">
+                        <TextBlock x:ConnectionId='9' x:Name="BrisanjeKor" Text="Brisanje korisnika" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
                         <StackPanel Orientation="Horizontal">
-                            <StackPanel x:ConnectionId='10' x:Name="BrisanjeInfo" Padding="20">
-                                <TextBlock x:ConnectionId='13' x:Name="IDProfilaBrisanje" Text="ID Profila:" FontSize="20" HorizontalAlignment="Right" Margin="10"/>
+                            <StackPanel x:ConnectionId='11' x:Name="BrisanjeInfo" Padding="20">
+                                <TextBlock x:ConnectionId='14' x:Name="IDProfilaBrisanje" Text="ID Profila:" FontSize="20" HorizontalAlignment="Right" Margin="10"/>
                             </StackPanel>
-                            <StackPanel x:ConnectionId='11' x:Name="Bleh" VerticalAlignment="Center">
-                                <TextBox x:ConnectionId='12' x:Name="IDProfilaBrisanjeText" Width="250" Height="20" HorizontalAlignment="Left"/>
+                            <StackPanel x:ConnectionId='12' x:Name="Bleh" VerticalAlignment="Center">
+                                <TextBox x:ConnectionId='13' x:Name="IDProfilaBrisanjeText" Width="250" Height="20" HorizontalAlignment="Left"/>
                             </StackPanel>
                         </StackPanel>
-                        <Button x:ConnectionId='9' x:Name="BrisiKorIzBaze" Content="Obrisi" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                        <Button x:ConnectionId='10' x:Name="BrisiKorIzBaze" Content="Obrisi" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
 
                     </StackPanel>
                 </StackPanel>
-                <Button x:ConnectionId='5' Style="{StaticResource NavigationBackButtonNormalStyle}"                     />
-            </Grid>
+               </Grid>
         </ScrollViewer>
+        <Button x:ConnectionId='4' x:Name="Back" VerticalAlignment="Top" Style="{StaticResource NavigationBackButtonNormalStyle}"                   />
+        <Button x:ConnectionId='5' x:Name="Logout" Content="Log Out" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 0 15 0"                     ></Button>
     </Grid>
    </Page>
 

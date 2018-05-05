@@ -67,6 +67,7 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel x:Name="Glavni" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.RowSpan="5" Grid.ColumnSpan="5" Background="Beige">
+                    <HyperlinkButton x:Name="OdaberiSlikuOdjece" Content="Odaberi odjevni predmet" FontSize="20" HorizontalAlignment="Center" Click="OdaberiSlikuOdjece_Click"/>
                     <StackPanel x:Name="Gornji" Orientation="Horizontal">
                         <StackPanel.Resources>
                             <Style TargetType="StackPanel">
@@ -153,13 +154,14 @@
                             </StackPanel>
                         </StackPanel>
                         <StackPanel x:Name="s3">
-                            <Image Width="300" Height="300" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <Image x:Name="SlikaAdminDodavanje" Width="300" Height="300" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
                         </StackPanel>
                     </StackPanel>
                     <Button x:Name="DodajOdjevniPredmet" Content="Dodaj" HorizontalAlignment="Center" Margin="10"></Button>
                 </StackPanel>
             </Grid>
         </ScrollViewer>
-        <local:BackHomeLogout/>
+        <Button x:Name="Logout" Content="Log Out" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Row="0" Click="Logout_Click" Margin="0 0 15 0"/>
+        <Button x:Name="Back" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Back_Click"/>
     </Grid>
 </Page>

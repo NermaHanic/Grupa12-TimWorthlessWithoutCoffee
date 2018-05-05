@@ -26,5 +26,30 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void zelim_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Poklon2));
+        }
+
+        private void nezelim_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Checkout));
+        }
     }
 }

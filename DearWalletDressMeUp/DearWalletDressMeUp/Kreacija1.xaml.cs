@@ -26,5 +26,35 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
         }
+        
+        private void Homebtn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Home));
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Home));
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Login));
+        }
+
+        private void MuskiOdjel_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Kreacija2)); //dodati neki bool here
+        }
+
+        private void ZenskiOdjel_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Kreacija2));
+        }
+
+        private void DjecijiOdjel_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Kreacija2));
+        }
     }
 }

@@ -66,8 +66,9 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <StackPanel x:ConnectionId='4' x:Name="Glavni" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.RowSpan="5" Grid.ColumnSpan="5" Background="Beige">
-                    <StackPanel x:ConnectionId='5' x:Name="Gornji" Orientation="Horizontal">
+                <StackPanel x:ConnectionId='6' x:Name="Glavni" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.RowSpan="5" Grid.ColumnSpan="5" Background="Beige">
+                    <HyperlinkButton x:ConnectionId='7' x:Name="OdaberiSlikuOdjece" Content="Odaberi odjevni predmet" FontSize="20" HorizontalAlignment="Center"                                 />
+                    <StackPanel x:ConnectionId='8' x:Name="Gornji" Orientation="Horizontal">
                         <StackPanel.Resources>
                             <Style TargetType="StackPanel">
                                 <Setter Property="Padding" Value="20"></Setter>
@@ -93,7 +94,7 @@
                             </Style>
                         </StackPanel.Resources>
                         <StackPanel Orientation="Horizontal">
-                            <StackPanel x:ConnectionId='8' x:Name="s1">
+                            <StackPanel x:ConnectionId='12' x:Name="s1">
                                 <TextBlock Text="Naziv:"></TextBlock>
                                 <TextBlock Text="ID:"></TextBlock>
                                 <TextBlock Text="Kategorija:"></TextBlock>
@@ -101,10 +102,10 @@
                                 <TextBlock Text="Stil:"></TextBlock>
                                 <TextBlock Text="Cijena:"></TextBlock>
                             </StackPanel>
-                            <StackPanel x:ConnectionId='9' x:Name="s2">
-                                <TextBox x:ConnectionId='10' x:Name="NazivTextOdjeca"></TextBox>
-                                <TextBox x:ConnectionId='11' x:Name="IDTextOdjeca"></TextBox>
-                                <ComboBox x:ConnectionId='12' x:Name="KategorijaCombo">
+                            <StackPanel x:ConnectionId='13' x:Name="s2">
+                                <TextBox x:ConnectionId='14' x:Name="NazivTextOdjeca"></TextBox>
+                                <TextBox x:ConnectionId='15' x:Name="IDTextOdjeca"></TextBox>
+                                <ComboBox x:ConnectionId='16' x:Name="KategorijaCombo">
                                     <ComboBoxItem>
                                         <TextBlock Text="Majica"></TextBlock>
                                     </ComboBoxItem>
@@ -121,7 +122,7 @@
                                         <TextBlock Text="Jakna"></TextBlock>
                                     </ComboBoxItem>
                                 </ComboBox>
-                                <ComboBox x:ConnectionId='13' x:Name="OdjelCombo">
+                                <ComboBox x:ConnectionId='17' x:Name="OdjelCombo">
                                     <ComboBoxItem>
                                         <TextBlock Text="Muski"></TextBlock>
                                     </ComboBoxItem>
@@ -132,7 +133,7 @@
                                         <TextBlock Text="Djeciji"></TextBlock>
                                     </ComboBoxItem>
                                 </ComboBox>
-                                <ComboBox x:ConnectionId='14' x:Name="StilCombo">
+                                <ComboBox x:ConnectionId='18' x:Name="StilCombo">
                                     <ComboBoxItem>
                                         <TextBlock Text="Casual"></TextBlock>
                                     </ComboBoxItem>
@@ -149,18 +150,19 @@
                                         <TextBlock Text="Elegant/Formal"></TextBlock>
                                     </ComboBoxItem>
                                 </ComboBox>
-                                <TextBox x:ConnectionId='15' x:Name="CijenaTextOdjeca"></TextBox>
+                                <TextBox x:ConnectionId='19' x:Name="CijenaTextOdjeca"></TextBox>
                             </StackPanel>
                         </StackPanel>
-                        <StackPanel x:ConnectionId='7' x:Name="s3">
-                            <Image Width="300" Height="300" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                        <StackPanel x:ConnectionId='10' x:Name="s3">
+                            <Image x:ConnectionId='11' x:Name="SlikaAdminDodavanje" Width="300" Height="300" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
                         </StackPanel>
                     </StackPanel>
-                    <Button x:ConnectionId='6' x:Name="DodajOdjevniPredmet" Content="Dodaj" HorizontalAlignment="Center" Margin="10"></Button>
+                    <Button x:ConnectionId='9' x:Name="DodajOdjevniPredmet" Content="Dodaj" HorizontalAlignment="Center" Margin="10"></Button>
                 </StackPanel>
             </Grid>
         </ScrollViewer>
-        <local:BackHomeLogout/>
+        <Button x:ConnectionId='4' x:Name="Logout" Content="Log Out" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Row="0"                      Margin="0 0 15 0"/>
+        <Button x:ConnectionId='5' x:Name="Back" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Style="{StaticResource NavigationBackButtonNormalStyle}"                   />
     </Grid>
 </Page>
 

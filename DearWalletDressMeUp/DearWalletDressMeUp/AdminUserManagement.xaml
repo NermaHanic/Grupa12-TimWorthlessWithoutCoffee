@@ -156,8 +156,9 @@
 
                     </StackPanel>
                 </StackPanel>
-                <Button Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Button_Click"/>
-            </Grid>
+               </Grid>
         </ScrollViewer>
+        <Button x:Name="Back" VerticalAlignment="Top" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Back_Click"/>
+        <Button x:Name="Logout" Content="Log Out" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 0 15 0" Click="Logout_Click"></Button>
     </Grid>
    </Page>

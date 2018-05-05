@@ -26,5 +26,25 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
         }
+
+        private void Kreiraj_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Kreacija1));
+        }
+
+        private void Pretraga_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Pretraga));
+        }
+
+        private void MojProfil_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Pregled_profila));
+        }
+
+        private void Kviz_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Kviz1));
+        }
     }
 }

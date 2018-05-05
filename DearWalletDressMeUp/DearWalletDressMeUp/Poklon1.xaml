@@ -79,19 +79,23 @@
             <Rectangle x:Name="rectangle" Fill="Beige" Height="285"/>
 
         </StackPanel>
-        <Button Style="{StaticResource NavigationBackButtonNormalStyle}"/>
+        <Button x:Name="Back" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Back_Click"/>
         <TextBlock x:Name="tekst" Grid.ColumnSpan="5" HorizontalAlignment="Left" Margin="385,195,-935,-325" Grid.RowSpan="5" Text="Cestitamo, dragi korisnice! U znak zahvalnosti sto ste korisnik nase aplikacije i sto ste ostvarili kupovinu vecu od 150 KM, zelimo Vam poslati poklon-igracku." TextWrapping="Wrap" VerticalAlignment="Top" Height="130" Width="500"/>
         <RelativePanel x:Name="r" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="130" Margin="510,290,-770,-420" Grid.RowSpan="5" VerticalAlignment="Top" Width="260">
-            <Button x:Name="nezelim" Content="Ne zelim" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="95" Margin="165,0,-165,0"/>
-            <Button x:Name="zelim" Content="Zelim" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="95" Margin="0,0,-95,-35"/>
+            <Button x:Name="nezelim" Content="Ne zelim" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="95" Margin="165,0,-165,0" Click="nezelim_Click"/>
+            <Button x:Name="zelim" Content="Zelim" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="95" Margin="0,0,-95,-35" Click="zelim_Click"/>
             <Image x:Name="poklon" HorizontalAlignment="Left" Height="65" Margin="95,-65,-165,0" VerticalAlignment="Top" Width="70" Source="Assets/christmas-icon-gift-512.png"/>
         </RelativePanel>
         <StackPanel x:Name="stek1" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="60" Margin="300,170,-365,-230" Grid.RowSpan="5" VerticalAlignment="Top" Width="65">
             <Image x:Name="srce" Height="60" VerticalAlignment="Top" Source="Assets/srculence.png" Margin="20,0,0,0"/>
         </StackPanel>
-        <Button Content="Log out" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Top" Width="75" Grid.Column="4"/>
-        <Image Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="42" Margin="10,10,-45,-52" Grid.RowSpan="5" VerticalAlignment="Top" Width="35" Source="Assets/homeIcon.png"/>
-        <Button Background="Transparent" Content="Home" HorizontalAlignment="Left" Margin="10,10,-120,-47" VerticalAlignment="Top" Width="110" Height="37" Grid.ColumnSpan="5" Grid.RowSpan="5"/>
+        <Button x:Name="Logout" Content="Log out" HorizontalAlignment="Right" Margin="0,0,15,0" VerticalAlignment="Top" Width="75" Grid.Column="4" Click="Logout_Click"/>
+        <Button x:Name="Home" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Home_Click" >
+            <StackPanel Orientation="Horizontal">
+                <Image HorizontalAlignment="Left" Height="25" Width="25" Source="Assets/homeIcon.png"/>
+                <TextBlock Text="Home" Margin="10 0 0 0"></TextBlock>
+            </StackPanel>
+        </Button>
 
     </Grid>
 </Page>

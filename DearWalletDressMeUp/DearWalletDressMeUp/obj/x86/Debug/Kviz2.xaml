@@ -93,14 +93,14 @@
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Button x:ConnectionId='4' x:Name="Logout" Content="Log Out" Height="32" Margin="0 0 10 0" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"/>
+                <Button x:ConnectionId='4' x:Name="Logout" Content="Log Out" Height="32" Margin="0 0 10 0" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="4" Grid.Row="0"                     />
                 <StackPanel x:ConnectionId='5' x:Name="HomeiNazad" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
                     <StackPanel.Resources>
                         <Style TargetType="Button">
                             <Setter Property="Width" Value="100"></Setter>
                         </Style>
                     </StackPanel.Resources>
-                    <Button x:ConnectionId='16' x:Name="Home" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Button x:ConnectionId='16' x:Name="Home" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top"                   >
                         <StackPanel Orientation="Horizontal">
                             <StackPanel.Resources>
                                 <Style TargetType="Image">
@@ -111,17 +111,8 @@
                             <TextBlock Text="Home"></TextBlock>
                         </StackPanel>
                     </Button>
-                    <Button x:ConnectionId='17' x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top">
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel.Resources>
-                                <Style TargetType="Image">
-                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
-                                </Style>
-                            </StackPanel.Resources>
-                            <Image Source="Assets/backArrow.png" Height="20" Width="20"></Image>
-                            <TextBlock Text="Nazad"></TextBlock>
-                        </StackPanel>
-                    </Button>
+                    <Button x:ConnectionId='17' x:Name="Back" Style="{StaticResource NavigationBackButtonNormalStyle}"                   ></Button>
+                    
                 </StackPanel>
                 <StackPanel x:ConnectionId='6' x:Name="Glavni" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Background="Beige" BorderBrush="Beige" Orientation="Vertical" Margin="0 30 0 0">
                     <StackPanel.Resources>
@@ -181,7 +172,7 @@
                     <Rectangle x:ConnectionId='15' x:Name="TreciRect" Height="0" Fill="Beige" ></Rectangle>
 
                 </StackPanel>
-                <Button x:ConnectionId='7'  x:Name="Rez" Grid.Column="2" Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 10 0 10">
+                <Button x:ConnectionId='7'  x:Name="Rez" Grid.Column="2" Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 10 0 10"                  >
                     <TextBlock x:ConnectionId='8' x:Name="RezText" Text="Prikazi rezultate kviza"></TextBlock>
                 </Button>
             </Grid>
