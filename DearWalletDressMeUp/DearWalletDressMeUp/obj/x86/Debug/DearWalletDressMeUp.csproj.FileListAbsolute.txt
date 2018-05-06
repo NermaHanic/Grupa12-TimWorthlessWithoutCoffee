@@ -476,7 +476,6 @@ C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\De
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\MainPage.xbf
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Pretraga.xbf
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Registracija.xbf
-C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Registracja.xbf
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.xr.xml
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.exe
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.pdb
@@ -616,8 +615,6 @@ C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\De
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Pretraga.g.cs
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracija.g.i.cs
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracija.g.cs
-C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracja.g.i.cs
-C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracja.g.cs
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Login.g.i.cs
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Login.g.cs
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\XamlTypeInfo.g.cs
@@ -630,7 +627,6 @@ C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\De
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\MainPage.xaml
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Pretraga.xaml
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracija.xaml
-C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracja.xaml
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\App.xbf
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminovProfil.xbf
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminUserManagement.xbf
@@ -640,7 +636,6 @@ C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\De
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\MainPage.xbf
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Pretraga.xbf
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracija.xbf
-C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Registracja.xbf
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\DearWalletDressMeUp.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\DearWalletDressMeUp.exe
@@ -1373,3 +1368,33 @@ C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressM
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\DearWalletDressMeUp.csprojResolveAssemblyReference.cache
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\AdminDodavanjeOdjece.xbf
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\BackHomeLogout.xbf
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Kviz1.xbf
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Kviz2.xbf
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Kviz3.xbf
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Pregled profila.xbf
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminDodavanjeOdjece.g.i.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminDodavanjeOdjece.g.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\BackHomeLogout.g.i.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\BackHomeLogout.g.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz1.g.i.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz1.g.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz2.g.i.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz2.g.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz3.g.i.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz3.g.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Pregled profila.g.i.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Pregled profila.g.cs
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminDodavanjeOdjece.xaml
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\BackHomeLogout.xaml
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz1.xaml
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz2.xaml
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz3.xaml
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Pregled profila.xaml
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\AdminDodavanjeOdjece.xbf
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\BackHomeLogout.xbf
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz1.xbf
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz2.xbf
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Kviz3.xbf
+C:\Users\LENOVO\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Pregled profila.xbf

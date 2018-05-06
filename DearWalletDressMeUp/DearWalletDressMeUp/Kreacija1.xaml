@@ -67,7 +67,7 @@
             <Button x:Name="MuskiOdjel" Background="Beige" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="120" FontSize="20" Click="MuskiOdjel_Click">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Muski" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-                    <Image x:Name="musko" Source="Assets/shirt_dress_blouse_male-512.png"/>
+                    <Image x:Name="musko" Source="Assets/majica.png"/>
                 </StackPanel>
             </Button>
             <Button x:Name="ZenskiOdjel" Background="Beige" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="145" FontSize="20" Click="ZenskiOdjel_Click">

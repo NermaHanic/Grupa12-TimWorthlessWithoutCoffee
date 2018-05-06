@@ -51,5 +51,31 @@ namespace DearWalletDressMeUp
         {
             Frame.Navigate(typeof(Checkout));
         }
+
+
+        private void ContentDialog_SecondaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
+        {
+
+        }
+
+        private async void button_Click(object sender, RoutedEventArgs e)
+        {
+
+            await c.ShowAsync();
+        }
+
+
+
+        private void c_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
+        {
+
+            Frame.Navigate(typeof(Poklon2));
+
+        }
+
+        private void c_SecondaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
+        {
+            Frame.Navigate(typeof(Checkout));
+        }
     }
 }

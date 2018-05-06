@@ -78,8 +78,8 @@
         <Button Content="Log out" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Grid.Column="4"/>
 
         <StackPanel x:Name="stek2" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="140" Margin="510,425,-765,-565" Grid.RowSpan="5" VerticalAlignment="Top" Width="255">
-            <Button x:Name="unesi" Content="Unesi tekst" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="50,0,50,0" Height="35"/>
-            <Button x:Name="zapis" Content="Snimi zapis" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="50,0,50,0"/>
+            <Button x:Name="unesi" Content="Unesi tekst" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="50,0,50,0" Height="35" Click="unesi_Click"/>
+            <Button x:Name="zapis" Content="Snimi zapis" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="50,0,50,0" Click="zapis_Click"/>
         </StackPanel>
 
     </Grid>

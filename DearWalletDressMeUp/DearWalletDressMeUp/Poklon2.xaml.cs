@@ -26,5 +26,17 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
         }
+
+        private void unesi_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Poklon3));
+
+        }
+
+        private void zapis_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Poklon4));
+
+        }
     }
 }
