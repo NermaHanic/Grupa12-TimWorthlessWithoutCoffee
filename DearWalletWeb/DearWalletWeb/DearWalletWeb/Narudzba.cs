@@ -17,6 +17,7 @@ namespace DearWalletWeb
             if (ukupnaCijena >= 150) return true;
             return false;
         }
-
+        public double ObracunajCijenu() { return 0; }
+        public void DodajStavkuNarudzbe() { }
     }
 }
