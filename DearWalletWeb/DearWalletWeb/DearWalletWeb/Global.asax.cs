@@ -8,6 +8,7 @@ using System.Web.Routing;
 
 namespace DearWalletWeb
 {
+    public enum Stil { Casual, Elegant, RockPunkEmo, Vintage, Sport }
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()

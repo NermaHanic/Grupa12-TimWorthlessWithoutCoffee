@@ -184,6 +184,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -198,14 +199,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IIzmjene.cs" />
+    <Compile Include="IKreacijeNaProfilu.cs" />
     <Compile Include="IKupovina.cs" />
     <Compile Include="IPretraga.cs" />
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="Kviz.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Narudzba.cs" />
     <Compile Include="ObicnaDostava.cs" />
+    <Compile Include="Odgovor.cs" />
+    <Compile Include="Pitanje.cs" />
+    <Compile Include="Profil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SlikaKviz.cs" />
     <Compile Include="Snizenje.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="StavkeNarudzbe.cs" />
