@@ -10,6 +10,8 @@ namespace DearWalletWeb
         private DateTime datumPocetka;
         private DateTime datumZavrsetka;
         private double iznos;
+        //povezivanje
+        private ICollection<Narudzba> narudzbe;
 
         public DateTime DatumPocetka { get => datumPocetka; set => datumPocetka = value; }
         public DateTime DatumZavrsetka { get => datumZavrsetka; set => datumZavrsetka = value; }

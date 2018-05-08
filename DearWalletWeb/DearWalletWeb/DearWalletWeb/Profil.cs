@@ -12,14 +12,12 @@ namespace DearWalletWeb
         //povezivanje
         private Korisnik korisnik;
         private ICollection<Narudzba> narudzba;
-        private ICollection<Kreacija> kreacija;
 
 
         public string Id { get => id; set => id = value; }
         public string Slika { get => slika; set => slika = value; }
         public virtual Korisnik Korisnik { get => korisnik; set => korisnik = value; }
         public virtual ICollection<Narudzba> Narudzba { get => narudzba; set => narudzba = value; }
-        public virtual ICollection<Kreacija> Kreacija { get => kreacija; set => kreacija = value; }
 
         public void BrisanjeProfila() { }
         public void PreporuciPrijatelju(string emailAdresa) { }
