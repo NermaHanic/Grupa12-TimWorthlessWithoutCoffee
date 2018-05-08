@@ -7,10 +7,16 @@ namespace DearWalletWeb
 {
     public class Odgovor
     {
-        private string tekstOdgovora;
-        private Stil pripadniStil;
 
-        public string TekstOdgovora { get => tekstOdgovora; set => tekstOdgovora = value; }
-        public Stil PripadniStil { get => pripadniStil; set => pripadniStil = value; }
+        public string OdgovorId { get; set; }
+        public string TekstOdgovora { get; set; }
+        public Stil PripadniStil { get; set; }
+
+        public string SlikaKvizId { get; set; }
+        public string PitanjeId { get; set; }
+
+        public virtual Pitanje pitanje { get; set; }
+        public virtual SlikaKviz slika { get; set; }
+
     }
 }
