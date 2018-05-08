@@ -7,15 +7,10 @@ namespace DearWalletWeb
 {
     public class Materijal
     {
-        public string sifraMaterijala;
-        private string nazivMaterijala;
-        private double cijenaMaterijala;
+        public string MaterijalId { get; set; }
+        public string NazivMaterijala { get; set; }
+        public double CijenaMaterijala { get; set; }
         //Povezivanje
-        private ICollection<OdjevniPredmet> odjevniPredmeti;
-
-        public string SifraMaterijala { get => sifraMaterijala; set => sifraMaterijala = value; }
-        public string NazivMaterijala { get => nazivMaterijala; set => nazivMaterijala = value; }
-        public double CijenaMaterijala { get => cijenaMaterijala; set => cijenaMaterijala = value; }
-        public virtual ICollection<OdjevniPredmet> OdjevniPredmeti { get => odjevniPredmeti; set => odjevniPredmeti = value; }
+        public ICollection<OdjevniPredmet> OdjevniPredmeti { get; set; }
     }
 }

@@ -7,30 +7,23 @@ namespace DearWalletWeb
 {
     public class OdjevniPredmet
     {
-        private string nazivOdjevnogPredmeta;
-        private string slikaOdjevnogPredmeta;
-        private double cijenaOdjevnogPredmeta;
-        private string barCodeOdjevnogPredmeta;
+
+        public string OdjevniPredmetId { get; set; }
+        public string KreacijaId { get; set; }
+        public string MaterijalId { get; set; }
+        public string MjeraId { get; set; }
+        public string DezenId { get; set; }
+        public string NazivOdjevnogPredmeta { get; set; }
+        public string SlikaOdjevnogPredmeta { get; set; }
+        public double CijenaOdjevnogPredmeta { get; set; }
+
         //povezivanje
-        private Odjel odjel;
-        private Stil stil;
-        private Dezen dezen;
-        private Materijal materijal;
-        private DefaultVelicine dvelicina;
-        private Mjera mjera;
-        private ICollection<Kreacija> kreacije;
-
-        public string NazivOdjevnogPredmeta { get => nazivOdjevnogPredmeta; set => nazivOdjevnogPredmeta = value; }
-        public string SlikaOdjevnogPredmeta { get => slikaOdjevnogPredmeta; set => slikaOdjevnogPredmeta = value; }
-        public double CijenaOdjevnogPredmeta { get => cijenaOdjevnogPredmeta; set => cijenaOdjevnogPredmeta = value; }
-        public string BarCodeOdjevnogPredmeta { get => barCodeOdjevnogPredmeta; set => barCodeOdjevnogPredmeta = value; }
-
-        public virtual Odjel Odjel { get => odjel; set => odjel = value; }
-        public virtual Stil Stil { get => stil; set => stil = value; }
-        public virtual Dezen Dezen { get => dezen; set => dezen = value; }
-        public virtual Materijal Materijal { get => materijal; set => materijal = value; }
-        public virtual DefaultVelicine Dvelicina { get => dvelicina; set => dvelicina = value; }
-        public virtual Mjera Mjera { get => mjera; set => mjera = value; }
-        public virtual ICollection<Kreacija> Kreacije { get => kreacije; set => kreacije = value; }
+        public virtual Odjel Odjel { get; set; }
+        public virtual Stil Stil { get; set; }
+        public virtual Dezen Dezen { get; set; }
+        public virtual Materijal Materijal { get; set; }
+        public virtual DefaultVelicine Dvelicina { get; set; }
+        public virtual Mjera Mjera { get; set; }
+        public virtual ICollection<Kreacija> Kreacije { get; set; }
     }
 }

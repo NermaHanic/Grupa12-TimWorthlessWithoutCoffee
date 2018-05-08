@@ -7,18 +7,15 @@ namespace DearWalletWeb
 {
     public class Kreacija
     {
-        private string sifraKreacije;
-        private double trenutnaCijena;
+        public string KreacijaId { get; set; }
+        public string ProfilId { get; set; }
+        public string OdjevniPredemtId { get; set; }
+        public string StavkeNarudzbeId { get; set; }
+        public double TrenutnaCijena { get; set; }
         //povezivanje
-        private ICollection<OdjevniPredmet> odjevniPredmeti;
-        private StavkeNarudzbe stavkaNarudzbe;
-        private Profil profil;
-
-        public string SifraKreacije { get => sifraKreacije; set => sifraKreacije = value; }
-        public double TrenutnaCijena { get => trenutnaCijena; set => trenutnaCijena = value; }
-        public virtual ICollection<OdjevniPredmet> OdjevniPredmeti { get => odjevniPredmeti; set => odjevniPredmeti = value; }
-        public virtual StavkeNarudzbe StavkaNarudzbe { get => stavkaNarudzbe; set => stavkaNarudzbe = value; }
-        public virtual Profil Profil { get => profil; set => profil = value; }
+        public ICollection<OdjevniPredmet> odjevniPredmeti { get; set; }
+        public StavkeNarudzbe StavkaNarudzbe { get; set; }
+        public Profil profil { get; set; }
 
         public double ObracunajCijenu()
         {
@@ -30,7 +27,6 @@ namespace DearWalletWeb
         void PromijeniDezen(string barCode) { }
         void PromijeniMaterijal(string barCode) { }
         void PromijeniBoju(string barCode) { }
-
 
     }
 }
