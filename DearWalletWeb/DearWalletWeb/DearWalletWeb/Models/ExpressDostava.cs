@@ -7,7 +7,6 @@ namespace DearWalletWeb
 {
     public class ExpressDostava:Dostava
     {
-        private double dodatniTrosak;
-        public double DodatniTrosak { get => dodatniTrosak; }
+        public double DodatniTrosak { get; set; }
     }
 }

@@ -7,16 +7,25 @@ namespace DearWalletWeb
 {
     public class Korisnik
     {
-        public string Ime { get; set; }
-        public string Prezime { get; set; }
-        public string Email { get; set; }
-        public string Adresa { get; set; }
-        public string BrojTel { get; set; }
-        public string BrojKreditneKartice { get; set; }
-        public string KorisnikId { get; set; }
-        public string Sifra { get; set; }
+        private string ime;
+        private string prezime;
+        private string email;
+        private string adresa;
+        private string brojTel;
+        private string brojKreditneKartice;
+        private string username;
+        private string sifra;
+        //povezivanje
+        private Profil profil;
 
-        public string ProfilId { get; set; }
-        public virtual Profil Profil { get; set; }
+        public string Ime { get => ime; set => ime = value; }
+        public string Prezime { get => prezime; set => prezime = value; }
+        public string Email { get => email; set => email = value; }
+        public string Adresa { get => adresa; set => adresa = value; }
+        public string BrojTel { get => brojTel; set => brojTel = value; }
+        public string BrojKreditneKartice { get => brojKreditneKartice; set => brojKreditneKartice = value; }
+        public string Username { get => username; set => username = value; }
+        public string Sifra { get => sifra; set => sifra = value; }
+        public virtual Profil Profil { get => profil; set => profil = value; }
     }
 }

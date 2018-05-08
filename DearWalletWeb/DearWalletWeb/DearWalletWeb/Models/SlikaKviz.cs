@@ -7,14 +7,12 @@ namespace DearWalletWeb
 {
     public class SlikaKviz
     {
-        public string SlikaKvizId { get; set; }
+        private string putanjaDoSlike;
+        private Odgovor odg;
+        private Kviz kviz;
 
-        public string KvizId { get; set; }
-        public string OdgovorId { get; set; }
-
-        public string PutanjaDoSlike { get; set; }
-
-        public virtual Odgovor Odg { get; set; }
-        public virtual Kviz Kviz { get; set; }
+        public string PutanjaDoSlike { get => putanjaDoSlike; set => putanjaDoSlike = value; }
+        public virtual Odgovor Odg { get => odg; set => odg = value; }
+        public virtual Kviz Kviz { get => kviz; set => kviz = value; }
     }
 }

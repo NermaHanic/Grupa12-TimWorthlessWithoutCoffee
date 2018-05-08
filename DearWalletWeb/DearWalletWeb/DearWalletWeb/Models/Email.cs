@@ -7,10 +7,9 @@ namespace DearWalletWeb
 {
     public class Email
     {
-        private string preporukaPrijatelju;
-        private string passwordRecovery;
-
-        public string PreporukaPrijatelju { get => preporukaPrijatelju; set => preporukaPrijatelju = value; }
-        public string PasswordRecovery { get => passwordRecovery; set => passwordRecovery = value; }
+        public string EmailId { get; set; }
+        public string PreporukaPrijatelju { get; set; }
+        public string PasswordRecovery { get; set; }
+        
     }
 }

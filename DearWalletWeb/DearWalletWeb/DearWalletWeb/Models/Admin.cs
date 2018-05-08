@@ -7,8 +7,10 @@ namespace DearWalletWeb
 {
     public static class Admin
     {
-        public static string AdminId { get; set; }
-        public static string password { get; set; }
+        private static string username;
+        private static string password;
 
+        public static string Username { get => username; set => username = value; }
+        public static string Password { get => password; set => password = value; }
     }
 }

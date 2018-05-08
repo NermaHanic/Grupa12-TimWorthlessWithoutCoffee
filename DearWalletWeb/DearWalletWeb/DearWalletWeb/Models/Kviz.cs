@@ -7,14 +7,15 @@ namespace DearWalletWeb
 {
     public class Kviz
     {
-        public string KvizId { get; set; }
-        public string PitanjeId { get; set; }
-        public string SlikaKvizId { get; set; }
+        private Pitanje pitanje1;
+        private Pitanje pitanje2;
+        private Pitanje pitanje3;
+        private ICollection<SlikaKviz> slike; 
 
-        public virtual Pitanje Pitanje1 { get; set; }
-        public virtual Pitanje Pitanje2 { get; set; }
-        public virtual Pitanje Pitanje3 { get; set; }
-        public virtual ICollection<SlikaKviz> Slike { get; set; }
+        public virtual Pitanje Pitanje1 { get => pitanje1; set => pitanje1 = value; }
+        public virtual Pitanje Pitanje2 { get => pitanje2; set => pitanje2 = value; }
+        public virtual Pitanje Pitanje3 { get => pitanje3; set => pitanje3 = value; }
+        public virtual ICollection<SlikaKviz> Slike { get => slike; set => slike = value; }
 
         public void PrikazRezultata() { }
         public void IspunjavanjeKviza() { }

@@ -7,14 +7,9 @@ namespace DearWalletWeb
 {
     public class Snizenje
     {
-        private DateTime datumPocetka;
-        private DateTime datumZavrsetka;
-        private double iznos;
-        //povezivanje
-        private ICollection<Narudzba> narudzbe;
-
-        public DateTime DatumPocetka { get => datumPocetka; set => datumPocetka = value; }
-        public DateTime DatumZavrsetka { get => datumZavrsetka; set => datumZavrsetka = value; }
-        public double Iznos { get => iznos; set => iznos = value; }
+        public string SnizenjeId { get; set; }
+        public DateTime DatumPocetka { get; set; }
+        public DateTime DatumZavrsetka { get; set; }
+        public double Iznos { get; set; }
     }
 }
