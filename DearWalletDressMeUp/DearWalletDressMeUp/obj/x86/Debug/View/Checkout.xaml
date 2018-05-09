@@ -136,8 +136,17 @@
                                         </Style>
                                     </StackPanel.Resources>
                                     <TextBox x:ConnectionId='18' x:Name="AdresaSText" HorizontalAlignment="Left" Width="250"/>
-                                    <TextBox x:ConnectionId='19' x:Name="GradText" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="0 35 0 0"/>
-                                    <TextBox x:ConnectionId='20' x:Name="DrzavaText" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="0 33 0 0"/>
+                                    <ComboBox x:ConnectionId='19' x:Name="GradText" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="0 35 0 0">
+                                        <ComboBoxItem>Sarajevo</ComboBoxItem>
+                                        <ComboBoxItem>Mostar</ComboBoxItem>
+                                        <ComboBoxItem>Zenica</ComboBoxItem>
+                                        <ComboBoxItem>Tuzla</ComboBoxItem>
+                                        <ComboBoxItem>Bihac</ComboBoxItem>
+                                        <ComboBoxItem>Konjic</ComboBoxItem>
+                                    </ComboBox>
+                                    <ComboBox x:ConnectionId='20' x:Name="DrzavaText" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="0 33 0 0">
+                                        <ComboBoxItem>"Bosna i Hercegovina"</ComboBoxItem>
+                                    </ComboBox>
                                     <StackPanel x:ConnectionId='21' x:Name="PrviRadio" Orientation="Horizontal">
                                         <StackPanel.Resources>
                                             <Style TargetType="RadioButton">
