@@ -92,46 +92,46 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AdminDodavanjeOdjece.xaml.cs">
+    <Compile Include="View\AdminDodavanjeOdjece.xaml.cs">
       <DependentUpon>AdminDodavanjeOdjece.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AdminovProfil.xaml.cs">
+    <Compile Include="View\AdminovProfil.xaml.cs">
       <DependentUpon>AdminovProfil.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AdminUserManagement.xaml.cs">
+    <Compile Include="View\AdminUserManagement.xaml.cs">
       <DependentUpon>AdminUserManagement.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BackHomeLogout.xaml.cs">
+    <Compile Include="View\BackHomeLogout.xaml.cs">
       <DependentUpon>BackHomeLogout.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Checkout.xaml.cs">
+    <Compile Include="View\Checkout.xaml.cs">
       <DependentUpon>Checkout.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Home.xaml.cs">
+    <Compile Include="View\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Kreacija1.xaml.cs">
+    <Compile Include="View\Kreacija1.xaml.cs">
       <DependentUpon>Kreacija1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Kreacija2.xaml.cs">
+    <Compile Include="View\Kreacija2.xaml.cs">
       <DependentUpon>Kreacija2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Kreacija3.xaml.cs">
+    <Compile Include="View\Kreacija3.xaml.cs">
       <DependentUpon>Kreacija3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Kviz1.xaml.cs">
+    <Compile Include="View\Kviz1.xaml.cs">
       <DependentUpon>Kviz1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Kviz2.xaml.cs">
+    <Compile Include="View\Kviz2.xaml.cs">
       <DependentUpon>Kviz2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Kviz3.xaml.cs">
+    <Compile Include="View\Kviz3.xaml.cs">
       <DependentUpon>Kviz3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Login.xaml.cs">
+    <Compile Include="View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
@@ -161,28 +161,35 @@
     <Compile Include="Model\SlikaKviz.cs" />
     <Compile Include="Model\Snizenje.cs" />
     <Compile Include="Model\StavkeNarudzbe.cs" />
-    <Compile Include="Poklon1.xaml.cs">
+    <Compile Include="View\Poklon1.xaml.cs">
       <DependentUpon>Poklon1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Poklon2.xaml.cs">
+    <Compile Include="View\Poklon2.xaml.cs">
       <DependentUpon>Poklon2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Poklon3.xaml.cs">
+    <Compile Include="View\Poklon3.xaml.cs">
       <DependentUpon>Poklon3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Poklon4.xaml.cs">
+    <Compile Include="View\Poklon4.xaml.cs">
       <DependentUpon>Poklon4.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pregled profila.xaml.cs">
+    <Compile Include="View\Pregled profila.xaml.cs">
       <DependentUpon>Pregled profila.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pretraga.xaml.cs">
+    <Compile Include="View\Pretraga.xaml.cs">
       <DependentUpon>Pretraga.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registracija.xaml.cs">
+    <Compile Include="View\Registracija.xaml.cs">
       <DependentUpon>Registracija.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\KreacijaViewModel.cs" />
+    <Compile Include="ViewModel\KvizViewModel.cs" />
+    <Compile Include="ViewModel\NarudzbaViewModel.cs" />
+    <Compile Include="ViewModel\PoklonViewModel.cs" />
+    <Compile Include="ViewModel\PretragaViewModel.cs" />
+    <Compile Include="ViewModel\ProfilViewModel.cs" />
+    <Compile Include="ViewModel\RelayCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -228,55 +235,55 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="AdminDodavanjeOdjece.xaml">
+    <Page Include="View\AdminDodavanjeOdjece.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AdminovProfil.xaml">
+    <Page Include="View\AdminovProfil.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AdminUserManagement.xaml">
+    <Page Include="View\AdminUserManagement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="BackHomeLogout.xaml">
+    <Page Include="View\BackHomeLogout.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Checkout.xaml">
+    <Page Include="View\Checkout.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Home.xaml">
+    <Page Include="View\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Kreacija1.xaml">
+    <Page Include="View\Kreacija1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Kreacija2.xaml">
+    <Page Include="View\Kreacija2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Kreacija3.xaml">
+    <Page Include="View\Kreacija3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Kviz1.xaml">
+    <Page Include="View\Kviz1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Kviz2.xaml">
+    <Page Include="View\Kviz2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Kviz3.xaml">
+    <Page Include="View\Kviz3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Login.xaml">
+    <Page Include="View\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -284,31 +291,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Poklon1.xaml">
+    <Page Include="View\Poklon1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Poklon2.xaml">
+    <Page Include="View\Poklon2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Poklon3.xaml">
+    <Page Include="View\Poklon3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Poklon4.xaml">
+    <Page Include="View\Poklon4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pregled profila.xaml">
+    <Page Include="View\Pregled profila.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pretraga.xaml">
+    <Page Include="View\Pretraga.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Registracija.xaml">
+    <Page Include="View\Registracija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -321,10 +328,7 @@
       <Version>6.0.1</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-    <Folder Include="View\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
