@@ -137,6 +137,30 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Admin.cs" />
+    <Compile Include="Model\Dostava.cs" />
+    <Compile Include="Model\Email.cs" />
+    <Compile Include="Model\Express.cs" />
+    <Compile Include="Model\IIzmjene.cs" />
+    <Compile Include="Model\IKupovina.cs" />
+    <Compile Include="Model\IPretraga.cs" />
+    <Compile Include="Model\Korisnik.cs" />
+    <Compile Include="Model\IKreacijeNaProfilu.cs" />
+    <Compile Include="Model\Narudzba.cs" />
+    <Compile Include="Model\Obicna.cs" />
+    <Compile Include="Model\Odgovor.cs" />
+    <Compile Include="Model\Pitanje.cs" />
+    <Compile Include="Model\Dezen.cs" />
+    <Compile Include="Model\Kreacija.cs" />
+    <Compile Include="Model\Kviz.cs" />
+    <Compile Include="Model\Materijal.cs" />
+    <Compile Include="Model\Mjera.cs" />
+    <Compile Include="Model\OdjevniPredmet.cs" />
+    <Compile Include="Model\Poklon.cs" />
+    <Compile Include="Model\Profil.cs" />
+    <Compile Include="Model\SlikaKviz.cs" />
+    <Compile Include="Model\Snizenje.cs" />
+    <Compile Include="Model\StavkeNarudzbe.cs" />
     <Compile Include="Poklon1.xaml.cs">
       <DependentUpon>Poklon1.xaml</DependentUpon>
     </Compile>
@@ -296,6 +320,10 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.1</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+    <Folder Include="View\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
