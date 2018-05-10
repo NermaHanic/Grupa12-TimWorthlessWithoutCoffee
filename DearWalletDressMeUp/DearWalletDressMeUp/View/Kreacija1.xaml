@@ -64,7 +64,7 @@
 
             </StackPanel.Resources>
             <TextBlock x:Name="tekst" Text="Odaberite odjel:" HorizontalAlignment="Center"  TextWrapping="Wrap"  FontSize="30"/>
-            <Button x:Name="MuskiOdjel" Background="Beige" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="120" FontSize="20" Click="MuskiOdjel_Click">
+            <Button x:Name="MuskiOdjel" Visibility="Visible" Background="Beige" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="120" FontSize="20" Click="MuskiOdjel_Click" IsEnabled="false">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Muski" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     <Image x:Name="musko" Source="Assets/majica.png"/>

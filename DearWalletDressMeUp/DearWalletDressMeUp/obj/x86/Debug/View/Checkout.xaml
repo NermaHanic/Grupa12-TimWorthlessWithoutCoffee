@@ -145,7 +145,7 @@
                                         <ComboBoxItem>Konjic</ComboBoxItem>
                                     </ComboBox>
                                     <ComboBox x:ConnectionId='20' x:Name="DrzavaText" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="0 33 0 0">
-                                        <ComboBoxItem>"Bosna i Hercegovina"</ComboBoxItem>
+                                        <ComboBoxItem>Bosna i Hercegovina</ComboBoxItem>
                                     </ComboBox>
                                     <StackPanel x:ConnectionId='21' x:Name="PrviRadio" Orientation="Horizontal">
                                         <StackPanel.Resources>

@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using DearWalletDressMeUp.Model;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,11 +24,12 @@ namespace DearWalletDressMeUp
     /// </summary>
     public sealed partial class Kreacija2 : Page
     {
+        Kreacija1 k;
         public Kreacija2()
         {
             this.InitializeComponent();
         }
-        
+
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Login));
@@ -61,5 +64,7 @@ namespace DearWalletDressMeUp
         {
             Frame.Navigate(typeof(Home));
         }
+
     }
 }
+

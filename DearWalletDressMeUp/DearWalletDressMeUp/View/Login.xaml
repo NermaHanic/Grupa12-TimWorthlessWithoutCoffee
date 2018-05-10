@@ -40,6 +40,7 @@
                 <HyperlinkButton x:Name="pink" Content="Registrujte se" FontSize="10" HorizontalAlignment="Center"
                   RelativePanel.Below="lala" Margin="15,0,-21,0" Height="35" Width="95" Click="pink_Click"/>
             </RelativePanel>
+            <TextBlock x:Name="error" Text="" TextWrapping="Wrap" Height="151" Foreground="Red"/>
 
         </StackPanel>
         <VisualStateManager.VisualStateGroups>
