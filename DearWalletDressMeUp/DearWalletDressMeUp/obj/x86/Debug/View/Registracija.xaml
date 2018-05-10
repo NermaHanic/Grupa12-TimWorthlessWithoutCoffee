@@ -62,7 +62,7 @@
 
                 <StackPanel x:ConnectionId='5' x:Name="Glavni" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="5" Orientation="Horizontal" HorizontalAlignment="Center" Padding="5" >
                     <Image x:ConnectionId='6' x:Name="Logo" Source="Assets/logo.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" MaxHeight="400" MaxWidth="500"  Margin="0 0 70 0"></Image>
-                    <StackPanel x:ConnectionId='7' x:Name="LicniPodaciRegistracija" Background="Beige" VerticalAlignment="Center">
+                    <StackPanel x:ConnectionId='7' x:Name="LicniPodaciRegistracija" Background="Beige" VerticalAlignment="Center" Height="549">
                         <StackPanel Padding="20" Orientation="Horizontal">
                             <StackPanel>
                                 <StackPanel.Resources>
@@ -93,17 +93,18 @@
                                     </Style>
                                 </StackPanel.Resources>
 
-                                <TextBox></TextBox>
-                                <TextBox></TextBox>
-                                <TextBox></TextBox>
-                                <PasswordBox></PasswordBox>
-                                <PasswordBox></PasswordBox>
-                                <TextBox></TextBox>
-                                <TextBox></TextBox>
-                                <TextBox></TextBox>
+                                <TextBox x:ConnectionId='10' x:Name="ime"></TextBox>
+                                <TextBox x:ConnectionId='11' x:Name="prezime"></TextBox>
+                                <TextBox x:ConnectionId='12' x:Name="username"></TextBox>
+                                <PasswordBox x:ConnectionId='13' x:Name="sifra"></PasswordBox>
+                                <PasswordBox x:ConnectionId='14' x:Name="potvrdaSifre" ></PasswordBox>
+                                <TextBox x:ConnectionId='15' x:Name="adresa"></TextBox>
+                                <TextBox x:ConnectionId='16' x:Name="telefon" ></TextBox>
+                                <TextBox x:ConnectionId='17' x:Name="kartica"></TextBox>
                             </StackPanel>
                         </StackPanel>
-                        <Button x:ConnectionId='8' x:Name="Registruj" FontSize="25" Content="Registruj se" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Margin="0 20 0 10"></Button>
+                        <Button x:ConnectionId='8' x:Name="Registruj" FontSize="25" Content="Registruj se" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Margin="0 20 0 10"                        ></Button>
+                        <TextBlock x:ConnectionId='9' x:Name="error" Text="" TextWrapping="Wrap" Foreground="Red"/>
                     </StackPanel>
                 </StackPanel>
 

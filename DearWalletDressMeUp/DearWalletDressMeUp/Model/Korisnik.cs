@@ -17,6 +17,9 @@ namespace DearWalletDressMeUp.Model
         private string id;
         private string sifra;
 
+        public Korisnik()
+        { }
+
         public Korisnik(string ime, string prezime, string email, string adresa, string brojTelefona, string brojKreditneKartice, string id, string sifra)
         {
             this.Ime = ime;

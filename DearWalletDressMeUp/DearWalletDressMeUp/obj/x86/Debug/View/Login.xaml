@@ -19,7 +19,7 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel x:ConnectionId='1' x:Name="stek1" Grid.Row="0" Grid.Column="1">
-            <Image x:ConnectionId='10'  x:Name="slika" Width="300" Source="Assets/logo.jpg" Height="175" Margin="68,0,59,0" HorizontalAlignment="Center"/>
+            <Image x:ConnectionId='11'  x:Name="slika" Width="300" Source="Assets/logo.jpg" Height="175" Margin="68,0,59,0" HorizontalAlignment="Center"/>
         </StackPanel>
 
         <StackPanel x:ConnectionId='2' x:Name="stek2" Grid.Row="1" Grid.Column="1">
@@ -33,18 +33,19 @@
             <RelativePanel x:ConnectionId='6' x:Name="r" HorizontalAlignment="Center"  
             Margin="2,10,2,0" Width="115">
 
-                <Button x:ConnectionId='7' x:Name="Loginbtn" Content="Potvrdi" Height="31" Width="67" HorizontalAlignment="Center" Margin="28,0,-28,0"                        />
+                <Button x:ConnectionId='8' x:Name="Loginbtn" Content="Potvrdi" Height="31" Width="67" HorizontalAlignment="Center" Margin="28,0,-28,0"                        />
 
-                <TextBlock x:ConnectionId='8' x:Name="lala" Text=" Novi ste clan?" Margin="0,0,-110,0" FontSize="5" HorizontalAlignment="Right" 
+                <TextBlock x:ConnectionId='9' x:Name="lala" Text=" Novi ste clan?" Margin="0,0,-110,0" FontSize="5" HorizontalAlignment="Right" 
                   RelativePanel.Below="Loginbtn" TextWrapping="Wrap" Width="100" Height="20"/>
-                <HyperlinkButton x:ConnectionId='9' x:Name="pink" Content="Registrujte se" FontSize="10" HorizontalAlignment="Center"
+                <HyperlinkButton x:ConnectionId='10' x:Name="pink" Content="Registrujte se" FontSize="10" HorizontalAlignment="Center"
                   RelativePanel.Below="lala" Margin="15,0,-21,0" Height="35" Width="95"                   />
             </RelativePanel>
+            <TextBlock x:ConnectionId='7' x:Name="error" Text="" TextWrapping="Wrap" Height="151" Foreground="Red"/>
 
         </StackPanel>
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
-                <VisualState x:ConnectionId='11' x:Name="Mobile">
+                <VisualState x:ConnectionId='12' x:Name="Mobile">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
@@ -60,7 +61,7 @@
                         <Setter Target="r.Below" Value="lala"></Setter>
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='12' x:Name="tablet">
+                <VisualState x:ConnectionId='13' x:Name="tablet">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="800"/>
                     </VisualState.StateTriggers>
@@ -80,7 +81,7 @@
 
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='13' x:Name="desktop">
+                <VisualState x:ConnectionId='14' x:Name="desktop">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="1200"/>
                     </VisualState.StateTriggers>

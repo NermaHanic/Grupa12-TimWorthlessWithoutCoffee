@@ -26,7 +26,6 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
         }
-        
         private void Homebtn_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Home));
@@ -56,5 +55,7 @@ namespace DearWalletDressMeUp
         {
             Frame.Navigate(typeof(Kreacija2));
         }
+
+       
     }
 }

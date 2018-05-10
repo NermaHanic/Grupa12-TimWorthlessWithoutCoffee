@@ -29,7 +29,21 @@ namespace DearWalletDressMeUp
 
         private void Loginbtn_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Home));
+            error.Text = "";
+            
+            if(tekst.Text.Length==0 || sifra.Password.Length == 0)
+            {
+                error.Text = "Niste unijeli sva polja";
+            }
+            //provjera za bazu
+            else if(ime.Text=="admin")
+            {
+                Frame.Navigate(typeof(AdminovProfil));
+            }
+            else
+            {
+                Frame.Navigate(typeof(Home));
+            }
         }
 
         private void pink_Click(object sender, RoutedEventArgs e)
