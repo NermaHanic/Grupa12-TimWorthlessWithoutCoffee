@@ -95,7 +95,7 @@
                             <Setter Property="Margin" Value="0 0 0 10"></Setter>
                         </Style>
                         <Style TargetType="ComboBox">
-                            
+
                             <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
                             <Setter Property="Margin" Value="0 0 0 10"></Setter>
                         </Style>
@@ -112,7 +112,7 @@
                     </StackPanel.Resources>
                     <StackPanel x:ConnectionId='5' x:Name="NadjiOdjecu">
                         <TextBlock Text="Odjevni predmet"></TextBlock>
-                        <ComboBox x:ConnectionId='16' x:Name="OdjevniPredmetCombo">
+                        <ComboBox x:ConnectionId='16' x:Name="OdjevniPredmetCombo" >
                             <ComboBox.Resources>
                                 <Style TargetType="TextBlock">
                                     <Setter Property="HorizontalAlignment" Value="Left"></Setter>
@@ -122,7 +122,7 @@
                                 <TextBlock Text="Majice"></TextBlock>
                             </ComboBoxItem>
                             <ComboBoxItem>
-                                <TextBlock Text="Pantalone/Suknje"></TextBlock>
+                                <TextBlock Text="Pantalone"></TextBlock>
                             </ComboBoxItem>
                             <ComboBoxItem>
                                 <TextBlock Text="Haljine"></TextBlock>
@@ -131,7 +131,7 @@
                                 <TextBlock Text="Jakne"></TextBlock>
                             </ComboBoxItem>
                             <ComboBoxItem>
-                                <TextBlock Text="Obuca"></TextBlock>
+                                <TextBlock Text="Suknja"></TextBlock>
                             </ComboBoxItem>
                         </ComboBox>
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
@@ -219,7 +219,7 @@
                             </ComboBoxItem>
                         </ComboBox>
                         <ColorPicker x:ConnectionId='14' x:Name="Piker" Margin="0 10 0 0" IsColorChannelTextInputVisible="False" ColorSpectrumShape="Ring" HorizontalAlignment="Center"/>
-                      </StackPanel>
+                    </StackPanel>
                     <StackPanel x:ConnectionId='7' x:Name="Velicine">
                         <TextBlock Text="Unesite Vase dimenzije (cm):"></TextBlock>
                         <TextBox PlaceholderText="Obim struka " />

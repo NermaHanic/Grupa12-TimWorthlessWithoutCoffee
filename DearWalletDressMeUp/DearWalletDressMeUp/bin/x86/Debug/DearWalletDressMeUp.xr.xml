@@ -68,7 +68,9 @@
       <RootProperty Name="Style" />
       <RootProperty Name="Height" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="IsEnabled" />
       <RootProperty Name="Width" />
       <RootProperty Name="Foreground" />
       <RootEvent Name="Click" />
