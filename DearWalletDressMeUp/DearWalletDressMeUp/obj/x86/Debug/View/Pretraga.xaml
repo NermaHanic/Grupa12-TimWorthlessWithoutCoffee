@@ -88,7 +88,7 @@
                             <Setter Property="Margin" Value="0 0 10 0"></Setter>
                         </Style>
                     </StackPanel.Resources>
-                    <Image Source="Assets/homeIcon.png" Width="25" Height="25"></Image>
+                    <Image Source="ms-appx:///Assets/homeIcon.png" Width="25" Height="25"></Image>
                     <TextBlock Text="Home"></TextBlock>
                 </StackPanel>
             </Button>
@@ -163,7 +163,7 @@
                 <GridView.ItemTemplate>
                     <DataTemplate x:Name="Tmp">
                         <Grid Height="160" Width="160" BorderBrush="DarkGray" BorderThickness="2">
-                            <Image Height="100" Width="100" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png" Stretch="UniformToFill"/>
+                            <Image Height="100" Width="100" Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png" Stretch="UniformToFill"/>
                             
                         </Grid>
                     </DataTemplate>

@@ -122,13 +122,13 @@
                 </StackPanel.Resources>
                     <Button x:ConnectionId='14' x:Name="Kreiraj"                      >
                         <StackPanel Orientation="Horizontal" Padding="10">
-                            <Image x:ConnectionId='18' x:Name="KreirajImg" Source="Assets/plusIcon.png" Width="100" Height="100"></Image>
+                            <Image x:ConnectionId='18' x:Name="KreirajImg" Source="ms-appx:///Assets/plusIcon.png" Width="100" Height="100"></Image>
                             <TextBlock x:ConnectionId='19' x:Name="KreirajText" Text="Kreiraj!" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
                         </StackPanel>
                     </Button>
                     <Button x:ConnectionId='15' x:Name="Pretraga"                       >
                         <StackPanel Orientation="Horizontal" Padding="10">
-                            <Image x:ConnectionId='16' x:Name="PretragaImg" Source="Assets/search-icon.png" Width="100" Height="100"></Image>
+                            <Image x:ConnectionId='16' x:Name="PretragaImg" Source="ms-appx:///Assets/search-icon.png" Width="100" Height="100"></Image>
                             <TextBlock x:ConnectionId='17' x:Name="PretragaText" Text="Pretraga" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
                         </StackPanel>
                     </Button>
@@ -142,13 +142,13 @@
                 </StackPanel.Resources>
                 <Button x:ConnectionId='8' x:Name="MojProfil"                        >
                     <StackPanel Orientation="Horizontal" Padding="10">
-                        <Image x:ConnectionId='12' x:Name="ProfilImg" Source="Assets/mojProfilIcon2.png" Width="100" Height="100"></Image>
+                        <Image x:ConnectionId='12' x:Name="ProfilImg" Source="ms-appx:///Assets/mojProfilIcon2.png" Width="100" Height="100"></Image>
                         <TextBlock x:ConnectionId='13' x:Name="ProfilText" Text="Moj Profil" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
                     </StackPanel>
                 </Button>
                     <Button x:ConnectionId='9' x:Name="Kviz"                   >
                     <StackPanel Orientation="Horizontal" Padding="10">
-                        <Image x:ConnectionId='10' x:Name="KvizImg" Source="Assets/quizIcon.png" Width="100" Height="100"></Image>
+                        <Image x:ConnectionId='10' x:Name="KvizImg" Source="ms-appx:///Assets/quizIcon.png" Width="100" Height="100"></Image>
                         <TextBlock x:ConnectionId='11' x:Name="KvizText" Text="Kviz" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
                     </StackPanel>
                     </Button>

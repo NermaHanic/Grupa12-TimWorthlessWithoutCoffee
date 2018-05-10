@@ -67,26 +67,26 @@
             <Button x:Name="MuskiOdjel" Background="Beige" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="120" FontSize="20" Click="MuskiOdjel_Click">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Muski" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-                    <Image x:Name="musko" Source="Assets/majica.png"/>
+                    <Image x:Name="musko" Source="ms-appx:///Assets/majica.png"/>
                 </StackPanel>
             </Button>
             <Button x:Name="ZenskiOdjel" Background="Beige" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="145" FontSize="20" Click="ZenskiOdjel_Click">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Zenski" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-                    <Image x:Name="zensko" Source="Assets/female.png"/>
+                    <Image x:Name="zensko" Source="ms-appx:///Assets/female.png"/>
                 </StackPanel>
             </Button>
             <Button x:Name="DjecijiOdjel" Background="Beige" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="150" FontSize="20" Click="DjecijiOdjel_Click" >
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Djeciji" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-                    <Image x:Name="dijete" Source="Assets/Baby-Clothes-512.png"/>
+                    <Image x:Name="dijete" Source="ms-appx:///Assets/Baby-Clothes-512.png"/>
 
                 </StackPanel>
             </Button>
         </StackPanel>
         <Button x:Name="Homebtn" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="Homebtn_Click" Margin="0,0,0,102">
             <StackPanel Orientation="Horizontal">
-                <Image Height="30" Width="30" Source="Assets/homeIcon.png"/>
+                <Image Height="30" Width="30" Source="ms-appx:///Assets/homeIcon.png"/>
                 <TextBlock Text="Home" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 0 0 0"></TextBlock>
             </StackPanel>
         </Button>

@@ -107,7 +107,7 @@
                                     <Setter Property="Margin" Value="0 0 10 0"></Setter>
                                 </Style>
                             </StackPanel.Resources>
-                            <Image Source="Assets/homeIcon.png" Width="25" Height="25"></Image>
+                            <Image Source="ms-appx:///Assets/homeIcon.png" Width="25" Height="25"></Image>
                             <TextBlock Text="Home"></TextBlock>
                         </StackPanel>
                     </Button>
@@ -138,22 +138,22 @@
                     <TextBlock x:Name="Tekstic" HorizontalAlignment="Center" Text="Koja od navedenih kombinacija Vam se vise dopada?"></TextBlock>
                     <StackPanel x:Name="Prvi">
                         <StackPanel Orientation="Vertical">
-                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <Image Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
                             <RadioButton Content="Kombinacija 1"></RadioButton>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
-                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <Image Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
                             <RadioButton Content="Kombinacija 2"></RadioButton>
                         </StackPanel>
                     </StackPanel>
                     <Rectangle x:Name="PrviRect" Height="0" Fill="Beige" ></Rectangle>
                     <StackPanel x:Name="Drugi">
                         <StackPanel Orientation="Vertical">
-                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <Image Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
                             <RadioButton Content="Kombinacija 1"></RadioButton>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
-                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <Image Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
                             <RadioButton Content="Kombinacija 2"></RadioButton>
                         </StackPanel>
                     </StackPanel>
@@ -161,11 +161,11 @@
 
                     <StackPanel x:Name="Treci">
                         <StackPanel Orientation="Vertical">
-                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <Image Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
                             <RadioButton Content="Kombinacija 1"></RadioButton>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
-                            <Image Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <Image Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
                             <RadioButton Content="Kombinacija 2"></RadioButton>
                         </StackPanel>
                     </StackPanel>

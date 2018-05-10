@@ -14,7 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using Microsoft.WindowsAzure.MobileServices;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace DearWalletDressMeUp
@@ -34,17 +34,18 @@ namespace DearWalletDressMeUp
             Frame.Navigate(typeof(Login));
         }
 
+        IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
         private async void Registruj_Click(object sender, RoutedEventArgs e)
         {
             error.Text = "";
-            if (ime.Text.Length == 0 || prezime.Text.Length == 0 || username.Text.Length == 0 || sifra.Password.Length == 0 || potvrdaSifre.Password.Length == 0 || adresa.Text.Length == 0 || telefon.Text.Length == 0)
+            if (ime.Text.Length == 0 || prezime.Text.Length == 0 || sifra.Password.Length == 0 || potvrdaSifre.Password.Length == 0 || adresa.Text.Length == 0 || telefon.Text.Length == 0)
             {
-                error.Text = "Niste unijeli sva polja";
+                error.Text = "Niste unijeli sva polja.";
             }
 
-            else if (potvrdaSifre.Password.Length != sifra.Password.Length)
+            else if (potvrdaSifre.Password != sifra.Password)
             {
-                error.Text = "Neispravna sifra";
+                error.Text = "Unesene sifre se ne slazu.";
             }
 
             else
@@ -57,23 +58,32 @@ namespace DearWalletDressMeUp
                 {
                     if (Char.IsLetter(kartica.Text[i])) error.Text = "Neispravan format broja kreditne kartice";
                 }
-
             }
 
             if (error.Text == "")
             {
-                
-                MessageDialog m = new MessageDialog("Uspjesno ste registrovani na Dear Wallet Dress Me Up! Dobrodosli :)");
-                await m.ShowAsync();
-
-
-
-                this.Frame.Navigate(typeof(Pregled_profila));
+                try
+                {
+                    Korisnik obj = new Korisnik();
+                    obj.Ime = ime.Text;
+                    obj.Prezime = prezime.Text;
+                    obj.Id = Pomocna.DodjelaUsername(obj.Ime, obj.Prezime);
+                    obj.Sifra = sifra.Password;
+                    obj.Email = EmailReg.Text;
+                    obj.Adresa = adresa.Text;
+                    obj.BrojKreditneKartice = kartica.Text;
+                    obj.BrojTelefona = telefon.Text;
+                    await tabelica.InsertAsync(obj);
+                    MessageDialog m = new MessageDialog("Uspjesno ste registrovani na Dear Wallet Dress Me Up! Vas username glasi: " + obj.Id + " :)");
+                    await m.ShowAsync();
+                    this.Frame.Navigate(typeof(Home));
+                }
+                catch (Exception ex)
+                {
+                    MessageDialog feedbackError = new MessageDialog("Error : Doslo je do greske! \n" + ex.ToString());
+                    await feedbackError.ShowAsync();
+                }
             }
-
-
         }
-
-     
     }
 }

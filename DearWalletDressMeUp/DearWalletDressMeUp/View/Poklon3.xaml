@@ -67,7 +67,7 @@
         <Button x:Name="button" Style="{StaticResource NavigationBackButtonNormalStyle}" Margin="0,20,-80,0" Width="60" Height="48" Grid.ColumnSpan="5"/>
 
         <Button Background="Transparent" Content="Home" Grid.ColumnSpan="5" HorizontalAlignment="Left" Margin="5,0,-110,-32" Grid.RowSpan="5" VerticalAlignment="Top" Width="100"/>
-        <Image Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="56" Margin="0,0,-31,-56" Grid.RowSpan="5" VerticalAlignment="Top" Width="31" Source="Assets/homeIcon.png"/>
+        <Image Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="56" Margin="0,0,-31,-56" Grid.RowSpan="5" VerticalAlignment="Top" Width="31" Source="ms-appx:///Assets/homeIcon.png"/>
         <Button Content="Log out" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="4" Width="75"/>
     </Grid>
 </Page>

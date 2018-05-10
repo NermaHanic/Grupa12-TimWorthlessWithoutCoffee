@@ -74,7 +74,7 @@
 
         <TextBlock x:ConnectionId='6' x:Name="tekst" Grid.Row="1" Grid.ColumnSpan="5" HorizontalAlignment="Left" Margin="430,128,-850,-243" Grid.RowSpan="4" Text="Vas poklon ce imati glasovnu poruku. Odaberite opciju unosa teksta ili opciju snimanja zvucnog zapisa, koji ce biti glasovna poruka Vase igracke." TextWrapping="Wrap" VerticalAlignment="Top" Height="115" Width="420" />
         <Button Background="Transparent" Content="Home" Grid.ColumnSpan="5" HorizontalAlignment="Left" Margin="5,0,-110,-32" Grid.RowSpan="5" VerticalAlignment="Top" Width="100"/>
-        <Image Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="56" Margin="0,0,-31,-56" Grid.RowSpan="5" VerticalAlignment="Top" Width="31" Source="Assets/homeIcon.png"/>
+        <Image Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="56" Margin="0,0,-31,-56" Grid.RowSpan="5" VerticalAlignment="Top" Width="31" Source="ms-appx:///Assets/homeIcon.png"/>
         <Button Content="Log out" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Grid.Column="4"/>
 
         <StackPanel x:ConnectionId='7' x:Name="stek2" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="140" Margin="510,425,-765,-565" Grid.RowSpan="5" VerticalAlignment="Top" Width="255">

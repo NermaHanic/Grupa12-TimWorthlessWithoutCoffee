@@ -173,6 +173,7 @@
     <Compile Include="View\Poklon4.xaml.cs">
       <DependentUpon>Poklon4.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Pomocna.cs" />
     <Compile Include="View\Pregled profila.xaml.cs">
       <DependentUpon>Pregled profila.xaml</DependentUpon>
     </Compile>

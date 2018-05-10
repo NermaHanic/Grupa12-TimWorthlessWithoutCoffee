@@ -122,13 +122,13 @@
                 </StackPanel.Resources>
                     <Button x:Name="Kreiraj" Click="Kreiraj_Click">
                         <StackPanel Orientation="Horizontal" Padding="10">
-                            <Image x:Name="KreirajImg" Source="Assets/plusIcon.png" Width="100" Height="100"></Image>
+                            <Image x:Name="KreirajImg" Source="ms-appx:///Assets/plusIcon.png" Width="100" Height="100"></Image>
                             <TextBlock x:Name="KreirajText" Text="Kreiraj!" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
                         </StackPanel>
                     </Button>
                     <Button x:Name="Pretraga" Click="Pretraga_Click">
                         <StackPanel Orientation="Horizontal" Padding="10">
-                            <Image x:Name="PretragaImg" Source="Assets/search-icon.png" Width="100" Height="100"></Image>
+                            <Image x:Name="PretragaImg" Source="ms-appx:///Assets/search-icon.png" Width="100" Height="100"></Image>
                             <TextBlock x:Name="PretragaText" Text="Pretraga" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
                         </StackPanel>
                     </Button>
@@ -142,13 +142,13 @@
                 </StackPanel.Resources>
                 <Button x:Name="MojProfil" Click="MojProfil_Click">
                     <StackPanel Orientation="Horizontal" Padding="10">
-                        <Image x:Name="ProfilImg" Source="Assets/mojProfilIcon2.png" Width="100" Height="100"></Image>
+                        <Image x:Name="ProfilImg" Source="ms-appx:///Assets/mojProfilIcon2.png" Width="100" Height="100"></Image>
                         <TextBlock x:Name="ProfilText" Text="Moj Profil" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
                     </StackPanel>
                 </Button>
                     <Button x:Name="Kviz" Click="Kviz_Click">
                     <StackPanel Orientation="Horizontal" Padding="10">
-                        <Image x:Name="KvizImg" Source="Assets/quizIcon.png" Width="100" Height="100"></Image>
+                        <Image x:Name="KvizImg" Source="ms-appx:///Assets/quizIcon.png" Width="100" Height="100"></Image>
                         <TextBlock x:Name="KvizText" Text="Kviz" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
                     </StackPanel>
                     </Button>

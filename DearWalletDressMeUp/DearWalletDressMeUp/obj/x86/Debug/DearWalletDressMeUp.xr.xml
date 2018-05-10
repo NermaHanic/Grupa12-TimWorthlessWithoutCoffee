@@ -177,6 +177,10 @@
     </RootType>
     <RootType FullName="DearWalletDressMeUp.AdminDodavanjeOdjece" />
     <RootType FullName="DearWalletDressMeUp.AdminovProfil" />
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="PlaceholderText" />
+    </RootType>
     <RootType FullName="DearWalletDressMeUp.AdminUserManagement" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
@@ -231,10 +235,6 @@
     <RootType FullName="DearWalletDressMeUp.Kviz1" />
     <RootType FullName="DearWalletDressMeUp.Kviz2" />
     <RootType FullName="DearWalletDressMeUp.Kviz3" />
-    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
-      <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="Margin" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />

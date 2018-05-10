@@ -61,7 +61,7 @@
                 <Button x:Name="Back" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Back_Click"/>
 
                 <StackPanel x:Name="Glavni" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="5" Orientation="Horizontal" HorizontalAlignment="Center" Padding="5" >
-                    <Image x:Name="Logo" Source="Assets/logo.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" MaxHeight="400" MaxWidth="500"  Margin="0 0 70 0"></Image>
+                    <Image x:Name="Logo" Source="ms-appx:///Assets/logo.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" MaxHeight="400" MaxWidth="500"  Margin="0 0 70 0"></Image>
                     <StackPanel x:Name="LicniPodaciRegistracija" Background="Beige" VerticalAlignment="Center" Height="549">
                         <StackPanel Padding="20" Orientation="Horizontal">
                             <StackPanel>
@@ -74,7 +74,7 @@
                                 </StackPanel.Resources>
                                 <TextBlock Text="Ime:"></TextBlock>
                                 <TextBlock Text="Prezime"></TextBlock>
-                                <TextBlock Text="Username:"></TextBlock>
+                                <TextBlock Text="Email:"></TextBlock>
                                 <TextBlock Text="Sifra:"></TextBlock>
                                 <TextBlock Text="Potvrda sifre:"></TextBlock>
                                 <TextBlock Text="Adresa:"></TextBlock>
@@ -95,7 +95,7 @@
 
                                 <TextBox x:Name="ime"></TextBox>
                                 <TextBox x:Name="prezime"></TextBox>
-                                <TextBox x:Name="username"></TextBox>
+                                <TextBox x:Name="EmailReg"></TextBox>
                                 <PasswordBox x:Name="sifra"></PasswordBox>
                                 <PasswordBox x:Name="potvrdaSifre" ></PasswordBox>
                                 <TextBox x:Name="adresa"></TextBox>
@@ -103,7 +103,7 @@
                                 <TextBox x:Name="kartica"></TextBox>
                             </StackPanel>
                         </StackPanel>
-                        <Button x:Name="Registruj" FontSize="25" Content="Registruj se" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Margin="0 20 0 10" Click="Registruj_Click"></Button>
+                        <Button x:Name="Registruj" FontSize="25" Content="Registruj se" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Margin="0 20 0 0" Click="Registruj_Click"></Button>
                         <TextBlock x:Name="error" Text="" TextWrapping="Wrap" Foreground="Red"/>
                     </StackPanel>
                 </StackPanel>

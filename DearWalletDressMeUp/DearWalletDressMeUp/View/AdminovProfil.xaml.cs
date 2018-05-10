@@ -41,26 +41,10 @@ namespace DearWalletDressMeUp
         {
             Frame.Navigate(typeof(AdminDodavanjeOdjece));
         }
-        IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable <Korisnik>();
 
         private void DodajBrisiKor_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                Korisnik obj = new Korisnik();
-
-                
-                tabelica.InsertAsync(obj);
-                MessageDialog feedback = new MessageDialog("Uspjesno ste dodali korisnika");
-                feedback.ShowAsync();
-            }
-            catch (Exception ex)
-            {
-                MessageDialog feedbackError = new MessageDialog("Error : Doslo je do greske! \n" + ex.ToString());
-                feedbackError.ShowAsync();
-            }
-
-
+            
             Frame.Navigate(typeof(AdminUserManagement));
         }
     }

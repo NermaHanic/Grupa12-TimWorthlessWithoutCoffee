@@ -97,10 +97,10 @@
                     <Button x:Name="Back" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Back_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="OutermostStackPanel" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="5" HorizontalAlignment="Center" Orientation="Vertical" Margin="0 -20 0 0">
-                    <Image x:Name="logo"  Source="Assets/logo.jpg" MaxHeight="300" MaxWidth="400" ></Image>
+                    <Image x:Name="logo"  Source="ms-appx:///Assets/logo.jpg" MaxHeight="300" MaxWidth="400" ></Image>
                     <StackPanel x:Name="FirstUpperStack" Orientation="Horizontal" Padding="20" HorizontalAlignment="Left" Margin="0 20 0 0">
                         <StackPanel x:Name="Slikica" Height="400" Background="Beige"  HorizontalAlignment="Center">
-                            <Image x:Name="userSlika"  Height="350" Width="250" VerticalAlignment="Top" Stretch="Fill" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <Image x:Name="userSlika"  Height="350" Width="250" VerticalAlignment="Top" Stretch="Fill" Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
                             <Button x:Name="IzmijeniSliku" Content="Izmijeni sliku"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="IzmijeniSliku_Click"/>
                         </StackPanel>
                         <StackPanel x:Name="LicniPodaci" Background="Beige" Orientation="Vertical" Width="300" HorizontalAlignment="Stretch">
@@ -157,8 +157,8 @@
                                                 <StackPanel Orientation="Horizontal">
                                                     <Image x:Name="Placeholder" Width="100" Height="100" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"/>
                                                     <StackPanel VerticalAlignment="Center">
-                                                        <Image Width="50" Source="Assets/Square44x44Logo.png"></Image>
-                                                        <Image Width="50" Source="Assets/Square44x44Logo.png"></Image>
+                                                        <Image Width="50" Source="ms-appx:///Assets/Square44x44Logo.png"></Image>
+                                                        <Image Width="50" Source="ms-appx:///Assets/Square44x44Logo.png"></Image>
                                                     </StackPanel>
                                                 </StackPanel>
                                                 <StackPanel Orientation="Horizontal" Height="40" VerticalAlignment="Bottom" Padding="10">

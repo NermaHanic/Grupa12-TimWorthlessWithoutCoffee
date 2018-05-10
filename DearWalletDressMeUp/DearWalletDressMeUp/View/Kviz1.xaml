@@ -95,7 +95,7 @@
                                     <Setter Property="Margin" Value="0 0 10 0"></Setter>
                                 </Style>
                             </StackPanel.Resources>
-                            <Image Source="Assets/homeIcon.png" Width="25" Height="25"></Image>
+                            <Image Source="ms-appx:///Assets/homeIcon.png" Width="25" Height="25"></Image>
                             <TextBlock Text="Home"></TextBlock>
                         </StackPanel>
                     </Button>
