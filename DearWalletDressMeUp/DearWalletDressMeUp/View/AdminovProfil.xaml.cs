@@ -7,6 +7,10 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
+using DearWalletDressMeUp.Model;
+
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -37,9 +41,25 @@ namespace DearWalletDressMeUp
         {
             Frame.Navigate(typeof(AdminDodavanjeOdjece));
         }
-
+        IMobileServiceTable<AdminovProfil> tabelica = App.MobileService.GetTable <AdminovProfil>();
         private void DodajBrisiKor_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                AdminovProfil obj = new AdminovProfil();
+
+                
+                tabelica.InsertAsync(obj);
+                MessageDialog feedback = new MessageDialog("Uspjesno ste dodali...");
+                feedback.ShowAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageDialog feedbackError = new MessageDialog("Error : " + ex.ToString());
+                feedbackError.ShowAsync();
+            }
+
+
             Frame.Navigate(typeof(AdminUserManagement));
         }
     }
