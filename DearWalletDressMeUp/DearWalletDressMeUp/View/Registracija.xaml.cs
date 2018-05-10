@@ -62,10 +62,16 @@ namespace DearWalletDressMeUp
 
             if (error.Text == "")
             {
+                
                 MessageDialog m = new MessageDialog("Uspjesno ste registrovani na Dear Wallet Dress Me Up! Dobrodosli :)");
                 await m.ShowAsync();
+
+
+
                 this.Frame.Navigate(typeof(Pregled_profila));
             }
+
+
         }
 
      
