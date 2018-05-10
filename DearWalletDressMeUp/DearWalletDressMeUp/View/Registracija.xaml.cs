@@ -28,12 +28,10 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
         }
-
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Login));
         }
-
         IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
         private async void Registruj_Click(object sender, RoutedEventArgs e)
         {

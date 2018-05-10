@@ -24,7 +24,6 @@
                         <Setter Target="AdresaKorAdmin.HorizontalAlignment" Value="Left"></Setter>
                         <Setter Target="BrojTelKorAdmin.HorizontalAlignment" Value="Left"></Setter>
                         <Setter Target="BrojKreditneKarticeKorAdmin.HorizontalAlignment" Value="Left"></Setter>
-                        <Setter Target="IDProfilaKorAdmin.HorizontalAlignment" Value="Left"></Setter>
                         
                         <Setter Target="ImeKorAdmin.FontSze" Value="15"></Setter>
                         <Setter Target="PrezimeKorAdmin.FontSze" Value="15"></Setter>
@@ -44,6 +43,7 @@
                         <Setter Target="BrojKreditneKarticeKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="IDProfilaKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="IDProfilaBrisanjeText.Width" Value="200"></Setter>
+                        
                         <Setter Target="IDProfilaBrisanje.HorizontalAlignment" Value="Left"></Setter>
 
                         <Setter Target="BrisanjeKorisnika.Margin" Value="0 20 0 0"></Setter>
@@ -58,12 +58,11 @@
                         <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
                         <Setter Target="ImeKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="PrezimeKorAdminText.Width" Value="200"></Setter>
+                        <Setter Target="EmailKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="SifraKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="AdresaKorAdminText.Width" Value="200"></Setter>
-                        <Setter Target="EmailKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="BrojTelKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="BrojKreditneKarticeKorAdminText.Width" Value="200"></Setter>
-                        <Setter Target="IDProfilaKorAdminText.Width" Value="200"></Setter>
                         <Setter Target="IDProfilaBrisanjeText.Width" Value="200"></Setter>
                         <Setter Target="IDProfilaBrisanje.HorizontalAlignment" Value="Left"></Setter>
 
@@ -77,7 +76,7 @@
                         <Setter Target="AdresaKorAdmin.HorizontalAlignment" Value="Left"></Setter>
                         <Setter Target="BrojTelKorAdmin.HorizontalAlignment" Value="Left"></Setter>
                         <Setter Target="BrojKreditneKarticeKorAdmin.HorizontalAlignment" Value="Left"></Setter>
-                        <Setter Target="IDProfilaKorAdmin.HorizontalAlignment" Value="Left"></Setter>
+                        
 
                     </VisualState.Setters>
                 </VisualState>
@@ -118,7 +117,6 @@
                                         <Setter Property="VerticalAlignment" Value="Center"></Setter>
                                     </Style>
                                 </StackPanel.Resources>
-
                                 <TextBlock x:ConnectionId='26' x:Name="ImeKorAdmin" Text="Ime:"/>
                                 <TextBlock x:ConnectionId='27' x:Name="PrezimeKorAdmin" Text="Prezime:"/>
                                 <TextBlock x:ConnectionId='28' x:Name="EmailKorAdmin" Text="Email:"></TextBlock>
@@ -139,7 +137,7 @@
                                 <TextBox x:ConnectionId='19' x:Name="ImeKorAdminText"/>
                                 <TextBox x:ConnectionId='20' x:Name="PrezimeKorAdminText"/>
                                 <TextBox x:ConnectionId='21' x:Name="EmailKorAdminText"></TextBox>
-                                <PasswordBox x:ConnectionId='22' x:Name="SifraKorAdminText" Margin="-10 0 0 0"></PasswordBox>
+                                <PasswordBox x:ConnectionId='22' x:Name="SifraKorAdminText" Width="250" Height="20" Margin="0 5 10 10"></PasswordBox>
                                 <TextBox x:ConnectionId='23' x:Name="AdresaKorAdminText"/>
                                 <TextBox x:ConnectionId='24' x:Name="BrojTelKorAdminText"/>
                                 <TextBox x:ConnectionId='25' x:Name="BrojKreditneKarticeKorAdminText"/>

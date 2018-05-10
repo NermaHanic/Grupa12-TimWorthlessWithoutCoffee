@@ -47,6 +47,7 @@ namespace DearWalletDressMeUp
                 obj.Ime = ImeKorAdminText.Text;
                 obj.Prezime = PrezimeKorAdminText.Text;
                 obj.Id = Pomocna.DodjelaUsername(obj.Ime, obj.Prezime);
+                obj.Sifra = SifraKorAdminText.Password;
                 obj.Email = EmailKorAdminText.Text;
                 obj.Adresa = AdresaKorAdminText.Text;
                 obj.BrojKreditneKartice = BrojKreditneKarticeKorAdminText.Text;
