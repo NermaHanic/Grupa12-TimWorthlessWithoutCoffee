@@ -68,9 +68,7 @@
       <RootProperty Name="Style" />
       <RootProperty Name="Height" />
       <RootProperty Name="Background" />
-      <RootProperty Name="Visibility" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="IsEnabled" />
       <RootProperty Name="Width" />
       <RootProperty Name="Foreground" />
       <RootEvent Name="Click" />
@@ -166,6 +164,13 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="MaxHeight" />
       <RootProperty Name="MaxWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
+      <RootMethod Name="GetAttachedFlyout" />
+      <RootMethod Name="SetAttachedFlyout" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
       <RootProperty Name="Content" />

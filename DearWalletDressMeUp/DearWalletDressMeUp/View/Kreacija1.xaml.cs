@@ -26,10 +26,6 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
         }
-        private bool muski;
-        
-        
-
         private void Homebtn_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Home));

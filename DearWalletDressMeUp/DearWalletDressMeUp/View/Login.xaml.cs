@@ -36,7 +36,10 @@ namespace DearWalletDressMeUp
                 error.Text = "Niste unijeli sva polja";
             }
             //provjera za bazu
-
+            else if(ime.Text=="admin")
+            {
+                Frame.Navigate(typeof(AdminovProfil));
+            }
             else
             {
                 Frame.Navigate(typeof(Home));

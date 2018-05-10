@@ -24,7 +24,6 @@ namespace DearWalletDressMeUp
     /// </summary>
     public sealed partial class Kreacija2 : Page
     {
-        Kreacija1 k;
         public Kreacija2()
         {
             this.InitializeComponent();

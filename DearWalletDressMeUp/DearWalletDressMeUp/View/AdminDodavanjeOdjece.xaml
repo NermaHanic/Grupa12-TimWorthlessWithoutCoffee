@@ -156,7 +156,13 @@
                                     </ComboBoxItem>
                                 </ComboBox>
                                 <StackPanel Orientation="Horizontal" Padding="0">
-                                    <TextBox x:Name="CijenaTextOdjeca" VerticalAlignment="Center" InputScope="Number"></TextBox>
+                                    <TextBox x:Name="CijenaTextOdjeca" VerticalAlignment="Center" InputScope="Number">
+                                        <FlyoutBase.AttachedFlyout>
+                                            <Flyout>
+                                                <TextBlock Text="Cijena treba biti broj!"></TextBlock>
+                                            </Flyout>
+                                        </FlyoutBase.AttachedFlyout>
+                                    </TextBox>
                                     <TextBlock Text="KM" VerticalAlignment="Top" Margin="0 -10 0 0"></TextBlock>
                                 </StackPanel>
                             </StackPanel>
