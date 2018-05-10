@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace DearWalletDressMeUp
 {
@@ -22,6 +23,7 @@ namespace DearWalletDressMeUp
     /// </summary>
     sealed partial class App : Application
     {
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://dearwalletdressmeup.azurewebsites.net");
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -66,7 +68,7 @@ namespace DearWalletDressMeUp
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(Checkout), e.Arguments);
+                    rootFrame.Navigate(typeof(AdminDodavanjeOdjece), e.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();

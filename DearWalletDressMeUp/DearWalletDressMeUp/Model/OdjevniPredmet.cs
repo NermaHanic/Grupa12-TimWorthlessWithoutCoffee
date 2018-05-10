@@ -10,27 +10,36 @@ namespace DearWalletDressMeUp.Model
     public enum Stil { Casual,Elegant,RockPunkEmo,Vintage,Sport}
     public enum DefaultVelicine { XS,S,M,L,XL}
     public enum Kategorije { Majica,Pantalone,Haljina,Jakna,Suknja}
+   
     public class OdjevniPredmet
     {
-        private string nazivOdjevnogPredmeta;
-        private string slikaOdjevnogPredmeta;
-        private double cijenaOdjevnogPredmeta;
-        private string barCode;
+        private string naziv;
+        private string slika;
+        private double cijena;
+        private string id;
         private Odjel pripadniOdjel;
+        private Stil pripadniStil;
+        private DefaultVelicine defVel;
+        private Mjera mjera;
 
-        public OdjevniPredmet(string nazivOdjevnogPredmeta, string slikaOdjevnogPredmeta, double cijenaOdjevnogPredmeta, string barCode, Odjel pripadniOdjel)
+        public OdjevniPredmet() { }
+        public OdjevniPredmet(string nazivOdjevnogPredmeta, string slikaOdjevnogPredmeta, double cijenaOdjevnogPredmeta, string barCode, Odjel pripadniOdjel, Stil pripadniStil)
         {
-            this.nazivOdjevnogPredmeta = nazivOdjevnogPredmeta;
-            this.slikaOdjevnogPredmeta = slikaOdjevnogPredmeta;
-            this.cijenaOdjevnogPredmeta = cijenaOdjevnogPredmeta;
-            this.barCode = barCode;
+            this.naziv = nazivOdjevnogPredmeta;
+            this.slika = slikaOdjevnogPredmeta;
+            this.cijena = cijenaOdjevnogPredmeta;
+            this.id = barCode;
             this.pripadniOdjel = pripadniOdjel;
+            this.pripadniStil = pripadniStil;
         }
 
-        public string NazivOdjevnogPredmeta { get => nazivOdjevnogPredmeta; set => nazivOdjevnogPredmeta = value; }
-        public string SlikaOdjevnogPredmeta { get => slikaOdjevnogPredmeta; set => slikaOdjevnogPredmeta = value; }
-        public double CijenaOdjevnogPredmeta { get => cijenaOdjevnogPredmeta; set => cijenaOdjevnogPredmeta = value; }
-        public string BarCode { get => barCode; set => barCode = value; }
+        public string Naziv { get => naziv; set => naziv = value; }
+        public string Slika { get => slika; set => slika = value; }
+        public double Cijena { get => cijena; set => cijena = value; }
+        public string Id { get => id; set => id = value; }
         public Odjel PripadniOdjel { get => pripadniOdjel; set => pripadniOdjel = value; }
+        public Stil PripadniStil { get => pripadniStil; set => pripadniStil = value; }
+        public DefaultVelicine DefVel { get => defVel; set => defVel = value; }
+        public Mjera Mjera { get => mjera; set => mjera = value; }
     }
 }

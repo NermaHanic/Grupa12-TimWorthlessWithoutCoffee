@@ -15,6 +15,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
+using DearWalletDressMeUp.Model;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -61,5 +64,26 @@ namespace DearWalletDressMeUp
         {
             Frame.Navigate(typeof(Login));
         }
+
+        IMobileServiceTable<OdjevniPredmet> tabelica = App.MobileService.GetTable<OdjevniPredmet>();
+        private void DodajOdjevniPredmet_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                OdjevniPredmet obj = new OdjevniPredmet();
+                obj.Id = IDTextOdjeca.Text;
+                obj.Naziv = NazivTextOdjeca.Text;
+                obj.Cijena =Convert.ToDouble(CijenaTextOdjeca.Text);
+                obj.Slika = SlikaAdminDodavanje.Source.ToString();
+                tabelica.InsertAsync(obj);
+                MessageDialog feedback = new MessageDialog("Uspjesno ste dodali odjevni predmet.");
+                feedback.ShowAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageDialog feedbackError = new MessageDialog("Error : " + ex.ToString());
+                feedbackError.ShowAsync();
+            }
+         }
     }
 }
