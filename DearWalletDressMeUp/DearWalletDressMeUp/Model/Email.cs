@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace DearWalletDressMeUp.Model
 {
-    public class Email
+    public static class Email
     {
-        public Email(string preporuciPrijatelju, string passwordRecovery)
-        {
-            this.preporuciPrijatelju = preporuciPrijatelju;
-            this.passwordRecovery = passwordRecovery;
-        }
+        private static string preporuciPrijatelju;
+        private static string passwordRecovery;
 
-        public string preporuciPrijatelju { get; }
-        public string passwordRecovery { get; }
-
+        public static string PreporuciPrijatelju { get => preporuciPrijatelju; set => preporuciPrijatelju = value; }
+        public static string PasswordRecovery { get => passwordRecovery; set => passwordRecovery = value; }
     }
 }

@@ -9,22 +9,26 @@ namespace DearWalletDressMeUp.Model
 {
     public class Profil:IIzmjene,IKupovina,IKreacijeNaProfilu
     {
-        private string idProfila;
+        private string id;
         private BitmapImage slikaProfila;
         private List<Kreacija> listaKreacija;
 
         public Profil(string idProfila, BitmapImage slikaProfila, List<Kreacija> listaKreacija)
         {
-            this.idProfila = idProfila;
+            this.id = idProfila;
             this.slikaProfila = slikaProfila;
             this.listaKreacija = listaKreacija;
         }
-
-        public string IdProfila { get => idProfila; set => idProfila = value; }
+        public Profil()
+        { }
+        public string Id { get => id; set => id = value; }
         public BitmapImage SlikaProfila { get => slikaProfila; set => slikaProfila = value; }
         public List<Kreacija> ListaKreacija { get => listaKreacija; set => listaKreacija = value; }
 
-        public void BrisanjeProfila() { } 
+        public void BrisanjeProfila()
+        {
+           
+        } 
         public void PreporuciPrijatelju(string emailAdresa) { }
 
         public void IzmijeniIme(string novoIme) { }

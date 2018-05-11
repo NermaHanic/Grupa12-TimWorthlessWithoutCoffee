@@ -46,5 +46,10 @@ namespace DearWalletDressMeUp
         {
             Frame.Navigate(typeof(Kviz1));
         }
+
+        private void LogOutHome_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Login));
+        }
     }
 }

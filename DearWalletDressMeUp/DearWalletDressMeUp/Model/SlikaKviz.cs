@@ -8,13 +8,7 @@ namespace DearWalletDressMeUp.Model
 {
     public class SlikaKviz
     {
-        private string putanjaDoSlike;
-
-        public SlikaKviz(string putanjaDoSlike)
-        {
-            this.PutanjaDoSlike = putanjaDoSlike;
-        }
-
-        public string PutanjaDoSlike { get => putanjaDoSlike; set => putanjaDoSlike = value; }
+        private string id;
+        private byte[] naziv; 
     }
 }

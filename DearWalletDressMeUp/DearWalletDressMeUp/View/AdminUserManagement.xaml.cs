@@ -39,19 +39,18 @@ namespace DearWalletDressMeUp
             Frame.Navigate(typeof(Login));
         }
         IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
+        //IMobileServiceTable<Profil> profil = App.MobileService.GetTable<Profil>();
         private async void DodajKorUBazu_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                Korisnik obj = new Korisnik();
-                obj.Ime = ImeKorAdminText.Text;
-                obj.Prezime = PrezimeKorAdminText.Text;
-                obj.Id = Pomocna.DodjelaUsername(obj.Ime, obj.Prezime);
-                obj.Sifra = SifraKorAdminText.Password;
-                obj.Email = EmailKorAdminText.Text;
-                obj.Adresa = AdresaKorAdminText.Text;
-                obj.BrojKreditneKartice = BrojKreditneKarticeKorAdminText.Text;
-                obj.BrojTelefona = BrojTelKorAdminText.Text;
+                Korisnik obj = new Korisnik(ImeKorAdminText.Text, PrezimeKorAdminText.Text, EmailKorAdminText.Text, AdresaKorAdminText.Text,
+                    BrojTelKorAdminText.Text, BrojKreditneKarticeKorAdminText.Text, 
+                    await Pomocna.DodjelaUsername(ImeKorAdminText.Text, PrezimeKorAdminText.Text), SifraKorAdminText.Password);
+               
+                /*Profil objProf = new Profil();
+                objProf.Id = await ID<Profil>.DodjelaID(profil);
+                await profil.InsertAsync(objProf);*/
                 await tabelica.InsertAsync(obj);
                 MessageDialog feedback = new MessageDialog("Uspjesno ste dodali korisnika");
                 await feedback.ShowAsync();

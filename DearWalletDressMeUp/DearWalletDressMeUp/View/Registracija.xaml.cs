@@ -62,16 +62,15 @@ namespace DearWalletDressMeUp
             {
                 try
                 {
-                    Korisnik obj = new Korisnik();
-                    obj.Ime = ime.Text;
-                    obj.Prezime = prezime.Text;
-                    obj.Id = Pomocna.DodjelaUsername(obj.Ime, obj.Prezime);
-                    obj.Sifra = sifra.Password;
-                    obj.Email = EmailReg.Text;
-                    obj.Adresa = adresa.Text;
-                    obj.BrojKreditneKartice = kartica.Text;
-                    obj.BrojTelefona = telefon.Text;
+                    Korisnik obj = new Korisnik(ime.Text, prezime.Text, EmailReg.Text, adresa.Text, telefon.Text, kartica.Text,
+                        await Pomocna.DodjelaUsername(ime.Text, prezime.Text), sifra.Password);
                     await tabelica.InsertAsync(obj);
+
+                    /*IMobileServiceTable<Profil> profil = App.MobileService.GetTable<Profil>();
+                    Profil objProf = new Profil();
+                    objProf.Id = await ID<Profil>.DodjelaID(profil);
+                    await profil.InsertAsync(objProf);*/
+
                     MessageDialog m = new MessageDialog("Uspjesno ste registrovani na Dear Wallet Dress Me Up! Vas username glasi: " + obj.Id + " :)");
                     await m.ShowAsync();
                     this.Frame.Navigate(typeof(Home));

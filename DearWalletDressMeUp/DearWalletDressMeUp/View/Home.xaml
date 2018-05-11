@@ -8,20 +8,20 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
@@ -35,13 +35,13 @@
                         <Setter Target="Kreiraj.Margin" Value="0 0 0 20"></Setter>
 
                         <Setter Target="KreirajText.FontSize" Value="40"></Setter>
-                        
+
                         <Setter Target="KreirajImg.Width" Value="50"></Setter>
                         <Setter Target="KreirajImg.Height" Value="50"></Setter>
 
                         <Setter Target="KreirajPretraga.Orientation" Value="Vertical"></Setter>
                         <Setter Target="KreirajPretraga.Padding" Value="0"></Setter>
-                        
+
                         <Setter Target="Pretraga.Width" Value="300"></Setter>
                         <Setter Target="Pretraga.Margin" Value="0 0 0 20"></Setter>
 
@@ -49,10 +49,10 @@
 
                         <Setter Target="PretragaImg.Width" Value="50"></Setter>
                         <Setter Target="PretragaImg.Height" Value="50"></Setter>
-                        
+
                         <Setter Target="ProfilKviz.Orientation" Value="Vertical"></Setter>
                         <Setter Target="ProfilKviz.Padding" Value="0"></Setter>
-                        
+
                         <Setter Target="MojProfil.Width" Value="300"></Setter>
                         <Setter Target="MojProfil.Margin" Value="0 0 0 20"></Setter>
 
@@ -68,7 +68,7 @@
 
                         <Setter Target="KvizImg.Width" Value="50"></Setter>
                         <Setter Target="KvizImg.Height" Value="50"></Setter>
-                        
+
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Tablet">
@@ -106,34 +106,34 @@
                         <AdaptiveTrigger MinWindowWidth="800"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        
+
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-            <StackPanel x:Name="Glavni" Orientation="Vertical" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <StackPanel x:Name="KreirajPretraga" Orientation="Horizontal" Padding="20">
+        <StackPanel x:Name="Glavni" Orientation="Vertical" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel x:Name="KreirajPretraga" Orientation="Horizontal" Padding="20">
                 <StackPanel.Resources>
                     <Style TargetType="Button">
                         <Setter Property="Width" Value="450"></Setter>
                         <Setter Property="Margin" Value="0 0 40 0"></Setter>
-                        
+
                     </Style>
                 </StackPanel.Resources>
-                    <Button x:Name="Kreiraj" Click="Kreiraj_Click">
-                        <StackPanel Orientation="Horizontal" Padding="10">
-                            <Image x:Name="KreirajImg" Source="ms-appx:///Assets/plusIcon.png" Width="100" Height="100"></Image>
-                            <TextBlock x:Name="KreirajText" Text="Kreiraj!" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
-                        </StackPanel>
-                    </Button>
-                    <Button x:Name="Pretraga" Click="Pretraga_Click">
-                        <StackPanel Orientation="Horizontal" Padding="10">
-                            <Image x:Name="PretragaImg" Source="ms-appx:///Assets/search-icon.png" Width="100" Height="100"></Image>
-                            <TextBlock x:Name="PretragaText" Text="Pretraga" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
-                        </StackPanel>
-                    </Button>
-                </StackPanel>
-                <StackPanel x:Name="ProfilKviz" Orientation="Horizontal" Padding="20">
+                <Button x:Name="Kreiraj" Click="Kreiraj_Click">
+                    <StackPanel Orientation="Horizontal" Padding="10">
+                        <Image x:Name="KreirajImg" Source="ms-appx:///Assets/plusIcon.png" Width="100" Height="100"></Image>
+                        <TextBlock x:Name="KreirajText" Text="Kreiraj!" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="Pretraga" Click="Pretraga_Click">
+                    <StackPanel Orientation="Horizontal" Padding="10">
+                        <Image x:Name="PretragaImg" Source="ms-appx:///Assets/search-icon.png" Width="100" Height="100"></Image>
+                        <TextBlock x:Name="PretragaText" Text="Pretraga" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel x:Name="ProfilKviz" Orientation="Horizontal" Padding="20">
                 <StackPanel.Resources>
                     <Style TargetType="Button">
                         <Setter Property="Width" Value="450"></Setter>
@@ -146,15 +146,15 @@
                         <TextBlock x:Name="ProfilText" Text="Moj Profil" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
                     </StackPanel>
                 </Button>
-                    <Button x:Name="Kviz" Click="Kviz_Click">
+                <Button x:Name="Kviz" Click="Kviz_Click">
                     <StackPanel Orientation="Horizontal" Padding="10">
                         <Image x:Name="KvizImg" Source="ms-appx:///Assets/quizIcon.png" Width="100" Height="100"></Image>
                         <TextBlock x:Name="KvizText" Text="Kviz" FontSize="50" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
                     </StackPanel>
-                    </Button>
-                </StackPanel>
+                </Button>
             </StackPanel>
-            
-        <Button x:Name="LogOutHome" Content="Log out" HorizontalAlignment="Right"  VerticalAlignment="Top" Grid.Column="4" Grid.Row="0"/>
+        </StackPanel>
+
+        <Button x:Name="LogOutHome" Content="Log out" HorizontalAlignment="Right"  VerticalAlignment="Stretch" Grid.Column="4" Grid.Row="0" Margin="0,0,0,112" Click="LogOutHome_Click"/>
     </Grid>
 </Page>

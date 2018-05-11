@@ -11,20 +11,20 @@ namespace DearWalletDressMeUp.Model
     {
         private string nazivDezena;
         private BitmapImage slikaDezena;
-        private string sifraDezena;
+        private string id;
         private double cijenaDezena;
 
         public Dezen(string nazivDezena, BitmapImage slikaDezena, string sifraDezena, double cijenaDezena)
         {
             this.nazivDezena = nazivDezena;
             this.slikaDezena = slikaDezena;
-            this.sifraDezena = sifraDezena;
+            this.id = sifraDezena;
             this.cijenaDezena = cijenaDezena;
         }
 
         public string NazivDezena { get => nazivDezena; set => nazivDezena = value; }
         public BitmapImage SlikaDezena { get => slikaDezena; set => slikaDezena = value; }
-        public string SifraDezena { get => sifraDezena; set => sifraDezena = value; }
+        public string Id { get => id; set => id = value; }
         public double CijenaDezena { get => cijenaDezena; set => cijenaDezena = value; }
     }
 }

@@ -9,16 +9,16 @@ namespace DearWalletDressMeUp.Model
     public class Kreacija
     {
         private double trenutnaCijena;
-        private string sifraKreacije;
+        private string id;
 
         public Kreacija(double trenutnaCijena, string sifraKreacije)
         {
             this.trenutnaCijena = trenutnaCijena;
-            this.sifraKreacije = sifraKreacije;
+            this.id = sifraKreacije;
         }
 
         public double TrenutnaCijena { get => trenutnaCijena; set => trenutnaCijena = value; }
-        public string SifraKreacije { get => sifraKreacije; set => sifraKreacije = value; }
+        public string Id { get => id; set => id = value; }
         public double ObracunajCijenu() { return 0; }
     }
 }

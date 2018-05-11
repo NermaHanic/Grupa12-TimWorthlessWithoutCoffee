@@ -8,11 +8,25 @@ namespace DearWalletDressMeUp.Model
 {
     class Poklon
     {
-        //private MP3 glasovnaPoruka;
+        private string id;
+        private byte[] glasovnaPoruka;
         private string tekstPoruke;
 
-        public string TekstPoruke { get => tekstPoruke; set => tekstPoruke = value; }
+        public Poklon(string id, byte[] glasovnaPoruka)
+        {
+            this.id = id;
+            this.glasovnaPoruka = glasovnaPoruka;
+        }
 
-        public void snimiPoruku() { return; }
+        public Poklon(string id,  string tekstPoruke)
+        {
+            this.id = id;
+            this.tekstPoruke = tekstPoruke;
+        }
+
+        public string TekstPoruke { get => tekstPoruke; set => tekstPoruke = value; }
+        public string Id { get => id; set => id = value; }
+
+        public void SnimiPoruku() { return; }
     }
 }
