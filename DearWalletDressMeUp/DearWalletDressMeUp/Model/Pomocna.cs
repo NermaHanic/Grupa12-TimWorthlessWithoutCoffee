@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Popups;
 
 namespace DearWalletDressMeUp.Model
 {
@@ -15,6 +17,5 @@ namespace DearWalletDressMeUp.Model
             List<Korisnik> lista = await tabelica.ToListAsync();
             return ime.ToLower()[0] + prezime.ToLower() + (lista.FindAll(x => (x.Ime[0] == ime[0] && x.Prezime == prezime)).Count()+1).ToString();
         }
-        
     }
 }
