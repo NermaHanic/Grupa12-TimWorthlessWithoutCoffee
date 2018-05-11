@@ -38,7 +38,7 @@ namespace DearWalletDressMeUp
             error.Text = "";
             if (ime.Text.Length == 0 || prezime.Text.Length == 0 || sifra.Password.Length == 0 || potvrdaSifre.Password.Length == 0 || adresa.Text.Length == 0 || telefon.Text.Length == 0)
             {
-                error.Text = "Niste unijeli sva polja.";
+                error.Text = "Niste unijeli sva obavezna polja.";
             }
 
             else if (potvrdaSifre.Password != sifra.Password)
