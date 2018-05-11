@@ -63,9 +63,21 @@ namespace DearWalletDressMeUp
 
         }
 
-        private void UsernameKorAdminText_TextChanged(object sender, TextChangedEventArgs e)
+        private async void BrisiKorIzBaze_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                Korisnik kor = (await tabelica.ToListAsync()).Find(x => x.Id == IDProfilaBrisanjeText.Text);
+                await tabelica.DeleteAsync(kor);
+                MessageDialog msg = new MessageDialog("Uspjesno ste obrisali korisnika.");
+                await msg.ShowAsync();
+            }
+            catch (Exception)
+            {
+                MessageDialog msgError = new MessageDialog("Ne postoji korisnik sa tim username-om.");
+                await msgError.ShowAsync();
+            }
+            
         }
     }
 }
