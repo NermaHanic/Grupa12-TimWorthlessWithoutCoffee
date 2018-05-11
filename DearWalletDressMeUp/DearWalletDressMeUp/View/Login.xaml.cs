@@ -52,6 +52,10 @@ namespace DearWalletDressMeUp
                     {
                         error.Text = "Username i sifra se ne slazu.";
                     }
+                    else
+                    {
+                        Frame.Navigate(typeof(Home));
+                    }
                 }
                 catch
                 {

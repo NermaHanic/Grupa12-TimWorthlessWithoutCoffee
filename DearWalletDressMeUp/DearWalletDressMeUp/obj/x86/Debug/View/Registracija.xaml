@@ -65,22 +65,23 @@
                 <StackPanel x:ConnectionId='5' x:Name="Glavni" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="5" Orientation="Horizontal" HorizontalAlignment="Center" Padding="5" >
                     <Image x:ConnectionId='6' x:Name="Logo" Source="ms-appx:///Assets/logo.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" MaxHeight="400" MaxWidth="450"  Margin="0 0 50 0"></Image>
                     <StackPanel x:ConnectionId='7' x:Name="LicniPodaciRegistracija" Background="Beige" VerticalAlignment="Center">
-                        <StackPanel Padding="20" Orientation="Horizontal">
+                        <TextBlock Text="Molimo unesite svoje podatke. Polja oznacena sa * su obavezna." TextWrapping="WrapWholeWords" FontSize="15" Foreground="#787272" Padding="10"></TextBlock>
+                        <StackPanel Padding="0" Orientation="Horizontal">
                             <StackPanel>
                                 <StackPanel.Resources>
                                     <Style TargetType="TextBlock">
                                         <Setter Property="FontSize" Value="15"></Setter>
-                                        <Setter Property="Margin" Value="0 20 0 0"></Setter>
+                                        <Setter Property="Margin" Value="10 20 0 0"></Setter>
                                         <Setter Property="Foreground" Value="#787272"></Setter>
                                     </Style>
                                 </StackPanel.Resources>
-                                <TextBlock Text="Ime:"></TextBlock>
-                                <TextBlock Text="Prezime:"></TextBlock>
-                                <TextBlock Text="Email:"></TextBlock>
-                                <TextBlock Text="Sifra:"></TextBlock>
-                                <TextBlock Text="Potvrda sifre:"></TextBlock>
-                                <TextBlock Text="Adresa:"></TextBlock>
-                                <TextBlock Text="Broj telefona:"></TextBlock>
+                                <TextBlock Text="*Ime:"></TextBlock>
+                                <TextBlock Text="*Prezime:"></TextBlock>
+                                <TextBlock Text="*Email:"></TextBlock>
+                                <TextBlock Text="*Sifra:"></TextBlock>
+                                <TextBlock Text="*Potvrda sifre:"></TextBlock>
+                                <TextBlock Text="*Adresa:"></TextBlock>
+                                <TextBlock Text="*Broj telefona:"></TextBlock>
                                 <TextBlock Text="Broj kreditne kartice:" TextWrapping="WrapWholeWords"></TextBlock>
                             </StackPanel>
                             <StackPanel>
