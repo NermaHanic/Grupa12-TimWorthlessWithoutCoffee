@@ -29,7 +29,9 @@
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
-                        <Setter Target="Logo.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="Glavni.(Grid.Row)" Value="1"></Setter>
+                        <Setter Target="Glavni.VerticalAlignment" Value="Center"></Setter>
+                        <Setter Target="Logo.Margin" Value="0 0 0 40"></Setter>
                         <Setter Target="LicniPodaciRegistracija.HorizontalAlignment" Value="Center"></Setter>
                         <Setter Target="LicniPodaciRegistracija.Margin" Value="0 0 0 30"></Setter>
                     </VisualState.Setters>
@@ -61,19 +63,19 @@
                 <Button x:Name="Back" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Back_Click"/>
 
                 <StackPanel x:Name="Glavni" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="5" Orientation="Horizontal" HorizontalAlignment="Center" Padding="5" >
-                    <Image x:Name="Logo" Source="ms-appx:///Assets/logo.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" MaxHeight="400" MaxWidth="500"  Margin="0 0 70 0"></Image>
-                    <StackPanel x:Name="LicniPodaciRegistracija" Background="Beige" VerticalAlignment="Center" Height="549">
+                    <Image x:Name="Logo" Source="ms-appx:///Assets/logo.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" MaxHeight="400" MaxWidth="450"  Margin="0 0 50 0"></Image>
+                    <StackPanel x:Name="LicniPodaciRegistracija" Background="Beige" VerticalAlignment="Center">
                         <StackPanel Padding="20" Orientation="Horizontal">
                             <StackPanel>
                                 <StackPanel.Resources>
                                     <Style TargetType="TextBlock">
-                                        <Setter Property="FontSize" Value="25"></Setter>
-                                        <Setter Property="Margin" Value="0 10 0 0"></Setter>
+                                        <Setter Property="FontSize" Value="15"></Setter>
+                                        <Setter Property="Margin" Value="0 20 0 0"></Setter>
                                         <Setter Property="Foreground" Value="#787272"></Setter>
                                     </Style>
                                 </StackPanel.Resources>
                                 <TextBlock Text="Ime:"></TextBlock>
-                                <TextBlock Text="Prezime"></TextBlock>
+                                <TextBlock Text="Prezime:"></TextBlock>
                                 <TextBlock Text="Email:"></TextBlock>
                                 <TextBlock Text="Sifra:"></TextBlock>
                                 <TextBlock Text="Potvrda sifre:"></TextBlock>
@@ -85,11 +87,11 @@
                                 <StackPanel.Resources>
                                     <Style TargetType="TextBox">
                                         <Setter Property="Width" Value="200"></Setter>
-                                        <Setter Property="Margin" Value="20 12 0 0"></Setter>
+                                        <Setter Property="Margin" Value="20 9 0 0"></Setter>
                                     </Style>
                                     <Style TargetType="PasswordBox">
                                         <Setter Property="Width" Value="200"></Setter>
-                                        <Setter Property="Margin" Value="20 12 0 0"></Setter>
+                                        <Setter Property="Margin" Value="20 9 0 0"></Setter>
                                     </Style>
                                 </StackPanel.Resources>
 
@@ -103,9 +105,9 @@
                                 <TextBox x:Name="kartica"></TextBox>
                             </StackPanel>
                         </StackPanel>
-                        <Button x:Name="Registruj" FontSize="25" Content="Registruj se" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Margin="0 20 0 0" Click="Registruj_Click"></Button>
-                        <TextBlock x:Name="error" Text="" TextWrapping="Wrap" Foreground="Red"/>
-                    </StackPanel>
+                        <TextBlock x:Name="error" Text="" TextWrapping="Wrap" Foreground="Red" Margin="20 0 0 0"/>
+                        <Button x:Name="Registruj" FontSize="15" Content="Registruj se" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Margin="0 0 0 20" Click="Registruj_Click"></Button>
+                        </StackPanel>
                 </StackPanel>
 
             </Grid>
