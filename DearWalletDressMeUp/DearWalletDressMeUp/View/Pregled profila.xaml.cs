@@ -73,13 +73,17 @@ namespace DearWalletDressMeUp
 
         private void DodajKorpica_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(Checkout));
         }
 
         private void DodajKreaciju_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Kreacija1));
         }
-        
+
+        private void DodajUKorpicu_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
     }
 }

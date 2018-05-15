@@ -92,6 +92,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ViewModel\IBaza.cs" />
     <Compile Include="View\AdminDodavanjeOdjece.xaml.cs">
       <DependentUpon>AdminDodavanjeOdjece.xaml</DependentUpon>
     </Compile>
@@ -114,6 +115,7 @@
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\ID.cs" />
+    <Compile Include="ViewModel\KorisnikViewModel.cs" />
     <Compile Include="View\Kreacija1.xaml.cs">
       <DependentUpon>Kreacija1.xaml</DependentUpon>
     </Compile>

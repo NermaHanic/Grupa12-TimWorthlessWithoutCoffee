@@ -1,5 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Korisnik" />
+    <RootPropertyPathName Name="BrojKreditneKartice" />
+    <RootPropertyPathName Name="BrojTelefona" />
+    <RootPropertyPathName Name="Adresa" />
+    <RootPropertyPathName Name="Sifra" />
+    <RootPropertyPathName Name="Email" />
+    <RootPropertyPathName Name="Prezime" />
+    <RootPropertyPathName Name="Ime" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
@@ -71,6 +81,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Width" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Command" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
@@ -92,6 +103,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="Content" />
@@ -179,6 +191,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Password" />
     </RootType>
     <RootType FullName="DearWalletDressMeUp.AdminUserManagement" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
@@ -261,6 +274,9 @@
     <RootType FullName="DearWalletDressMeUp.Poklon4" />
     <RootType FullName="DearWalletDressMeUp.Pregled_profila" />
     <RootType FullName="DearWalletDressMeUp.Pretraga" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+    </RootType>
     <RootType FullName="DearWalletDressMeUp.Registracija" />
   </Roots.RootTypes>
 </Roots>

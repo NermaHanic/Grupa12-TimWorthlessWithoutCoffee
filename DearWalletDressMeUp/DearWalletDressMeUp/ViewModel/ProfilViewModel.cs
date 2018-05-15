@@ -12,16 +12,14 @@ namespace DearWalletDressMeUp.ViewModel
     {
         public ICommand BrisiProfil { get; set; }
         public ICommand Preporuci { get; set; }
-
         
-
         public ProfilViewModel()
         {
-            BrisiProfil = new RelayCommand(brisi);
-            Preporuci = new RelayCommand(preporuciPrijatelju);
+            BrisiProfil = new RelayCommand(Brisi);
+            Preporuci = new RelayCommand(PreporuciPrijatelju);
         }
-        public void brisi(object parametar) { }
-        public void preporuciPrijatelju(object param) { }
+        public void Brisi(object parametar) { }
+        public void PreporuciPrijatelju(object param) { }
 
         
     }
