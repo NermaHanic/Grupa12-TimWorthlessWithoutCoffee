@@ -29,7 +29,7 @@
                 <TextBox x:Name="ime" PlaceholderText="Unesite korisnicko ime"/>
                 <PasswordBox x:Name="sifra" PlaceholderText="Unesite sifru" Margin="0,10,0,0"/>
                 <StackPanel x:Name="RegistrujSe" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
-                    <TextBlock x:Name="lala" Text="Novi ste clan?" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="lala" Text="korisnik ste clan?" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                     <HyperlinkButton x:Name="pink" Content="Registrujte se" FontSize="15" Click="pink_Click" VerticalAlignment="Center" Margin="10 0 0 0"/>
                 </StackPanel>
                 <TextBlock x:Name="error" Text="" TextWrapping="Wrap" Width="250" HorizontalAlignment="Left" Foreground="Red"/>

@@ -15,9 +15,13 @@ namespace DearWalletDressMeUp.ViewModel
 
         public KreacijaViewModel()
         {
+<<<<<<< HEAD
+            ObracunCijene = new RelayCommand<object>(Obracunaj);
+=======
             ObracunCijene = new RelayCommand<object>(obracunaj);
+>>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
         }
 
-        public void obracunaj(object param) { }
+        public void Obracunaj(object param) { }
     }
 }

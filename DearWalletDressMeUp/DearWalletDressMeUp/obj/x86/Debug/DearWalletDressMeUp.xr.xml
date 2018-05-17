@@ -6,6 +6,7 @@
     <RootPropertyPathName Name="BrojKreditneKartice" />
     <RootPropertyPathName Name="BrojTelefona" />
     <RootPropertyPathName Name="Adresa" />
+    <RootPropertyPathName Name="PSifra" />
     <RootPropertyPathName Name="Sifra" />
     <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="Prezime" />
@@ -17,6 +18,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
+      <RootProperty Name="DataContext" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Children" />
@@ -275,8 +277,11 @@
     <RootType FullName="DearWalletDressMeUp.Poklon4" />
     <RootType FullName="DearWalletDressMeUp.Pregled_profila" />
     <RootType FullName="DearWalletDressMeUp.Pretraga" />
+    <RootType FullName="DearWalletDressMeUp.ViewModel.KorisnikViewModel" />
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Path" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="DearWalletDressMeUp.Registracija" />
   </Roots.RootTypes>

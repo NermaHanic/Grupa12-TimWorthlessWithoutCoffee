@@ -116,7 +116,7 @@
     <Compile Include="View\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\ID.cs" />
+    <Compile Include="Helper\ID.cs" />
     <Compile Include="ViewModel\KorisnikViewModel.cs" />
     <Compile Include="View\Kreacija1.xaml.cs">
       <DependentUpon>Kreacija1.xaml</DependentUpon>
@@ -178,7 +178,7 @@
     <Compile Include="View\Poklon4.xaml.cs">
       <DependentUpon>Poklon4.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\Pomocna.cs" />
+    <Compile Include="Helper\Pomocna.cs" />
     <Compile Include="View\Pregled profila.xaml.cs">
       <DependentUpon>Pregled profila.xaml</DependentUpon>
     </Compile>

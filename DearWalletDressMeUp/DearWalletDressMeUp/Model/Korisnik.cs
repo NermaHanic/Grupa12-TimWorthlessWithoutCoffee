@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DearWalletDressMeUp.Model
 {
-    public class Korisnik
+    public class Korisnik:INotifyPropertyChanged
     {
         private string ime;
         private string prezime;
@@ -40,5 +41,14 @@ namespace DearWalletDressMeUp.Model
         public string BrojKreditneKartice { get => brojKreditneKartice; set => brojKreditneKartice = value; }
         public string Id { get => id; set => id = value; }
         public string Sifra { get => sifra; set => sifra = value; }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
 }

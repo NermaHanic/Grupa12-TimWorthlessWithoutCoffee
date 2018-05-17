@@ -9,7 +9,11 @@ using Windows.UI.Xaml.Controls;
 
 namespace DearWalletDressMeUp.Helper
 {
+<<<<<<< HEAD
+    public class Navigacija:INavigacija
+=======
     public static class Navigacija
+>>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
     {
         public static void Navigiraj(Type sourcePage)
         {

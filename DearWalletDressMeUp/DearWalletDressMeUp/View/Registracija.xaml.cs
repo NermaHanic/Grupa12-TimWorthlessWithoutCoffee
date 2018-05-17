@@ -16,6 +16,10 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
 using DearWalletDressMeUp.ViewModel;
+<<<<<<< HEAD
+using DearWalletDressMeUp.Helper;
+=======
+>>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace DearWalletDressMeUp
@@ -28,11 +32,15 @@ namespace DearWalletDressMeUp
         public Registracija()
         {
             this.InitializeComponent();
+            DataContext = new KorisnikViewModel();
         }
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Login));
         }
+<<<<<<< HEAD
+       
+=======
         IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
         private async void Registruj_Click(object sender, RoutedEventArgs e)
         {
@@ -65,5 +73,6 @@ namespace DearWalletDressMeUp
                 k.dodajUBazu(true);
             }
         }
+>>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
     }
 }

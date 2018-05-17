@@ -12,8 +12,8 @@ namespace DearWalletDressMeUp.Model
         void IzmijeniIme(string novoIme);
         void IzmijeniPrezime(string novoPrezime);
         void IzmijeniAdresu(string novaAdresa);
-        void IzmijeniBrojTelefona(string noviBrojTelefona);
-        void IzmijeniBrojKreditneKartice(string noviBrojKreditneKartice);
+        void IzmijeniBrojTelefona(string korisnikBrojTelefona);
+        void IzmijeniBrojKreditneKartice(string korisnikBrojKreditneKartice);
         void IzmijeniSifru(string novaSifra);
         void IzmijeniSliku(BitmapImage novaSlika);
 

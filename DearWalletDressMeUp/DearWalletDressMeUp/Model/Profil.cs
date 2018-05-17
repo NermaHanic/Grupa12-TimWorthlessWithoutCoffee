@@ -34,8 +34,8 @@ namespace DearWalletDressMeUp.Model
         public void IzmijeniIme(string novoIme) { }
         public void IzmijeniPrezime(string novoPrezime) { }
         public void IzmijeniAdresu(string novaAdresa) { }
-        public void IzmijeniBrojTelefona(string noviBrojTelefona) { }
-        public void IzmijeniBrojKreditneKartice(string noviBrojKreditneKartice) { }
+        public void IzmijeniBrojTelefona(string korisnikBrojTelefona) { }
+        public void IzmijeniBrojKreditneKartice(string korisnikBrojKreditneKartice) { }
         public void IzmijeniSifru(string novaSifra) { }
         public void IzmijeniSliku(BitmapImage novaSlika) { }
         public void DodajUKorpicu() { }

@@ -31,13 +31,21 @@
     <AppXManifest Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+<<<<<<< HEAD
+      <Modified>2018-05-17T12:31:55.037</Modified>
+=======
       <Modified>2018-05-17T02:01:01.210</Modified>
+>>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.exe">
       <PackagePath>entrypoint\DearWalletDressMeUp.exe</PackagePath>
+<<<<<<< HEAD
+      <Modified>2018-05-17T12:31:51.741</Modified>
+=======
       <Modified>2018-05-17T02:01:00.032</Modified>
+>>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
       <PackagePath>Microsoft.Azure.Mobile.Client.dll</PackagePath>
@@ -635,7 +643,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.xr.xml">
       <PackagePath>DearWalletDressMeUp.xr.xml</PackagePath>
+<<<<<<< HEAD
+      <Modified>2018-05-17T12:22:55.039</Modified>
+=======
       <Modified>2018-05-17T01:55:25.067</Modified>
+>>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -644,11 +656,19 @@
     <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+<<<<<<< HEAD
+      <Modified>2018-05-17T12:22:56.923</Modified>
+=======
       <Modified>2018-05-17T01:55:27.993</Modified>
+>>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\DearWalletDressMeUp.exe">
       <PackagePath>DearWalletDressMeUp.exe</PackagePath>
+<<<<<<< HEAD
+      <Modified>2018-05-17T12:31:54.608</Modified>
+=======
       <Modified>2018-05-17T02:01:01.195</Modified>
+>>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
