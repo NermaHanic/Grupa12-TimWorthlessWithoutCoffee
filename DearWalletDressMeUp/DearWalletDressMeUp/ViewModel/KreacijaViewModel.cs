@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using DearWalletDressMeUp.Helper;
 
 
 namespace DearWalletDressMeUp.ViewModel
@@ -14,7 +15,7 @@ namespace DearWalletDressMeUp.ViewModel
 
         public KreacijaViewModel()
         {
-            ObracunCijene = new RelayCommand(obracunaj);
+            ObracunCijene = new RelayCommand<object>(obracunaj);
         }
 
         public void obracunaj(object param) { }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DearWalletDressMeUp.Helper;
 using System.Windows.Input;
 
 
@@ -14,7 +15,7 @@ namespace DearWalletDressMeUp.ViewModel
 
         public PoklonViewModel()
         {
-            SnimiPoruku = new RelayCommand(snimiPoruku);
+            SnimiPoruku = new RelayCommand<object>(snimiPoruku);
         }
 
         public void snimiPoruku(object param) { }

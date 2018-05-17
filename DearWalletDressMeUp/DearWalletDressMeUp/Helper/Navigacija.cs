@@ -9,21 +9,21 @@ using Windows.UI.Xaml.Controls;
 
 namespace DearWalletDressMeUp.Helper
 {
-    class Navigacija
+    public static class Navigacija
     {
-        public void Navigiraj(Type sourcePage)
+        public static void Navigiraj(Type sourcePage)
         {
             var frame = (Frame)Window.Current.Content;
             frame.Navigate(sourcePage);
         }
 
-        public void Navigiraj(Type sourcePage, object parameter)
+        public static void Navigiraj(Type sourcePage, object parameter)
         {
             var frame = (Frame)Window.Current.Content;
             frame.Navigate(sourcePage, parameter);
         }
 
-        public void Nazad()
+        public static void Nazad()
         {
             var frame = (Frame)Window.Current.Content;
             frame.GoBack();

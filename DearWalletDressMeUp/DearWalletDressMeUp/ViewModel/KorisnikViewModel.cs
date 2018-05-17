@@ -16,56 +16,33 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Windows.Input;
 using Microsoft.WindowsAzure.MobileServices;
+using DearWalletDressMeUp.Helper;
 
 namespace DearWalletDressMeUp.ViewModel
 {
     public class KorisnikViewModel
     {
          //public ICommand DobaviIzBaze { get; set; }
-         public ICommand UnesiUBazu { get; set; }
+        public ICommand UnesiUBazu { get; set; }
          //public ICommand UnesiViseUBazu { get; set; }
-        List<Korisnik> korisnici;
+        //List<Korisnik> korisnici;
+        public Korisnik korisnik { get; set; }
 
         public KorisnikViewModel()
         {
-            //DobaviIzBaze = new RelayCommand();
-            UnesiUBazu = new RelayCommand(dodajUBazu);
-            //UnesiViseUBazu = new RelayCommand();
-            korisnici = new List<Korisnik>();
+            //DobaviIzBaze = new RelayCommand<object>();
+            UnesiUBazu = new RelayCommand<object>(dodajUBazu);
+            //UnesiViseUBazu = new RelayCommand<object>();
+            //korisnici = new List<Korisnik>();
         }
 
         IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
 
-        public void dodajUBazu(object parametar)
+        public async void dodajUBazu(object parametar)
         {
-            error.Text = "";
-            if (ime.Text.Length == 0 || prezime.Text.Length == 0 || sifra.Password.Length == 0 || potvrdaSifre.Password.Length == 0 || adresa.Text.Length == 0 || telefon.Text.Length == 0)
-            {
-                error.Text = "Niste unijeli sva obavezna polja.";
-            }
-
-            else if (potvrdaSifre.Password != sifra.Password)
-            {
-                error.Text = "Unesene sifre se ne slazu.";
-            }
-
-            else
-            {
-                for (int i = 0; i < telefon.Text.Length; i++)
-                {
-                    if (Char.IsLetter(telefon.Text[i])) error.Text = "Neispravan format broja telefona";
-                }
-                for (int i = 0; i < kartica.Text.Length; i++)
-                {
-                    if (Char.IsLetter(kartica.Text[i])) error.Text = "Neispravan format broja kreditne kartice";
-                }
-            }
-
-            if (error.Text == "")
-            {
                 try
                 {
-                    Korisnik obj = new Korisnik(ime.Text, prezime.Text, EmailReg.Text, adresa.Text, telefon.Text, kartica.Text,
+                    /*Korisnik obj = new Korisnik(ime.Text, prezime.Text, EmailReg.Text, adresa.Text, telefon.Text, kartica.Text,
                         await Pomocna.DodjelaUsername(ime.Text, prezime.Text), sifra.Password);
                     await tabelica.InsertAsync(obj);
 
@@ -74,9 +51,24 @@ namespace DearWalletDressMeUp.ViewModel
                     objProf.Id = await ID<Profil>.DodjelaID(profil);
                     await profil.InsertAsync(objProf);*/
 
-                    MessageDialog m = new MessageDialog("Uspjesno ste registrovani na Dear Wallet Dress Me Up! Vas username glasi: " + obj.Id + " :)");
+                    Korisnik obj = new Korisnik();
+                    obj.Ime = korisnik.Ime;
+                    obj.Prezime = korisnik.Prezime;
+                    obj.Prezime = korisnik.Sifra;
+                    obj.Email = korisnik.Email;
+                    obj.Adresa = korisnik.Adresa;
+                    obj.BrojTelefona = korisnik.BrojTelefona;
+                    obj.BrojKreditneKartice = korisnik.BrojKreditneKartice;
+                    obj.Sifra = korisnik.Sifra;
+                    obj.Id = await Pomocna.DodjelaUsername(obj.Ime, obj.Prezime);
+
+                await tabelica.InsertAsync(obj);
+
+                MessageDialog m = new MessageDialog("Uspjesno ste registrovani na Dear Wallet Dress Me Up! Vas username glasi: " + obj.Id + " :)");
                     await m.ShowAsync();
-                    this.Frame.Navigate(typeof(Home));
+                    Navigacija.Navigiraj(typeof(Home));
+                    
+                   
                 }
                 catch (Exception ex)
                 {
@@ -84,6 +76,6 @@ namespace DearWalletDressMeUp.ViewModel
                     await feedbackError.ShowAsync();
                 }
             }
-        }
+        
     }
 }

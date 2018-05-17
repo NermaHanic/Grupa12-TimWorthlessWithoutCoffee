@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DearWalletDressMeUp.Helper;
 using System.Windows.Input;
 
 namespace DearWalletDressMeUp.ViewModel
@@ -15,8 +16,8 @@ namespace DearWalletDressMeUp.ViewModel
         
         public ProfilViewModel()
         {
-            BrisiProfil = new RelayCommand(Brisi);
-            Preporuci = new RelayCommand(PreporuciPrijatelju);
+            BrisiProfil = new RelayCommand<object>(Brisi);
+            Preporuci = new RelayCommand<object>(PreporuciPrijatelju);
         }
         public void Brisi(object parametar) { }
         public void PreporuciPrijatelju(object param) { }

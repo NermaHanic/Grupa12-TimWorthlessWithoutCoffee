@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace DearWalletDressMeUp.Helper
 {
-    public class RelayCommand : ICommand
+    public class RelayCommand<T> : ICommand
     {
         private readonly Func<T, bool> _canExecuteMethod;
         private readonly Action<T> _executeMethod;

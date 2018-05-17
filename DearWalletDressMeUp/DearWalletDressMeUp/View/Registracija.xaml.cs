@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
+using DearWalletDressMeUp.ViewModel;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace DearWalletDressMeUp
@@ -60,26 +61,8 @@ namespace DearWalletDressMeUp
 
             if (error.Text == "")
             {
-                try
-                {
-                    Korisnik obj = new Korisnik(ime.Text, prezime.Text, EmailReg.Text, adresa.Text, telefon.Text, kartica.Text,
-                        await Pomocna.DodjelaUsername(ime.Text, prezime.Text), sifra.Password);
-                    await tabelica.InsertAsync(obj);
-
-                    /*IMobileServiceTable<Profil> profil = App.MobileService.GetTable<Profil>();
-                    Profil objProf = new Profil();
-                    objProf.Id = await ID<Profil>.DodjelaID(profil);
-                    await profil.InsertAsync(objProf);*/
-
-                    MessageDialog m = new MessageDialog("Uspjesno ste registrovani na Dear Wallet Dress Me Up! Vas username glasi: " + obj.Id + " :)");
-                    await m.ShowAsync();
-                    this.Frame.Navigate(typeof(Home));
-                }
-                catch (Exception ex)
-                {
-                    MessageDialog feedbackError = new MessageDialog("Error : Doslo je do greske! \n" + ex.ToString());
-                    await feedbackError.ShowAsync();
-                }
+                KorisnikViewModel k = new KorisnikViewModel();
+                k.dodajUBazu(true);
             }
         }
     }

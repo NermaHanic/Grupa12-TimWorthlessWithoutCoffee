@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DearWalletDressMeUp.Helper;
 using System.Windows.Input;
 
 namespace DearWalletDressMeUp.ViewModel
@@ -15,9 +16,9 @@ namespace DearWalletDressMeUp.ViewModel
 
         public NarudzbaViewModel()
         {
-            provjeraZaPoklon = new RelayCommand(ProvjeraZaPoklon);
-            obracunCijene = new RelayCommand(ObracunajCijenu);
-            dodajStavku = new RelayCommand(DodajStavkuNarudzbe);
+            provjeraZaPoklon = new RelayCommand<object>(ProvjeraZaPoklon);
+            obracunCijene = new RelayCommand<object>(ObracunajCijenu);
+            dodajStavku = new RelayCommand<object>(DodajStavkuNarudzbe);
         }
 
         public void ProvjeraZaPoklon(object param) { }
