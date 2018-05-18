@@ -132,11 +132,7 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-<<<<<<< HEAD
             _typeNameTable = new string[29];
-=======
-            _typeNameTable = new string[23];
->>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
             _typeNameTable[0] = "DearWalletDressMeUp.AdminDodavanjeOdjece";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -159,7 +155,6 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
             _typeNameTable[19] = "DearWalletDressMeUp.Poklon4";
             _typeNameTable[20] = "DearWalletDressMeUp.Pregled_profila";
             _typeNameTable[21] = "DearWalletDressMeUp.Pretraga";
-<<<<<<< HEAD
             _typeNameTable[22] = "DearWalletDressMeUp.ViewModel.KorisnikViewModel";
             _typeNameTable[23] = "Object";
             _typeNameTable[24] = "System.Windows.Input.ICommand";
@@ -169,11 +164,6 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
             _typeNameTable[28] = "DearWalletDressMeUp.Registracija";
 
             _typeTable = new global::System.Type[29];
-=======
-            _typeNameTable[22] = "DearWalletDressMeUp.Registracija";
-
-            _typeTable = new global::System.Type[23];
->>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
             _typeTable[0] = typeof(global::DearWalletDressMeUp.AdminDodavanjeOdjece);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -196,7 +186,6 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
             _typeTable[19] = typeof(global::DearWalletDressMeUp.Poklon4);
             _typeTable[20] = typeof(global::DearWalletDressMeUp.Pregled_profila);
             _typeTable[21] = typeof(global::DearWalletDressMeUp.Pretraga);
-<<<<<<< HEAD
             _typeTable[22] = typeof(global::DearWalletDressMeUp.ViewModel.KorisnikViewModel);
             _typeTable[23] = typeof(global::System.Object);
             _typeTable[24] = typeof(global::System.Windows.Input.ICommand);
@@ -204,9 +193,6 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
             _typeTable[26] = typeof(global::System.String);
             _typeTable[27] = typeof(global::DearWalletDressMeUp.Model.Korisnik);
             _typeTable[28] = typeof(global::DearWalletDressMeUp.Registracija);
-=======
-            _typeTable[22] = typeof(global::DearWalletDressMeUp.Registracija);
->>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -261,13 +247,9 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
         private object Activate_19_Poklon4() { return new global::DearWalletDressMeUp.Poklon4(); }
         private object Activate_20_Pregled_profila() { return new global::DearWalletDressMeUp.Pregled_profila(); }
         private object Activate_21_Pretraga() { return new global::DearWalletDressMeUp.Pretraga(); }
-<<<<<<< HEAD
         private object Activate_22_KorisnikViewModel() { return new global::DearWalletDressMeUp.ViewModel.KorisnikViewModel(); }
         private object Activate_27_Korisnik() { return new global::DearWalletDressMeUp.Model.Korisnik(); }
         private object Activate_28_Registracija() { return new global::DearWalletDressMeUp.Registracija(); }
-=======
-        private object Activate_22_Registracija() { return new global::DearWalletDressMeUp.Registracija(); }
->>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -427,7 +409,6 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-<<<<<<< HEAD
             case 22:   //  DearWalletDressMeUp.ViewModel.KorisnikViewModel
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_22_KorisnikViewModel;
@@ -470,11 +451,6 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
             case 28:   //  DearWalletDressMeUp.Registracija
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_28_Registracija;
-=======
-            case 22:   //  DearWalletDressMeUp.Registracija
-                userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_Registracija;
->>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -483,7 +459,6 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
         }
 
 
-<<<<<<< HEAD
         private object get_0_KorisnikViewModel_UnesiUBazu(object instance)
         {
             var that = (global::DearWalletDressMeUp.ViewModel.KorisnikViewModel)instance;
@@ -524,13 +499,10 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
             var that = (global::DearWalletDressMeUp.ViewModel.KorisnikViewModel)instance;
             that.Korisnik = (global::DearWalletDressMeUp.Model.Korisnik)Value;
         }
-=======
->>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlMember xamlMember = null;
-<<<<<<< HEAD
             global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType userType;
 
             switch (longMemberName)
@@ -560,9 +532,6 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
                 xamlMember.Setter = set_3_KorisnikViewModel_Korisnik;
                 break;
             }
-=======
-            // No Local Properties
->>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
             return xamlMember;
         }
     }

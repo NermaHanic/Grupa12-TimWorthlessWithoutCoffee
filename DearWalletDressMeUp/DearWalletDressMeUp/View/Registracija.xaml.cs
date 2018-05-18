@@ -16,10 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
 using DearWalletDressMeUp.ViewModel;
-<<<<<<< HEAD
 using DearWalletDressMeUp.Helper;
-=======
->>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace DearWalletDressMeUp
@@ -38,41 +35,6 @@ namespace DearWalletDressMeUp
         {
             Frame.Navigate(typeof(Login));
         }
-<<<<<<< HEAD
-       
-=======
-        IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
-        private async void Registruj_Click(object sender, RoutedEventArgs e)
-        {
-            error.Text = "";
-            if (ime.Text.Length == 0 || prezime.Text.Length == 0 || sifra.Password.Length == 0 || potvrdaSifre.Password.Length == 0 || adresa.Text.Length == 0 || telefon.Text.Length == 0)
-            {
-                error.Text = "Niste unijeli sva obavezna polja.";
-            }
-
-            else if (potvrdaSifre.Password != sifra.Password)
-            {
-                error.Text = "Unesene sifre se ne slazu.";
-            }
-
-            else
-            {
-                for (int i = 0; i < telefon.Text.Length; i++)
-                {
-                    if (Char.IsLetter(telefon.Text[i])) error.Text = "Neispravan format broja telefona";
-                }
-                for (int i = 0; i < kartica.Text.Length; i++)
-                {
-                    if (Char.IsLetter(kartica.Text[i])) error.Text = "Neispravan format broja kreditne kartice";
-                }
-            }
-
-            if (error.Text == "")
-            {
-                KorisnikViewModel k = new KorisnikViewModel();
-                k.dodajUBazu(true);
-            }
-        }
->>>>>>> fdfdfd4ab3669d3bcb126d8aacfaccfdbfb2d990
+        
     }
 }

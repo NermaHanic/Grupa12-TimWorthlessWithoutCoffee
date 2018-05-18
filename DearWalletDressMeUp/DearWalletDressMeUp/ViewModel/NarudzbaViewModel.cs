@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using DearWalletDressMeUp.Helper;
 using System.Windows.Input;
-using DearWalletDressMeUp.Helper;
 
 namespace DearWalletDressMeUp.ViewModel
 {
