@@ -65,11 +65,11 @@ namespace DearWalletDressMeUp.Model
             }
             return new Tuple<bool, string>(false, "");
         }
-        public async static Task<Tuple<bool, string>> ValidacijaLogina(string username,string password)
+        public async static Task<Tuple<bool, string, string>> ValidacijaLogina(string username,string password)
         {
             if(username is null || password is null)
             {
-                return new Tuple<bool, string>(false, "Niste unijeli sva polja.");
+                return new Tuple<bool, string, string>(false, "Niste unijeli sva polja.", "");
             }
             IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
             List<Korisnik> lista = await tabelica.ToListAsync();
@@ -80,10 +80,10 @@ namespace DearWalletDressMeUp.Model
             }
             catch(Exception e)
             {
-                return new Tuple<bool, string>(false, "nr");
+                return new Tuple<bool, string, string>(false, "nr", "");
             }
-            if (kor.Sifra != password) return new Tuple<bool, string>(false, "Username i sifra se ne slazu!");
-            return new Tuple<bool, string>(true, "");
+            if (kor.Sifra != password) return new Tuple<bool, string, string>(false, "Username i sifra se ne slazu!", "");
+            return new Tuple<bool, string, string>(true, "", kor.IdProfila);
         }
     }
 }

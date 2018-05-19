@@ -36,7 +36,7 @@ namespace DearWalletDressMeUp.ViewModel
         {
             string greska = "";
             Tuple<bool, string> admin = Pomocna.JeLAdmin(korisnik.Id);
-            Tuple<bool, string> meh = await Pomocna.ValidacijaLogina(korisnik.Id, korisnik.Sifra);
+            Tuple<bool, string, string> meh = await Pomocna.ValidacijaLogina(korisnik.Id, korisnik.Sifra);
 
             if(!(meh.Item1))
             {
@@ -59,7 +59,7 @@ namespace DearWalletDressMeUp.ViewModel
             }*/
             else
             {
-                Navigacija.Navigiraj(typeof(Home), korisnik.IdProfila);
+                Navigacija.Navigiraj(typeof(Home), meh.Item3);
             }
         }
         public event PropertyChangedEventHandler PropertyChanged;

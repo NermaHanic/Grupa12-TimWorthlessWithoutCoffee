@@ -26,7 +26,9 @@ namespace DearWalletDressMeUp
     /// </summary>
     public sealed partial class Pregled_profila : Page
     {
+        private IMobileServiceTable<Korisnik> tabela = App.MobileService.GetTable<Korisnik>();
         private string profil;
+        private Korisnik _korLogin;
         public Pregled_profila()
         {
             this.InitializeComponent();
@@ -38,9 +40,13 @@ namespace DearWalletDressMeUp
             {
                 profil = (string)e.Parameter;
             }
+            else if (e.Parameter is Korisnik)
+            {
+                _korLogin = (Korisnik)e.Parameter;
+            }
             try
             {
-                IMobileServiceTable<Korisnik> tabela = App.MobileService.GetTable<Korisnik>();
+               
                 Korisnik kor = (await tabela.ToListAsync()).Find(x => x.IdProfila == profil);
                 LicniImeText.Text = kor.Ime;
                 LicniPrezimeText.Text = kor.Prezime;
