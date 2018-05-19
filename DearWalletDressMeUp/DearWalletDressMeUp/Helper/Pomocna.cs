@@ -56,50 +56,34 @@ namespace DearWalletDressMeUp.Model
             }
             return new Tuple<bool, string>(true, "");
         }
-
-        public static Tuple<bool,string> ValidirajLogin(string username, string sifra)
-        {
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(sifra))
-            {
-                return new Tuple<bool, string>(false, "Niste unijeli sva polja");
-            }
-            return new Tuple<bool, string>(true, "");
-        }
+        
         public static Tuple<bool, string> JeLAdmin(string username)
         {
             if (username == "admin")
-            {
+            {  //popravi ovo
                 return new Tuple<bool, string>(true, "");
             }
             return new Tuple<bool, string>(false, "");
         }
-        public async static Task<string> ValidacijaLogina(string username,string password)
+        public async static Task<Tuple<bool, string>> ValidacijaLogina(string username,string password)
         {
-            IMobileServiceTable<Korisnik> tabela = App.MobileService.GetTable<Korisnik>();
-            List<Korisnik> l = await tabela.ToListAsync();
-            
+            if(username is null || password is null)
+            {
+                return new Tuple<bool, string>(false, "Niste unijeli sva polja.");
+            }
+            IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
+            List<Korisnik> lista = await tabelica.ToListAsync();
+            Korisnik kor = new Korisnik();
             try
             {
-                
-                Korisnik k = l.Find(x=> x.Id == username);
-                if (k.Sifra != password)
-                {
-                    return "Username i sifra se ne slazu.";
-                }
-                return "";
+                kor = lista.Find(x => x.Id == username);
             }
-            catch
+            catch(Exception e)
             {
-                ContentDialog errorMsg = new ContentDialog()
-                {
-                    Title = "Oops",
-                    Content = "Vi nemate kreiran profil :( Molimo, registrujte se.",
-                    CloseButtonText = "Ok"
-                };
-                await errorMsg.ShowAsync();
+                return new Tuple<bool, string>(false, "nr");
             }
-            return "Doslo je do greske";
+            if (kor.Sifra != password) return new Tuple<bool, string>(false, "Username i sifra se ne slazu!");
+            return new Tuple<bool, string>(true, "");
         }
-        
     }
 }

@@ -35,26 +35,13 @@ namespace DearWalletDressMeUp.ViewModel
         public async void Login(object parametar)
         {
             string greska = "";
-            Tuple<bool, string> polja = Pomocna.ValidirajLogin(korisnik.Ime, korisnik.Sifra);
-            Tuple<bool, string> admin = Pomocna.JeLAdmin(korisnik.Ime);
+            Tuple<bool, string> admin = Pomocna.JeLAdmin(korisnik.Id);
+            Tuple<bool, string> meh = await Pomocna.ValidacijaLogina(korisnik.Id, korisnik.Sifra);
 
-            if (!polja.Item1)
+            if(!(meh.Item1))
             {
-                greska += polja.Item2 + "\n";
-            }
-            else if (admin.Item1)
-            {
-                Navigacija.Navigiraj(typeof(AdminovProfil));
-            }
-            else if (!admin.Item1)
-            {
-                IMobileServiceTable<Korisnik> tabela = App.MobileService.GetTable<Korisnik>();
-                List<Korisnik> l = await tabela.ToListAsync();
-                try
-                {
-                    greska = await Pomocna.ValidacijaLogina(korisnik.Id, korisnik.Sifra);
-                }
-                catch
+                greska += meh.Item2;
+                if (meh.Item2 == "nr")
                 {
                     ContentDialog errorMsg = new ContentDialog()
                     {
@@ -64,10 +51,15 @@ namespace DearWalletDressMeUp.ViewModel
                     };
                     await errorMsg.ShowAsync();
                 }
+                else await (new MessageDialog(greska)).ShowAsync();
             }
+           /* if (admin.Item1)
+            {
+                Navigacija.Navigiraj(typeof(AdminovProfil));  //treba popraviit ovo za admina
+            }*/
             else
             {
-                Navigacija.Navigiraj(typeof(Home));
+                Navigacija.Navigiraj(typeof(Home), korisnik.IdProfila);
             }
         }
         public event PropertyChangedEventHandler PropertyChanged;

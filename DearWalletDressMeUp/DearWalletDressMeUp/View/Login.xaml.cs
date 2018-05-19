@@ -31,7 +31,7 @@ namespace DearWalletDressMeUp
             this.InitializeComponent();
             DataContext = new LoginViewModel();
         }
-
+        
         private void Loginbtn_Click(object sender, RoutedEventArgs e)
         {
             

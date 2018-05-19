@@ -2344,3 +2344,4 @@ C:\Users\defaultuser0\Desktop\bleh\Grupa12-TimWorthlessWithoutCoffee\DearWalletD
 C:\Users\defaultuser0\Desktop\bleh\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\defaultuser0\Desktop\bleh\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\Microsoft.Azure.Mobile.Client.pri.xml
 C:\Users\defaultuser0\Desktop\bleh\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\defaultuser0\Desktop\bleh\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\DearWalletDressMeUp.csprojAssemblyReference.cache

@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using DearWalletDressMeUp.Model;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -23,6 +24,7 @@ namespace DearWalletDressMeUp
     public sealed partial class Home : Page
     {
         private string profil;
+        private Korisnik _korLogin;
         public Home()
         {
             this.InitializeComponent();
@@ -33,6 +35,10 @@ namespace DearWalletDressMeUp
             if (e.Parameter is string)
             {
                 profil = (string)e.Parameter;
+            }
+            else if (e.Parameter is Korisnik)
+            {
+                _korLogin = (Korisnik)e.Parameter;
             }
         }
 
