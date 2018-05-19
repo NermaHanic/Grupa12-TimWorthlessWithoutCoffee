@@ -22,9 +22,18 @@ namespace DearWalletDressMeUp
     /// </summary>
     public sealed partial class Home : Page
     {
+        private string profil;
         public Home()
         {
             this.InitializeComponent();
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            if (e.Parameter is string)
+            {
+                profil = (string)e.Parameter;
+            }
         }
 
         private void Kreiraj_Click(object sender, RoutedEventArgs e)
@@ -39,7 +48,7 @@ namespace DearWalletDressMeUp
 
         private void MojProfil_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pregled_profila));
+            Frame.Navigate(typeof(Pregled_profila), profil);
         }
 
         private void Kviz_Click(object sender, RoutedEventArgs e)

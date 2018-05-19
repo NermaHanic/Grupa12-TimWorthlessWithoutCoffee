@@ -32,9 +32,9 @@ namespace DearWalletDressMeUp
             DataContext = new LoginViewModel();
         }
 
-        private async void Loginbtn_Click(object sender, RoutedEventArgs e)
+        private void Loginbtn_Click(object sender, RoutedEventArgs e)
         {
-             Frame.Navigate(typeof(Profil));
+            
         }
 
         private void pink_Click(object sender, RoutedEventArgs e)

@@ -28,7 +28,7 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
         }
-        
+
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(AdminovProfil));
@@ -39,18 +39,30 @@ namespace DearWalletDressMeUp
             Frame.Navigate(typeof(Login));
         }
         IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
-        //IMobileServiceTable<Profil> profil = App.MobileService.GetTable<Profil>();
+        IMobileServiceTable<Profil> profil = App.MobileService.GetTable<Profil>();
         private async void DodajKorUBazu_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                Korisnik obj = new Korisnik(ImeKorAdminText.Text, PrezimeKorAdminText.Text, EmailKorAdminText.Text, AdresaKorAdminText.Text,
-                    BrojTelKorAdminText.Text, BrojKreditneKarticeKorAdminText.Text, 
-                    await Pomocna.DodjelaUsername(ImeKorAdminText.Text, PrezimeKorAdminText.Text), SifraKorAdminText.Password);
-               
-                /*Profil objProf = new Profil();
+                /* Korisnik obj = new Korisnik(, , ,,
+                     , , 
+                     , );*/
+                Korisnik obj = new Korisnik();
+                obj.Ime = ImeKorAdminText.Text;
+                obj.Prezime = PrezimeKorAdminText.Text;
+                obj.Email = EmailKorAdminText.Text;
+                obj.Adresa = AdresaKorAdminText.Text;
+                obj.BrojTelefona = BrojTelKorAdminText.Text;
+                obj.BrojKreditneKartice = BrojKreditneKarticeKorAdminText.Text;
+                obj.Sifra = SifraKorAdminText.Password;
+                obj.Id = await Pomocna.DodjelaUsername(ImeKorAdminText.Text, PrezimeKorAdminText.Text);
+
+                Profil objProf = new Profil();
                 objProf.Id = await ID<Profil>.DodjelaID(profil);
-                await profil.InsertAsync(objProf);*/
+                objProf.IdKorisnika = obj.Id;
+                obj.IdProfila = objProf.Id;
+
+                await profil.InsertAsync(objProf);
                 await tabelica.InsertAsync(obj);
                 MessageDialog feedback = new MessageDialog("Uspjesno ste dodali korisnika");
                 await feedback.ShowAsync();
@@ -77,7 +89,7 @@ namespace DearWalletDressMeUp
                 MessageDialog msgError = new MessageDialog("Ne postoji korisnik sa tim username-om.");
                 await msgError.ShowAsync();
             }
-            
+
         }
     }
 }

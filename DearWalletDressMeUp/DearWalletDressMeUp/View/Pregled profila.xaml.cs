@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
+using DearWalletDressMeUp.Model;
+using Microsoft.WindowsAzure.MobileServices;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -24,9 +26,33 @@ namespace DearWalletDressMeUp
     /// </summary>
     public sealed partial class Pregled_profila : Page
     {
+        private string profil;
         public Pregled_profila()
         {
             this.InitializeComponent();
+        }
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            if (e.Parameter is string)
+            {
+                profil = (string)e.Parameter;
+            }
+            try
+            {
+                IMobileServiceTable<Korisnik> tabela = App.MobileService.GetTable<Korisnik>();
+                Korisnik kor = (await tabela.ToListAsync()).Find(x => x.IdProfila == profil);
+                LicniImeText.Text = kor.Ime;
+                LicniPrezimeText.Text = kor.Prezime;
+                UsernameText.Text = kor.Id;
+                Pass.Password = kor.Sifra;
+                EmailText.Text = kor.Email;
+                LicniAdresaText.Text = kor.Adresa;
+                LicniTelefonText.Text = kor.BrojTelefona;
+                Kreditna.Text = kor.BrojKreditneKartice;
+            }
+            catch (Exception)
+            { }
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)

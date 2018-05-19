@@ -37,7 +37,7 @@
                     <HyperlinkButton x:ConnectionId='10' x:Name="pink" Content="Registrujte se" FontSize="15"                    VerticalAlignment="Center" Margin="10 0 0 0"/>
                 </StackPanel>
                 <TextBlock x:ConnectionId='7' x:Name="error" Text="" TextWrapping="Wrap" Width="250" HorizontalAlignment="Left" Foreground="Red"/>
-                    <Button x:ConnectionId='8' x:Name="Loginbtn" Content="Potvrdi" HorizontalAlignment="Center"                        Margin="0 20 0 0" Command="{Binding Path=Login}"  />
+                    <Button x:ConnectionId='8' x:Name="Loginbtn" Content="Potvrdi" HorizontalAlignment="Center"                        Margin="0 20 0 0" Command="{Binding Path=Logiranje}"  />
             </StackPanel>
         </StackPanel>
     </Grid>

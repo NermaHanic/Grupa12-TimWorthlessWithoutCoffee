@@ -54,7 +54,9 @@
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="1100"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
-                    <VisualState.Setters></VisualState.Setters>
+                    <VisualState.Setters>
+                        <Setter Target="LicniPodaci.Margin" Value="150 0 0 0"></Setter>
+                    </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
@@ -99,11 +101,11 @@
                 <StackPanel x:ConnectionId='6' x:Name="OutermostStackPanel" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="5" HorizontalAlignment="Center" Orientation="Vertical" Margin="0 -20 0 0">
                     <Image x:ConnectionId='7' x:Name="logo"  Source="ms-appx:///Assets/logo.jpg" MaxHeight="300" MaxWidth="400" ></Image>
                     <StackPanel x:ConnectionId='8' x:Name="FirstUpperStack" Orientation="Horizontal" Padding="20" HorizontalAlignment="Left" Margin="0 20 0 0">
-                        <StackPanel x:ConnectionId='18' x:Name="Slikica" Height="400" Background="Beige"  HorizontalAlignment="Center">
-                            <Image x:ConnectionId='34' x:Name="userSlika"  Height="350" Width="250" VerticalAlignment="Top" Stretch="Fill" Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                        <StackPanel x:ConnectionId='18' x:Name="Slikica" Height="400" Background="Beige" Padding="10" HorizontalAlignment="Center" Margin="20">
+                            <Image x:ConnectionId='34' x:Name="userSlika"  Height="350" Width="300" VerticalAlignment="Top" Stretch="Fill" Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
                             <Button x:ConnectionId='35' x:Name="IzmijeniSliku" Content="Izmijeni sliku"  HorizontalAlignment="Center" VerticalAlignment="Bottom"                            />
                         </StackPanel>
-                        <StackPanel x:ConnectionId='19' x:Name="LicniPodaci" Background="Beige" Orientation="Vertical" Width="300" HorizontalAlignment="Stretch">
+                        <StackPanel x:ConnectionId='19' x:Name="LicniPodaci" Background="Beige" Orientation="Vertical" Width="320" HorizontalAlignment="Stretch" Padding="10">
                             <StackPanel.Resources>
                                 <Style TargetType="StackPanel">
                                     <Setter Property="Orientation" Value="Horizontal"></Setter>
@@ -113,6 +115,9 @@
                                 <Style TargetType="TextBox">
                                     <Setter Property="Width" Value="200"></Setter>
                                     <Setter Property="Margin" Value="10 0 0 0"></Setter>
+                                </Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FontSize" Value="13"></Setter>
                                 </Style>
                             </StackPanel.Resources>
                             <TextBlock Text="Licni Podaci" FontSize="25"></TextBlock>
@@ -125,20 +130,28 @@
                                 <TextBox x:ConnectionId='31' x:Name="LicniPrezimeText"></TextBox>
                             </StackPanel>
                             <StackPanel>
-                                <TextBlock x:ConnectionId='28' x:Name="LicniAdresa" Text="Adresa:"></TextBlock>
-                                <TextBox x:ConnectionId='29' x:Name="LicniAdresaText"></TextBox>
+                                <TextBlock Text="Username:"></TextBlock>
+                                <TextBox x:ConnectionId='29' x:Name="UsernameText" IsReadOnly="True"></TextBox>
                             </StackPanel>
                             <StackPanel>
-                                <TextBlock x:ConnectionId='26' x:Name="LicniGrad" Text="Grad:"></TextBlock>
-                                <TextBox x:ConnectionId='27' x:Name="LicniGradText"></TextBox>
+                                <TextBlock Text="Password:"></TextBlock>
+                                <PasswordBox x:ConnectionId='28' x:Name="Pass" Margin="10 0 0 0" Width="200" Visibility="Visible"></PasswordBox>
                             </StackPanel>
                             <StackPanel>
-                                <TextBlock x:ConnectionId='24' x:Name="LicniDrzava" Text="Drzava:"></TextBlock>
-                                <TextBox x:ConnectionId='25' x:Name="LicniDrzavaText"></TextBox>
+                                <TextBlock Text="Email:"></TextBlock>
+                                <TextBox x:ConnectionId='27' x:Name="EmailText"></TextBox>
                             </StackPanel>
                             <StackPanel>
-                                <TextBlock x:ConnectionId='22' x:Name="LicniTelefon" Text="Telefon:"></TextBlock>
-                                <TextBox x:ConnectionId='23' x:Name="LicniTelefonText"></TextBox>
+                                <TextBlock x:ConnectionId='25' x:Name="LicniAdresa" Text="Adresa:"></TextBlock>
+                                <TextBox x:ConnectionId='26' x:Name="LicniAdresaText"></TextBox>
+                            </StackPanel>
+                            <StackPanel>
+                                <TextBlock x:ConnectionId='23' x:Name="LicniTelefon" Text="Telefon:"></TextBlock>
+                                <TextBox x:ConnectionId='24' x:Name="LicniTelefonText"></TextBox>
+                            </StackPanel>
+                            <StackPanel>
+                                <TextBlock Text="Kreditna kartica:" TextWrapping="WrapWholeWords" MaxWidth="50"></TextBlock>
+                                <TextBox x:ConnectionId='22' x:Name="Kreditna"></TextBox>
                             </StackPanel>
                             <Button x:ConnectionId='21' x:Name="IzmijeniLicne" Content="Izmijeni" HorizontalAlignment="Right"                            ></Button>
                         </StackPanel>
@@ -155,7 +168,7 @@
                                         <DataTemplate>
                                             <Grid Height="150" Width="150">
                                                 <StackPanel Orientation="Horizontal">
-                                                    <Image x:Name="Placeholder" Width="100" Height="100" Source="Assets/5f7a11765690b717abfdf22372fe80c1.png"/>
+                                                    <Image x:Name="Placeholder" Width="100" Height="100" Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png"/>
                                                     <StackPanel VerticalAlignment="Center">
                                                         <Image Width="50" Source="ms-appx:///Assets/Square44x44Logo.png"></Image>
                                                         <Image Width="50" Source="ms-appx:///Assets/Square44x44Logo.png"></Image>
@@ -216,7 +229,7 @@
                             </StackPanel>
                         </StackPanel>
                         <StackPanel x:ConnectionId='11' x:Name="DodajUKorpicu" BorderBrush="MediumPurple" Orientation="Vertical" Margin="10 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Padding="10"                              >
-                            <Image Source="Assets/addtocart.png" Width="80" Height="80" Margin="0 0 0 10"></Image>
+                            <Image Source="ms-appx:///Assets/addtocart.png" Width="80" Height="80" Margin="0 0 0 10"></Image>
                             <Button x:ConnectionId='12' x:Name="DodajKorpica" Content="Dodaj u korpicu"                           ></Button>
                             <HyperlinkButton x:ConnectionId='13' x:Name="BrisanjeProfila" Content="Zahtjev za brisanje profila" VerticalAlignment="Bottom"                              ></HyperlinkButton>
                         </StackPanel>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DearWalletDressMeUp.Model
 {
-    public class Korisnik:INotifyPropertyChanged
+    public class Korisnik : INotifyPropertyChanged
     {
         private string ime;
         private string prezime;
@@ -17,11 +17,12 @@ namespace DearWalletDressMeUp.Model
         private string brojKreditneKartice;
         private string id;
         private string sifra;
+        private string idProfila;
 
         public Korisnik()
         { }
 
-        public Korisnik(string ime, string prezime, string email, string adresa, string brojTelefona, string brojKreditneKartice, string id, string sifra)
+        public Korisnik(string ime, string prezime, string email, string adresa, string brojTelefona, string brojKreditneKartice, string id, string sifra, string idProfila)
         {
             this.Ime = ime;
             this.Prezime = prezime;
@@ -31,6 +32,7 @@ namespace DearWalletDressMeUp.Model
             this.BrojKreditneKartice = brojKreditneKartice;
             this.Id = id;
             this.Sifra = sifra;
+            this.idProfila = idProfila;
         }
 
         public string Ime { get => ime; set => ime = value; }
@@ -41,6 +43,7 @@ namespace DearWalletDressMeUp.Model
         public string BrojKreditneKartice { get => brojKreditneKartice; set => brojKreditneKartice = value; }
         public string Id { get => id; set => id = value; }
         public string Sifra { get => sifra; set => sifra = value; }
+        public string IdProfila { get => idProfila; set => idProfila = value; }
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)

@@ -360,7 +360,7 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
                 userType = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_14_LoginViewModel;
                 userType.AddMemberName("Navigacija");
-                userType.AddMemberName("RegistrujSe");
+                userType.AddMemberName("Logiranje");
                 userType.AddMemberName("Korisnik");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -482,15 +482,15 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
             var that = (global::DearWalletDressMeUp.ViewModel.LoginViewModel)instance;
             that.Navigacija = (global::DearWalletDressMeUp.Helper.INavigacija)Value;
         }
-        private object get_1_LoginViewModel_RegistrujSe(object instance)
+        private object get_1_LoginViewModel_Logiranje(object instance)
         {
             var that = (global::DearWalletDressMeUp.ViewModel.LoginViewModel)instance;
-            return that.RegistrujSe;
+            return that.Logiranje;
         }
-        private void set_1_LoginViewModel_RegistrujSe(object instance, object Value)
+        private void set_1_LoginViewModel_Logiranje(object instance, object Value)
         {
             var that = (global::DearWalletDressMeUp.ViewModel.LoginViewModel)instance;
-            that.RegistrujSe = (global::System.Windows.Input.ICommand)Value;
+            that.Logiranje = (global::System.Windows.Input.ICommand)Value;
         }
         private object get_2_LoginViewModel_Korisnik(object instance)
         {
@@ -556,11 +556,11 @@ namespace DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo
                 xamlMember.Getter = get_0_LoginViewModel_Navigacija;
                 xamlMember.Setter = set_0_LoginViewModel_Navigacija;
                 break;
-            case "DearWalletDressMeUp.ViewModel.LoginViewModel.RegistrujSe":
+            case "DearWalletDressMeUp.ViewModel.LoginViewModel.Logiranje":
                 userType = (global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DearWalletDressMeUp.ViewModel.LoginViewModel");
-                xamlMember = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlMember(this, "RegistrujSe", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_1_LoginViewModel_RegistrujSe;
-                xamlMember.Setter = set_1_LoginViewModel_RegistrujSe;
+                xamlMember = new global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlMember(this, "Logiranje", "System.Windows.Input.ICommand");
+                xamlMember.Getter = get_1_LoginViewModel_Logiranje;
+                xamlMember.Setter = set_1_LoginViewModel_Logiranje;
                 break;
             case "DearWalletDressMeUp.ViewModel.LoginViewModel.Korisnik":
                 userType = (global::DearWalletDressMeUp.DearWalletDressMeUp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DearWalletDressMeUp.ViewModel.LoginViewModel");

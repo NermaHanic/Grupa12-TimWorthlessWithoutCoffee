@@ -17,7 +17,7 @@ namespace DearWalletDressMeUp.ViewModel
     {
         private Korisnik korisnik;
         public INavigacija Navigacija { get; set; }
-        public ICommand RegistrujSe { get; set; }
+        public ICommand Logiranje { get; set; }
 
         public Korisnik Korisnik
         {
@@ -27,7 +27,7 @@ namespace DearWalletDressMeUp.ViewModel
 
         public LoginViewModel()
         {
-            RegistrujSe = new RelayCommand<object>(Login);
+            Logiranje = new RelayCommand<object>(Login);
             korisnik = new Korisnik();
             Navigacija = new Navigacija();
         }
@@ -52,7 +52,6 @@ namespace DearWalletDressMeUp.ViewModel
                 List<Korisnik> l = await tabela.ToListAsync();
                 try
                 {
-
                     greska = await Pomocna.ValidacijaLogina(korisnik.Id, korisnik.Sifra);
                 }
                 catch
