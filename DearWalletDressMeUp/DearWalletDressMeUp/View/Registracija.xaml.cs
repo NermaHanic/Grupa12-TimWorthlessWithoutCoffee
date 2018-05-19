@@ -35,6 +35,10 @@ namespace DearWalletDressMeUp
         {
             Frame.Navigate(typeof(Login));
         }
-        
+
+        private void Registruj_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -108,7 +108,7 @@
                             </StackPanel>
                         </StackPanel>
                         <TextBlock x:Name="error" TextWrapping="Wrap" Foreground="Red" Margin="20 0 0 0" Text=""/>
-                        <Button x:Name="Registruj" FontSize="15" Content="Registruj se" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Margin="0 0 0 20" Command="{Binding Path=UnesiUBazu}"></Button>
+                        <Button x:Name="Registruj" FontSize="15" Content="Registruj se" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Margin="0 0 0 20" Command="{Binding Path=UnesiUBazu}" Click="Registruj_Click"></Button>
                         </StackPanel>
                 </StackPanel>
 

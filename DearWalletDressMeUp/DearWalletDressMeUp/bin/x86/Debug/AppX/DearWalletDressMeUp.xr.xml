@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="UnesiUBazu" />
+    <RootPropertyPathName Name="Login" />
     <RootPropertyPathName Name="Korisnik" />
+    <RootPropertyPathName Name="Sifra" />
+    <RootPropertyPathName Name="Id" />
+    <RootPropertyPathName Name="UnesiUBazu" />
     <RootPropertyPathName Name="BrojKreditneKartice" />
     <RootPropertyPathName Name="BrojTelefona" />
     <RootPropertyPathName Name="Adresa" />
     <RootPropertyPathName Name="PSifra" />
-    <RootPropertyPathName Name="Sifra" />
     <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="Prezime" />
     <RootPropertyPathName Name="Ime" />
@@ -83,8 +85,8 @@
       <RootProperty Name="Background" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="Command" />
+      <RootProperty Name="Foreground" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
@@ -250,6 +252,12 @@
     <RootType FullName="DearWalletDressMeUp.Kviz1" />
     <RootType FullName="DearWalletDressMeUp.Kviz2" />
     <RootType FullName="DearWalletDressMeUp.Kviz3" />
+    <RootType FullName="DearWalletDressMeUp.ViewModel.LoginViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="Mode" />
+    </RootType>
     <RootType FullName="DearWalletDressMeUp.Login" />
     <RootType FullName="DearWalletDressMeUp.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog">
@@ -278,11 +286,6 @@
     <RootType FullName="DearWalletDressMeUp.Pregled_profila" />
     <RootType FullName="DearWalletDressMeUp.Pretraga" />
     <RootType FullName="DearWalletDressMeUp.ViewModel.KorisnikViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
-      <RootProperty Name="UpdateSourceTrigger" />
-      <RootProperty Name="Mode" />
-    </RootType>
     <RootType FullName="DearWalletDressMeUp.Registracija" />
   </Roots.RootTypes>
 </Roots>

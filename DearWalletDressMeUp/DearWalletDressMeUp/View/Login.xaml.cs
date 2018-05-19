@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using DearWalletDressMeUp.Model;
 using Microsoft.WindowsAzure.MobileServices;
+using DearWalletDressMeUp.ViewModel;
+using DearWalletDressMeUp.Helper;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -27,51 +29,12 @@ namespace DearWalletDressMeUp
         public Login()
         {
             this.InitializeComponent();
+            DataContext = new LoginViewModel();
         }
 
         private async void Loginbtn_Click(object sender, RoutedEventArgs e)
         {
-            error.Text = "";
-
-            if (tekst.Text.Length == 0 || sifra.Password.Length == 0)
-            {
-                error.Text = "Niste unijeli sva polja";
-            }
-            else if (ime.Text == "admin")
-            {
-                Frame.Navigate(typeof(AdminovProfil));
-            }
-            else if (ime.Text != "admin")
-            {
-                IMobileServiceTable<Korisnik> tabela = App.MobileService.GetTable<Korisnik>();
-                List<Korisnik> l = await tabela.ToListAsync();
-                try
-                {
-                    Korisnik dummy = l.Find(x => x.Id == ime.Text);
-                    if (dummy.Sifra != sifra.Password)
-                    {
-                        error.Text = "Username i sifra se ne slazu.";
-                    }
-                    else
-                    {
-                        Frame.Navigate(typeof(Home));
-                    }
-                }
-                catch
-                {
-                    ContentDialog errorMsg = new ContentDialog()
-                    {
-                        Title = "Oops",
-                        Content = "Vi nemate kreiran profil :( Molimo, registrujte se.",
-                        CloseButtonText = "Ok"
-                    };
-                    await errorMsg.ShowAsync();
-                }
-            }
-            else
-            {
-                Frame.Navigate(typeof(Home));
-            }
+             Frame.Navigate(typeof(Profil));
         }
 
         private void pink_Click(object sender, RoutedEventArgs e)

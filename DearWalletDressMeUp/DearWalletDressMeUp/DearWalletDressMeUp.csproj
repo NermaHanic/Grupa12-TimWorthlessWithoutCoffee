@@ -95,6 +95,7 @@
     <Compile Include="Helper\INavigacija.cs" />
     <Compile Include="Helper\Navigacija.cs" />
     <Compile Include="ViewModel\IBaza.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="View\AdminDodavanjeOdjece.xaml.cs">
       <DependentUpon>AdminDodavanjeOdjece.xaml</DependentUpon>
     </Compile>

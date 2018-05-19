@@ -5,7 +5,11 @@
     xmlns:local="using:DearWalletDressMeUp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="using:DearWalletDressMeUp.ViewModel"
     mc:Ignorable="d">
+    <Page.DataContext>
+        <viewModel:LoginViewModel></viewModel:LoginViewModel>
+    </Page.DataContext>
     <ScrollViewer VerticalScrollBarVisibility="Auto">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -26,14 +30,14 @@
             <Image  x:Name="slika" Width="300" Source="ms-appx:///Assets/logo.jpg" Height="175"/>
             <StackPanel Background="Beige" Padding="15">
                 <TextBlock x:Name="tekst" Text="Prijava na &quot;Dear Wallet  Dress Me Up&quot;" FontSize="15" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="0 20 0 20"/>
-                <TextBox x:Name="ime" PlaceholderText="Unesite korisnicko ime"/>
-                <PasswordBox x:Name="sifra" PlaceholderText="Unesite sifru" Margin="0,10,0,0"/>
+                    <TextBox x:Name="ime" PlaceholderText="Unesite korisnicko ime" Text="{Binding Path = Korisnik.Id ,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                    <PasswordBox x:Name="sifra" PlaceholderText="Unesite sifru" Margin="0,10,0,0" Password="{Binding Path=Korisnik.Sifra,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
                 <StackPanel x:Name="RegistrujSe" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
                     <TextBlock x:Name="lala" Text="korisnik ste clan?" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                     <HyperlinkButton x:Name="pink" Content="Registrujte se" FontSize="15" Click="pink_Click" VerticalAlignment="Center" Margin="10 0 0 0"/>
                 </StackPanel>
                 <TextBlock x:Name="error" Text="" TextWrapping="Wrap" Width="250" HorizontalAlignment="Left" Foreground="Red"/>
-                <Button x:Name="Loginbtn" Content="Potvrdi" HorizontalAlignment="Center" Click="Loginbtn_Click" Margin="0 20 0 0"/>
+                    <Button x:Name="Loginbtn" Content="Potvrdi" HorizontalAlignment="Center" Click="Loginbtn_Click" Margin="0 20 0 0" Command="{Binding Path=Login}"  />
             </StackPanel>
         </StackPanel>
     </Grid>

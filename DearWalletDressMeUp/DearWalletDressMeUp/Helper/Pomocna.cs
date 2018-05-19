@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Popups;
+using DearWalletDressMeUp.Helper;
 
 namespace DearWalletDressMeUp.Model
 {
@@ -55,5 +56,50 @@ namespace DearWalletDressMeUp.Model
             }
             return new Tuple<bool, string>(true, "");
         }
+
+        public static Tuple<bool,string> ValidirajLogin(string username, string sifra)
+        {
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(sifra))
+            {
+                return new Tuple<bool, string>(false, "Niste unijeli sva polja");
+            }
+            return new Tuple<bool, string>(true, "");
+        }
+        public static Tuple<bool, string> JeLAdmin(string username)
+        {
+            if (username == "admin")
+            {
+                return new Tuple<bool, string>(true, "");
+            }
+            return new Tuple<bool, string>(false, "");
+        }
+        public async static Task<string> ValidacijaLogina(string username,string password)
+        {
+            IMobileServiceTable<Korisnik> tabela = App.MobileService.GetTable<Korisnik>();
+            List<Korisnik> l = await tabela.ToListAsync();
+            
+            try
+            {
+                
+                Korisnik k = l.Find(x=> x.Id == username);
+                if (k.Sifra != password)
+                {
+                    return "Username i sifra se ne slazu.";
+                }
+                return "";
+            }
+            catch
+            {
+                ContentDialog errorMsg = new ContentDialog()
+                {
+                    Title = "Oops",
+                    Content = "Vi nemate kreiran profil :( Molimo, registrujte se.",
+                    CloseButtonText = "Ok"
+                };
+                await errorMsg.ShowAsync();
+            }
+            return "Doslo je do greske";
+        }
+        
     }
 }
