@@ -29,12 +29,12 @@ namespace DearWalletDressMeUp
         public Login()
         {
             this.InitializeComponent();
+            Pomocna.UlogovaniKorisnik = ime.Text;
             DataContext = new LoginViewModel();
         }
         
         private void Loginbtn_Click(object sender, RoutedEventArgs e)
         {
-            
         }
 
         private void pink_Click(object sender, RoutedEventArgs e)

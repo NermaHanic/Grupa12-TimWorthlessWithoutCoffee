@@ -5,6 +5,7 @@
     <RootPropertyPathName Name="Korisnik" />
     <RootPropertyPathName Name="Sifra" />
     <RootPropertyPathName Name="Id" />
+    <RootPropertyPathName Name="BrisiProfil" />
     <RootPropertyPathName Name="UnesiUBazu" />
     <RootPropertyPathName Name="BrojKreditneKartice" />
     <RootPropertyPathName Name="BrojTelefona" />
@@ -117,6 +118,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Command" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">

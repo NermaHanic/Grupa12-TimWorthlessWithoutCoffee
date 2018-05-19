@@ -231,7 +231,7 @@
                         <StackPanel x:ConnectionId='11' x:Name="DodajUKorpicu" BorderBrush="MediumPurple" Orientation="Vertical" Margin="10 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Padding="10"                              >
                             <Image Source="ms-appx:///Assets/addtocart.png" Width="80" Height="80" Margin="0 0 0 10"></Image>
                             <Button x:ConnectionId='12' x:Name="DodajKorpica" Content="Dodaj u korpicu"                           ></Button>
-                            <HyperlinkButton x:ConnectionId='13' x:Name="BrisanjeProfila" Content="Zahtjev za brisanje profila" VerticalAlignment="Bottom"                              ></HyperlinkButton>
+                            <HyperlinkButton x:ConnectionId='13' x:Name="BrisanjeProfila" Content="Zahtjev za brisanje profila" VerticalAlignment="Bottom" Command="{Binding Path=BrisiProfil}"></HyperlinkButton>
                         </StackPanel>
                     </StackPanel>
                 </StackPanel>

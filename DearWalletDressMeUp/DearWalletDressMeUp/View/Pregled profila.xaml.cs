@@ -16,6 +16,8 @@ using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using DearWalletDressMeUp.Model;
 using Microsoft.WindowsAzure.MobileServices;
+using DearWalletDressMeUp.ViewModel;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -29,8 +31,10 @@ namespace DearWalletDressMeUp
         private IMobileServiceTable<Korisnik> tabela = App.MobileService.GetTable<Korisnik>();
         private string profil;
         private Korisnik _korLogin;
+
         public Pregled_profila()
         {
+            DataContext = new ProfilViewModel();
             this.InitializeComponent();
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
@@ -77,9 +81,9 @@ namespace DearWalletDressMeUp
         }
         
 
-        private void IzmijeniLicne_Click(object sender, RoutedEventArgs e)
+        private async void IzmijeniLicne_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private async void IzmijeniSliku_Click(object sender, RoutedEventArgs e)

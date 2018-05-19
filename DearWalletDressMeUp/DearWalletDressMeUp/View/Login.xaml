@@ -30,7 +30,7 @@
             <Image  x:Name="slika" Width="300" Source="ms-appx:///Assets/logo.jpg" Height="175"/>
             <StackPanel Background="Beige" Padding="15">
                 <TextBlock x:Name="tekst" Text="Prijava na &quot;Dear Wallet  Dress Me Up&quot;" FontSize="15" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="0 20 0 20"/>
-                    <TextBox x:Name="ime" PlaceholderText="Unesite korisnicko ime" Text="{Binding Path = Korisnik.Id ,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                    <TextBox x:Name="ime" PlaceholderText="Unesite korisnicko ime" Text="{Binding Path = Korisnik.Id ,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
                     <PasswordBox x:Name="sifra" PlaceholderText="Unesite sifru" Margin="0,10,0,0" Password="{Binding Path=Korisnik.Sifra,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
                 <StackPanel x:Name="RegistrujSe" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
                     <TextBlock x:Name="lala" Text="Novi ste clan?" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center"/>

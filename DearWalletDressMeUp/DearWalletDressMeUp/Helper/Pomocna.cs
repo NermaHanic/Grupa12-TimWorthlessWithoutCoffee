@@ -12,8 +12,10 @@ namespace DearWalletDressMeUp.Model
 {
     public static class Pomocna
     {
+        public static string UlogovaniKorisnik { get; set; }
         public async static Task<string> DodjelaUsername(string ime, string prezime)
         {
+            
             IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
             List<Korisnik> lista = await tabelica.ToListAsync();
             int blah = 0;
@@ -24,6 +26,8 @@ namespace DearWalletDressMeUp.Model
             catch (Exception) { }
             return ime.ToLower()[0] + prezime.ToLower() + (blah + 1).ToString();
         }
+
+      
         public static Tuple<bool, string> ValidirajPolja(string ime, string prezime, string sifra, string psifra,string adresa, string email,string telefon)
         {
             if (string.IsNullOrEmpty(ime) || string.IsNullOrEmpty(prezime) || string.IsNullOrEmpty(sifra) || string.IsNullOrEmpty(psifra)
@@ -74,14 +78,8 @@ namespace DearWalletDressMeUp.Model
             IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
             List<Korisnik> lista = await tabelica.ToListAsync();
             Korisnik kor = new Korisnik();
-            try
-            {
-                kor = lista.Find(x => x.Id == username);
-            }
-            catch(Exception e)
-            {
-                return new Tuple<bool, string, string>(false, "nr", "");
-            }
+            if (!lista.Any(x => x.Id == username)) return new Tuple<bool, string, string>(false, "nr", "");
+            kor=lista.Find(x => x.Id == username);
             if (kor.Sifra != password) return new Tuple<bool, string, string>(false, "Username i sifra se ne slazu!", "");
             return new Tuple<bool, string, string>(true, "", kor.IdProfila);
         }

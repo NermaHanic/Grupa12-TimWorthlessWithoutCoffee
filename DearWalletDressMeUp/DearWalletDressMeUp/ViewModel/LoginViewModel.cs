@@ -21,6 +21,7 @@ namespace DearWalletDressMeUp.ViewModel
 
         public Korisnik Korisnik
         {
+            
             get { return korisnik; }
             set { korisnik = value; OnPropertyChanged("Korisnik"); }
         }
@@ -35,10 +36,11 @@ namespace DearWalletDressMeUp.ViewModel
         public async void Login(object parametar)
         {
             string greska = "";
-            Tuple<bool, string> admin = Pomocna.JeLAdmin(korisnik.Id);
-            Tuple<bool, string, string> meh = await Pomocna.ValidacijaLogina(korisnik.Id, korisnik.Sifra);
 
-            if(!(meh.Item1))
+           Tuple<bool, string> admin = Pomocna.JeLAdmin(korisnik.Id);
+           Tuple<bool, string, string> meh = await Pomocna.ValidacijaLogina(korisnik.Id, korisnik.Sifra);
+            
+            if (!(meh.Item1))
             {
                 greska += meh.Item2;
                 if (meh.Item2 == "nr")
@@ -59,6 +61,7 @@ namespace DearWalletDressMeUp.ViewModel
             }*/
             else
             {
+                Pomocna.UlogovaniKorisnik = korisnik.Id;
                 Navigacija.Navigiraj(typeof(Home), meh.Item3);
             }
         }
