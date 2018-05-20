@@ -29,7 +29,6 @@ namespace DearWalletDressMeUp
         public Login()
         {
             this.InitializeComponent();
-            Pomocna.UlogovaniKorisnik = ime.Text;
             DataContext = new LoginViewModel();
         }
         
