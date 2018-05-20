@@ -81,7 +81,7 @@ namespace DearWalletDressMeUp
         }
         
 
-        private async void IzmijeniLicne_Click(object sender, RoutedEventArgs e)
+        private  void IzmijeniLicne_Click(object sender, RoutedEventArgs e)
         {
             
         }
@@ -118,6 +118,11 @@ namespace DearWalletDressMeUp
         }
 
         private void DodajUKorpicu_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
         {
 
         }
