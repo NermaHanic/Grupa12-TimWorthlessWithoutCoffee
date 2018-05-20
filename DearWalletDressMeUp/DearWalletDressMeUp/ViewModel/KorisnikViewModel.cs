@@ -65,11 +65,15 @@ namespace DearWalletDressMeUp.ViewModel
                 {
                     IMobileServiceTable<Korisnik> tabelica = App.MobileService.GetTable<Korisnik>();
                     korisnik.Id = await Pomocna.DodjelaUsername(korisnik.Ime, korisnik.Prezime);
-                    await tabelica.InsertAsync(korisnik);
-                    /*IMobileServiceTable<Profil> profil = App.MobileService.GetTable<Profil>();
+
+                    IMobileServiceTable<Profil> profil = App.MobileService.GetTable<Profil>();
                     Profil objProf = new Profil();
                     objProf.Id = await ID<Profil>.DodjelaID(profil);
-                    await profil.InsertAsync(objProf);*/
+                    objProf.IdKorisnika = korisnik.Id;
+                    korisnik.IdProfila = objProf.Id;
+
+                    await tabelica.InsertAsync(korisnik);
+                    await profil.InsertAsync(objProf);
                     
                     MessageDialog m = new MessageDialog("Uspjesno ste registrovani na Dear Wallet Dress Me Up! Vas username glasi: " + korisnik.Id + " :)");
                     await m.ShowAsync();
