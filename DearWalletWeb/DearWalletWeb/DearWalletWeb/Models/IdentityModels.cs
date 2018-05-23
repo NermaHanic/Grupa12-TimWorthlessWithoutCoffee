@@ -9,7 +9,7 @@ namespace DearWalletWeb.Models
 {
     public class DearWalletContext : DbContext
     {
-        DearWalletContext() : base("DeafultConnection") { }
+        DearWalletContext() : base("AzureConnection") { }
         public DbSet<Korisnik> Korisnik { get; set; }
         public DbSet<Profil> Profil { get; set; }
 
