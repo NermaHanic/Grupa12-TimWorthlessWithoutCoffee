@@ -90,6 +90,7 @@
                                 <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
                                 <Setter Property="Padding" Value="10"></Setter>
                                 <Setter Property="Margin" Value="0 0 0 15"></Setter>
+                                <Setter Property="Height" Value="45"></Setter>
                                 <Setter Property="VerticalAlignment" Value="Center"></Setter>
                             </Style>
                         </StackPanel.Resources>
@@ -109,6 +110,7 @@
                                     <ComboBox.Resources>
                                         <Style TargetType="ComboBoxItem">
                                             <Setter Property="Padding" Value="0"></Setter>
+                                            <Setter Property="FontSize" Value="15"></Setter>
                                         </Style>
                                     </ComboBox.Resources>
                                     <ComboBoxItem>
@@ -118,10 +120,10 @@
                                         <TextBlock Text="Haljina"></TextBlock>
                                     </ComboBoxItem>
                                     <ComboBoxItem>
-                                        <TextBlock Text="Pantalone/Suknje"></TextBlock>
+                                        <TextBlock Text="Pantalone"></TextBlock>
                                     </ComboBoxItem>
                                     <ComboBoxItem>
-                                        <TextBlock Text="Obuca"></TextBlock>
+                                        <TextBlock Text="Suknja"></TextBlock>
                                     </ComboBoxItem>
                                     <ComboBoxItem>
                                         <TextBlock Text="Jakna"></TextBlock>

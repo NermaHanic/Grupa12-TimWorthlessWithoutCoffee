@@ -21,15 +21,15 @@
             <ColumnDefinition  />
             <ColumnDefinition  />
         </Grid.ColumnDefinitions>
-        <Button Style="{StaticResource NavigationBackButtonNormalStyle}"/>
+        <Button Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Button_Click"/>
         <StackPanel x:Name="GlavniStek" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="5" Padding="20">
-            <Image x:Name="slika" Height="145" VerticalAlignment="Top" Width="315" Source="Assets/AAS-745x380.jpg"/>
-             <TextBlock x:Name="tekst" Margin="20" HorizontalAlignment="Center" FontSize="20" Text="Stilista Vam savjetuje" TextWrapping="Wrap" VerticalAlignment="Top"/>
-                <TextBox x:Name="blok" Margin="0 0 0 20" Text="" TextWrapping="Wrap" Height="145" IsReadOnly="True"/>
-                <Button x:Name="ok" Content="OK" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-            
+            <Image x:Name="slika" Height="145" VerticalAlignment="Top" Width="315" Source="ms-appx:///Assets/AAS-745x380.jpg"/>
+            <TextBlock x:Name="tekst" Margin="20" HorizontalAlignment="Center" FontSize="20" Text="Stilista Vam savjetuje" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox x:Name="blok" Margin="0 0 0 20" Text="" TextWrapping="Wrap" Height="145" IsReadOnly="True"/>
+            <Button x:Name="ok" Content="OK" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
         </StackPanel>
-        <Button Content="Log out" HorizontalAlignment="Right" Margin="0,4,10,0" VerticalAlignment="Top" Grid.Column="4" Width="75" Height="32"/>
+        <Button Content="Log out" HorizontalAlignment="Right" Margin="0,0,10,108" VerticalAlignment="Bottom" Grid.Column="4" Width="75" Height="32" Click="Button_Click_1"/>
         <Button Content="Home" Background="Transparent" HorizontalAlignment="Left" Margin="0,0,-135,-50" VerticalAlignment="Top" Height="50" Grid.ColumnSpan="5" Grid.RowSpan="5" Width="135"/>
         <Image Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="48" Margin="10,0,-46,-48" Grid.RowSpan="5" VerticalAlignment="Top" Width="36" Source="Assets/homeIcon.png"/>
 

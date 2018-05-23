@@ -124,7 +124,7 @@
                     </StackPanel.Resources>
                     <StackPanel x:ConnectionId='8' x:Name="s1">
                         <TextBlock x:ConnectionId='19' x:Name="p1" Text="Pitanje 1"></TextBlock>
-                        <RadioButton x:ConnectionId='20' x:Name="r1" Content="Blabla"></RadioButton>
+                        <RadioButton x:ConnectionId='20' x:Name="r1" Content=""></RadioButton>
                         <RadioButton x:ConnectionId='21' x:Name="r2" ></RadioButton>
                         <RadioButton x:ConnectionId='22' x:Name="r3"></RadioButton>
                     </StackPanel>

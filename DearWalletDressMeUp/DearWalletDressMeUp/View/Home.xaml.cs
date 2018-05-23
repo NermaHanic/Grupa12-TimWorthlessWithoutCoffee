@@ -44,22 +44,22 @@ namespace DearWalletDressMeUp
 
         private void Kreiraj_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Kreacija1));
+            Frame.Navigate(typeof(Kreacija1),_korLogin);
         }
 
         private void Pretraga_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pretraga));
+            Frame.Navigate(typeof(Pretraga),_korLogin);
         }
 
         private void MojProfil_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pregled_profila), profil);
+            Frame.Navigate(typeof(Pregled_profila), _korLogin);
         }
 
         private void Kviz_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Kviz1));
+            Frame.Navigate(typeof(Kviz1),_korLogin);
         }
 
         private void LogOutHome_Click(object sender, RoutedEventArgs e)

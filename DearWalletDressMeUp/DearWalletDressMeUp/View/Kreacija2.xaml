@@ -291,7 +291,6 @@
                                     <Setter Property="Width" Value="100"></Setter>
                                 </Style>
                             </StackPanel.Resources>
-                            <Button x:Name="Nastavi" Content="Nastavi" Click="Nastavi_Click"></Button>
                             <Button x:Name="Odustani" Content="Odustani" Click="Odustani_Click"></Button>
                         </StackPanel>
                     </StackPanel>

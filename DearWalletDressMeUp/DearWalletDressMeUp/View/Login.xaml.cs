@@ -15,7 +15,6 @@ using Windows.UI.Xaml.Navigation;
 using DearWalletDressMeUp.Model;
 using Microsoft.WindowsAzure.MobileServices;
 using DearWalletDressMeUp.ViewModel;
-using DearWalletDressMeUp.Helper;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -31,7 +30,6 @@ namespace DearWalletDressMeUp
             this.InitializeComponent();
             DataContext = new LoginViewModel();
         }
-        
         private void Loginbtn_Click(object sender, RoutedEventArgs e)
         {
         }

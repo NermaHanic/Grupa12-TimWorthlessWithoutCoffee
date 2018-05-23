@@ -29,29 +29,23 @@ namespace DearWalletDressMeUp
     public sealed partial class Pregled_profila : Page
     {
         private IMobileServiceTable<Korisnik> tabela = App.MobileService.GetTable<Korisnik>();
-        private string profil;
         private Korisnik _korLogin;
 
         public Pregled_profila()
         {
-            DataContext = new ProfilViewModel();
             this.InitializeComponent();
+            DataContext = new ProfilViewModel();
         }
-        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            if (e.Parameter is string)
-            {
-                profil = (string)e.Parameter;
-            }
-            else if (e.Parameter is Korisnik)
+            if (e.Parameter is Korisnik)
             {
                 _korLogin = (Korisnik)e.Parameter;
             }
             try
             {
-               
-                Korisnik kor = (await tabela.ToListAsync()).Find(x => x.IdProfila == profil);
+                Korisnik kor = _korLogin;
                 LicniImeText.Text = kor.Ime;
                 LicniPrezimeText.Text = kor.Prezime;
                 UsernameText.Text = kor.Id;
@@ -67,12 +61,12 @@ namespace DearWalletDressMeUp
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Home));
+            Frame.Navigate(typeof(Home),_korLogin);
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Home));
+            Frame.Navigate(typeof(Home),_korLogin);
         }
 
         private void PreporuciPrijatelju_Click(object sender, RoutedEventArgs e)
@@ -109,12 +103,12 @@ namespace DearWalletDressMeUp
 
         private void DodajKorpica_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Checkout));
+            Frame.Navigate(typeof(Checkout),_korLogin);
         }
 
         private void DodajKreaciju_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Kreacija1));
+            Frame.Navigate(typeof(Kreacija1),_korLogin);
         }
 
         private void DodajUKorpicu_Tapped(object sender, TappedRoutedEventArgs e)

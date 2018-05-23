@@ -124,7 +124,7 @@
                     <StackPanel x:ConnectionId='8' x:Name="Tekstic">
                         <TextBlock Text=""></TextBlock>
                         <TextBox x:ConnectionId='9' x:Name="LoremIpsum" Margin="0 0 0 55" TextWrapping="Wrap" Height="250" Width="350" ScrollViewer.VerticalScrollBarVisibility="Auto" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac scelerisque lorem, fermentum efficitur ante. Praesent nec tortor eu risus cursus ornare. Aliquam lacinia lorem eros, non laoreet dui porttitor in. Morbi gravida, dolor vitae vehicula facilisis, diam metus dictum sapien, eu sodales est erat vel dolor. Sed viverra elit augue, sed mollis lorem aliquet id. Aliquam commodo mi tellus, ut lacinia tellus interdum non. Phasellus nec neque finibus magna vehicula fringilla. Curabitur id diam eu risus mollis laoreet. Aliquam tempor interdum egestas."></TextBox>
-                        <Button x:ConnectionId='10' x:Name="Generisi" HorizontalAlignment="Right" FontSize="20" Content="Generisi korisnik outfit"                       ></Button>
+                        <Button x:ConnectionId='10' x:Name="Generisi" HorizontalAlignment="Right" FontSize="20" Content="Generisi novi outfit"                       ></Button>
                     </StackPanel>
                 </StackPanel>
             </Grid>

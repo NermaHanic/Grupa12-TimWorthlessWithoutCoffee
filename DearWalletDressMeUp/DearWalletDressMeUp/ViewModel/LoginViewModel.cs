@@ -38,9 +38,13 @@ namespace DearWalletDressMeUp.ViewModel
             string greska = "";
 
            Tuple<bool, string> admin = Pomocna.JeLAdmin(korisnik.Id);
-           Tuple<bool, string, string> meh = await Pomocna.ValidacijaLogina(korisnik.Id, korisnik.Sifra);
-            
-            if (!(meh.Item1))
+           Tuple<bool, string, Korisnik> meh = await Pomocna.ValidacijaLogina(korisnik.Id, korisnik.Sifra);
+
+            if (admin.Item1)
+            {
+                Navigacija.Navigiraj(typeof(AdminovProfil));
+            }
+            else if (!(meh.Item1))
             {
                 greska += meh.Item2;
                 if (meh.Item2 == "nr")
@@ -55,13 +59,11 @@ namespace DearWalletDressMeUp.ViewModel
                 }
                 else await (new MessageDialog(greska)).ShowAsync();
             }
-           /* if (admin.Item1)
-            {
-                Navigacija.Navigiraj(typeof(AdminovProfil));  //treba popraviit ovo za admina
-            }*/
+            
             else
             {
                 Pomocna.UlogovaniKorisnik = korisnik.Id;
+                
                 Navigacija.Navigiraj(typeof(Home), meh.Item3);
             }
         }

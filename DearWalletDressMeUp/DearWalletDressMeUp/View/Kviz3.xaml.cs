@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using DearWalletDressMeUp.Model;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,11 +23,20 @@ namespace DearWalletDressMeUp
     /// </summary>
     public sealed partial class Kviz3 : Page
     {
+        private Korisnik _korLogin;
         public Kviz3()
         {
             this.InitializeComponent();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            if(e.Parameter is Korisnik)
+            {
+                _korLogin = (Korisnik)e.Parameter;
+            }
+        }
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Login));
@@ -34,12 +44,12 @@ namespace DearWalletDressMeUp
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Kviz2));
+            Frame.Navigate(typeof(Kviz2),_korLogin);
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Home));
+            Frame.Navigate(typeof(Home),_korLogin);
         }
 
         private void Generisi_Click(object sender, RoutedEventArgs e)

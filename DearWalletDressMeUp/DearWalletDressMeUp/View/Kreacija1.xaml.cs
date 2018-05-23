@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using DearWalletDressMeUp.Model;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,18 +23,27 @@ namespace DearWalletDressMeUp
     /// </summary>
     public sealed partial class Kreacija1 : Page
     {
+        private Korisnik _korLogin;
         public Kreacija1()
         {
             this.InitializeComponent();
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            if(e.Parameter is Korisnik)
+            {
+                _korLogin = (Korisnik)e.Parameter;
+            }
+        }
         private void Homebtn_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Home));
+            Frame.Navigate(typeof(Home),_korLogin);
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Home));
+            Frame.Navigate(typeof(Home),_korLogin);
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
@@ -43,17 +53,17 @@ namespace DearWalletDressMeUp
 
         private void MuskiOdjel_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Kreacija2)); //dodati neki bool here
+            Frame.Navigate(typeof(Kreacija2),_korLogin);
         }
 
         private void ZenskiOdjel_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Kreacija2));
+            Frame.Navigate(typeof(Kreacija2),_korLogin);
         }
 
         private void DjecijiOdjel_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Kreacija2));
+            Frame.Navigate(typeof(Kreacija2),_korLogin);
         }
 
        

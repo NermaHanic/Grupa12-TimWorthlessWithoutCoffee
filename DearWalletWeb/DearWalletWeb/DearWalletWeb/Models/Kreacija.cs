@@ -9,13 +9,13 @@ namespace DearWalletWeb
     {
         public string KreacijaId { get; set; }
         public string ProfilId { get; set; }
-        public string OdjevniPredemtId { get; set; }
+        public string OdjevniPredmetId { get; set; }
         public string StavkeNarudzbeId { get; set; }
         public double TrenutnaCijena { get; set; }
         //povezivanje
-        public ICollection<OdjevniPredmet> odjevniPredmeti { get; set; }
-        public StavkeNarudzbe StavkaNarudzbe { get; set; }
-        public Profil profil { get; set; }
+        public virtual StavkeNarudzbe StavkaNarudzbe { get; set; }
+        public virtual OdjevniPredmet OdjevniPredmet { get; set; }
+        public virtual Profil Profil { get; set; }
 
         public double ObracunajCijenu()
         {

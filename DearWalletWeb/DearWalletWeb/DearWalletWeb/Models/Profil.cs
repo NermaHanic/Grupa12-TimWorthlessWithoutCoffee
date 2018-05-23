@@ -7,19 +7,13 @@ namespace DearWalletWeb
 {
     public class Profil : IKupovina, IKreacijeNaProfilu, IIzmjene
     {
-
-
         public string ProfilId { get; set; }
         public string Slika { get; set; }
-        public virtual Korisnik Korisnik { get; set; }
-        public virtual ICollection<Narudzba> Narudzba { get; set; }
-        public virtual ICollection<Kreacija> Kreacija { get; set; }
-
-
+        public string KorisnikId { get; set; }
         //povezivanje
-        private Korisnik korisnik;
-        private ICollection<Narudzba> narudzba;
-
+        public virtual Korisnik Korisnik { get; set; }
+        public virtual Narudzba Narudzba { get; set; }
+        public virtual ICollection<Kreacija> Kreacija { get; set; }
 
 
         public void BrisanjeProfila() { }

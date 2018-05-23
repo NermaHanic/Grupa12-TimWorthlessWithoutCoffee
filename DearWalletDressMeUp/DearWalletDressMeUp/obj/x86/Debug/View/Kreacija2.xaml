@@ -67,7 +67,7 @@
                     <ColumnDefinition  />
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
-                    <Button x:ConnectionId='18' x:Name="Home" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top"                   >
+                    <Button x:ConnectionId='17' x:Name="Home" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top"                   >
                         <StackPanel Orientation="Horizontal">
                             <StackPanel.Resources>
                                 <Style TargetType="Image">
@@ -78,7 +78,7 @@
                             <TextBlock VerticalAlignment="Center" Text="Home"></TextBlock>
                         </StackPanel>
                     </Button>
-                    <Button x:ConnectionId='19' x:Name="Back" Style="{StaticResource NavigationBackButtonNormalStyle}"                   />
+                    <Button x:ConnectionId='18' x:Name="Back" Style="{StaticResource NavigationBackButtonNormalStyle}"                   />
                 </StackPanel>
                 <Button x:ConnectionId='3' x:Name="Logout" Content="Log out" Grid.Column="4" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 0 20 0"                     ></Button>
                 <StackPanel x:ConnectionId='4' x:Name="Glavni" Background="Beige" Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="4" Padding="20" Margin="0">
@@ -112,7 +112,7 @@
                     </StackPanel.Resources>
                     <StackPanel x:ConnectionId='5' x:Name="NadjiOdjecu">
                         <TextBlock Text="Odjevni predmet"></TextBlock>
-                        <ComboBox x:ConnectionId='16' x:Name="OdjevniPredmetCombo" >
+                        <ComboBox x:ConnectionId='15' x:Name="OdjevniPredmetCombo" >
                             <ComboBox.Resources>
                                 <Style TargetType="TextBlock">
                                     <Setter Property="HorizontalAlignment" Value="Left"></Setter>
@@ -135,7 +135,7 @@
                             </ComboBoxItem>
                         </ComboBox>
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
-                            <GridView x:ConnectionId='17' x:Name="OdjevniPredmetGridView" VerticalAlignment="Stretch">
+                            <GridView x:ConnectionId='16' x:Name="OdjevniPredmetGridView" VerticalAlignment="Stretch">
                                 <GridView.ItemTemplate>
                                     <DataTemplate>
                                         <Grid Height="150" Width="150">
@@ -166,7 +166,7 @@
                     <StackPanel x:ConnectionId='6' x:Name="DezenBojeMaterijal">
                         <TextBlock Text="Dezen"></TextBlock>
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
-                            <GridView x:ConnectionId='15' x:Name="DezenGridView" MaxHeight="250">
+                            <GridView x:ConnectionId='14' x:Name="DezenGridView" MaxHeight="250">
                                 <GridView.ItemTemplate>
                                     <DataTemplate x:Name="Tmp">
                                         <Grid Height="120" Width="120">
@@ -196,7 +196,7 @@
                             </GridView>
                         </ScrollViewer>
                         <TextBlock Margin="0 10 0 0" Text="Boja i materijal"></TextBlock>
-                        <ComboBox x:ConnectionId='13' Margin="0 10 0 0" x:Name="MaterijalCombo" PlaceholderText="Materijal">
+                        <ComboBox x:ConnectionId='12' Margin="0 10 0 0" x:Name="MaterijalCombo" PlaceholderText="Materijal">
                             <ComboBox.Resources>
                                 <Style TargetType="TextBlock">
                                     <Setter Property="HorizontalAlignment" Value="Left"></Setter>
@@ -218,7 +218,7 @@
                                 <TextBlock Text="Poliester"></TextBlock>
                             </ComboBoxItem>
                         </ComboBox>
-                        <ColorPicker x:ConnectionId='14' x:Name="Piker" Margin="0 10 0 0" IsColorChannelTextInputVisible="False" ColorSpectrumShape="Ring" HorizontalAlignment="Center"/>
+                        <ColorPicker x:ConnectionId='13' x:Name="Piker" Margin="0 10 0 0" IsColorChannelTextInputVisible="False" ColorSpectrumShape="Ring" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel x:ConnectionId='7' x:Name="Velicine">
                         <TextBlock Text="Unesite Vase dimenzije (cm):"></TextBlock>
@@ -281,8 +281,8 @@
                                     <Setter Property="Width" Value="100"></Setter>
                                 </Style>
                             </StackPanel.Resources>
-                            <Button x:ConnectionId='11' x:Name="Zavrsi" Content="Zavrsi"                      ></Button>
-                            <Button x:ConnectionId='12' x:Name="PitajStilistu" Content="Pitaj stilistu"                            ></Button>
+                            <Button x:ConnectionId='10' x:Name="Zavrsi" Content="Zavrsi"                      ></Button>
+                            <Button x:ConnectionId='11' x:Name="PitajStilistu" Content="Pitaj stilistu"                            ></Button>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Padding="10" HorizontalAlignment="Center">
                             <StackPanel.Resources>
@@ -291,8 +291,7 @@
                                     <Setter Property="Width" Value="100"></Setter>
                                 </Style>
                             </StackPanel.Resources>
-                            <Button x:ConnectionId='9' x:Name="Nastavi" Content="Nastavi"                      ></Button>
-                            <Button x:ConnectionId='10' x:Name="Odustani" Content="Odustani"                       ></Button>
+                            <Button x:ConnectionId='9' x:Name="Odustani" Content="Odustani"                       ></Button>
                         </StackPanel>
                     </StackPanel>
 

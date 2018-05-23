@@ -12,7 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using DearWalletDressMeUp.Model;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace DearWalletDressMeUp
@@ -22,6 +22,7 @@ namespace DearWalletDressMeUp
     /// </summary>
     public sealed partial class Checkout : Page
     {
+        private Korisnik _korLogin;
         public Checkout()
         {
             this.InitializeComponent();
@@ -31,10 +32,17 @@ namespace DearWalletDressMeUp
         {
             //popup
         }
-
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            if(e.Parameter is Korisnik)
+            {
+                _korLogin = (Korisnik)e.Parameter;
+            }
+        }
         private void Home_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Home));
+            Frame.Navigate(typeof(Home),_korLogin);
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
@@ -44,7 +52,7 @@ namespace DearWalletDressMeUp
 
         private void Back1_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pregled_profila));
+            Frame.Navigate(typeof(Pregled_profila),_korLogin);
         }
     }
 }

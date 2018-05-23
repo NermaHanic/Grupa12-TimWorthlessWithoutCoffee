@@ -14,7 +14,6 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using DearWalletDressMeUp.Model;
 using Windows.UI.Popups;
-
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace DearWalletDressMeUp
@@ -24,6 +23,7 @@ namespace DearWalletDressMeUp
     /// </summary>
     public sealed partial class Kreacija2 : Page
     {
+        private Korisnik _korLogin;
         public Kreacija2()
         {
             this.InitializeComponent();
@@ -33,35 +33,42 @@ namespace DearWalletDressMeUp
         {
             Frame.Navigate(typeof(Login));
         }
-
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            if(e.Parameter is Korisnik)
+            {
+                _korLogin = (Korisnik)e.Parameter;
+            }
+        }
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Kreacija1));
+            Frame.Navigate(typeof(Kreacija1),_korLogin);
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Home));
+            Frame.Navigate(typeof(Home),_korLogin);
         }
 
         private void PitajStilistu_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Kreacija3));
+            Frame.Navigate(typeof(Kreacija3),_korLogin);
         }
 
         private void Zavrsi_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Pregled_profila));
+            Frame.Navigate(typeof(Pregled_profila),_korLogin);
         }
 
         private void Nastavi_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Kreacija1));
+            Frame.Navigate(typeof(Kreacija1),_korLogin);
         }
 
         private void Odustani_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Home));
+            Frame.Navigate(typeof(Home),_korLogin);
         }
 
     }

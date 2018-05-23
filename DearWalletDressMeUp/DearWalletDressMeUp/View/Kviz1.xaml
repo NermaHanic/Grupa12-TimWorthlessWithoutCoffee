@@ -124,7 +124,7 @@
                     </StackPanel.Resources>
                     <StackPanel x:Name="s1">
                         <TextBlock x:Name="p1" Text="Pitanje 1"></TextBlock>
-                        <RadioButton x:Name="r1" Content="Blabla"></RadioButton>
+                        <RadioButton x:Name="r1" Content=""></RadioButton>
                         <RadioButton x:Name="r2" ></RadioButton>
                         <RadioButton x:Name="r3"></RadioButton>
                     </StackPanel>

@@ -7,14 +7,12 @@ namespace DearWalletWeb
 {
     public class Dezen
     {
-
-
         public string DezenId { get; set; }
         public string NazivDezena { get; set; }
         public string SlikaDezena { get; set; }
         public double CijenaDezena { get; set; }
 
         //Povezivanje
-        public ICollection<OdjevniPredmet> OdjevniPredmeti { get; set; }
+        public virtual ICollection<OdjevniPredmet> OdjevniPredmeti { get; set; }
     }
 }

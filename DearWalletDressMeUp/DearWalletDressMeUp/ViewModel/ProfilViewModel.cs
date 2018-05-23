@@ -17,7 +17,14 @@ namespace DearWalletDressMeUp.ViewModel
         public ICommand BrisiProfil { get; set; }
         public ICommand Preporuci { get; set; }
         public Navigacija nav;
-    
+        //
+        public Func<ProfilViewModel, Task> OnNavigationRequest { get; set; }
+
+        public async Task NavigateTo<TViewModel>(TViewModel targetViewModel) where TViewModel : ProfilViewModel
+        {
+            await OnNavigationRequest?.Invoke(targetViewModel);
+        }
+        //
         public ProfilViewModel()
         {
             BrisiProfil = new RelayCommand<object>(Brisi);

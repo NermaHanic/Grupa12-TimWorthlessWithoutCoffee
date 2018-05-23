@@ -24,6 +24,6 @@ namespace DearWalletWeb
         public virtual Materijal Materijal { get; set; }
         public virtual DefaultVelicine Dvelicina { get; set; }
         public virtual Mjera Mjera { get; set; }
-        public virtual ICollection<Kreacija> Kreacije { get; set; }
+        public virtual Kreacija Kreacija { get; set; }
     }
 }
