@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -7,13 +9,15 @@ namespace DearWalletWeb
 {
     public class Profil : IKupovina, IKreacijeNaProfilu, IIzmjene
     {
+        [Key, ForeignKey("Korisnik")]
         public string ProfilId { get; set; }
         public string Slika { get; set; }
-        public string KorisnikId { get; set; }
+        //public string KorisnikId { get; set; }
+
         //povezivanje
         public virtual Korisnik Korisnik { get; set; }
-        public virtual Narudzba Narudzba { get; set; }
-        public virtual ICollection<Kreacija> Kreacija { get; set; }
+       // public virtual Narudzba Narudzba { get; set; }
+        //public virtual ICollection<Kreacija> Kreacija { get; set; }
 
 
         public void BrisanjeProfila() { }

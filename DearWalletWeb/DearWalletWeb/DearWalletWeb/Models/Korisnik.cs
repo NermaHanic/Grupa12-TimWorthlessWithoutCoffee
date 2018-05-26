@@ -16,7 +16,7 @@ namespace DearWalletWeb
         public string KorisnikId { get; set; }
         public string Sifra { get; set; }
 
-        public string ProfilId { get; set; }
+        //public string ProfilId { get; set; }
         public virtual Profil Profil { get; set; }
     }
 }

@@ -117,3 +117,6 @@ C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\De
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWeb\DearWalletWeb\obj\Debug\DearWalletWeb.csproj.CopyComplete
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWeb\DearWalletWeb\obj\Debug\DearWalletWeb.dll
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWeb\DearWalletWeb\obj\Debug\DearWalletWeb.pdb
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWeb\DearWalletWeb\obj\Debug\DearWalletWeb.csprojAssemblyReference.cache
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWeb\DearWalletWeb\obj\Debug\DearWalletWeb.Migrations.k.resources
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWeb\DearWalletWeb\obj\Debug\DearWalletWeb.csproj.GenerateResource.cache
