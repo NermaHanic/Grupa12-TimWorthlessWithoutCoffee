@@ -10,7 +10,7 @@ namespace DearWalletDressMeUp.Model
     {
         private string sifraNarudzbe;
         private string sifraKreacije;
-        private int kolicina;
+        private int kolicina = 1;
 
         public StavkeNarudzbe(string sifraNarudzbe, string sifraKreacije, int kolicina)
         {

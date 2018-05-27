@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using DearWalletDressMeUp.Helper;
 using System.Windows.Input;
+using DearWalletDressMeUp.Model;
 
 namespace DearWalletDressMeUp.ViewModel
 {
     public class NarudzbaViewModel
     {
+
         public ICommand provjeraZaPoklon;
         public ICommand obracunCijene;
         public ICommand dodajStavku;

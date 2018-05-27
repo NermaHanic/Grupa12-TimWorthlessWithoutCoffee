@@ -16,7 +16,7 @@ namespace DearWalletWeb.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            modelBuilder.HasDefaultSchema("DearWalletWeb");
+            //modelBuilder.HasDefaultSchema("DearWalletWeb");
         }
         
     }

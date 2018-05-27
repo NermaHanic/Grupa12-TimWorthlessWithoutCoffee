@@ -83,5 +83,7 @@ namespace DearWalletDressMeUp.Model
             if (kor.Sifra != password) return new Tuple<bool, string, Korisnik>(false, "Username i sifra se ne slazu!", new Korisnik());
             return new Tuple<bool, string, Korisnik>(true, "", kor);
         }
+        public async static Task<Tuple<bool, string>> ValidacijaNarudzbe(string adresa, string)
+        { }
     }
 }

@@ -30,7 +30,7 @@ namespace DearWalletDressMeUp
 
         private void OtkaziNarudzbu_Click(object sender, RoutedEventArgs e)
         {
-            //popup
+            
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -53,6 +53,15 @@ namespace DearWalletDressMeUp
         private void Back1_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Pregled_profila),_korLogin);
+        }
+
+        private async void Potvrdi_Click(object sender, RoutedEventArgs e)
+        {
+           /* double cijena = Convert.ToDouble(Total.Text);
+            string id = await ID<Narudzba>.DodjelaID();
+            List<StavkeNarudzbe> lista = {new StavkeNarudzbe(id,) };  //ovdje myb factory? 
+            Narudzba nova = new Narudzba(id,cijena,
+            */
         }
     }
 }

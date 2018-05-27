@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-20T12:09:34.868</Modified>
+      <Modified>2018-05-27T16:30:23.167</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.exe">
       <PackagePath>entrypoint\DearWalletDressMeUp.exe</PackagePath>
-      <Modified>2018-05-20T12:09:33.664</Modified>
+      <Modified>2018-05-27T16:30:22.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
       <PackagePath>Microsoft.Azure.Mobile.Client.dll</PackagePath>
@@ -639,91 +639,91 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.059</Modified>
+      <Modified>2018-05-27T16:08:16.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\AdminDodavanjeOdjece.xbf">
       <PackagePath>View\AdminDodavanjeOdjece.xbf</PackagePath>
-      <Modified>2018-05-20T12:08:19.132</Modified>
+      <Modified>2018-05-27T16:08:16.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\AdminovProfil.xbf">
       <PackagePath>View\AdminovProfil.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.060</Modified>
+      <Modified>2018-05-27T16:08:16.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\AdminUserManagement.xbf">
       <PackagePath>View\AdminUserManagement.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.061</Modified>
+      <Modified>2018-05-27T16:08:16.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\BackHomeLogout.xbf">
       <PackagePath>View\BackHomeLogout.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.061</Modified>
+      <Modified>2018-05-27T16:08:16.099</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Checkout.xbf">
       <PackagePath>View\Checkout.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.061</Modified>
+      <Modified>2018-05-27T16:30:21.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Home.xbf">
       <PackagePath>View\Home.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.061</Modified>
+      <Modified>2018-05-27T16:08:16.099</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Kreacija1.xbf">
       <PackagePath>View\Kreacija1.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.062</Modified>
+      <Modified>2018-05-27T16:08:16.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Kreacija2.xbf">
       <PackagePath>View\Kreacija2.xbf</PackagePath>
-      <Modified>2018-05-20T10:50:54.265</Modified>
+      <Modified>2018-05-27T16:08:16.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Kreacija3.xbf">
       <PackagePath>View\Kreacija3.xbf</PackagePath>
-      <Modified>2018-05-20T10:50:54.265</Modified>
+      <Modified>2018-05-27T16:08:16.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Kviz1.xbf">
       <PackagePath>View\Kviz1.xbf</PackagePath>
-      <Modified>2018-05-20T10:50:54.265</Modified>
+      <Modified>2018-05-27T16:08:16.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Kviz2.xbf">
       <PackagePath>View\Kviz2.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.063</Modified>
+      <Modified>2018-05-27T16:08:16.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Kviz3.xbf">
       <PackagePath>View\Kviz3.xbf</PackagePath>
-      <Modified>2018-05-20T10:50:54.266</Modified>
+      <Modified>2018-05-27T16:08:16.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Login.xbf">
       <PackagePath>View\Login.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.065</Modified>
+      <Modified>2018-05-27T16:08:16.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.065</Modified>
+      <Modified>2018-05-27T16:08:16.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Poklon1.xbf">
       <PackagePath>View\Poklon1.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.065</Modified>
+      <Modified>2018-05-27T16:08:16.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Poklon2.xbf">
       <PackagePath>View\Poklon2.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.066</Modified>
+      <Modified>2018-05-27T16:08:16.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Poklon3.xbf">
       <PackagePath>View\Poklon3.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.066</Modified>
+      <Modified>2018-05-27T16:08:16.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Poklon4.xbf">
       <PackagePath>View\Poklon4.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.066</Modified>
+      <Modified>2018-05-27T16:08:16.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Pregled profila.xbf">
       <PackagePath>View\Pregled profila.xbf</PackagePath>
-      <Modified>2018-05-20T08:58:09.031</Modified>
+      <Modified>2018-05-27T16:08:16.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Pretraga.xbf">
       <PackagePath>View\Pretraga.xbf</PackagePath>
-      <Modified>2018-05-20T11:06:31.836</Modified>
+      <Modified>2018-05-27T16:08:16.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\View\Registracija.xbf">
       <PackagePath>View\Registracija.xbf</PackagePath>
-      <Modified>2018-05-20T08:42:50.067</Modified>
+      <Modified>2018-05-27T16:08:16.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -732,11 +732,11 @@
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-20T08:42:54.487</Modified>
+      <Modified>2018-05-27T16:08:18.966</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\DearWalletDressMeUp.exe">
       <PackagePath>DearWalletDressMeUp.exe</PackagePath>
-      <Modified>2018-05-20T12:09:34.796</Modified>
+      <Modified>2018-05-27T16:30:23.160</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

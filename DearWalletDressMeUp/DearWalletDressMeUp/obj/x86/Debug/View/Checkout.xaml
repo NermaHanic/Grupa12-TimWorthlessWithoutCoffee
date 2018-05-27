@@ -172,7 +172,7 @@
                         </StackPanel>
                        </StackPanel>
                     <Rectangle Fill="Beige" Height="20"></Rectangle>
-                    <Button x:ConnectionId='11' x:Name="Potvrdi" Content="Potvrdi" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="32"/>
+                    <Button x:ConnectionId='11' x:Name="Potvrdi" Content="Potvrdi" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="32"                      />
                     
                 </StackPanel>
                 

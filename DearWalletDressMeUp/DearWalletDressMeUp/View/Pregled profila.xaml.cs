@@ -35,6 +35,7 @@ namespace DearWalletDressMeUp
         {
             this.InitializeComponent();
             DataContext = new ProfilViewModel();
+
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -117,6 +118,11 @@ namespace DearWalletDressMeUp
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
