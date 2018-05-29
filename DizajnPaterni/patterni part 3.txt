@@ -6,7 +6,7 @@ Subject(ISubject) zajednicki interfejs za stvarne subjekte i proksije-surogate k
 RealSubject je glavni objekat kojeg predstavlja proxy, Proxy vrsi kontrolu pristupa RealSubject objektu.
 
 U nasem projektu, ovaj bi se pattern mogao iskoristiti, jer imamo klasu Admin koji ima pristup bazi podataka
-(dodaje korisnika,brise ga,dodaj odjecu itd) tj. klasi Baza,znaci da 
+(dodaje korisnika,brise ga,dodaj odjecu itd),znaci da 
 ne moze svako direktno pristupat toj klasi npr. korisnik, pa bi izvrsili restrikciju pristupa.
 
 PROTOTYPE
