@@ -1,0 +1,33 @@
+PROXY
+PROXY pattern spada u klasu strukturalnih patterna. Ovaj pattern sluzi da kontrolise pristup nekom objektu. 
+Rjesava problem kada se objekat ne moze instancirat direktno npr. zbog restrikcije pristupa. To se postize tako sto se 
+dodaju klase:
+Subject(ISubject) zajednicki interfejs za stvarne subjekte i proksije-surogate koji omogucava da se oni naizmjenicno koriste.
+RealSubject je glavni objekat kojeg predstavlja proxy, Proxy vrsi kontrolu pristupa RealSubject objektu.
+
+U nasem projektu, ovaj bi se pattern mogao iskoristiti, jer imamo klasu Admin koji ima pristup bazi podataka
+(dodaje korisnika,brise ga,dodaj odjecu itd) tj. klasi Baza,znaci da 
+ne moze svako direktno pristupat toj klasi npr. korisnik, pa bi izvrsili restrikciju pristupa.
+
+PROTOTYPE
+PROTOTYPE pattern spada u klasu kreacijskih patterna. Uloga ovog patterna je da kreira nove objekte klonirajuci postojeci
+objekat.To je posebno korisno u situaciji kada je trosak kreiranja novog objekta velik. Njegovu strukturu cine Client klasa
+koja zahtjeva kloniranje postojeceg objekta preko interfejsa IPrototype kojim se omogucava kloniranje postojecih objekata.
+
+U nasem projektu, ovaj bi se pattern mogao iskoristit. To bi bilo korisno ako bi u buducnosti omogucili da korisnik aplikacije
+moze da modifikuje postojecu kreaciju, a da je spasi kao novu, znaci ne bi morali iznova praviti istu kreaciju pa modifikovat,
+vec modifikovati postojecu zahvaljujuci kloniranju klase Kreacija. Mogli bi ga iskoristit i za validaciju podataka za login i
+registraciju, jer bi efikasnije dobavljali podatke iz baze i sprijecili bi bespotrebno kopiranje koda.
+
+BUILDER
+BUILDER pattern je kreacijski pattern. Njegova uloga je odvajanje kompleksnih objekata
+od njihove stvarne konstrukcije. Kreira finalni objekt "step by step". Osnovni elementi su: IBuilder
+interfejs koji definira pojedinacne dijelove koji se koriste za izgradnju produkta, Director klasa
+sadrzi sve operacije koje su neophodne za izgradnju produkta, Builder je klasa koja kreira objekat i
+imamo Product klasu na osnovu koje se kreira objekat koji se gradi preko dijelova.
+
+U nasem projektu, ovaj bi se pattern mogao iskoristiti, jer imamo kreiranje odjece gdje korisnik
+bira odjevni predmet, boju, dezen, materijal, velicinu, svi ti dijelovi grade konacan produkt,
+a to je korisnikova kreacija.
+
+
