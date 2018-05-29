@@ -12,11 +12,14 @@ Nacin koristenja ovog paterna sastoji se u tome da se u zeljenoj klasi dodamo me
 
 U nasem projektu se patern Iterator moze iskoristiti kod pretraga, posto, u zavisnosti od vrste pretrage, kao rezultat dobijamo liste odjece. Radi lakse kretanja kroz te liste, kao i pristuta njenim elementima, pogodno je koristiti iterator.
 
-#COMMAND PATTERN
-Command patern kreira distancu izmeðu klijenata koji zahtevaju operacije i objekata koji ih izvršavaju.On može da podrži:
-- slanje zahteva ka razlièitim objektima
-- smeštanje zahteva u redove, logovanje i odbijanje zahteva
-- kreiranje transakcija višeg nivoa od primitivnih operacija
-- Redo i Undo funkcionalnosti
-
-U nasem projektu, Command patern je moguce iskoristiti kod kreiranja odjece, gdje se korisniku nude opcije zavrsi, odustani i "Pitaj stilistu", kao i dodatne opcije kao sto su undo, redo i slicno, koje je moguce kasnije dodati i implementirati.
+#SINGLETON
+Singleton pattern ogranièava instanciranje klase i osigurava da samo jedna instanca date klase
+postoji i pruža globalnu taèku pristupa ka toj instanci. Patern osigurava da je klasa instancirana samo
+jednom i da su svi zahtevi upuæeni ka tom jednom i samo jednom objektu.
+Modifikacije su:
+- kreiramo konstruktor kao private
+- dodamo private static objekat koji je interno instanciran korišæenjem private konstruktora
+- dodajemo public staitc properti koji pristupa private objektu
+Javni properti je jedini vidljiv izvan klase. Svi zahtevi za kreiranjem instance klase idu kroz ovaj
+properti. On pristupa privatnom static objektu i instancira ga ukoliko on veæ ne postoji.
+U nasoj aplikaciji, Singleton bi se mogao primjeniti kod baze, kao i kod kviza, koji predstavlja sistem za koji je potrebna samo jedna instanca te klase. 
