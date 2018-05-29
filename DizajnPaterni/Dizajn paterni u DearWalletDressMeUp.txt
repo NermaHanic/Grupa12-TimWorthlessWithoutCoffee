@@ -1,0 +1,22 @@
+#OBSERVER PATTERN
+Uloga Observer paterna je da uspostavi relaciju izmeðu objekata tako kada jedan objekat promijeni stanje, drugi zainteresirani objekti se obavještavaju.
+Observer pattern se koristi ukoliko postoje jedna-na-više veze izmeðu objekata takve da ako se jedan objekat modifikuje, ostali æe biti obavješteni automatski. Observer koristi tri actor klase: subjekat, observer i objekat. Observer nadzire subjekat i svaki put kad se on promijeni obavještavaju se objekti.
+
+Konkretno u nasem projektu je moguce iskoristiti Observer patern prilikom azuriranja cijene kreacije, na nacin da kad se na kreaciju odabere odreðeni materijal, dezen ili se iskoristi opcija "Pitaj stilistu" nova cijena kreacije se prikazuje korisniku
+Takoðe, Observer mozemo iskoristiti prilikom obavjestavanja korisnika koji je izvrsio narudzbu preko 150KM o ostvarenoj pogodnosti - poklonu.
+
+#ITERATOR PATTERN
+Iterator patern omoguæava sekvencijalni pristup elementima kolekcije bez poznavanja kako je kolekcija strukturirana.
+Pored toga, patern omoguæava filtriranje elemenata na razlièite naèine. 
+Nacin koristenja ovog paterna sastoji se u tome da se u zeljenoj klasi dodamo metodu createIterator() koja pravi iterator klasu, omoguciti tom iteratoru prolazak kroz kolekciju i dodati odgovarajuce metode kao sto su first(), last(), next() radi lakseg rada
+
+U nasem projektu se patern Iterator moze iskoristiti kod pretraga, posto, u zavisnosti od vrste pretrage, kao rezultat dobijamo liste odjece. Radi lakse kretanja kroz te liste, kao i pristuta njenim elementima, pogodno je koristiti iterator.
+
+#COMMAND PATTERN
+Command patern kreira distancu izmeðu klijenata koji zahtevaju operacije i objekata koji ih izvršavaju.On može da podrži:
+- slanje zahteva ka razlièitim objektima
+- smeštanje zahteva u redove, logovanje i odbijanje zahteva
+- kreiranje transakcija višeg nivoa od primitivnih operacija
+- Redo i Undo funkcionalnosti
+
+U nasem projektu, Command patern je moguce iskoristiti kod kreiranja odjece, gdje se korisniku nude opcije zavrsi, odustani i "Pitaj stilistu", kao i dodatne opcije kao sto su undo, redo i slicno, koje je moguce kasnije dodati i implementirati.
