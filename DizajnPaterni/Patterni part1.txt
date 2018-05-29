@@ -1,0 +1,38 @@
+DEKORATER
+Decorater spada u strukturalne patterne. On omogucava dinamicko 
+dodavanje funkcionalnosti objektima bez kreiranja suvisnih potklasa.
+To se postize dodavanjem Component klase i jedne ili vise Dekorater 
+klasa. Component klasa predstavlja klasu nad kojom ce se vrsiti
+"dekorisanje", a dekorater klase odredjuju koja se dekoracija dodaje.
+Implementiraju zajednicki interfejs. U nasem projektu bi se mogao
+iskoristiti prilikom kreiranja odjece. Svaka kreacija se sastoji 
+iz odjevnog predmeta, materijala, dezena i boje (dezen i boja su 
+opcionalni). Da ne bismo pravili klase tipa BijelaMajicaPamuk i 
+slicno, koristimo dekorater.
+
+COMMAND
+Command pattern spada u paterne ponasanja i omogucava da komande 
+(ondosno neke akcije) tretiramo
+kao objekte. Postoje klase za svaku komandu koju smo implementirali,
+i sve naslijedjuju jedan zajednicki interfejs. Takodjer postoji
+i Invoker klasa koja sadrzi kolekciju postojecih komandi
+i brine se o izvrsavanju.
+U nasem projektu bi se ovaj pattern mogao iskoristiti
+kod kreiranja, posto se tu nude opcije zavrsi, odustani i pitaj
+stilistu. Takodje bi se olaksalo dodavanje komandi nekad kasnije,
+recimo ako odlucimo dodati undo i redo nad nekom kreacijom.
+
+STATE 
+Ovaj patern spada u paterne ponasanja i slican je Strategy paternu.
+Ono sto ga razlikuje od Strategy je cinjenica da se stanja objekta
+mijenjanju dinamicki (tokom runtime), dok kod Strategy to nije slucaj.
+Sva stanja imaju zajednicki interfejs/apstraktnu klasu koju 
+naslijedjuju. Takodjer postoji i Context klasa koja sadrzi kolekciju
+postojecih stanja. 
+Sluzi nam u situacijama kada objekat treba da promijeni svoje ponasanje
+u ovisnosti od tog kako se promijenila njegova interna struktura.
+Mogao bi se iskoristiti u kvizu. Tokom popunjavanja kviza, korisniku
+se nude pitanja sa ponudjenim odgovorima te nekoliko slika. Odgovori koje
+korisnik dadne direktno uticu na to kakav ce rezultat dobiti. Kako
+korisnik u bilo kojem trenutku moze promijeniti odgovor, tako se i
+njegov rezultat moze promijeniti.
