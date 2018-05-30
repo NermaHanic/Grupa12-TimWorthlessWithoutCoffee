@@ -1,0 +1,57 @@
+﻿@model IEnumerable<DearWalletWeb.OdjevniPredmet>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NazivOdjevnogPredmeta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SlikaOdjevnogPredmeta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CijenaOdjevnogPredmeta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Odjel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stil)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NazivOdjevnogPredmeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SlikaOdjevnogPredmeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CijenaOdjevnogPredmeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Odjel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stil)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OdjevniPredmetId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OdjevniPredmetId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OdjevniPredmetId })
+        </td>
+    </tr>
+}
+
+</table>

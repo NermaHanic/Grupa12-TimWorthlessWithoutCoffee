@@ -1,0 +1,39 @@
+﻿@model IEnumerable<DearWalletWeb.Materijal>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NazivMaterijala)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CijenaMaterijala)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NazivMaterijala)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CijenaMaterijala)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaterijalId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaterijalId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaterijalId })
+        </td>
+    </tr>
+}
+
+</table>

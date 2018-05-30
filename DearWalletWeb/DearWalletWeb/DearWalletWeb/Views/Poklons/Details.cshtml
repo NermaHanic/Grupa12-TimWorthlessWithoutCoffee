@@ -1,0 +1,42 @@
+﻿@model DearWalletWeb.Poklon
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Poklon</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Narudzba.DostavaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Narudzba.DostavaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TekstPoruke)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TekstPoruke)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Snimak)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Snimak)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NarudzbaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

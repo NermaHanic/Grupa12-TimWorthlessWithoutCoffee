@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -7,18 +9,17 @@ namespace DearWalletWeb
 {
     public class Narudzba
     {
+        [Required]
         public string NarudzbaId { get; set; }
+        [ForeignKey("Dostava")]
         public string DostavaId { get; set; }
+        [Required]
         public double UkupnaCijena { get; set; }
-        public string ProfilId { get; set; }
-        public string PoklonId { get; set; }
-        public string SnizenjeId { get; set; }
 
         public virtual Dostava Dostava { get; set; }
         public virtual Poklon Poklon { get; set; }
-        public virtual ICollection<StavkeNarudzbe> StavkeNarudzbe { get; set; }
-        public virtual Snizenje Snizenje { get; set; }
-        public virtual Profil Profil { get; set; }
+       
+        public virtual ICollection<Kreacija> Kreacije { get; set; }
 
         public bool ProvjeraZaPoklon()
         {

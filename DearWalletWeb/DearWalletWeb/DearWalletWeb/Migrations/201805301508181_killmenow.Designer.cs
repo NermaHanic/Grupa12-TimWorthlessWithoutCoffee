@@ -7,13 +7,13 @@ namespace DearWalletWeb.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class k : IMigrationMetadata
+    public sealed partial class killmenow : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(k));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(killmenow));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805242106213_k"; }
+            get { return "201805301508181_killmenow"; }
         }
         
         string IMigrationMetadata.Source

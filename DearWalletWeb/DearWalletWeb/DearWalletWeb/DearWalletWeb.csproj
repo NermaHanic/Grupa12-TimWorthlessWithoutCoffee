@@ -184,23 +184,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201805242106213_k.cs" />
-    <Compile Include="Migrations\201805242106213_k.Designer.cs">
-      <DependentUpon>201805242106213_k.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Admin.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DezensController.cs" />
+    <Compile Include="Controllers\DostavasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KorisniksController.cs" />
+    <Compile Include="Controllers\KreacijasController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MaterijalsController.cs" />
+    <Compile Include="Controllers\MjerasController.cs" />
+    <Compile Include="Controllers\NarudzbasController.cs" />
+    <Compile Include="Controllers\OdgovorController.cs" />
+    <Compile Include="Controllers\OdjevniPredmetsController.cs" />
+    <Compile Include="Controllers\PitanjeController.cs" />
+    <Compile Include="Controllers\PoklonsController.cs" />
+    <Compile Include="Controllers\ProfilsController.cs" />
+    <Compile Include="Migrations\201805301508181_killmenow.cs" />
+    <Compile Include="Migrations\201805301508181_killmenow.Designer.cs">
+      <DependentUpon>201805301508181_killmenow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DearWalletContext.cs" />
     <Compile Include="Models\Dezen.cs" />
     <Compile Include="Models\Dostava.cs" />
-    <Compile Include="Models\Email.cs" />
     <Compile Include="Models\ExpressDostava.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -226,10 +237,7 @@
     <Compile Include="Models\Poklon.cs" />
     <Compile Include="Models\Profil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\SlikaKviz.cs" />
-    <Compile Include="Models\Snizenje.cs" />
     <Compile Include="Models\Startup.cs" />
-    <Compile Include="Models\StavkeNarudzbe.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -288,6 +296,71 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Korisniks\Create.cshtml" />
+    <Content Include="Views\Korisniks\Delete.cshtml" />
+    <Content Include="Views\Korisniks\Details.cshtml" />
+    <Content Include="Views\Korisniks\Edit.cshtml" />
+    <Content Include="Views\Korisniks\Index.cshtml" />
+    <Content Include="Views\Profils\Create.cshtml" />
+    <Content Include="Views\Profils\Delete.cshtml" />
+    <Content Include="Views\Profils\Details.cshtml" />
+    <Content Include="Views\Profils\Edit.cshtml" />
+    <Content Include="Views\Profils\Index.cshtml" />
+    <Content Include="Views\Dezens\Create.cshtml" />
+    <Content Include="Views\Dezens\Delete.cshtml" />
+    <Content Include="Views\Dezens\Details.cshtml" />
+    <Content Include="Views\Dezens\Edit.cshtml" />
+    <Content Include="Views\Dezens\Index.cshtml" />
+    <Content Include="Views\Poklons\Create.cshtml" />
+    <Content Include="Views\Poklons\Delete.cshtml" />
+    <Content Include="Views\Poklons\Details.cshtml" />
+    <Content Include="Views\Poklons\Edit.cshtml" />
+    <Content Include="Views\Poklons\Index.cshtml" />
+    <Content Include="Views\Narudzbas\Create.cshtml" />
+    <Content Include="Views\Narudzbas\Delete.cshtml" />
+    <Content Include="Views\Narudzbas\Details.cshtml" />
+    <Content Include="Views\Narudzbas\Edit.cshtml" />
+    <Content Include="Views\Narudzbas\Index.cshtml" />
+    <Content Include="Views\Dostavas\Create.cshtml" />
+    <Content Include="Views\Dostavas\Delete.cshtml" />
+    <Content Include="Views\Dostavas\Details.cshtml" />
+    <Content Include="Views\Dostavas\Edit.cshtml" />
+    <Content Include="Views\Dostavas\Index.cshtml" />
+    <Content Include="Views\Kreacijas\Create.cshtml" />
+    <Content Include="Views\Kreacijas\Delete.cshtml" />
+    <Content Include="Views\Kreacijas\Details.cshtml" />
+    <Content Include="Views\Kreacijas\Edit.cshtml" />
+    <Content Include="Views\Kreacijas\Index.cshtml" />
+    <Content Include="Views\Materijals\Create.cshtml" />
+    <Content Include="Views\Materijals\Delete.cshtml" />
+    <Content Include="Views\Materijals\Details.cshtml" />
+    <Content Include="Views\Materijals\Edit.cshtml" />
+    <Content Include="Views\Materijals\Index.cshtml" />
+    <Content Include="Views\Mjeras\Create.cshtml" />
+    <Content Include="Views\Mjeras\Delete.cshtml" />
+    <Content Include="Views\Mjeras\Details.cshtml" />
+    <Content Include="Views\Mjeras\Edit.cshtml" />
+    <Content Include="Views\Mjeras\Index.cshtml" />
+    <Content Include="Views\Odgovors\Create.cshtml" />
+    <Content Include="Views\Odgovors\Delete.cshtml" />
+    <Content Include="Views\Odgovors\Details.cshtml" />
+    <Content Include="Views\Odgovors\Edit.cshtml" />
+    <Content Include="Views\Odgovors\Index.cshtml" />
+    <Content Include="Views\OdjevniPredmets\Create.cshtml" />
+    <Content Include="Views\OdjevniPredmets\Delete.cshtml" />
+    <Content Include="Views\OdjevniPredmets\Details.cshtml" />
+    <Content Include="Views\OdjevniPredmets\Edit.cshtml" />
+    <Content Include="Views\OdjevniPredmets\Index.cshtml" />
+    <Content Include="Views\Pitanje\Create.cshtml" />
+    <Content Include="Views\Pitanje\Delete.cshtml" />
+    <Content Include="Views\Pitanje\Details.cshtml" />
+    <Content Include="Views\Pitanje\Edit.cshtml" />
+    <Content Include="Views\Pitanje\Index.cshtml" />
+    <Content Include="Views\Odgovor\Create.cshtml" />
+    <Content Include="Views\Odgovor\Delete.cshtml" />
+    <Content Include="Views\Odgovor\Details.cshtml" />
+    <Content Include="Views\Odgovor\Edit.cshtml" />
+    <Content Include="Views\Odgovor\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -306,8 +379,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805242106213_k.resx">
-      <DependentUpon>201805242106213_k.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805301508181_killmenow.resx">
+      <DependentUpon>201805301508181_killmenow.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

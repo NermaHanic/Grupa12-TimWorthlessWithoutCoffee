@@ -1,0 +1,64 @@
+﻿@model DearWalletWeb.Mjera
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Mjera</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DuzinaRuke)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DuzinaRuke)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DuzinaNoge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DuzinaNoge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ObimStruka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ObimStruka)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ObimGrudi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ObimGrudi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SirinaRamena)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SirinaRamena)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
