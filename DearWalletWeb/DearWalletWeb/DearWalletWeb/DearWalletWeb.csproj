@@ -204,9 +204,9 @@
     <Compile Include="Controllers\PitanjeController.cs" />
     <Compile Include="Controllers\PoklonsController.cs" />
     <Compile Include="Controllers\ProfilsController.cs" />
-    <Compile Include="Migrations\201805301508181_killmenow.cs" />
-    <Compile Include="Migrations\201805301508181_killmenow.Designer.cs">
-      <DependentUpon>201805301508181_killmenow.cs</DependentUpon>
+    <Compile Include="Migrations\201805301631025_RADI.cs" />
+    <Compile Include="Migrations\201805301631025_RADI.Designer.cs">
+      <DependentUpon>201805301631025_RADI.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DearWalletContext.cs" />
@@ -379,8 +379,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805301508181_killmenow.resx">
-      <DependentUpon>201805301508181_killmenow.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805301631025_RADI.resx">
+      <DependentUpon>201805301631025_RADI.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
