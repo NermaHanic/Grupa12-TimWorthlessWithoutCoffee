@@ -9,7 +9,7 @@ namespace DearWalletWeb.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(DearWalletWeb.Models.DearWalletContext context)
