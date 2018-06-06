@@ -1,0 +1,58 @@
+﻿@model DearWalletWeb.Models.Mjera
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Mjera</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DuzinaRuke)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DuzinaRuke)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DuzinaNoge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DuzinaNoge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ObimStruka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ObimStruka)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ObimGrudi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ObimGrudi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SirinaRamena)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SirinaRamena)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MjeraId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
