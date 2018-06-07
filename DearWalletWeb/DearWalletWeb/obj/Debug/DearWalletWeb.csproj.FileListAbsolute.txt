@@ -121,3 +121,4 @@ C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\De
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWeb\obj\Debug\DearWalletWeb.pdb
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWeb\obj\Debug\DearWalletWeb.Migrations.fingerscrossed.resources
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWeb\obj\Debug\DearWalletWeb.csproj.GenerateResource.cache
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWeb\obj\Debug\DearWalletWeb.csprojAssemblyReference.cache
