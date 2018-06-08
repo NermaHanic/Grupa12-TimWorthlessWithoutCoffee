@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Dobro dosli!";
+}
+
+<div class="jumbotron">
+    <h1>Dear Wallet, Dress Me Up</h1>
+    <p class="lead">Tu smo da Vam pomognemo pronaci Vas idealni outfit za svaku priliku!</p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-5" style="float:right">
+        <h2>Nemate profil?</h2>
+        <p>
+            Ukoliko zelite postati nas korisnik, molimo da se prvo registrujete :)
+        </p>
+        <p><a class="btn btn-default" onclick="window.location.href='@Url.Action("Create", "Korisniks")';">Zelim profil! &raquo;</a></p>
+    </div>
+    <div class="col-md-5" style="float:left">
+        <h2>Prijavite se</h2>
+        <p>
+            Dobro nam dosli, dragi korisnice!
+        </p>
+        <form method="POST">
+            <input class="form-control" name="UsernameLogin" id="UsernameLogin" type="text" placeholder="Username" />
+            <br />
+            <div id="passwordGreska" style="font-size:small">
+                @Html.Label("", Convert.ToString((string)ViewBag.passwordGreska))
+            </div>
+            <input class="form-control" name="PasswordLogin" id="Pass" type="password" placeholder="Password" />
+            <br />
+            <p><button type="submit" class="btn btn-primary btn-lg">Login &raquo;</button></p>
+        </form>
+    </div>
+</div>
