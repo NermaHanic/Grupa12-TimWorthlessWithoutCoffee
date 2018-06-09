@@ -1,51 +1,39 @@
 ﻿@model IEnumerable<DearWalletWebNovi.Models.Dezen>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Search";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Naziv)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Slika)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PSlika)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Cijena)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Naziv)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Slika)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PSlika)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Cijena)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
+<h2>Pretraga dezena</h2>
+@using (Html.BeginForm("Index", "Dezens", FormMethod.Get))
+{
+    @Html.TextBox("trazi") <input type="submit" style="margin-top:20px" value="Trazi!" />
 }
-
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th>Slika</th>
+            <th>Cijena</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="3" style="color:red">Šmrc, nema ničeg :(</td>
+            </tr>
+        }
+        else
+        {
+            foreach (var i in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => i.Naziv)</td>
+                    <td>@Html.DisplayFor(modelItem => i.Slika)</td>
+                    <td>@Html.DisplayFor(modelItem => i.Cijena)</td>
+                </tr>
+            }
+        }
+    </tbody>
 </table>

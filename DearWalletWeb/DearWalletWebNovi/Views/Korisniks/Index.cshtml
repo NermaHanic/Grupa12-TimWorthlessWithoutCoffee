@@ -1,28 +1,36 @@
-﻿@model IEnumerable<object>
+﻿@model IEnumerable<DearWalletWebNovi.Models.Korisnik>
 
 @{
     ViewBag.Title = "Vas Profil";
-    List<DearWalletWebNovi.Models.Kreacija> listaKreacija = Model.ToList()[0] as List<DearWalletWebNovi.Models.Kreacija>;
+    
 }
+
 
 <div class="jumbotron">
     <div style="text-align:center">
         <font size="6">Ćao, @Session["User"].ToString()</font>
     </div>
     <div style="text-align:center">
-        <input style="height:34px" type="text" placeholder="Pretraga" name="pretraga">
-        <button class="btn btn-default" type="submit">Traži</button>
         <input type="button" class="btn btn-default" value="Edituj profil" onclick="window.location.href='@Url.Action("Edit", "Korisniks",new { id= @Session["UserId"]})';" />
         <input type="button" class="btn btn-default" value="Obriši profil" onclick="window.location.href='@Url.Action("Delete", "Korisniks", new { id=@Session["UserId"] })';" />
 
         <input type="button" class="btn btn-primary btn-lg" value="Odjava" onclick="window.location.href='@Url.Action("Index", "Home")';" />
     </div>
 </div>
-<div>
+<div style="float:left">
     <h2>Vaše kreacije</h2>
     @*Ovjde idu slikice i ta cuda*@
-    <br/>
+    <br />
     @Html.ActionLink("+ Nova kreacija", "Index", "Kreacijas")
     <h2>Korpa</h2>
     @Html.ActionLink("+ Nova narudzba", "Create", "Narudzbas")
+</div>
+<div style="float:right">
+    @* <input style="height:34px" type="text" placeholder="Pretraga" name="pretraga">
+        <button class="btn btn-default" type="submit">Traži</button>
+    *@
+    <h2>Pretraga</h2>
+    @Html.ActionLink("Odjeca", "Index", "OdjevniPredmets")
+    <br />
+    @Html.ActionLink("Dezeni", "Index", "Dezens")
 </div>

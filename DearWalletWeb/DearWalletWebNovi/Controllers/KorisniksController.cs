@@ -17,14 +17,14 @@ namespace DearWalletWebNovi.Controllers
         // GET: Korisniks
         public ActionResult Index()
         {
+
             List<Kreacija> listaKreacija = new List<Kreacija>();
             foreach (Kreacija x in db.Kreacija.ToList())
                 if (x.IdKorisnika.Equals(Session["UserId"].ToString()))
                     listaKreacija.Add(x);
-            
+
             return View(db.Korisnik.ToList());
         }
-
         // GET: Korisniks/Details/5
         public ActionResult Details(string id)
         {

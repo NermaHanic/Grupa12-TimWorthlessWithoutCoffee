@@ -15,9 +15,9 @@ namespace DearWalletWebNovi.Controllers
         private DressMeUpContext db = new DressMeUpContext();
 
         // GET: Dezens
-        public ActionResult Index()
+        public ActionResult Index(string trazi)
         {
-            return View(db.Dezen.ToList());
+            return View(db.Dezen.Where(x => x.Naziv.Contains(trazi) || trazi == null).ToList());
         }
 
         // GET: Dezens/Details/5
