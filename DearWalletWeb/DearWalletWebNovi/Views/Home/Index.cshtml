@@ -1,31 +1,35 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Dobro dosli!";
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Dear Wallet, Dress Me Up</h1>
+    <p class="lead">Tu smo da Vam pomognemo pronaci Vas idealni outfit za svaku priliku!</p>
+
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
+    <div class="col-md-5" style="float:right">
+        <h2>Nemate profil?</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Ukoliko zelite postati nas korisnik, molimo da se prvo registrujete :)
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" onclick="window.location.href='@Url.Action("Create", "Korisniks")';">Zelim profil! &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="col-md-5" style="float:left">
+        <h2>Prijavite se</h2>
+        <p>
+            Dobro nam dosli, dragi korisnice!
+        </p>
+        <form method="POST">
+            <input class="form-control" name="UsernameLogin" id="UsernameLogin" type="text" placeholder="Username" />
+            <br />
+            <div id="passwordGreska" style="font-size:small">
+                @Html.Label("", Convert.ToString((string)ViewBag.passwordGreska))
+            </div>
+            <input class="form-control" name="PasswordLogin" id="Pass" type="password" placeholder="Password" />
+            <br />
+            <p><button type="submit" class="btn btn-primary btn-lg">Login &raquo;</button></p>
+        </form>
     </div>
 </div>

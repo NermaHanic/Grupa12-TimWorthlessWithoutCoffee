@@ -16,9 +16,9 @@ namespace DearWalletWebNovi.Models
         public int IdDezen { get; set; }
         //public string Boja { get; set; }
         [Required]
-        public string IdOdjevniPredmet { get; set; }
+        public int IdOdjevniPredmet { get; set; }
         [Required]
-        public string IdKorisnika { get; set; }
+        public int IdKorisnika { get; set; }
         [Required]
         public string Velicina { get; set; }
         public int IdNarudzbe { get; set; }

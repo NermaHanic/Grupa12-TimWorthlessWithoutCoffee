@@ -195,6 +195,7 @@
     <Compile Include="Controllers\KorisniksController.cs" />
     <Compile Include="Controllers\KreacijasController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NarudzbasController.cs" />
     <Compile Include="Controllers\OdjevniPredmetsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -210,6 +211,30 @@
     <Compile Include="Migrations\201806090925125_narudzbe.cs" />
     <Compile Include="Migrations\201806090925125_narudzbe.Designer.cs">
       <DependentUpon>201806090925125_narudzbe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806090945361_new.cs" />
+    <Compile Include="Migrations\201806090945361_new.Designer.cs">
+      <DependentUpon>201806090945361_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806090948211_a.cs" />
+    <Compile Include="Migrations\201806090948211_a.Designer.cs">
+      <DependentUpon>201806090948211_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806090953381_radi.cs" />
+    <Compile Include="Migrations\201806090953381_radi.Designer.cs">
+      <DependentUpon>201806090953381_radi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806090955145_int.cs" />
+    <Compile Include="Migrations\201806090955145_int.Designer.cs">
+      <DependentUpon>201806090955145_int.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806091010404_atributeless.cs" />
+    <Compile Include="Migrations\201806091010404_atributeless.Designer.cs">
+      <DependentUpon>201806091010404_atributeless.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806091018307_intovi.cs" />
+    <Compile Include="Migrations\201806091018307_intovi.Designer.cs">
+      <DependentUpon>201806091018307_intovi.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -302,6 +327,11 @@
     <Content Include="Views\OdjevniPredmets\Details.cshtml" />
     <Content Include="Views\OdjevniPredmets\Edit.cshtml" />
     <Content Include="Views\OdjevniPredmets\Index.cshtml" />
+    <Content Include="Views\Narudzbas\Create.cshtml" />
+    <Content Include="Views\Narudzbas\Delete.cshtml" />
+    <Content Include="Views\Narudzbas\Details.cshtml" />
+    <Content Include="Views\Narudzbas\Edit.cshtml" />
+    <Content Include="Views\Narudzbas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -328,6 +358,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806090925125_narudzbe.resx">
       <DependentUpon>201806090925125_narudzbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806090945361_new.resx">
+      <DependentUpon>201806090945361_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806090948211_a.resx">
+      <DependentUpon>201806090948211_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806090953381_radi.resx">
+      <DependentUpon>201806090953381_radi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806090955145_int.resx">
+      <DependentUpon>201806090955145_int.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806091010404_atributeless.resx">
+      <DependentUpon>201806091010404_atributeless.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806091018307_intovi.resx">
+      <DependentUpon>201806091018307_intovi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

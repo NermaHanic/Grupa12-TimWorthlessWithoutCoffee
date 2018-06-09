@@ -17,6 +17,11 @@ namespace DearWalletWebNovi.Controllers
         // GET: Korisniks
         public ActionResult Index()
         {
+            List<Kreacija> listaKreacija = new List<Kreacija>();
+            foreach (Kreacija x in db.Kreacija.ToList())
+                if (x.IdKorisnika.Equals(Session["UserId"].ToString()))
+                    listaKreacija.Add(x);
+            
             return View(db.Korisnik.ToList());
         }
 
@@ -52,7 +57,7 @@ namespace DearWalletWebNovi.Controllers
             {
                 db.Korisnik.Add(korisnik);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Home");
             }
 
             return View(korisnik);

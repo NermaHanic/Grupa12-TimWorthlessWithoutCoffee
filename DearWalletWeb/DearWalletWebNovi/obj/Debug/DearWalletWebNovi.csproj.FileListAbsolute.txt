@@ -242,5 +242,11 @@ C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\De
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.dll
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.pdb
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.Migrations.nova.resources
-C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.csprojAssemblyReference.cache
 C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.Migrations.narudzbe.resources
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.Migrations._new.resources
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.Migrations.a.resources
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.Migrations.radi.resources
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.Migrations._int.resources
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.Migrations.atributeless.resources
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.Migrations.intovi.resources
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.csprojAssemblyReference.cache

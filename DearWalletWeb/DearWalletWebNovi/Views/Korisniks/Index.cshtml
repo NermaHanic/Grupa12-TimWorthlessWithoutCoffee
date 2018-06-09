@@ -1,75 +1,28 @@
-﻿@model IEnumerable<DearWalletWebNovi.Models.Korisnik>
+﻿@model IEnumerable<object>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Vas Profil";
+    List<DearWalletWebNovi.Models.Kreacija> listaKreacija = Model.ToList()[0] as List<DearWalletWebNovi.Models.Kreacija>;
 }
 
-<h2>Index</h2>
+<div class="jumbotron">
+    <div style="text-align:center">
+        <font size="6">Ćao, @Session["User"].ToString()</font>
+    </div>
+    <div style="text-align:center">
+        <input style="height:34px" type="text" placeholder="Pretraga" name="pretraga">
+        <button class="btn btn-default" type="submit">Traži</button>
+        <input type="button" class="btn btn-default" value="Edituj profil" onclick="window.location.href='@Url.Action("Edit", "Korisniks",new { id= @Session["UserId"]})';" />
+        <input type="button" class="btn btn-default" value="Obriši profil" onclick="window.location.href='@Url.Action("Delete", "Korisniks", new { id=@Session["UserId"] })';" />
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Ime)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Prezime)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Username)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Sifra)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Adresa)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BrojTel)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BrojKreditneKartice)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ime)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Prezime)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Username)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Sifra)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Adresa)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BrojTel)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BrojKreditneKartice)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
-
-</table>
+        <input type="button" class="btn btn-primary btn-lg" value="Odjava" onclick="window.location.href='@Url.Action("Index", "Home")';" />
+    </div>
+</div>
+<div>
+    <h2>Vaše kreacije</h2>
+    @*Ovjde idu slikice i ta cuda*@
+    <br/>
+    @Html.ActionLink("+ Nova kreacija", "Index", "Kreacijas")
+    <h2>Korpa</h2>
+    @Html.ActionLink("+ Nova narudzba", "Create", "Narudzbas")
+</div>
