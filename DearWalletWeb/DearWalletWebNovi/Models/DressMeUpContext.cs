@@ -14,7 +14,7 @@ namespace DearWalletWebNovi.Models
         public DbSet<Kreacija> Kreacija { get; set; }
         public DbSet<OdjevniPredmet> OdjevniPredmet { get; set; }
         public DbSet<Dezen> Dezen { get; set; }
-
+        public DbSet<Narudzba> Narudzba { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

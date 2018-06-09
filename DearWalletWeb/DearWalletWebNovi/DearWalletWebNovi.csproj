@@ -203,6 +203,14 @@
     <Compile Include="Migrations\201806082248389_initial.Designer.cs">
       <DependentUpon>201806082248389_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806090922057_nova.cs" />
+    <Compile Include="Migrations\201806090922057_nova.Designer.cs">
+      <DependentUpon>201806090922057_nova.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806090925125_narudzbe.cs" />
+    <Compile Include="Migrations\201806090925125_narudzbe.Designer.cs">
+      <DependentUpon>201806090925125_narudzbe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Dezen.cs" />
@@ -212,6 +220,7 @@
     <Compile Include="Models\Kreacija.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\DressMeUpContext.cs" />
+    <Compile Include="Models\Narudzba.cs" />
     <Compile Include="Models\OdjevniPredmet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -313,6 +322,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201806082248389_initial.resx">
       <DependentUpon>201806082248389_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806090922057_nova.resx">
+      <DependentUpon>201806090922057_nova.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806090925125_narudzbe.resx">
+      <DependentUpon>201806090925125_narudzbe.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -12,7 +12,7 @@ namespace DearWalletWebNovi.Models
         [ScaffoldColumn(false)]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public string Id { get; set; }
+        public int Id { get; set; }
         [Required(ErrorMessage = "Ime je obavezno!")]
         public string Ime { get; set; }
         [Required(ErrorMessage = "Prezime je obavezno!")]
