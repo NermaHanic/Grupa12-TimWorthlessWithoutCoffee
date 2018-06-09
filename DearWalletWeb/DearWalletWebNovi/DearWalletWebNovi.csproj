@@ -196,6 +196,7 @@
     <Compile Include="Controllers\KreacijasController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NarudzbasController.cs" />
+    <Compile Include="Controllers\OdjevniPredmetController.cs" />
     <Compile Include="Controllers\OdjevniPredmetsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -332,9 +333,11 @@
     <Content Include="Views\Narudzbas\Details.cshtml" />
     <Content Include="Views\Narudzbas\Edit.cshtml" />
     <Content Include="Views\Narudzbas\Index.cshtml" />
+    <Content Include="Views\OdjevniPredmet\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Image\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
