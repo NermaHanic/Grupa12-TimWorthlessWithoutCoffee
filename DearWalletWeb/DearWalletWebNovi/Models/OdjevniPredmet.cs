@@ -23,6 +23,7 @@ namespace DearWalletWebNovi.Models
         public byte[] Slika { get; set; }
         [Required]
         public double Cijena { get; set; }
+        [NotMapped]
         public HttpPostedFileBase ImageFile { get; set; }
         // public virtual ICollection<Kreacija> Kreacije { get; set; }
     }
