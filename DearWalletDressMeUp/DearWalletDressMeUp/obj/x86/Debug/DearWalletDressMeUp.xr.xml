@@ -12,11 +12,11 @@
     <RootPropertyPathName Name="Logiranje" />
     <RootPropertyPathName Name="Korisnik" />
     <RootPropertyPathName Name="Sifra" />
-    <RootPropertyPathName Name="Id" />
+    <RootPropertyPathName Name="Username" />
     <RootPropertyPathName Name="BrisiProfil" />
     <RootPropertyPathName Name="UnesiUBazu" />
     <RootPropertyPathName Name="BrojKreditneKartice" />
-    <RootPropertyPathName Name="BrojTelefona" />
+    <RootPropertyPathName Name="BrojTel" />
     <RootPropertyPathName Name="Adresa" />
     <RootPropertyPathName Name="PSifra" />
     <RootPropertyPathName Name="Email" />
@@ -29,9 +29,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
-      <RootProperty Name="IsTabStop" />
       <RootProperty Name="DataContext" />
-      <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Children" />
@@ -44,7 +42,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
-      <RootProperty Name="VerticalAlignment" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -106,9 +103,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
-    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
@@ -119,7 +114,6 @@
       <RootProperty Name="Padding" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
-      <RootProperty Name="Visibility" />
       <RootProperty Name="Width" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
@@ -145,9 +139,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Width" />
-      <RootProperty Name="TextAlignment" />
-      <RootProperty Name="FontFamily" />
-      <RootProperty Name="Inlines" />
       <RootProperty Name="Height" />
       <RootProperty Name="MaxWidth" />
     </RootType>
@@ -231,7 +222,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Style" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
       <RootProperty Name="Content" />
@@ -243,7 +233,6 @@
       <RootProperty Name="Path" />
       <RootProperty Name="UpdateSourceTrigger" />
       <RootProperty Name="Mode" />
-      <RootProperty Name="ElementName" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="Height" />
@@ -267,28 +256,6 @@
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="DearWalletDressMeUp.Checkout" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RichTextBlockOverflow">
-      <RootProperty Name="OverflowContentTarget" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.RichTextBlock">
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="TextAlignment" />
-      <RootProperty Name="FontFamily" />
-      <RootProperty Name="Blocks" />
-      <RootProperty Name="OverflowContentTarget" />
-      <RootProperty Name="IsTextSelectionEnabled" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Visibility" />
-      <RootProperty Name="FontWeight" />
-      <RootProperty Name="Style" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.Paragraph">
-      <RootProperty Name="Inlines" />
-      <RootProperty Name="FontSize" />
-    </RootType>
-    <RootType FullName="DearWalletDressMeUp.View.ContinuationPage" />
     <RootType FullName="DearWalletDressMeUp.Home" />
     <RootType FullName="DearWalletDressMeUp.Kreacija1" />
     <RootType FullName="Windows.UI.Xaml.Controls.Panel">
@@ -308,7 +275,6 @@
     <RootType FullName="DearWalletDressMeUp.ViewModel.LoginViewModel" />
     <RootType FullName="DearWalletDressMeUp.Login" />
     <RootType FullName="DearWalletDressMeUp.MainPage" />
-    <RootType FullName="DearWalletDressMeUp.View.PageToPrint" />
     <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Background" />
@@ -334,12 +300,6 @@
     <RootType FullName="DearWalletDressMeUp.Poklon4" />
     <RootType FullName="DearWalletDressMeUp.Pregled_profila" />
     <RootType FullName="DearWalletDressMeUp.Pretraga" />
-    <RootType FullName="Windows.UI.Xaml.Shapes.Shape">
-      <RootProperty Name="Stroke" />
-      <RootProperty Name="StrokeThickness" />
-      <RootProperty Name="StrokeDashArray" />
-    </RootType>
-    <RootType FullName="DearWalletDressMeUp.View.PreviewUnavailable" />
     <RootType FullName="DearWalletDressMeUp.ViewModel.KorisnikViewModel" />
     <RootType FullName="DearWalletDressMeUp.Registracija" />
   </Roots.RootTypes>

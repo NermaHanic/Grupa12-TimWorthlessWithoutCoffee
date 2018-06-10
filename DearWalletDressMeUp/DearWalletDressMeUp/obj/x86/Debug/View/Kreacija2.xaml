@@ -1,0 +1,303 @@
+﻿<Page
+    x:Class="DearWalletDressMeUp.Kreacija2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DearWalletDressMeUp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='1' x:Name="Mobitel">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Glavni.Orientation" Value="Vertical"></Setter>
+                        <Setter Target="Glavni.(Grid.Row)" Value="1"></Setter>
+
+                        <Setter Target="NadjiOdjecu.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="NadjiOdjecu.Margin" Value="0 0 0 20"></Setter>
+                        <Setter Target="NadjiOdjecu.Width" Value="400"></Setter>
+
+                        <Setter Target="DezenBojeMaterijal.HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Target="DezenBojeMaterijal.Margin" Value="0 0 0 20"></Setter>
+                        <Setter Target="DezenBojeMaterijal.Width" Value="400"></Setter>
+
+                        <Setter Target="DezenGridView.HorizontalAlignment" Value="Center"></Setter>
+
+
+                        <Setter Target="OdjevniPredmetGridView.MaxHeight" Value="450"></Setter>
+                        <Setter Target="OdjevniPredmetGridView.HorizontalAlignment" Value="Center"></Setter>
+
+                        <Setter Target="Velicine.Width" Value="400"></Setter>
+                        <Setter Target="Velicine.Margin" Value="0 0 0 20"></Setter>
+
+                        <Setter Target="VasaKreacija.Width" Value="400"></Setter>
+                        <Setter Target="VasaKreacija.HorizontalAlignment" Value="Center"></Setter>
+
+                        <Setter Target="Home.(Grid.ColumnSpan)" Value="2"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:ConnectionId='2' x:Name="Desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters></VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+
+        </VisualStateManager.VisualStateGroups>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+                    <Button x:ConnectionId='17' x:Name="Home" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top"                   >
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel.Resources>
+                                <Style TargetType="Image">
+                                    <Setter Property="Margin" Value="0 0 10 0"></Setter>
+                                </Style>
+                            </StackPanel.Resources>
+                            <Image Source="ms-appx:///Assets/homeIcon.png" Width="30" Height="30"></Image>
+                            <TextBlock VerticalAlignment="Center" Text="Home"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button x:ConnectionId='18' x:Name="Back" Style="{StaticResource NavigationBackButtonNormalStyle}"                   />
+                </StackPanel>
+                <Button x:ConnectionId='3' x:Name="Logout" Content="Log out" Grid.Column="4" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 0 20 0"                     ></Button>
+                <StackPanel x:ConnectionId='4' x:Name="Glavni" Background="Beige" Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="4" Padding="20" Margin="0">
+                    <StackPanel.Resources>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                            <Setter Property="Margin" Value="0 0 0 10"></Setter>
+                            <Setter Property="FontSize" Value="20"></Setter>
+                            <Setter Property="TextWrapping" Value="WrapWholeWords"></Setter>
+                            <Setter Property="MaxWidth" Value="150"></Setter>
+                        </Style>
+                        <Style TargetType="Button">
+                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                            <Setter Property="Margin" Value="0 0 0 10"></Setter>
+                        </Style>
+                        <Style TargetType="ComboBox">
+
+                            <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+                            <Setter Property="Margin" Value="0 0 0 10"></Setter>
+                        </Style>
+                        <Style TargetType="StackPanel">
+                            <Setter Property="Padding" Value="10"></Setter>
+                            <Setter Property="Background" Value="White"></Setter>
+                            <Setter Property="Margin" Value="0 0 20 0"></Setter>
+                            <Setter Property="MinWidth" Value="200"></Setter>
+                        </Style>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Margin" Value="0 0 0 10"></Setter>
+                            <Setter Property="Width" Value="120"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <StackPanel x:ConnectionId='5' x:Name="NadjiOdjecu">
+                        <TextBlock Text="Odjevni predmet"></TextBlock>
+                        <ComboBox x:ConnectionId='15' x:Name="OdjevniPredmetCombo" >
+                            <ComboBox.Resources>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                </Style>
+                            </ComboBox.Resources>
+                            <ComboBoxItem>
+                                <TextBlock Text="Majice"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="Pantalone"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="Haljine"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="Jakne"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="Suknja"></TextBlock>
+                            </ComboBoxItem>
+                        </ComboBox>
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <GridView x:ConnectionId='16' x:Name="OdjevniPredmetGridView" VerticalAlignment="Stretch">
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Height="150" Width="150">
+                                            <Image Height="100" Width="100" Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png" Stretch="UniformToFill"/>
+                                            <StackPanel Orientation="Horizontal" Height="40" VerticalAlignment="Bottom" Padding="10">
+                                                <TextBlock Text="Cijena:"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <ItemsWrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal"></ItemsWrapGrid>
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.Items>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                </GridView.Items>
+                            </GridView>
+                        </ScrollViewer>
+                    </StackPanel>
+                    <StackPanel x:ConnectionId='6' x:Name="DezenBojeMaterijal">
+                        <TextBlock Text="Dezen"></TextBlock>
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <GridView x:ConnectionId='14' x:Name="DezenGridView" MaxHeight="250">
+                                <GridView.ItemTemplate>
+                                    <DataTemplate x:Name="Tmp">
+                                        <Grid Height="120" Width="120">
+                                            <Image Height="80" Width="80" Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png" Stretch="UniformToFill"/>
+                                            <StackPanel Orientation="Horizontal" Height="40" VerticalAlignment="Bottom" Padding="10">
+                                                <TextBlock Text="Cijena:"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <ItemsWrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal"></ItemsWrapGrid>
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.Items>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                    <Image></Image>
+                                </GridView.Items>
+                            </GridView>
+                        </ScrollViewer>
+                        <TextBlock Margin="0 10 0 0" Text="Boja i materijal"></TextBlock>
+                        <ComboBox x:ConnectionId='12' Margin="0 10 0 0" x:Name="MaterijalCombo" PlaceholderText="Materijal">
+                            <ComboBox.Resources>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                </Style>
+                            </ComboBox.Resources>
+                            <ComboBoxItem>
+                                <TextBlock Text="Pamuk"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="Koža"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="Svila"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="Viskoza"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="Poliester"></TextBlock>
+                            </ComboBoxItem>
+                        </ComboBox>
+                        <ColorPicker x:ConnectionId='13' x:Name="Piker" Margin="0 10 0 0" IsColorChannelTextInputVisible="False" ColorSpectrumShape="Ring" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel x:ConnectionId='7' x:Name="Velicine">
+                        <TextBlock Text="Unesite Vase dimenzije (cm):"></TextBlock>
+                        <TextBox PlaceholderText="Obim struka " />
+                        <TextBox PlaceholderText="Obim grudi"/>
+                        <TextBox PlaceholderText="Sirina ramena"/>
+                        <TextBox PlaceholderText="Duzina noge"/>
+                        <TextBox PlaceholderText="Duzina ruke"/>
+                        <TextBlock Text="Ili odaberite zeljenu velicinu:"/>
+                        <ComboBox Width="150" VerticalAlignment="Stretch" PlaceholderText="Velicina">
+                            <ComboBoxItem>
+                                <TextBlock Text="XS"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="S"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="M"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="L"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="XL"></TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="XXL"></TextBlock>
+                            </ComboBoxItem>
+                        </ComboBox>
+
+                    </StackPanel>
+                    <StackPanel x:ConnectionId='8' x:Name="VasaKreacija" Width="380">
+                        <TextBlock Text="Vasa kreacija:"></TextBlock>
+                        <StackPanel Orientation="Horizontal" Padding="0">
+                            <Image Width="250" MinHeight="250" Source="ms-appx:///Assets/5f7a11765690b717abfdf22372fe80c1.png"></Image>
+                            <StackPanel Padding="10" HorizontalAlignment="Left">
+                                <StackPanel.Resources>
+                                    <Style TargetType="Image">
+                                        <Setter Property="Width" Value="80"></Setter>
+                                        <Setter Property="Height" Value="120"></Setter>
+                                        <Setter Property="Stretch" Value="Fill"></Setter>
+                                        <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                                        <Setter Property="Margin" Value="0 0 0 20"></Setter>
+                                    </Style>
+                                </StackPanel.Resources>
+                                <Image Source="ms-appx:///Assets/Square150x150Logo.png"></Image>
+                                <Image Source="ms-appx:///Assets/Square150x150Logo.png"></Image>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                            <TextBlock Text="Trenutna cijena:"></TextBlock>
+                            <TextBox IsReadOnly="True" Margin="20 0 10 0"></TextBox>
+                            <TextBlock Text="KM"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Padding="10">
+                            <StackPanel.Resources>
+                                <Style TargetType="Button">
+                                    <Setter Property="Margin" Value="0 0 20 0"></Setter>
+                                    <Setter Property="Width" Value="100"></Setter>
+                                </Style>
+                            </StackPanel.Resources>
+                            <Button x:ConnectionId='10' x:Name="Zavrsi" Content="Zavrsi"                      ></Button>
+                            <Button x:ConnectionId='11' x:Name="PitajStilistu" Content="Pitaj stilistu"                            ></Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Padding="10" HorizontalAlignment="Center">
+                            <StackPanel.Resources>
+                                <Style TargetType="Button">
+                                    <Setter Property="Margin" Value="0 0 20 0"></Setter>
+                                    <Setter Property="Width" Value="100"></Setter>
+                                </Style>
+                            </StackPanel.Resources>
+                            <Button x:ConnectionId='9' x:Name="Odustani" Content="Odustani"                       ></Button>
+                        </StackPanel>
+                    </StackPanel>
+
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
+
