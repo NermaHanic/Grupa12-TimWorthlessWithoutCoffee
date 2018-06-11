@@ -10,9 +10,9 @@ namespace DearWalletWebNovi.Models
 {
     public class OdjevniPredmet
     {
-        [ScaffoldColumn(false)]
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+       // [ScaffoldColumn(false)]
+        //[Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
         public string Naziv { get; set; }

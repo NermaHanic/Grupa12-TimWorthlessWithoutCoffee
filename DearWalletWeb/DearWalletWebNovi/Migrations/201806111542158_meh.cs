@@ -3,7 +3,7 @@ namespace DearWalletWebNovi.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initial : DbMigration
+    public partial class meh : DbMigration
     {
         public override void Up()
         {
@@ -11,7 +11,7 @@ namespace DearWalletWebNovi.Migrations
                 "dbo.Dezen",
                 c => new
                     {
-                        Id = c.String(nullable: false, maxLength: 128),
+                        Id = c.Int(nullable: false, identity: true),
                         Naziv = c.String(nullable: false),
                         Slika = c.Binary(nullable: false),
                         PSlika = c.String(nullable: false),
@@ -23,7 +23,7 @@ namespace DearWalletWebNovi.Migrations
                 "dbo.Korisnik",
                 c => new
                     {
-                        Id = c.String(nullable: false, maxLength: 128),
+                        Id = c.Int(nullable: false, identity: true),
                         Ime = c.String(nullable: false),
                         Prezime = c.String(nullable: false),
                         Username = c.String(nullable: false),
@@ -39,12 +39,21 @@ namespace DearWalletWebNovi.Migrations
                 "dbo.Kreacija",
                 c => new
                     {
-                        Id = c.String(nullable: false, maxLength: 128),
-                        IdDezen = c.String(),
-                        Boja = c.String(),
-                        IdOdjevniPredmet = c.String(nullable: false),
-                        IdKorisnika = c.String(nullable: false),
+                        Id = c.Int(nullable: false, identity: true),
+                        IdDezen = c.Int(nullable: false),
+                        IdOdjevniPredmet = c.Int(nullable: false),
+                        IdKorisnika = c.Int(nullable: false),
                         Velicina = c.String(nullable: false),
+                        IdNarudzbe = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Narudzba",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        IdKorisnika = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -52,10 +61,10 @@ namespace DearWalletWebNovi.Migrations
                 "dbo.OdjevniPredmet",
                 c => new
                     {
-                        Id = c.String(nullable: false, maxLength: 128),
+                        Id = c.Int(nullable: false, identity: true),
                         Naziv = c.String(nullable: false),
-                        Slika = c.Binary(nullable: false),
                         PSlika = c.String(nullable: false),
+                        Slika = c.Binary(nullable: false),
                         Cijena = c.Double(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
@@ -65,6 +74,7 @@ namespace DearWalletWebNovi.Migrations
         public override void Down()
         {
             DropTable("dbo.OdjevniPredmet");
+            DropTable("dbo.Narudzba");
             DropTable("dbo.Kreacija");
             DropTable("dbo.Korisnik");
             DropTable("dbo.Dezen");

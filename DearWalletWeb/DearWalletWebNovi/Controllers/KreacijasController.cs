@@ -46,7 +46,7 @@ namespace DearWalletWebNovi.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,IdDezen,Boja,IdOdjevniPredmet,IdKorisnika,Velicina")] Kreacija kreacija)
+        public ActionResult Create([Bind(Include = "Id,IdDezen,IdOdjevniPredmet,IdKorisnika,Velicina")] Kreacija kreacija)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace DearWalletWebNovi.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,IdDezen,Boja,IdOdjevniPredmet,IdKorisnika,Velicina")] Kreacija kreacija)
+        public ActionResult Edit([Bind(Include = "Id,IdDezen,IdOdjevniPredmet,IdKorisnika,Velicina")] Kreacija kreacija)
         {
             if (ModelState.IsValid)
             {

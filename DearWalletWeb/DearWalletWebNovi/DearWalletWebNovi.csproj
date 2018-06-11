@@ -201,41 +201,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201806082248389_initial.cs" />
-    <Compile Include="Migrations\201806082248389_initial.Designer.cs">
-      <DependentUpon>201806082248389_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806090922057_nova.cs" />
-    <Compile Include="Migrations\201806090922057_nova.Designer.cs">
-      <DependentUpon>201806090922057_nova.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806090925125_narudzbe.cs" />
-    <Compile Include="Migrations\201806090925125_narudzbe.Designer.cs">
-      <DependentUpon>201806090925125_narudzbe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806090945361_new.cs" />
-    <Compile Include="Migrations\201806090945361_new.Designer.cs">
-      <DependentUpon>201806090945361_new.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806090948211_a.cs" />
-    <Compile Include="Migrations\201806090948211_a.Designer.cs">
-      <DependentUpon>201806090948211_a.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806090953381_radi.cs" />
-    <Compile Include="Migrations\201806090953381_radi.Designer.cs">
-      <DependentUpon>201806090953381_radi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806090955145_int.cs" />
-    <Compile Include="Migrations\201806090955145_int.Designer.cs">
-      <DependentUpon>201806090955145_int.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806091010404_atributeless.cs" />
-    <Compile Include="Migrations\201806091010404_atributeless.Designer.cs">
-      <DependentUpon>201806091010404_atributeless.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806091018307_intovi.cs" />
-    <Compile Include="Migrations\201806091018307_intovi.Designer.cs">
-      <DependentUpon>201806091018307_intovi.cs</DependentUpon>
+    <Compile Include="Migrations\201806111542158_meh.cs" />
+    <Compile Include="Migrations\201806111542158_meh.Designer.cs">
+      <DependentUpon>201806111542158_meh.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -337,7 +305,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Image\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -353,32 +320,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201806082248389_initial.resx">
-      <DependentUpon>201806082248389_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806090922057_nova.resx">
-      <DependentUpon>201806090922057_nova.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806090925125_narudzbe.resx">
-      <DependentUpon>201806090925125_narudzbe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806090945361_new.resx">
-      <DependentUpon>201806090945361_new.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806090948211_a.resx">
-      <DependentUpon>201806090948211_a.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806090953381_radi.resx">
-      <DependentUpon>201806090953381_radi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806090955145_int.resx">
-      <DependentUpon>201806090955145_int.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806091010404_atributeless.resx">
-      <DependentUpon>201806091010404_atributeless.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806091018307_intovi.resx">
-      <DependentUpon>201806091018307_intovi.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201806111542158_meh.resx">
+      <DependentUpon>201806111542158_meh.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

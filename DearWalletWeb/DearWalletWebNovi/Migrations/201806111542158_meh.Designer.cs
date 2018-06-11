@@ -7,13 +7,13 @@ namespace DearWalletWebNovi.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class nova : IMigrationMetadata
+    public sealed partial class meh : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(nova));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(meh));
         
         string IMigrationMetadata.Id
         {
-            get { return "201806090922057_nova"; }
+            get { return "201806111542158_meh"; }
         }
         
         string IMigrationMetadata.Source

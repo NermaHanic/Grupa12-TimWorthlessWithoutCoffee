@@ -10,9 +10,9 @@ namespace DearWalletWebNovi.Models
     public class Dezen
     {
 
-        [Key]
-        [ScaffoldColumn(false)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        //[Key]
+        //[ScaffoldColumn(false)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
         public string Naziv { get; set; }

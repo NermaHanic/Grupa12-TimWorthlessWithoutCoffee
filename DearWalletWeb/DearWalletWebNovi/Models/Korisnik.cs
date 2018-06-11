@@ -10,9 +10,9 @@ namespace DearWalletWebNovi.Models
 {
     public class Korisnik
     {
-        [ScaffoldColumn(false)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Key]
+      //  [ScaffoldColumn(false)]
+       // [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        //[Key]
         public int Id { get; set; }
         [Required(ErrorMessage = "Ime je obavezno!")]
         public string Ime { get; set; }

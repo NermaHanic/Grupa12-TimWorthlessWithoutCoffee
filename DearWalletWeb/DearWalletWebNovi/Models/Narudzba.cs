@@ -10,9 +10,9 @@ namespace DearWalletWebNovi.Models
 {
     public class Narudzba
     {
-        [Key]
-        [ScaffoldColumn(false)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        //[Key]
+      //[ScaffoldColumn(false)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
         public int IdKorisnika { get; set; }
