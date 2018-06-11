@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>de107c0a-a28f-4375-baae-27a3e2f1e1ba</PackageIdentityName>
     <PackageIdentityPublisher>CN=AMILA</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.exe">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.exe">
       <PackagePath>entrypoint\DearWalletDressMeUp.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\entityframework.core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
@@ -433,103 +433,103 @@
     <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\5f7a11765690b717abfdf22372fe80c1.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\5f7a11765690b717abfdf22372fe80c1.png">
       <PackagePath>Assets\5f7a11765690b717abfdf22372fe80c1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\addtocart.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\addtocart.png">
       <PackagePath>Assets\addtocart.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Baby-Clothes-512.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Baby-Clothes-512.png">
       <PackagePath>Assets\Baby-Clothes-512.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\backArrow.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\backArrow.png">
       <PackagePath>Assets\backArrow.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\christmas-icon-gift-512.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\christmas-icon-gift-512.png">
       <PackagePath>Assets\christmas-icon-gift-512.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\female.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\female.png">
       <PackagePath>Assets\female.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\home.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\home.png">
       <PackagePath>Assets\home.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\homeIcon.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\homeIcon.png">
       <PackagePath>Assets\homeIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\letterIcon.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\letterIcon.png">
       <PackagePath>Assets\letterIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\majica.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\majica.png">
       <PackagePath>Assets\majica.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\mojProfilIcon.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\mojProfilIcon.png">
       <PackagePath>Assets\mojProfilIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\mojProfilIcon2.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\mojProfilIcon2.png">
       <PackagePath>Assets\mojProfilIcon2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\plusIcon.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\plusIcon.png">
       <PackagePath>Assets\plusIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\quizIcon.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\quizIcon.png">
       <PackagePath>Assets\quizIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\relax_my_girls_by_panansa-dbzkdz5.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\relax_my_girls_by_panansa-dbzkdz5.png">
       <PackagePath>Assets\relax_my_girls_by_panansa-dbzkdz5.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\search-icon.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\search-icon.png">
       <PackagePath>Assets\search-icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\srculence.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\srculence.png">
       <PackagePath>Assets\srculence.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\trashcanIcon.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\trashcanIcon.png">
       <PackagePath>Assets\trashcanIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\univerzalno.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\univerzalno.png">
       <PackagePath>Assets\univerzalno.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\mojProfilIcon.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\mojProfilIcon.png">
       <PackagePath>mojProfilIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\AAS-745x380.jpg">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\AAS-745x380.jpg">
       <PackagePath>Assets\AAS-745x380.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\logo.jpg">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\logo.jpg">
       <PackagePath>Assets\logo.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Assets\opened-surprise-gift-box_3446-340.jpg">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Assets\opened-surprise-gift-box_3446-340.jpg">
       <PackagePath>Assets\opened-surprise-gift-box_3446-340.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\entityframework.commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
@@ -538,17 +538,17 @@
     <AppxPackagedFile Include="C:\Users\HP\.nuget\packages\entityframework.commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.dll">
       <PackagePath>EntityFramework.Commands.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.xr.xml">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\DearWalletDressMeUp.xr.xml">
       <PackagePath>DearWalletDressMeUp.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\Desktop\Nermin branch\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\DearWalletDressMeUp.exe">
+    <AppxPackagedFile Include="C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletDressMeUp\DearWalletDressMeUp\bin\x86\Debug\Core\DearWalletDressMeUp.exe">
       <PackagePath>DearWalletDressMeUp.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

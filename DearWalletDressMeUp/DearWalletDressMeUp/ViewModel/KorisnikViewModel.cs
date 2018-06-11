@@ -35,7 +35,7 @@ namespace DearWalletDressMeUp.ViewModel
         public async void DodajUBazu(object parametar)
         {
             string greska = "";
-            Tuple<bool, string> var = Pomocna.ValidirajPolja(korisnik.Ime, korisnik.Prezime, korisnik.Sifra, pSifra, korisnik.Adresa,korisnik.Email, korisnik.BrojTel.ToString());
+            Tuple<bool, string> var = Pomocna.ValidirajPolja(korisnik.Ime, korisnik.Prezime, korisnik.Sifra, pSifra, korisnik.Adresa,korisnik.Email, korisnik.BrojTel);
             Tuple<bool, string> sifrice = Pomocna.ValidirajSifre(korisnik.Sifra, pSifra);
             Tuple<bool, string> tel = Pomocna.ValidirajTelefon(korisnik.BrojTel);
             Tuple<bool, string> kr = Pomocna.ValidirajKreditnu(korisnik.BrojKreditneKartice);

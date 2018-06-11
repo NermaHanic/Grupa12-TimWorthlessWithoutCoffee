@@ -26,5 +26,7 @@ namespace DearWalletDressMeUp.Model
         public BitmapImage SlikaDezena { get => slikaDezena; set => slikaDezena = value; }
         public string Id { get => id; set => id = value; }
         public double CijenaDezena { get => cijenaDezena; set => cijenaDezena = value; }
+        
+    
     }
 }

@@ -95,6 +95,7 @@
     <Compile Include="Helper\INavigacija.cs" />
     <Compile Include="Helper\Navigacija.cs" />
     <Compile Include="Model\DearWalletContext.cs" />
+    <Compile Include="Model\PrintHelper.cs" />
     <Compile Include="ViewModel\IBaza.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="View\AdminDodavanjeOdjece.xaml.cs">
@@ -115,6 +116,7 @@
     <Compile Include="View\Checkout.xaml.cs">
       <DependentUpon>Checkout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\ContinuationPage.xaml.cs" />
     <Compile Include="View\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -168,6 +170,7 @@
     <Compile Include="Model\SlikaKviz.cs" />
     <Compile Include="Model\Snizenje.cs" />
     <Compile Include="Model\StavkeNarudzbe.cs" />
+    <Compile Include="View\PageToPrint.xaml.cs" />
     <Compile Include="View\Poklon1.xaml.cs">
       <DependentUpon>Poklon1.xaml</DependentUpon>
     </Compile>
@@ -188,6 +191,9 @@
       <DependentUpon>Pretraga.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\PreviewUnavaiable.xaml.cs">
+      <DependentUpon>PreviewUnavaiable.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Registracija.xaml.cs">
       <DependentUpon>Registracija.xaml</DependentUpon>
     </Compile>
@@ -263,6 +269,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\ContinuationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -299,6 +309,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\PageToPrint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Poklon1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -320,6 +334,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Pretraga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PreviewUnavaiable.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
