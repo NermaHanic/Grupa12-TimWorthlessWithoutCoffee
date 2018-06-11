@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -44,20 +48,42 @@ namespace DearWalletWebNovi.Controllers
         // POST: OdjevniPredmets/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        /*  [HttpPost]
+          [ValidateAntiForgeryToken]
+          public ActionResult Create([Bind(Include = "Id,Naziv,Slika,PSlika,Cijena")] OdjevniPredmet odjevniPredmet)
+          {
+              if (ModelState.IsValid)
+               {
+                   db.OdjevniPredmet.Add(odjevniPredmet);
+                   db.SaveChanges();
+                   return RedirectToAction("Index");
+               }
+
+               return View(odjevniPredmet);
+          }
+          */
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Naziv,Slika,PSlika,Cijena")] OdjevniPredmet odjevniPredmet)
+        public ActionResult Create(OdjevniPredmet o, HttpPostedFileBase ImageFile)
         {
-            if (ModelState.IsValid)
+            string filename = Path.GetFileNameWithoutExtension(o.ImageFile.FileName);
+            string extension = Path.GetExtension(o.ImageFile.FileName);
+            filename = filename + DateTime.Now.ToString("yymmssff") + extension;
+            o.PSlika = "~/Image/" + filename;
+            filename = Path.Combine(Server.MapPath("~/Image/"), filename);
+            o.ImageFile.SaveAs(filename);
+            if (ImageFile != null)
             {
-                db.OdjevniPredmet.Add(odjevniPredmet);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                o.Slika = new byte[ImageFile.ContentLength];
+                ImageFile.InputStream.Read(o.Slika, 0, ImageFile.ContentLength);
+
             }
-
-            return View(odjevniPredmet);
+            using (DressMeUpContext db = new DressMeUpContext())
+            {
+                db.OdjevniPredmet.Add(o);
+                db.SaveChanges();
+            }
+            return View(o);
         }
-
         // GET: OdjevniPredmets/Edit/5
         public ActionResult Edit(string id)
         {

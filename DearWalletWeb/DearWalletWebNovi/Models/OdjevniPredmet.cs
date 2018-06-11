@@ -9,10 +9,7 @@ using System.Web;
 namespace DearWalletWebNovi.Models
 {
     public class OdjevniPredmet
-    {
-       // [ScaffoldColumn(false)]
-        //[Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    { 
         public int Id { get; set; }
         [Required]
         public string Naziv { get; set; }
@@ -25,6 +22,5 @@ namespace DearWalletWebNovi.Models
         public double Cijena { get; set; }
         [NotMapped]
         public HttpPostedFileBase ImageFile { get; set; }
-        // public virtual ICollection<Kreacija> Kreacije { get; set; }
     }
 }
