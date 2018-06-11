@@ -9,20 +9,16 @@ namespace DearWalletWebNovi.Models
 {
     public class Dezen
     {
-
-        //[Key]
-        //[ScaffoldColumn(false)]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
         public string Naziv { get; set; }
         [Required]
         public byte[] Slika { get; set; }
         [Required]
-        public string PSlika { get; set; }  //putanja do slike
+        public string PSlika { get; set; }
         [Required]
         public double Cijena { get; set; }
-
-        //public virtual ICollection<Kreacija> Kreacije { get; set; }
+        [NotMapped]
+        public HttpPostedFileBase ImageFile { get; set; }
     }
 }
