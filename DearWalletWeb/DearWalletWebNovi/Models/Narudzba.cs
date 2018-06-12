@@ -8,13 +8,20 @@ using System.Web;
 
 namespace DearWalletWebNovi.Models
 {
+    [BindableType]
     public class Narudzba
     {
         //[Key]
-      //[ScaffoldColumn(false)]
+        //[ScaffoldColumn(false)]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Id je neophodan!")]
         public int IdKorisnika { get; set; }
+        public int Cijena { get; set; }
+
+
+        
+
+       
     }
 }
