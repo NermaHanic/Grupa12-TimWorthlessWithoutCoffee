@@ -204,6 +204,10 @@
     <Compile Include="Migrations\201806111542158_meh.Designer.cs">
       <DependentUpon>201806111542158_meh.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806120253119_meh1.cs" />
+    <Compile Include="Migrations\201806120253119_meh1.Designer.cs">
+      <DependentUpon>201806120253119_meh1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Dezen.cs" />
@@ -300,6 +304,7 @@
     <Content Include="Views\Narudzbas\Details.cshtml" />
     <Content Include="Views\Narudzbas\Edit.cshtml" />
     <Content Include="Views\Narudzbas\Index.cshtml" />
+    <Content Include="Views\Kreacijas\Kreacija.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -321,6 +326,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201806111542158_meh.resx">
       <DependentUpon>201806111542158_meh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806120253119_meh1.resx">
+      <DependentUpon>201806120253119_meh1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

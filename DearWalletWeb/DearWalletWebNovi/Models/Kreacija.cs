@@ -21,5 +21,7 @@ namespace DearWalletWebNovi.Models
         [Required]
         public string Velicina { get; set; }
         public int IdNarudzbe { get; set; }
+        public int Cijena { get; set; }
+    
     }
 }

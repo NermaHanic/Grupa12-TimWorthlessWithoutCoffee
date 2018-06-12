@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DearWalletWebNovi.Models;
+using Microsoft.AspNet.Identity;
 
 namespace DearWalletWebNovi.Controllers
 {
@@ -14,12 +15,46 @@ namespace DearWalletWebNovi.Controllers
     {
         private DressMeUpContext db = new DressMeUpContext();
 
-        // GET: Kreacijas
-        public ActionResult Index()
+        // GET: Kreacijas/Create
+        public ActionResult Create()
         {
-            return View(db.Kreacija.ToList());
+            ViewBag.list1 = db.OdjevniPredmet.ToList();
+            ViewBag.list2 = db.Dezen.ToList();
+            return View();
         }
 
+
+        [HttpPost]
+        public ActionResult Create(Kreacija k)
+        {
+            //Dezen dezen = db.Dezen.Find(idD1);
+            // ViewBag.isplata = db.Dezen;
+            int idD1 =k.IdDezen;
+            int idD2 =k.IdOdjevniPredmet;
+            Dezen d = db.Dezen.ToList().Find(x => x.Id == idD1);
+            OdjevniPredmet o = db.OdjevniPredmet.ToList().Find(x => x.Id == idD2);
+            ViewBag.list1 = db.OdjevniPredmet.ToList();
+            ViewBag.list2 = db.Dezen.ToList();
+            var cijena = Convert.ToInt32(d.Cijena)+o.Cijena;
+            ViewBag.cijena = "Cijena kreacije: " + cijena.ToString()+"KM";
+            k.Cijena = Convert.ToInt32(cijena);
+            k.IdKorisnika = Convert.ToInt32(Session["UserId"].ToString());
+            db.Kreacija.Add(k);
+            db.SaveChanges();
+            return View();
+
+        }
+
+        [HttpPost]
+       /* // GET: Kreacijas
+        public ActionResult Create([Bind(Include = "Id,IdDezen,IdOdjevniPredmet,IdKorisnika,Velicina,Cijena")] Kreacija kreacija)
+        {
+            ViewBag.dezen = kreacija.IdDezen;
+            db.Kreacija.Add(kreacija);
+            db.SaveChanges();
+            return View(kreacija);
+        }*/
+        
         // GET: Kreacijas/Details/5
         public ActionResult Details(string id)
         {
@@ -34,20 +69,20 @@ namespace DearWalletWebNovi.Controllers
             }
             return View(kreacija);
         }
+        
 
-        // GET: Kreacijas/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+
+
+  
 
         // POST: Kreacijas/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+       /* [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,IdDezen,IdOdjevniPredmet,IdKorisnika,Velicina")] Kreacija kreacija)
+        public ActionResult Create([Bind(Include = "Id,IdDezen,IdOdjevniPredmet,IdKorisnika,Velicina,Cijena")] Kreacija kreacija)
         {
+            ViewBag.user = User.Identity.GetUserId<int>();
             if (ModelState.IsValid)
             {
                 db.Kreacija.Add(kreacija);
@@ -56,7 +91,7 @@ namespace DearWalletWebNovi.Controllers
             }
 
             return View(kreacija);
-        }
+        }*/
 
         // GET: Kreacijas/Edit/5
         public ActionResult Edit(string id)
