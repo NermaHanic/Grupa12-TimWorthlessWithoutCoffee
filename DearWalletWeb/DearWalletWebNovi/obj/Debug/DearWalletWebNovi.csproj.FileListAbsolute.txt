@@ -748,3 +748,5 @@ C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearW
 C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.csproj.CopyComplete
 C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.dll
 C:\Users\HP\Desktop\DearWalletDressMeUup\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.pdb
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.Migrations.meh1.resources
+C:\Users\defaultuser0\Desktop\Grupa12-TimWorthlessWithoutCoffee\DearWalletWeb\DearWalletWebNovi\obj\Debug\DearWalletWebNovi.Migrations.nova.resources

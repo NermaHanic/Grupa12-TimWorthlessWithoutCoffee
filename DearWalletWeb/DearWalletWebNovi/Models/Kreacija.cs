@@ -13,6 +13,7 @@ namespace DearWalletWebNovi.Models
         //[ScaffoldColumn(false)]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+	[Required]
         public int IdDezen { get; set; }
         [Required]
         public int IdOdjevniPredmet { get; set; }

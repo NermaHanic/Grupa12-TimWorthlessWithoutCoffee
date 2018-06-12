@@ -17,13 +17,23 @@ namespace DearWalletWebNovi.Controllers
         // GET: Korisniks
         public ActionResult Index()
         {
-
-            List<Kreacija> listaKreacija = new List<Kreacija>();
-            foreach (Kreacija x in db.Kreacija.ToList())
-                if (x.IdKorisnika.Equals(Session["UserId"].ToString()))
-                    listaKreacija.Add(x);
-
-            return View(db.Korisnik.ToList());
+            List<object> lista = new List<object>();
+            List <Kreacija> listaKreacija = new List<Kreacija>();
+            List<OdjevniPredmet> listaOdjece = new List<OdjevniPredmet>();
+            List<Dezen> listaDezena = new List<Dezen>();
+            foreach (Kreacija k in db.Kreacija.ToList())
+            {
+                if (k.IdKorisnika.ToString() == Session["UserId"].ToString())
+                {
+                    listaKreacija.Add(k);
+                    listaOdjece.Add(db.OdjevniPredmet.ToList().Find(x => x.Id == k.IdOdjevniPredmet));
+                    listaDezena.Add(db.Dezen.ToList().Find(x => x.Id == k.IdDezen));
+                }
+            }
+            lista.Add(listaKreacija);
+            lista.Add(listaOdjece);
+            lista.Add(listaDezena);
+            return View(lista);
         }
         // GET: Korisniks/Details/5
         public ActionResult Details(string id)

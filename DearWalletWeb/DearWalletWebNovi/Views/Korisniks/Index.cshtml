@@ -1,36 +1,51 @@
-﻿@model IEnumerable<DearWalletWebNovi.Models.Korisnik>
+﻿@model IEnumerable<object>
 
 @{
-    ViewBag.Title = "Vas Profil";
-
+    ViewBag.Title = "Vaš Profil";
+    List<DearWalletWebNovi.Models.Kreacija> listaKreacija = Model.ToList()[0] as List<DearWalletWebNovi.Models.Kreacija>;
+    List<DearWalletWebNovi.Models.OdjevniPredmet> listaOdjece = Model.ToList()[1] as List<DearWalletWebNovi.Models.OdjevniPredmet>;
+    List<DearWalletWebNovi.Models.Dezen> listaDezena = Model.ToList()[2] as List<DearWalletWebNovi.Models.Dezen>;
 }
-
-
 <div class="jumbotron">
     <div style="text-align:center">
         <font size="6">Ćao, @Session["User"].ToString()</font>
     </div>
-    <div style="text-align:center">
+    <div style="text-align:center; font-size:small">
         <input type="button" class="btn btn-default" value="Edituj profil" onclick="window.location.href='@Url.Action("Edit", "Korisniks",new { id= @Session["UserId"]})';" />
         <input type="button" class="btn btn-default" value="Obriši profil" onclick="window.location.href='@Url.Action("Delete", "Korisniks", new { id=@Session["UserId"] })';" />
-
-        <input type="button" class="btn btn-primary btn-lg" value="Odjava" onclick="window.location.href='@Url.Action("Index", "Home")';" />
+        @Html.ActionLink("Odjava", "Index", "Home")
+        @*<input type="button" class="btn btn-primary btn-lg" value="Odjava" onclick="window.location.href='@Url.Action("Index", "Home")';" />*@
     </div>
 </div>
-<div style="float:left">
-    <h2>Vaše kreacije</h2>
-    @*Ovjde idu slikice i ta cuda*@
-    <br />
-    @Html.ActionLink("+ Nova kreacija", "Create", "Kreacijas")
-    <h2>Korpa</h2>
-    @Html.ActionLink("+ Nova narudzba", "Create", "Narudzbas")
-</div>
-<div style="float:right">
-    @* <input style="height:34px" type="text" placeholder="Pretraga" name="pretraga">
-        <button class="btn btn-default" type="submit">Traži</button>
-    *@
-    <h2>Pretraga</h2>
-    @Html.ActionLink("Odjeca", "Index", "OdjevniPredmets")
-    <br />
-    @Html.ActionLink("Dezeni", "Index", "Dezens")
+<div class="row">
+    <div class="col-md-5" style="text-align:center; float:left">
+        <h2>Vaše kreacije</h2>
+        <table class="table table-striped">
+            <tbody>
+                @for (int i = 0; i < listaOdjece.Count(); i++)
+                {
+                    <tr>
+                        <td>Kreacija @(i+1).</td>
+                        <td><img src="@Url.Content(listaOdjece[i].PSlika)" width="100" height="100" /></td>
+                        <td><img src="@Url.Content(listaDezena[i].PSlika)" width="100" height="100" /></td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+        <br />
+        @Html.ActionLink("+ Nova kreacija", "Create", "Kreacijas")
+    </div>
+
+    <div class="col-md-3" style="text-align:center; float:left">
+        <h2>Korpa</h2>
+        @Html.ActionLink("+ Nova narudzba", "Create", "Narudzbas")
+    </div>
+
+    <div class="col-md-3" style="text-align:center; float:left">
+        <h2>Pretraga</h2>
+        @Html.ActionLink("Odjeca", "Index", "OdjevniPredmets")
+        <br />
+        @Html.ActionLink("Dezeni", "Index", "Dezens")
+    </div>
 </div>

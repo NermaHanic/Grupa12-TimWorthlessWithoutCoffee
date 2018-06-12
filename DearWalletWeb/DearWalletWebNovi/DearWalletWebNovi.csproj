@@ -208,6 +208,10 @@
     <Compile Include="Migrations\201806120253119_meh1.Designer.cs">
       <DependentUpon>201806120253119_meh1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806122236196_nova.cs" />
+    <Compile Include="Migrations\201806122236196_nova.Designer.cs">
+      <DependentUpon>201806122236196_nova.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Dezen.cs" />
@@ -329,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806120253119_meh1.resx">
       <DependentUpon>201806120253119_meh1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806122236196_nova.resx">
+      <DependentUpon>201806122236196_nova.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
