@@ -21,6 +21,15 @@ namespace DearWalletWebNovi.Controllers
             List <Kreacija> listaKreacija = new List<Kreacija>();
             List<OdjevniPredmet> listaOdjece = new List<OdjevniPredmet>();
             List<Dezen> listaDezena = new List<Dezen>();
+            List<Narudzba> listaNaruzdbi = new List<Narudzba>();
+            List<Kreacija> listaNarucenih = new List<Kreacija>();
+            foreach (Narudzba n in db.Narudzba.ToList())
+            {
+                if (n.IdKorisnika.ToString() == Session["UserId"].ToString())
+                {
+                    listaNaruzdbi.Add(n);
+                }
+            }
             foreach (Kreacija k in db.Kreacija.ToList())
             {
                 if (k.IdKorisnika.ToString() == Session["UserId"].ToString())
@@ -28,11 +37,21 @@ namespace DearWalletWebNovi.Controllers
                     listaKreacija.Add(k);
                     listaOdjece.Add(db.OdjevniPredmet.ToList().Find(x => x.Id == k.IdOdjevniPredmet));
                     listaDezena.Add(db.Dezen.ToList().Find(x => x.Id == k.IdDezen));
+                    foreach (Narudzba n in listaNaruzdbi)
+                    {
+                        if (n.Id == k.IdNarudzbe)
+                        {
+                            listaNarucenih.Add(k);
+                        }
+                    }
                 }
             }
+           
             lista.Add(listaKreacija);
             lista.Add(listaOdjece);
             lista.Add(listaDezena);
+            lista.Add(listaNaruzdbi);
+            lista.Add(listaNarucenih);
             return View(lista);
         }
         // GET: Korisniks/Details/5

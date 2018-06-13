@@ -23,7 +23,16 @@ namespace DearWalletWebNovi.Controllers
             return View();
         }
 
-
+        public ActionResult OrderNow(int idKreacije)
+        {
+            Session["KreacijaId"] = idKreacije;
+            Kreacija kr = db.Kreacija.Find(idKreacije);
+            if (kr == null)
+            {
+                return HttpNotFound();
+            }
+            return View(kr);
+        }
         [HttpPost]
         public ActionResult Create(Kreacija k)
         {

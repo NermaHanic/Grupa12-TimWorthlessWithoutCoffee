@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -9,11 +10,9 @@ namespace DearWalletWebNovi.Models
 {
     public class Kreacija
     {
-        //[Key]
-        //[ScaffoldColumn(false)]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DisplayName("ID kreacije")]
         public int Id { get; set; }
-	[Required]
+	    [Required]
         public int IdDezen { get; set; }
         [Required]
         public int IdOdjevniPredmet { get; set; }

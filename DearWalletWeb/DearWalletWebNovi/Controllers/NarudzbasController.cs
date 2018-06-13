@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
-using System.Data.Entity.Validation;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -16,29 +15,26 @@ namespace DearWalletWebNovi.Controllers
         private DressMeUpContext db = new DressMeUpContext();
 
         // GET: Narudzbas
-        public ActionResult Index()
+        public ActionResult Index(int idKreacije)
         {
-            return View(db.Narudzba.ToList());
+            Kreacija kr = db.Kreacija.Find(idKreacije);
+            return View(kr);
         }
 
         // GET: Narudzbas/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(int? id)
         {
-            if (id == 0)
+            if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Session["NarudzbaId"] = id;
             Narudzba narudzba = db.Narudzba.Find(id);
             if (narudzba == null)
             {
                 return HttpNotFound();
             }
-            double cijena = narudzba.Cijena;
             return View(narudzba);
         }
-
-        
 
         // GET: Narudzbas/Create
         public ActionResult Create()
@@ -51,7 +47,7 @@ namespace DearWalletWebNovi.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,IdKorisnika")] Narudzba narudzba)
+        public ActionResult Create([Bind(Include = "Id,IdKorisnika,Cijena")] Narudzba narudzba)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +79,7 @@ namespace DearWalletWebNovi.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,IdKorisnika")] Narudzba narudzba)
+        public ActionResult Edit([Bind(Include = "Id,IdKorisnika,Cijena")] Narudzba narudzba)
         {
             if (ModelState.IsValid)
             {
@@ -127,37 +123,6 @@ namespace DearWalletWebNovi.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
-        }
-        public ActionResult SaveRecords(Narudzba model)
-        {
-            try
-            {
-                Narudzba artikal = new Narudzba();
-                artikal.Id = model.Id;
-                artikal.Cijena = model.Cijena;
-                artikal.IdKorisnika = model.IdKorisnika;
-                
-
-                db.Narudzba.Add(artikal);
-                db.SaveChanges();
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-            return RedirectToAction("Index");
-        }
-        public ActionResult Kupovina()
-        {
-            Korisnik kupac = db.Korisnik.Find(Session["UserId"]);
-            Kreacija artikal = db.Kreacija.Find(Session["ArtikalId"]);
-            Narudzba n = new Narudzba();
-            n.Id = kupac.Id;
-            n.Id = artikal.Id;
-            db.Narudzba.Add(n);
-            db.SaveChanges();
-            ViewBag.novac = "Kupovina uspjesna";
-            return RedirectToAction("Index");
         }
     }
 }

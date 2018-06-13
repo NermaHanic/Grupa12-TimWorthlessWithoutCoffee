@@ -5,14 +5,16 @@
     List<DearWalletWebNovi.Models.Kreacija> listaKreacija = Model.ToList()[0] as List<DearWalletWebNovi.Models.Kreacija>;
     List<DearWalletWebNovi.Models.OdjevniPredmet> listaOdjece = Model.ToList()[1] as List<DearWalletWebNovi.Models.OdjevniPredmet>;
     List<DearWalletWebNovi.Models.Dezen> listaDezena = Model.ToList()[2] as List<DearWalletWebNovi.Models.Dezen>;
+    List<DearWalletWebNovi.Models.Narudzba> listaNarudzbi = Model.ToList()[3] as List<DearWalletWebNovi.Models.Narudzba>;
+    List<DearWalletWebNovi.Models.Kreacija> listaNarucenih = Model.ToList()[4] as List<DearWalletWebNovi.Models.Kreacija>;
 }
 <div class="jumbotron">
     <div style="text-align:center">
         <font size="6">Ćao, @Session["User"].ToString()</font>
     </div>
     <div style="text-align:center; font-size:small">
-        <input type="button" class="btn btn-default" value="Edituj profil" onclick="window.location.href='@Url.Action("Edit", "Korisniks",new { id= @Session["UserId"]})';" />
-        <input type="button" class="btn btn-default" value="Obriši profil" onclick="window.location.href='@Url.Action("Delete", "Korisniks", new { id=@Session["UserId"] })';" />
+        <input type="button" class="btn btn-default" value="Edituj profil" onclick="window.location.href='@Url.Action("Edit", "Korisniks", new { id = @Session["UserId"] })';" />
+        <input type="button" class="btn btn-default" value="Obriši profil" onclick="window.location.href='@Url.Action("Delete", "Korisniks", new { id = @Session["UserId"] })';" />
         @Html.ActionLink("Odjava", "Index", "Home")
         @*<input type="button" class="btn btn-primary btn-lg" value="Odjava" onclick="window.location.href='@Url.Action("Index", "Home")';" />*@
     </div>
@@ -21,13 +23,23 @@
     <div class="col-md-5" style="text-align:center; float:left">
         <h2>Vaše kreacije</h2>
         <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Id kreacije</td>
+                    <td>Odjevni predmet</td>
+                    <td>Odabrani dezen</td>
+                    <td>Cijena (KM)</td>
+                </tr>
+            </thead>
             <tbody>
-                @for (int i = 0; i < listaOdjece.Count(); i++)
+                @for (int i = 0; i < listaKreacija.Count(); i++)
                 {
                     <tr>
-                        <td>Kreacija @(i+1).</td>
+                        <td>@listaKreacija[i].Id</td>
                         <td><img src="@Url.Content(listaOdjece[i].PSlika)" width="100" height="100" /></td>
                         <td><img src="@Url.Content(listaDezena[i].PSlika)" width="100" height="100" /></td>
+                        <td>@listaKreacija[i].Cijena</td>
+                        <td>@Html.ActionLink("Kupi", "Index",new { controller = "Narudzbas" , idKreacije = listaKreacija[i].Id})</td>
                     </tr>
                 }
 
@@ -36,12 +48,22 @@
         <br />
         @Html.ActionLink("+ Nova kreacija", "Create", "Kreacijas")
     </div>
-
     <div class="col-md-3" style="text-align:center; float:left">
         <h2>Korpa</h2>
-        @Html.ActionLink("+ Nova narudzba", "Create", "Narudzbas")
+        @if (listaNarudzbi.Count() == 0)
+        {
+            <font style="font-size:small; color:darkred">Vi nemate nijednu narudžbu.</font><br/>
+        }
+        else
+        {
+            <ul>
+                @for(int i=0; i<listaNarudzbi.Count(); i++)
+                {
+                    <li>Id narudžbe: @listaNarudzbi[i].Id Id kreacije: @listaNarucenih[i].Id Total: @listaNarudzbi[i].Cijena</li>
+                }
+            </ul>
+        }
     </div>
-
     <div class="col-md-3" style="text-align:center; float:left">
         <h2>Pretraga</h2>
         @Html.ActionLink("Odjeca", "Index", "OdjevniPredmets")

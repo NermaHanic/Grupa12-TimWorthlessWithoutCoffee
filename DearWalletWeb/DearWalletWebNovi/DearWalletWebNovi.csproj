@@ -295,20 +295,18 @@
     <Content Include="Views\Korisniks\Index.cshtml" />
     <Content Include="Views\Kreacijas\Create.cshtml" />
     <Content Include="Views\Kreacijas\Delete.cshtml" />
-    <Content Include="Views\Kreacijas\Details.cshtml" />
-    <Content Include="Views\Kreacijas\Edit.cshtml" />
     <Content Include="Views\Kreacijas\Index.cshtml" />
     <Content Include="Views\OdjevniPredmets\Create.cshtml" />
     <Content Include="Views\OdjevniPredmets\Delete.cshtml" />
     <Content Include="Views\OdjevniPredmets\Details.cshtml" />
     <Content Include="Views\OdjevniPredmets\Edit.cshtml" />
     <Content Include="Views\OdjevniPredmets\Index.cshtml" />
+    <Content Include="Views\Kreacijas\Kreacija.cshtml" />
     <Content Include="Views\Narudzbas\Create.cshtml" />
     <Content Include="Views\Narudzbas\Delete.cshtml" />
     <Content Include="Views\Narudzbas\Details.cshtml" />
     <Content Include="Views\Narudzbas\Edit.cshtml" />
     <Content Include="Views\Narudzbas\Index.cshtml" />
-    <Content Include="Views\Kreacijas\Kreacija.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
